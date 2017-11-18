@@ -1,0 +1,67 @@
+/*
+ ____   ___   ____ ___    _    _       __  __ _____ ____ ___    _      _   _    ___     __
+/ ___| / _ \ / ___|_ _|  / \  | |     |  \/  | ____|  _ \_ _|  / \    | \ | |  / \ \   / /
+\___ \| | | | |    | |  / _ \ | |     | |\/| |  _| | | | | |  / _ \   |  \| | / _ \ \ / /
+__ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ ___ \ V /
+|____/ \___/ \____|___/_/   \_\_____| |_|  |_|_____|____/___/_/   \_\ |_| \_/_/   \_\_/
+
+*/
+
+.sm-nav {
+  position: absolute;
+  top: initial;
+  right: 0;
+  bottom: 0;
+  float: right;
+  width: 200px;
+  background: #fff;
+  border-top: 2px solid $color-primary;
+  border-left: 2px solid $color-primary;
+
+  li {
+    float: left;
+    width: 25%;
+    text-align: center;
+
+    a {
+      float: left;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: $white;
+
+      i {
+        padding-left: 0 !important;
+        font-size: 18px;
+        color: $color-primary;
+      }
+
+      &:hover {
+        background-color: $color-primary;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  @include mq(md) {
+    top: 0px;
+    float: left;
+    width: 100%;
+    background: $color-tertiary;
+    border-top: none;
+    border-left: none;
+
+  }
+
+  @include mq(sm) {
+    top: 0px;
+    float: left;
+    width: 100%;
+    background: $color-tertiary;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid $color-primary;
+  }
+}

@@ -1,0 +1,360 @@
+/*
+____  _____ ____  ____   ___  _   _ _   _ _____ _
+|  _ \| ____|  _ \/ ___| / _ \| \ | | \ | | ____| |
+| |_) |  _| | |_) \___ \| | | |  \| |  \| |  _| | |
+|  __/| |___|  _ < ___) | |_| | |\  | |\  | |___| |___
+|_|   |_____|_| \_\____/ \___/|_| \_|_| \_|_____|_____|
+
+*/
+
+ .main-wrapper-staffdirectory {
+    margin: 0px 0px 60px 0px;
+    padding: 110px 0px 0px 0px;
+ }
+
+.main-wrapper-staffMember {
+    margin: 0px 0px 60px 0px;
+    padding: 110px 0px 0px 0px;
+ }
+
+.main-wrapper-personnel {
+    padding: 110px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.personnel-title {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 80%;
+
+    h5 {
+        font-family: $raleway;
+        text-transform: uppercase;
+        padding: 10px 0px 5px 0px;
+        color: $black;
+        overflow: hidden;
+        font-size: 1.5em;
+        font-weight: 100;
+        line-height: 1.3em;
+    }
+
+    h6 {
+        padding: 0px 0px 10px 0px;
+        color: $westGreen;
+        overflow: hidden;
+        font-family: $opensans;
+        font-size: 1em;
+        font-weight: 100;
+        font-style: italic;;
+        line-height: 1.3em;
+        border-bottom: 1px solid $westGreen;
+    }
+}
+
+.personnelBodyContainer {
+    float: left;
+    clear: right;
+    padding: 35px 40px 50px 30px;
+    margin: 0px 0px 60px 0px;
+    text-align: left;
+    box-shadow: 1px 1px 6px $charcoal;
+    border: 1px solid #ecf0f1;
+
+    /*768px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        padding: 35px 10px 50px 20px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 15px 10px 50px 20px;
+        margin: -15px 0px 40px 0px;
+    }
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        font-size: 1.9em;
+        margin: 0px 0px 0px -20px;
+        color: $black;
+
+            /*768px --> 992px*/
+            @media only screen and (min-width:768px) and (max-width:992px) {
+                font-size: 2.2em;
+                margin: 0px 0px 0px -20px;
+                color: $black;
+            }
+
+            /*0px --> 768px*/
+            @media only screen and (min-width:0px) and (max-width:767px) {
+                font-size: 1.5em;
+                margin: 30px 0px 0px -20px;
+                color: $black;
+            }
+        }
+
+    h4 {
+    color: $westGreen !important;
+    font-size: 1.3em;
+    font-weight: 100;
+    font-style: italic;
+    margin: 4px 0px 15px -20px;
+
+        /*768px --> 992px*/
+        @media only screen and (min-width:768px) and (max-width:992px) {
+            font-size: 1.2em;
+            margin: 5px 0px 0px -20px;
+            color: $black;
+        }
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: 1em;
+            line-height: 1.3em;
+            margin: 5px 0px 0px -20px;
+            color: $black;
+        }
+    }
+
+    img {
+    margin: 25px 0px 0px 25px;
+    padding: 0px 30px 0px 0px;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            margin: 25px 50px 0px 5px;
+            padding: 0px 30px 0px 0px;
+        }
+    }
+
+}
+
+.personnelBodyText {
+    font-size: .95em;
+    line-height: 1.4em;
+    margin: 15px 0px 0px -20px;
+    color: $charcoal;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .85em;
+        padding: 15px 10px 0px 0px;
+    }
+}
+
+.personnelPage {
+
+    /*768px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        margin: 0px -40px 0px 40px;
+        padding: 0px 10px 0px 30px;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        margin: 0px -40px 0px 20px;
+        padding: 0px 30px 0px 0px;
+    }
+}
+
+.staffDirectoryBodyContainer {
+    width: 100%;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+    border: 2px solid #eeeeee;
+}
+
+.personnelPageTitle{
+    margin: -20px 0px 0px 0px;
+
+    h5{
+    font-size: 2em !important;
+    line-height: 1.3em !important;
+    margin: -20px 0px 0px 0px;
+    }
+
+    h6{
+    line-height: 1.4em !important;
+    }
+}
+
+
+ /* ---------- BEGIN SPECIFIC STAFF MEMBER PAGES ---------------- */
+
+.bioPhoto {
+    margin: -20px 0px 0px 0px;
+
+    img {
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            width: 100%;
+        }
+    }
+}
+
+.staffMemberBio {
+    padding: 0px 0px 0px 20px;
+}
+
+.staffMemberBio p {
+    color: $charcoal;
+    font-size: .95em;
+    line-height: 1.5em;
+}
+
+ /* ---------- END SPECIFIC STAFF MEMBER PAGES ---------------- */
+
+
+ /* ---------- BEGIN STAFF DIRECTORY ---------------- */
+
+.staffDirectoryBodyContainer {
+    width: 100%;
+    padding: 0px;
+}
+
+.staffDirectorySortMenu {
+    margin: 0px 0px -20px 0px;
+    font-size: 1.2em;
+}
+
+.subheaderMainStaffDirectoryContainer li{
+    width: 188px;
+    text-decoration: none;
+    list-style: none;
+    border-top: 2px solid $lightGray;
+    border-bottom: 2px solid $lightGray;
+    background-color: #efefef;
+    margin: 15px 15px 0px 0px !important;
+    padding: 15px 20px 15px 20px;
+}
+
+.subheaderMainStaffDirectoryContainer li p{
+    font-size: 1em;
+    padding: 3px 0px 15px 0px;
+
+}
+
+.subheaderMainStaffDirectoryContainer li p span{
+    font-size: .9em;
+    color:$westGreen;
+    font-style: italic;
+}
+
+#subheaderMainStaffDirectoryTop h1{
+    font-family: $raleway;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 100;
+    color: #000;
+    overflow: hidden;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin: 0px 0px 0px 0px;
+}
+
+#subheaderMainStaffDirectoryTop h2 {
+    font-family: $opensans;
+    position: relative;
+    font-weight: 300;
+    font-style: italic;
+    color: $westGreen;
+    font-size: 1em;
+    margin: 0px 0px 20px 0px;
+}
+
+/* Isotope Animating
+ * -------------------------- */
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+/* Portfolio Filter
+ * -------------------------- */
+.portfolio-filter {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.portfolio-filter.nav-pills > li > a {
+    border-radius: 2px;
+    color: $westGreen;
+    font-size: 1.1em !important;
+    padding: 10px 13px 10px 13px;
+}
+
+.portfolio-filter.nav-pills > li.active > a,
+.portfolio-filter.nav-pills > li.active > a:hover,
+.portfolio-filter.nav-pills > li.active > a:focus {
+    border-color: $westGreen;
+    color: $white;
+    background-color: $westGreen;
+}
+
+/* ************************************************* BEGIN MEDIA QUERIES ************************************************* */
+
+/*992px --> 1200px*/
+@media only screen and (min-width:992px) and (max-width:1200px) {
+
+}
+
+/*768px --> 992px*/
+@media only screen and (min-width:768px) and (max-width:992px) {
+
+}
+
+/*0px --> 768px*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+
+.subheaderMainStaffDirectoryContainer {
+    padding: 0px;
+}
+
+ .main-wrapper-staffdirectory {
+    margin: 0px 0px 60px 0px;
+ }
+
+.subheaderMainStaffDirectoryContainer li{
+    width: 100%;
+    margin: 15px 0px 0px 0px !important;
+    padding: 15px 20px 15px 20px;
+}
+}
+
+
+/* ************************************************* END MEDIA QUERIES ************************************************* */

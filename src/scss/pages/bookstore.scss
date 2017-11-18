@@ -1,0 +1,109 @@
+/*
+ ____   ___   ___  _  ______ _____ ___  ____  _____
+| __ ) / _ \ / _ \| |/ / ___|_   _/ _ \|  _ \| ____|
+|  _ \| | | | | | | ' /\___ \ | || | | | |_) |  _|
+| |_) | |_| | |_| | . \ ___) || || |_| |  _ <| |___
+|____/ \___/ \___/|_|\_\____/ |_| \___/|_| \_\_____|
+
+*/
+
+/* ############# NEW BOOKSTORE PAGE CSS ############# */
+
+.bookstore-page-container {
+  .bspc--inner {
+    .bspc-page--inner-left {
+      h1 {
+        margin-top: 10px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      ul.bookstore-list {
+        float: left;
+        width: 100%;
+
+        li.list-item  {
+          float: left;
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #DDDDDD;
+
+          .pbi--left {
+            float: left;
+            width: 100px;
+
+            img {
+              max-width: 100px;
+            }
+          }
+
+          .pbi--right {
+            float: left;
+            width: calc(100% - 100px);
+            padding-left: 30px;
+
+            h3.book-title {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              font-family: $font-secondary;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 140%;
+            }
+
+            h4.book-details {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              font-family: $font-secondary;
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 135%;
+              color: #333333;
+            }
+
+            h5.book-metadata {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              font-family: $font-secondary;
+              font-size: 15px;
+              font-style: italic;
+              font-weight: 500;
+              line-height: 135%;
+            }
+
+            p {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              font-family: $font-secondary;
+              font-size: 15px;
+              font-weight: 5400;
+              line-height: 135%;
+              color: #000000;
+            }
+
+            .btn {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .bspc-page--inner-right {
+      ul {
+        li {
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}

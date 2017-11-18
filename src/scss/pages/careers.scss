@@ -1,0 +1,64 @@
+/*
+  ____    _    ____  _____ _____ ____  ____
+ / ___|  / \  |  _ \| ____| ____|  _ \/ ___|
+| |     / _ \ | |_) |  _| |  _| | |_) \___ \
+| |___ / ___ \|  _ <| |___| |___|  _ < ___) |
+ \____/_/   \_\_| \_\_____|_____|_| \_\____/
+
+*/
+
+.careers-page-container {
+  .careers-page--header {
+    .main-header-title {
+
+    }
+  }
+
+  .careers-page--inner {
+    .careers-page--inner-left {
+      h1.main-title {
+        margin-bottom: 0;
+      }
+
+      .body-content {
+        p {
+          float: left;
+          width: 100%;
+          margin-top: 15px;
+          font-family: $font-secondary;
+          line-height: 140%;
+        }
+      }
+
+      .title-of-list {
+        float: left;
+        width: 100%;
+        margin-top: 25px;
+        font-family: $font-primary;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+    }
+
+    .careers-page--inner-right {
+      .sidebar-text {
+        float: left;
+        width: 100%;
+        max-width: 350px;
+        margin-top: 20px;
+        padding: 20px;
+        font-family: $font-secondary;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 500;
+        color: $black;
+        background-color: #EDEDED;
+        line-height: 140%;
+      }
+    }
+  }
+}

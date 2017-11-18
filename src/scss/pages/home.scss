@@ -1,0 +1,350 @@
+/*
+_   _  ___  __  __ _____
+| | | |/ _ \|  \/  | ____|
+| |_| | | | | |\/| |  _|
+|  _  | |_| | |  | | |___
+|_| |_|\___/|_|  |_|_____|
+
+*/
+
+
+
+.homePageBodyContainer {
+  float: left;
+  width: 100%;
+  padding: 90px 120px 70px 120px;
+  text-align: left;
+  overflow-x: hidden;
+
+  /*993px --> 1200px*/
+  @include mq(lg) {
+    padding: 30px 120px 0px 120px;
+    margin: 0px 0px 40px 0px;
+  }
+
+  /*768px --> 992px*/
+  @include mq(md) {
+    width: 100% !important;
+    padding: 50px 60px 30px 60px;
+    margin: 0px 0px 40px 0px;
+  }
+
+  /*0px --> 767px*/
+  @include mq(sm) {
+    padding: 15px 26px 30px 26px;
+    margin: 20px 0px 40px 0px;
+  }
+
+  h1 {
+    float: left;
+    width: 100%;
+    font-family: $opensans !important;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 0;
+    color: #333;
+    text-transform: capitalize !important;
+
+    @include mq (md) {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+
+    @include mq (sm) {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+    }
+  }
+
+  h2 {
+    float: left;
+    width: 100%;
+    color: $westGreen;
+    font-family: $opensans;
+    font-weight: 400;
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 5px 0px 15px 0px;
+
+    @include mq (md) {
+      margin: 5px 0px 15px 0px;
+    }
+
+    @include mq (sm) {
+      margin: .2rem 0rem 1.2rem 0rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #bbb;
+    }
+  }
+
+  p {
+    color: #777777;
+    font-size: .95em;
+    line-height: 1.5em;
+    padding: 0px 50px 0px 0px;
+
+    img {
+      display: inline;
+    }
+
+    @include mq (sm) {
+      padding: 0px 0px 0px 0px;
+    }
+  }
+}
+
+.homePageBodyContainerInner {
+  float: left;
+  padding: 0px 30px 0px 0px;
+  border-right: 1px solid #ddd;
+
+  /*993px --> 1200px*/
+  @include mq (lg) {
+    padding: 0px 20px 0px 0px;
+  }
+
+  /*768px --> 992px*/
+  @include mq(md) {
+    width: 100% !important;
+    padding: 0px 20px 0px 0px;
+    border-right: none;
+  }
+
+  /*0px --> 767px*/
+  @include mq (sm) {
+    border-right: none;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+#callOutBox {
+  float: left;
+  padding-left: 25px !important;
+  padding-right: 5px !important;
+  padding-top: 10px !important;
+  border: 0px !important;
+  background-color: transparent;
+
+  /*768px --> 992px*/
+  @include mq (md) {
+
+    /*************** REMOVE THIS AND UNCOMMENT BELOW AFTER HOLIDAY CARD IS TAKEN DOWN ****************/
+    display: none;
+    /*padding-left: 15px !important;
+    padding-right: 15px !important; */
+  }
+
+  @include mq (sm) {
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+
+    /*************** REMOVE THIS AFTER HOLIDAY CARD IS TAKEN DOWN ****************/
+    display: none;
+  }
+
+  .callout-box-inner {
+    float: left;
+    padding: 1.8rem;
+    border: 1px solid #72A430;
+  }
+
+  .callout-box-inner-alt {
+    float: left;
+  }
+
+  .holiday-btn {
+    display: block;
+    background-image: url("http://www.west-inc.com/images/west-card-2015-up.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 390px;
+    height: 300px;
+
+    &:hover {
+      cursor: pointer;
+      background-image: url("http://www.west-inc.com/images/west-card-2015-over.png");
+    }
+
+    @include mq (lg) {
+    }
+
+    @include mq (md) {
+    }
+
+    @include mq (sm) {
+
+    }
+  }
+
+  h3 {
+    font-family: $opensans;
+    font-weight: 500;
+    color: #72A430;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 0px 0px 10px 0px;
+  }
+
+  p {
+    width: 100%;
+    font-family: $opensans;
+    color: #72A430;
+    font-size: .9em;
+    line-height: 1.4em;
+    padding: 0;
+  }
+
+}
+
+.action-box {
+  float: left;
+  clear: right;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.action-box p {
+  color: $black;
+  font-size: 1.2em;
+}
+
+.main-
+-index {
+  padding: 76px 0px 0px 0px;
+}
+
+.mainSlideshow {
+  float: left;
+  clear: right;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.ws_bullets {
+  display: none;
+}
+
+#requestConsultationBTN {
+  margin: 20px 0px 0px 0px;
+  padding: .6rem 1.5rem .6rem 1.5rem;
+  font-size: .9rem;
+  color: white !important;
+  background-color: $westGreen !important;
+  display: block;
+
+  &:hover {
+    color: $white !important;
+    background-color: darken($westGreen, 15%) !important;
+  }
+}
+
+#locationsHeader {
+  color: $black;
+  font-size: .9em;
+}
+
+.sidebar .subpage-title h5 {
+  font-size: 15px;
+}
+
+.subpage-title h5:before{
+  left: -20px;
+  margin: 0 0 0 -200%;
+}
+
+#footer-1 .subpage-title h5:before, #footer-1 .subpage-title h5:after{
+  background-color: $westGreen;
+}
+
+.subpage-title h6 {
+  position: relative;
+  margin: 0;
+  font-weight: 100;
+  font-style: italic;
+  color: green;
+  font-size: 1.1em;
+  margin: 10px 0px 0px 0px;
+}
+
+.articlesContainer {
+  float: left;
+  clear: right;
+  text-align: left;
+  padding: 5px 5px 20px 0px;
+  border-bottom: 1px solid $ultraLightGray;
+
+  p {
+    font-size: .85em;
+    font-weight: 200;
+    color: #555555;
+    padding: 10px 0px 0px 0px;
+    line-height: 1.4em;
+  }
+}
+
+.articlesTitle a {
+  font-size: 1.1em;
+  color: $charcoal;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    color: $westGreen;
+  }
+}
+
+.articlesContainer .linkToArticle {
+  color: $westGreen;
+  font-style: italic;
+  font-size: .9em;
+  display: block;
+  padding: 15px 0px 0px 0px ;
+}
+
+.linkToArticle:hover {
+  color: $black;
+  font-style: italic;
+}
+
+
+/* -------------------------- END HOME PAGE -------------------------- */
+
+
+
+
+
+
+
+
+/* ############# NEW HOME PAGE CSS ############# */
+
+.home-page-container {
+  .hpc--header {
+
+  }
+
+  .hpc--inner-left {
+    .main-title {
+
+    }
+
+    .bc--left {
+      h4.title-of-list {
+
+      }
+    }
+
+    .bc--right {
+
+    }
+  }
+
+  .hpc--inner-right {
+
+  }
+}

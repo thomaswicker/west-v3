@@ -1,0 +1,174 @@
+
+#aboutWestCareersContainer {
+    padding: 0px !important;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 0px 30px 0px;
+
+    a {
+      /*0px --> 768px*/
+      @media only screen and (min-width:400px) and (max-width:768px) {
+        width: 100%;
+      }
+
+      /*0px --> 768px*/
+      @media only screen and (min-width:0px) and (max-width:399px) {
+        width: 100%;
+      }
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 0px 15px 10px 15px !important;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+
+
+
+
+
+.aboutWestCareersBodyContainer {
+  float: left;
+  width: 100%;
+  margin: 40px 0px 60px 0px;
+  padding: 30px 20px 30px 45px;
+  border: 2px solid #ddd;
+
+  /*0px --> 600px*/
+  @media only screen and (min-width:0px) and (max-width:600px) {
+    padding: 20px 15px 30px 15px;
+  }
+
+
+  .awcbc--left {
+    float: left;
+    width: calc(100% - 350px);
+    padding-right: 110px;
+
+    /*0px --> 600px*/
+    @media only screen and (min-width:0px) and (max-width:600px) {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    h1 {
+      margin: 10px 0px 20px 0px;
+      padding: 0px 0px 5px 0px;
+      font-family: Raleway,sans-serif!important;
+      font-weight: 400;
+      color: #000;
+      font-size: 1.7em;
+      line-height: 1.4em;
+      border-bottom: 1px solid $lightGray;
+    }
+
+    h2 {
+      float: left;
+      width: 100%;
+      color: #72A430;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 400;
+      font-size: 1.1em;
+      font-style: italic;
+      margin: 5px 0 15px;
+    }
+
+    img.awcbc-img {
+      float: left;
+      margin: 10px 30px 20px 40px;
+      border: 2px solid $lightGray;
+
+      /*0px --> 768px*/
+      @media only screen and (min-width:400px) and (max-width:768px) {
+          margin: 20px 0px 30px 30px;
+      }
+
+      /*0px --> 768px*/
+      @media only screen and (min-width:0px) and (max-width:399px) {
+          margin: 20px 0px 30px -15px;
+      }
+    }
+
+    p.careers-body-text {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+      font-size: .9em;
+      line-height: 1.35em;
+
+      /*0px --> 768px*/
+      @media only screen and (min-width:0px) and (max-width:768px) {
+          font-size: .85em;
+      }
+    }
+
+    .about-careers-list {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+
+      h5 {
+        float: left;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      ul {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+        list-style-type: disc;
+
+        li {
+          float: left;
+          width: 100%;
+          margin-top: 5px;
+          margin-left: 20px;
+          padding-left: 3px;
+          font-size: 15px;
+          line-height: 135%;
+        }
+      }
+    }
+  }
+
+  .awcbc--right {
+    float: left;
+    width: 350px;
+
+    /*0px --> 600px*/
+    @media only screen and (min-width:0px) and (max-width:600px) {
+        width: 100%;
+    }
+
+    .about-careers-quote {
+      float: left;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .quote {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+        color: $westGreen;
+        font-style: italic;
+        line-height: 145%;
+        font-size: 16px;
+      }
+
+      .quotee {
+        float: left;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+}

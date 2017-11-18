@@ -1,0 +1,382 @@
+/*
+____  _____ ____   ___  ____ _____ ____
+|  _ \| ____|  _ \ / _ \|  _ \_   _/ ___|
+| |_) |  _| | |_) | | | | |_) || | \___ \
+|  _ <| |___|  __/| |_| |  _ < | |  ___) |
+|_| \_\_____|_|    \___/|_| \_\|_| |____/
+
+*/
+
+.main-wrapper-reports {
+    padding: 100px 0px 30px 0px;
+
+    article {
+        padding: 12px 0px 7px 0px;
+        border-bottom: 1px solid $lightGray;
+    }
+
+    article:first-child {
+        padding: 12px 0px 3px 0px;
+        border-bottom: none;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 100px 0px 30px 0px;
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+.selectBoxReports {
+    display: none;
+
+    /*0px --> 992px*/
+    @media only screen and (min-width:0px) and (max-width:992px) {
+        display: block;
+        margin: 0px 0px 0px 20px;
+        max-width: 200px;
+    }
+}
+
+.reports {
+    float: left;
+    width: calc(30% - 30px);
+    margin: 10px 0px 0px 30px;
+
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        width: calc(35% - 30px);
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+       width: 100%;
+       clear: both;
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hr {
+    width: 94%;
+}
+
+#reports-wrapper-main {
+    float: left;
+    clear: right;
+    display: block;
+    height: auto;
+    padding: 10px 30px 0px 30px;
+    margin: 10px 0px 0px 0px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 0px 15px 0px 15px;
+        margin: 0px 15px 0px 15px;
+    }
+}
+
+#reports-wrapper {
+    float: left;
+    width: 70%;
+    padding: 0px 30px 30px 30px;
+    margin: 20px 0px 60px 0px;
+    text-align: left;
+    border: 1px solid #ddd;
+
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        width: 65%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+       width: 100%;
+       clear: both;
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+       width: 100%;
+       clear: both;
+        padding: 0px 12px 30px 12px;
+    }
+
+    h3 {
+        font-family: $raleway;
+        font-weight: 100;
+        line-height: 1.4em;
+        margin: 0px 0px 0px 0px;
+
+    }
+
+    h4 {
+        color: $westGreen !important;
+        font-family: $opensans;
+        font-weight: 400;
+        font-size: 1.1em;
+        font-style: italic;
+        margin: 5px 0px 15px 0px;
+        padding: 0px 0px 12px 0px;
+        border-bottom: 1px solid $lightGray;
+    }
+
+    h5 {
+        font-family: $raleway;
+        font-weight: 600;
+        font-size: 1em !important;
+        line-height: 1.4em;
+        padding: 20px 0px 0px 0px;
+        margin: 25px 0px 15px 30px;
+        color: $black;
+    }
+
+    p {
+        color: #777777;
+        font-size: .9em;
+        line-height: 1.5em;
+        padding: 0px 50px 0px 0px;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+
+        h3 {
+            font-family: $raleway;
+            font-weight: 100;
+            line-height: 1.4em;
+            margin: 0px 0px 10px 0px;
+        }
+
+        p {
+            color: #777777;
+            font-size: .9em;
+            line-height: 1.5em;
+            padding: 0px 10px 0px 0px;
+        }
+
+        p span {
+            color: #777777;
+            font-size: 1em;
+            line-height: 1.3em;
+            font-style: italic;
+            padding: 0px 50px 0px 0px;
+        }
+
+        span {
+            color: $charcoal;
+            font-size: .95em;
+            line-height: 1.5em;
+            font-weight: 600;
+            margin: 10px 0px 0px 0px;
+        }
+    }
+}
+
+.reportsSidebarActive i {
+    color: $white !important;
+}
+
+.reportsSidebar {
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: -35px 0px 0px 0px;
+  border-radius: 0px;
+
+    i {
+        color: $westGreen;
+        font-size: 1.4em;
+        padding: 0px 10px 0px 10px;
+    }
+
+    a {
+        font-size: .95em;
+        color: $charcoal !important;
+        width: 95%;
+    }
+
+}
+
+.reportsSidebar > li > i {
+    margin: 7px 0px 0px 0px;
+}
+
+.reportsSidebar > li {
+    font-size: .95em;
+    color: $charcoal;
+    padding: 3px 0px 15px 0px;
+    border-bottom: 1px solid $ultraLightGray;
+
+    a {
+        color: $charcoal;
+    }
+
+    &:hover {
+        color: $white !important;
+        background-color: $westGreen !important;
+
+        a {
+            color: $white !important;
+        }
+
+        i {
+            color: $white;
+        }
+    }
+}
+
+.reports-wrapper-header {
+    float: left;
+    clear: right;
+    padding: 10px 20px 10px 20px;
+    margin: 15px 0px 10px 0px;
+    text-align: left;
+    overflow: auto;
+
+    h3 {
+        font-family: $raleway !important;
+        font-weight: 300;
+        font-size: 1.9em;
+        line-height: 1.2em;
+        margin: 15px 0px -3px 0px !important;
+        color: $black;
+        text-transform: uppercase;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: 1.4em;
+            margin: 5px 0px -3px 0px !important;
+        }
+    }
+
+    h4 {
+        color: $westGreen !important;
+        font-family: $opensans;
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 1.3em;
+        font-style: italic;
+        display: block;
+        margin: 11px 0px 0px 0px;
+        padding: 0px 0px 12px 0px;
+        border-bottom: 1px solid $lightGray;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: 1em;
+            margin: 11px 0px 0px 0px;
+        }
+    }
+
+    p {
+        margin: 10px 0px 20px 0px;
+        font-style: italic;
+    }
+}
+
+.reports-wrapper-left {
+    float: left;
+    clear: right;
+    padding: 0px 30px 0px 20px;
+    margin: 10px 0px 30px 0px;
+    text-align: left;
+    overflow: auto;
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 1em;
+        font-weight: 400 !important;
+        line-height: 1.4em;
+        margin: 0px 0px 10px 0px;
+        color: $black;
+    }
+
+    p {
+        color: #777777;
+        font-size: .9em;
+        line-height: 1.5em;
+        padding: 0px 10px 0px 0px;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: .85em;
+        }
+    }
+
+    span {
+        color: $charcoal;
+        font-size: .9em;
+        line-height: 1.5em;
+        font-weight: 400;
+        padding: 20px 0px 0px 0px;
+        display: block;
+    }
+
+    /*769px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        display: block;
+        padding: 0px 30px 10px 30px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        padding: 0px 30px 10px 30px;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+.reports-wrapper-right {
+    float: left;
+    clear: right;
+
+    text-align: left;
+    overflow: none;
+
+    /*769px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        display: block;
+        padding: 5px 30px 10px 30px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        padding: 5px 30px 10px 30px;
+        margin: 10px 0px 20px 0px;
+    }
+}
+
+
+
+
+/* -------- BEGIN SERVICES SIDEBAR CSS --------- */
+
+.reports-title {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.reports-title h5 {
+    font-family: $raleway;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0px 5px 0px;
+    font-weight: 300;
+    color: $black !important;
+    overflow: hidden;
+    font-size: 1.1em !important;
+    line-height: 25px;
+    width: 80%;
+    border-bottom: 1px solid $westGreen;
+}
+
+.reportsSidebar > .reportsSidebarActive {
+    color: $white !important;
+    background-color: #555 !important;
+
+    &:hover {
+      background-color: #555 !important;
+    }
+}

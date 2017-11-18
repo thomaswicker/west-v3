@@ -1,0 +1,237 @@
+/*
+ ____ ___ ____  _____ ____    _    ____
+/ ___|_ _|  _ \| ____| __ )  / \  |  _ \
+\___ \| || | | |  _| |  _ \ / _ \ | |_) |
+__ _) | || |_| | |___| |_) / ___ \|  _ <
+|____/___|____/|_____|____/_/   \_\_| \_\
+
+*/
+
+.sidebar-container {
+  h3 {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  ul.subnav-sidebar {
+    float: left;
+    width: 100%;
+    border-left: 1px solid #DEDEDE;
+    padding-left: 40px;
+
+    //ABOUT SIDEBAR
+    &.profile {
+      li.about-subnav--profile a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.team {
+      li.about-subnav--team a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.professionalprofiles {
+      li.about-subnav--professionalprofiles a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.culture {
+      li.about-subnav--culture a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.safety {
+      li.about-subnav--safety a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.news {
+      li.about-subnav--news a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.locations {
+      li.about-subnav--locations a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    //PUBLICATIONS AND REPORTS SIDEBAR
+    &.wildlife-research-and-monitoring {
+      li.publications-subnav--wildlife a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    &.rsf-proceedings {
+      li.publications-subnav--rsf a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    &.statistics-and-biometrics {
+      li.publications-subnav--stats a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    &.wind-power {
+      li.publications-subnav--wind a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    //PUBLICATIONS ROOT SIDEBAR
+    &.bookstore {
+      li.publications-subnav--bookstore a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    &.publications-and-reports {
+      li.publications-subnav--publications-and-reports a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    &.computer-programs {
+      li.publications-subnav--computer-programs a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    &.media {
+      li.publications-subnav--media a {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+
+    li {
+      float: left;
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid #DEDEDE;
+
+      &.last-item {
+        border-bottom: 0px;
+      }
+
+      a {
+        float: left;
+        width: 100%;
+        padding: 12px $unit-md 12px $unit-xs;
+        font-size: 16px;
+        color: $color-secondary;
+        line-height: 140%;
+
+        @include mq(lg) {
+          font-size: 14px;
+        }
+
+        @include mq(md) {
+
+        }
+
+        @include mq(sm) {
+
+        }
+
+        i {
+          margin-right: $unit-xxs;
+          font-size: 16px;
+          color: $color-primary;
+        }
+
+        &:hover {
+          background-color: $color-primary;
+          color: $white;
+
+          i {
+            color: $white;
+          }
+        }
+      }
+
+      &.active {
+        a {
+          background-color: $color-primary;
+          color: $white;
+
+          &:hover {
+            background-color: lighten($color-primary, 10%);
+            color: $white;
+            cursor: default;
+
+            i {
+              color: $white;
+            }
+
+            strong {
+              display: none;
+            }
+          }
+
+          i {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

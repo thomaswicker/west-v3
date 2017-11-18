@@ -1,0 +1,86 @@
+/*
+  ____ ___  __  __ ____  _   _ _____ _____ ____    ____  ____   ___   ____ ____      _    __  __ ____
+ / ___/ _ \|  \/  |  _ \| | | |_   _| ____|  _ \  |  _ \|  _ \ / _ \ / ___|  _ \    / \  |  \/  / ___|
+| |  | | | | |\/| | |_) | | | | | | |  _| | |_) | | |_) | |_) | | | | |  _| |_) |  / _ \ | |\/| \___ \
+| |__| |_| | |  | |  __/| |_| | | | | |___|  _ <  |  __/|  _ <| |_| | |_| |  _ <  / ___ \| |  | |___) |
+ \____\___/|_|  |_|_|    \___/  |_| |_____|_| \_\ |_|   |_| \_\\___/ \____|_| \_\/_/   \_\_|  |_|____/
+
+*/
+
+/* ############# NEW COMPUTER PROGRAMS PAGE CSS ############# */
+
+.computer-programs-page-container {
+  .cppc--inner {
+    .cppc-page--inner-left {
+      h1 {
+        margin-top: 10px;
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      ul.computer-programs-list {
+        float: left;
+        width: 100%;
+
+        li.list-item  {
+          float: left;
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #DDDDDD;
+
+          .pbi--left {
+            float: left;
+            width: calc(100% - 150px);
+            padding-right: 30px;
+
+            h3.title-of-computer-program {
+              float: left;
+              width: 100%;
+              margin-bottom: 0;
+              font-family: $font-primary;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 140%;
+            }
+
+            p {
+              float: left;
+              width: 100%;
+              margin-top: 10px;
+              font-family: $font-secondary;
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 135%;
+              color: #333333;
+            }
+          }
+
+          .pbi--right {
+            float: left;
+            width: 150px;
+
+            a {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .cppc-page--inner-right {
+      ul {
+        li {
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}

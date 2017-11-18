@@ -1,0 +1,205 @@
+/*
+ ____ _____  _    _____ _____
+/ ___|_   _|/ \  |  ___|  ___|
+\___ \ | | / _ \ | |_  | |_
+__ _) || |/ ___ \|  _| |  _|
+|____/ |_/_/   \_\_|   |_|
+
+*/
+
+#staffContainer {
+    padding: 0px !important;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 0px 30px 0px;
+
+    p {
+        font-size: .9em;
+        line-height: 1.4em;
+    }
+
+    span {
+        font-weight: 500;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 0px 20px 10px 20px !important;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+#isotope-portfolio-container li {
+    height: 130px !important;
+}
+
+.staffBodyContainer {
+    float: left;
+    clear: right;
+    width: 100%;
+    padding: 10px 20px 10px 30px;
+    box-shadow: 1px 1px 6px $charcoal;
+    border: 2px solid #eeeeee;
+    margin: 40px 0px 60px 0px;
+
+    p {
+        font-size: .9em;
+        line-height: 1.35em;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:768px) {
+            font-size: .85em;
+        }
+    }
+
+    h1 {
+        font-family: 'Raleway', sans-serif !important;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0;
+        font-weight: 300;
+        color: #000;
+        font-size: 2em;
+        line-height: 1.4em;
+        margin: 10px 0px 20px 0px;
+        border-bottom: 1px solid $lightGray;
+        padding: 0px 0px 5px 0px;
+    }
+
+    img {
+        float: right;
+        clear: left;
+        margin: 10px 30px 20px 40px;
+        border: 2px solid $lightGray;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:768px) {
+            margin: 0px 0px 30px 0px;
+            width: 100%;
+        }
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 10px 0px 30px 0px;
+        margin: 10px 0px 30px 0px;
+    }
+}
+
+.staffDirectory > #subheaderMainStaffDirectoryTop > h1 {
+  font-family: $opensans !important;
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+  color: #333 !important;
+  text-transform: capitalize !important;
+}
+
+.staffDirectory > #subheaderMainStaffDirectoryTop > h2 {
+  font-weight: 400 !important;
+  font-style: italic !important;
+}
+
+/* -------------------------- END EXPERIENCE CSS -------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #################### NEW CSS FOR VERSION 3 ####################### //
+
+
+// Staff Landing Page CSS ##################################### //
+
+.staff-landing-container {
+  float: left;
+  width: 100%;
+  padding: 130px 25px 30px 25px;
+
+  .staff-landing-header {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: $font-primary;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 140%;
+  }
+
+  .staff-landing-list {
+    float: left;
+    width: 100%;
+    padding: 20px;
+
+    .staff-tile {
+      float: left;
+      width: calc(20% - 10px);
+      margin: 5px;
+      padding: 10px 15px;
+      border: 1px solid $color-secondary;
+
+      .staff-tile--left {
+        float: left;
+        width: 55px;
+
+        img {
+          max-width: 55px;
+        }
+      }
+
+      .staff-tile--right {
+        float: left;
+        width: calc(100% - 55px);
+        padding-left: 20px;
+      }
+
+      h2 {
+        float: left;
+        width: 100%;
+        padding-top: 4px;
+        margin-bottom: 4px;
+        font-family: $font-primary;
+        font-size: 18px;
+        color: $color-secondary;
+      }
+
+      h3 {
+        float: left;
+        width: 100%;
+        margin-bottom: 4px;
+        font-family: $font-secondary;
+        font-size: 15px;
+        font-weight: 600;
+        color: #202e0d;
+        font-style: italic;
+      }
+
+      .btn {
+        margin-top: 10px;
+        padding: 4px 13px;
+        border: 0px;
+        font-weight: 600;
+
+        &:hover {
+          padding: 4px 13px;
+        }
+
+        &.btn-secondary {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

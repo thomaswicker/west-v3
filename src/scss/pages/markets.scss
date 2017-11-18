@@ -1,0 +1,1262 @@
+/*
+__  __    _    ____  _  _______ _____ ____
+|  \/  |  / \  |  _ \| |/ / ____|_   _/ ___|
+| |\/| | / _ \ | |_) | ' /|  _|   | | \___ \
+| |  | |/ ___ \|  _ <| . \| |___  | |  ___) |
+|_|  |_/_/   \_\_| \_\_|\_\_____| |_| |____/
+
+*/
+
+.main-wrapper-markets {
+  padding: 110px 0px 30px 0px;
+  overflow-x: hidden;
+}
+
+.selectBoxMarkets {
+  display: none;
+
+  /*0px --> 992px*/
+  @media only screen and (min-width:0px) and (max-width:992px) {
+    display: block;
+    margin: 20px 0px 0px 0px;
+    max-width: 200px;
+  }
+}
+
+.markets-title {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+
+  h5 {
+    font-family: $raleway;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0px 10px 0px;
+    font-weight: 300;
+    color: $westGreen !important;
+    overflow: hidden;
+    font-size: 1.2rem !important;
+    line-height: 25px;
+    width: 90%;
+    border-bottom: 1px solid $westGreen;
+    font-weight: 500;
+  }
+}
+
+.markets-wrapper-left {
+  float: left;
+  width: 70%;
+  padding: 100px 30px 0px 20px;
+  margin: 10px 0px 30px 0px;
+  text-align: left;
+  overflow: auto;
+
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    width: 65%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    width: 100%;
+    clear: both;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    width: 100%;
+    clear: both;
+    padding: 0px 5px 20px 5px;
+  }
+
+  h3 {
+    font-family: $raleway;
+    font-size: .95em;
+    font-weight: 400 !important;
+    line-height: 1.4em;
+    margin: 0px 0px 10px 0px;
+    color: $black;
+  }
+
+  p {
+    color: #777777;
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 0px 10px 0px 0px;
+  }
+
+  span {
+    color: $charcoal;
+    font-size: .9em;
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 20px 0px 0px 0px;
+    display: block;
+  }
+
+  /*769px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    display: block;
+    padding: 0px 30px 10px 30px;
+    margin: 20px 0px 0px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: block;
+    padding: 0px 30px 10px 30px;
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+.markets-wrapper-right {
+  float: left;
+  width: 30%;
+  text-align: left;
+  overflow: auto;
+
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    width: 35%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    width: 100%;
+    clear: both;
+    display: block;
+    padding: 5px 10px 10px 5px;
+    margin: 10px 40px 20px 0px;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    width: 100%;
+    display: block;
+    padding: 5px 10px 10px 0px;
+    margin: 10px 40px 20px 0px;
+  }
+}
+
+.markets-wrapper-full {
+  float: left;
+  width: 100%;
+  padding: 0px 30px 0px 20px;
+  margin: 10px 0px 30px 0px;
+  text-align: left;
+  overflow: auto;
+
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    width: 65%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    width: 100%;
+    clear: both;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    width: 100%;
+    clear: both;
+    padding: 0px 5px 20px 5px;
+  }
+
+  h3 {
+    font-family: $raleway;
+    font-size: .95em;
+    font-weight: 400 !important;
+    line-height: 1.4em;
+    margin: 0px 0px 10px 0px;
+    color: $black;
+  }
+
+  p {
+    color: #777777;
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 0px 10px 0px 0px;
+  }
+
+  span {
+    color: $charcoal;
+    font-size: .9em;
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 20px 0px 0px 0px;
+    display: block;
+  }
+
+  /*769px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    display: block;
+    padding: 0px 30px 10px 30px;
+    margin: 20px 0px 0px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: block;
+    padding: 0px 30px 10px 30px;
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+.marketingList {
+
+  li {
+    font-size: .85em;
+    line-height: 1.6em;
+    list-style: disc;
+    margin: 0px 0px 0px 20px;
+    color: $black !important;
+  }
+}
+
+.marketsSidebarActive i {
+  color: $white !important;
+}
+
+.marketsSidebar {
+  list-style: none;
+  margin: -20px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
+  border-radius: 0px;
+
+  i {
+    color: $westGreen;
+    font-size: 1.4em;
+    padding: 0px 10px 0px 10px;
+  }
+
+  a {
+    font-size: .95em;
+    color: $charcoal !important;
+    width: 95%;
+  }
+
+  /*992px --> 1600px*/
+  @media only screen and (min-width:992px) and (max-width:1600px) {
+    margin: -20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  /*769px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    margin: -20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: -20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+.marketsSidebar > li > i {
+  margin: 7px 0px 0px 0px;
+}
+
+.marketsSidebar > li {
+  font-size: .95em;
+  color: $charcoal;
+  padding: 3px 0px 15px 0px;
+  border-bottom: 1px solid $ultraLightGray;
+
+  a {
+    color: $charcoal;
+  }
+
+  &:hover {
+    color: $white !important;
+    background-color: $westGreen !important;
+
+    a {
+      color: $white !important;
+    }
+
+    i {
+      color: $white;
+    }
+
+    .marketsSidebarInner li {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.marketsSidebarInner > li {
+  font-size: .85em;
+  color: lighten($charcoal, 20%) !important;
+  padding: 10px 0px 13px 0px;
+  border-bottom: 1px solid $ultraLightGray;
+  margin: 0px 0px 0px 25px;
+
+  &:hover {
+    color: $white !important;
+    background-color: darken($westGreen, 10%) !important;
+
+    a {
+      color: $white !important;
+    }
+
+    i {
+      color: $white;
+    }
+  }
+}
+
+
+.marketsSidebarInner > .marketsSidebarInnerActive > li > a{
+  color: $white !important;
+}
+
+
+.marketsSidebarInnerActive {
+  color: $white !important;
+  background-color: darken($westGreen, 10%) !important;
+
+  &:hover {
+    background-color: darken($westGreen, 10%) !important;
+    color: $white !important;
+  }
+
+  a {
+    color: $white !important;
+  }
+
+  i {
+    color: $white !important;
+  }
+}
+
+.marketsSubTitle {
+  font-weight: bold;
+  font-size: 1em !important;
+  padding: 0px 0px 0px 0px;
+  color: $black !important;
+}
+
+.marketsSubTitle2 {
+  color: $black !important;
+  font-weight: bold;
+  font-size: 1.2em !important;
+}
+
+.marketsList {
+  margin: 20px 0px 0px 10px;
+}
+
+.marketsList li {
+  font-size: .85em;
+  line-height: 1.7em;
+  list-style: disc;
+  color: $black;
+  font-family: $raleway;
+  margin: 10px 0px 10px 20px;
+}
+
+.marketsSidebarScroll {
+  max-height: 500px;
+  overflow: scroll;
+
+  li {
+    font-size: .9em;
+    padding: 8px 0px 8px 0px;
+    line-height: 1.3em;
+  }
+}
+
+.marketsImage {
+  border: 1px solid #ddd;
+  margin: 10px 10px 20px 30px;
+}
+
+.markets-thumb {
+  position: relative;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: -10px 0px 0px 0px;
+  }
+
+  img {
+    width: 100%;
+    max-width: none;
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
+      width: 100%
+    }
+  }
+}
+
+.markets-thumb-full {
+  position: relative;
+
+  img {
+    width: 97.5%;
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
+      width: 100%
+    }
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: -10px 0px 0px 0px;
+    width: 100%
+  }
+}
+
+.marketsBodyTextSpacer {
+  margin: 20px 0px 0px 0px;
+}
+
+.markets-details {
+  padding: 30px 40px 50px 40px;
+  margin: 0px 0px 20px 0px;
+  border: 1px solid #ddd;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:993px) and (max-width:1200px) {
+    margin: 0px 10px 20px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    margin: 0px 10px 20px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: 0px 0px 20px 0px;
+  }
+
+  p {
+    font-size: .9em;
+    line-height: 1.4em !important;
+    color: $charcoal !important;
+    display: block;
+  }
+
+  h4 {
+    color: #333;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-family: $opensans;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 0px 0px 10px 0px;
+    text-transform: capitalize !important;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.markets-details-spacer {
+  margin: 18px 0px 20px 0px;
+}
+
+
+.marketsHeader2 {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 10px 0px -20px 0px;
+  color: $black;
+  display: block;
+
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: 20px 0px -20px 0px;
+  }
+}
+
+.marketsHeader3 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 10px 0px -20px 0px;
+  color: $black;
+  display: block;
+
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: 20px 0px -20px 0px;
+  }
+}
+
+#pipelinesImage1 {
+  float: right;
+  width: 225px;
+  height: 170px;
+  margin: 5px 0px 15px 35px;
+
+  /*768px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    display: none;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
+}
+
+#eagleConservation1 {
+  width: 225px;
+  height: 145px;
+  margin: 15px 10px 30px 25px;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: block;
+    width: 285px;
+    height: 175px;
+    margin: 15px 10px 30px 70px;
+  }
+}
+
+#eagleConservation2 {
+  float: right;
+  clear: left;
+  width: 165px;
+  height: 205px;
+  margin: 10px 10px 30px 40px;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: block;
+    width: 165px;
+    height: 205px;
+    margin: 15px 10px 30px 70px;
+  }
+}
+
+#eagleConservation3 {
+  width: 165px;
+  height: 205px;
+  margin: 25px 10px 30px 30px;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: block;
+    width: 165px;
+    height: 205px;
+    margin: 15px 10px 30px 70px;
+  }
+}
+
+#govt1 {
+  float: right;
+  clear: left;
+  width: 165px;
+  height: 245px;
+  margin: 20px 0px 25px 35px;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
+}
+
+#infrastructure1 {
+  float: right;
+  clear: left;
+  width: 165px;
+  height: 275px;
+  margin: 40px 0px 25px 35px;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
+}
+
+#international1 {
+  float: right;
+  clear: left;
+  width: 165px;
+  height: 245px;
+  margin: 10px 0px 25px 35px;
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
+}
+
+.governmentsSidebar {
+  list-style: none;
+  margin: -20px 0px 20px 0px;
+  padding: 20px 0px 0px 0px;
+  border-radius: 0px;
+
+  i {
+    color: $westGreen;
+    font-size: 1.4em;
+    padding: 0px 10px 0px 10px;
+  }
+
+  a {
+    font-size: .95em;
+    color: $charcoal !important;
+    width: 95%;
+  }
+
+  /*992px --> 1600px*/
+  @media only screen and (min-width:992px) and (max-width:1600px) {
+    margin: -20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  /*769px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    margin: -20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: -20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+.governmentsSidebar > li > i {
+  margin: 7px 0px 0px 0px;
+}
+
+.governmentsSidebar > li {
+  font-size: .95em;
+  color: $charcoal;
+  padding: 3px 0px 15px 0px;
+  border-bottom: 1px solid $ultraLightGray;
+
+  a {
+    color: $charcoal;
+  }
+
+  &:hover {
+    color: $white !important;
+    background-color: $westGreen !important;
+
+    a {
+      color: $white !important;
+    }
+
+    i {
+      color: $white;
+    }
+  }
+}
+
+.governmentsSidebarActive i {
+  color: $white !important;
+}
+
+.governmentsSidebarInner > .governmentsSidebarInnerActive > li > a{
+  color: $white !important;
+}
+
+.markets-title2 {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 15px 0px 0px 0px;
+
+  h5 {
+    font-family: $raleway;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0px 10px 0px;
+    font-weight: 500;
+    color: $westGreen !important;
+    overflow: hidden;
+    font-size: 1.1em !important;
+    line-height: 25px;
+    border-bottom: 1px solid $westGreen;
+  }
+
+  /*769px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    font-size: .9em;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    font-size: .9em;
+  }
+}
+
+.markets {
+  float: left;
+  overflow: hidden;
+  margin: 100px 0px 50px 0px;
+
+  /*992px --> 1200px*/
+  @media only screen and (min-width:992px) and (max-width:1200px) {
+    margin: 100px 0px 50px 0px;
+  }
+
+  /*769px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    margin: 100px 0px 50px 0px;
+  }
+
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: 100px 0px 50px 0px;
+  }
+}
+
+.marketsSidebarActive {
+  color: $white !important;
+  background-color: $westGreen !important;
+
+  a {
+    color: $white !important;
+
+    &:hover {
+      color: $white !important;
+      cursor: default !important;
+    }
+  }
+
+  &:hover {
+    background-color: $westGreen !important;
+    color: $white !important;
+    cursor: default !important;
+  }
+}
+
+
+.governmentsSidebar > .governmentsSidebarActive {
+  color: $white !important;
+  background-color: #555!important;
+
+  &:hover {
+    color: $white !important;
+    background-color: #555!important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ############# NEW MARKETS PAGE CSS ############# */
+
+.markets-page-container {
+  float: left;
+  width: 100%;
+  padding-top: 50px;
+
+  h3 {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: $font-primary;
+    font-size: 22px;
+    font-weight: 500;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  .mpc--header {
+    float: left;
+    width: 100%;
+    height: 275px;
+
+    .main-header-title {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 275px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 125px;
+        padding-left: 100px;
+        font-size: 50px;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px $black;
+        text-align: left;
+        line-height: 145%;
+        color: $white;
+        z-index: 2;
+      }
+
+      &:after {
+        content: "XXXX";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 275px;
+        background-color: rgba(114, 164, 48, .3);
+        z-index: 1;
+      }
+
+      &.windpower {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Wind Power";
+        }
+      }
+
+      &.solarpower {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Solar Power";
+        }
+      }
+
+      &.internationalmarkets {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "International Markets";
+        }
+      }
+
+      &.powerlines {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Power Lines";
+        }
+      }
+
+      &.oilandgas {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Oil and Gas";
+        }
+      }
+
+      &.pipelines {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Pipelines";
+        }
+      }
+
+      &.mining {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Mining";
+        }
+      }
+    }
+  }
+
+  .mpc--inner {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .mpc--inner-left {
+      float: left;
+      width: calc(100% - 325px);
+      padding: 40px 50px 50px 0;
+
+      img.services-feature-image {
+        float: right;
+      }
+
+      h1.main-title {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: $black;
+        font-family: $font-primary;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 145%;
+      }
+
+      .body-content {
+        float: left;
+        width: 100%;
+        padding-bottom: 20px;
+        font-family: $font-secondary;
+        font-size: 14px;
+        color: $black;
+        line-height: 140%;
+
+        .bc--left {
+          float: left;
+          width: calc(100% - 250px);
+          padding-right: 25px;
+        }
+
+        .bc--right {
+          float: left;
+          width: 250px;
+          text-align: center;
+          padding-left: 25px;
+
+          img {
+            float: left;
+            width: 100%;
+            max-width: 180px;
+          }
+        }
+      }
+
+      p {
+        float: left;
+        width: 100%;
+        padding-bottom: 20px;
+        font-family: $font-secondary;
+        font-size: 16px;
+        color: $black;
+        line-height: 140%;
+      }
+
+      h3.body-text-header {
+        font-family: $font-1;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: none;
+      }
+
+      h4.title-of-list {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 600;
+        color: $black;
+      }
+
+      ul {
+        float: left;
+        width: 100%;
+        list-style-type: disc;
+
+        li {
+          float: left;
+          width: 100%;
+          margin-left: 20px;
+          padding: 5px 8px 5px 0px;
+          font-family: $font-primary;
+          font-size: 16px;
+          color: $black;
+
+          &:first-child {
+            margin-top: 6px;
+          }
+
+          a {
+            float: left;
+            width: 100%;
+          }
+        }
+      }
+
+      h2.subtitle {
+        float: left;
+        width: 100%;
+        font-family: $font-primary;
+        color: $black;
+      }
+
+      p.body-content-extra-section {
+        float: left;
+        width: 100%;
+        font-family: $font-secondary;
+        color: $black;
+      }
+    }
+
+
+    .mpc--inner-right {
+      float: left;
+      width: 325px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+
+      .markets-subnav-container {
+        ul.markets-subnav-sidebar {
+          float: left;
+          width: 100%;
+
+          li.renewable-header {
+            float: left;
+            width: 100%;
+            padding: 6px 12px;
+            background-color: #777;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+          }
+
+          ul.mss--inner {
+            float: left;
+            width: 100%;
+            padding-left: 20px;
+          }
+
+          // ENERGY RESOURCES SIDEBAR
+
+          &.windpower {
+            .windpower-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.solarpower {
+            .solarpower-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.internationalmarkets {
+            .internationalmarkets-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.powerlines {
+            .powerlines-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.oilandgas {
+            .oilandgas-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.pipelines {
+            .pipelines-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.mining {
+            .mining-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          // GOVERNMENT SIDEBAR
+
+          &.government {
+            .government-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.usfws {
+            .usfws-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.blm {
+            .blm-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.usforestservice {
+            .usforestservice-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.armycorpsofengineers {
+            .armycorpsofengineers-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          // INFRASTRUCTURE SIDEBAR
+
+          &.infrastructure {
+            .infrastructure-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.transportation {
+            .transportation-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.damsandreservoirs {
+            .damsandreservoirs-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+          li {
+            float: left;
+            width: 100%;
+
+            &.last-link {
+              a {
+                border-bottom: 0px;
+              }
+            }
+
+            a {
+              float: left;
+              width: 100%;
+              padding: 8px 15px 8px 5px;
+              font-family: $font-primary;
+              font-size: 16px;
+              background-color: $white;
+              color: $black;
+              border-bottom: 1px solid #DEDEDE;
+              line-height: 140%;
+
+              &:hover {
+                background-color: #DEDEDE;
+                color: $black;
+                cursor: pointer;
+              }
+
+              &:before {
+                content: "\f105";
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                padding-left: 5px;
+                font-family: $font-tertiary;
+                font-size: 20px;
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .project-profiles-container {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+
+    .project-profiles {
+      float: left;
+      width: 100%;
+
+      li {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+
+        a {
+          float: left;
+          width: 100%;
+
+          img {
+            float: left;
+            width: 100%;
+            max-width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

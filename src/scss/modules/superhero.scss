@@ -1,0 +1,43 @@
+/*
+ ____  _   _ ____  _____ ____  _   _ _____ ____   ___
+/ ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \
+\___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | |
+___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
+|____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/
+
+*/
+
+.superhero {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 400px;
+  margin-top: 40px;
+  background-size: cover;
+
+  .superhero-title {
+    position: absolute;
+    bottom: 35%;
+    float: left;
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+    font-family: $font-primary;
+    font-size: 60px;
+    font-weight: 300;
+    color: $white;
+    text-shadow: 1px 1px 1px $black;
+  }
+
+  &.profile-page--header {
+    background-position: 0px -150px;
+  }
+
+  &.culture-page--header {
+    background-position: 0px -50px;
+  }
+
+  &.safety-page--header {
+    background-position: 0px -170px;
+  }
+}

@@ -1,0 +1,336 @@
+/*
+_     ___   ____    _  _____ ___ ___  _   _ ____
+| |   / _ \ / ___|  / \|_   _|_ _/ _ \| \ | / ___|
+| |  | | | | |     / _ \ | |  | | | | |  \| \___ \
+| |__| |_| | |___ / ___ \| |  | | |_| | |\  |___) |
+|_____\___/ \____/_/   \_\_| |___\___/|_| \_|____/
+
+*/
+
+#google-map {
+	width: 100%;
+	height: 300px;
+	min-width: 1000px;
+	margin: -20px 0px -10px 0px;
+	padding: 5px 0px 290px 0px;
+	border-bottom: 2px solid #dddddd;
+}
+
+div.wpcf7-response-output {
+	float: left !important;
+	width: 100% !important;
+	padding: 7px 10px !important;
+	margin-top: 10px !important;
+	color: white !important;
+	background-color: $westGreen !important;
+
+	&.wpcf7-validation-errors {
+		background-color: red !important;
+	}
+}
+
+span.wpcf7-not-valid-tip {
+	float: left;
+	width: 100%;
+	color: red;
+	margin-top: -10px;
+	margin-bottom: 25px;
+	font-style: italic;
+}
+
+.your-message {
+	.wpcf7-not-valid-tip {
+		margin-top: 15px !important;
+	}
+}
+
+#locationsForm {
+	label {
+		float: left;
+		width: 100%;
+		font-weight: bold;
+		margin-bottom: 7px;
+
+		span {
+			font-style: italic;
+			color: #777;
+		}
+	}
+
+	#contact-form-submit-btn {
+		float: left;
+		margin-top: 10px;
+	}
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+		.wpcf7-form-control-wrap input {
+			width: 90% !important;
+		}
+  }
+}
+
+.wpgmza_markerbox{
+	line-height: 1.2em;
+	padding: 0px 0px 7px 0px;
+}
+
+#wpgmza_map_1 {
+	width: 100% !important;
+}
+
+.wpgmza_map {
+	width: 100% !important;
+}
+
+.main-wrapper-locations {
+    padding: 70px 0px 30px 0px;
+    overflow-x: none;
+}
+
+#contact-us {
+	display: block;
+	padding: 50px 0px 60px 0px;
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+    	padding: 20px 0px 30px 0px;
+    }
+}
+
+.wpgmza_markerbox strong{
+	font-weight: bolder;
+	font-size: 1.2em;
+	display: block;
+	padding: 0px 0px 7px 0px;
+}
+
+#contactMeHeader {
+	display: block;
+	font-size: 1.5em !important;
+	font-weight: 400;
+	line-height: 1.4em;
+	margin: -10px 0px 15px 0px;
+	font-family: $opensans;
+	color: $black;
+}
+
+#contactMeSubHeader {
+	margin: -10px 0px 20px 0px;
+	color: $westGreen;
+	font-style: italic;
+}
+
+.form-group label {
+	margin: 0px 0px 10px 0px;
+}
+
+.addressLine1 {
+	font-size: 19px;
+	font-weight: bold;
+	margin: 10px 10px 12px 0px;
+	color: $black;
+
+	@media only screen and (min-width:768px) and (max-width:992px) {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: 1.1em;
+    }
+}
+
+.addressLine2 {
+	font-size: 16px;
+	margin: 7px 10px 4px 0px;
+	color: $black;
+
+	@media only screen and (min-width:768px) and (max-width:992px) {
+        font-size: .8em;
+        line-height: 1.3em;
+    }
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .8em;
+    }
+}
+
+.addressLine3 {
+	font-size: 16px;
+	margin: 2px 10px 15px 0px;
+	color: $black;
+
+	@media only screen and (min-width:768px) and (max-width:992px) {
+        font-size: .8em;
+        line-height: 1.3em;
+    }
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .8em;
+    }
+}
+
+.locationsPhone {
+	font-size: 1em;
+	margin: 15px 10px 8px 0px;
+	color: $black;
+
+	@media only screen and (min-width:768px) and (max-width:992px) {
+        font-size: .9em;
+        line-height: 1.3em;
+    }
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .9em;
+    }
+}
+
+.locationsPhone span{
+	font-weight: bold;
+}
+
+.locationsFax span{
+	font-weight: bold;
+}
+
+.locationsFax {
+	font-size: 1em;
+	margin: 0px 10px 15px 0px;
+	color: $black;
+
+	@media only screen and (min-width:768px) and (max-width:992px) {
+        font-size: .9em;
+        line-height: 1.3em;
+    }
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .9em;
+    }
+}
+
+.locationsEmail {
+	font-size: 1em;
+	margin: 2px 10px 15px 0px;
+	color: $westGreen !important;
+}
+
+.locationsMenu {
+	display: block;
+	margin: 25px 0px 0px -5px !important;
+}
+
+.locationsMenuDropdown li a{
+	font-size: .8em !important;
+}
+
+.locationsMenu:hover {
+	background-color: #27301E !important;
+	color: #ffffff;
+	border: 1px solid #27301E;
+	border-radius: 0px;
+}
+
+.locationsMenu li{
+	text-align: left !important;
+}
+
+.lcb--bottom {
+  float: left;
+	width: 100%;
+	margin-top: 20px;	
+}
+
+.contactButtonContainer > .btn-info {
+	float: left;
+	clear: right;
+	border-radius: 0px;
+	border: 0px;
+	border: 1px solid #72A430 !important;
+	margin: 10px 0px 0px 0px;
+}
+
+.contactButtonContainer > .btn-info:hover {
+	border-radius: 0px;
+	border: 1px solid #27301E !important;
+	background-color: #27301E !important;
+}
+
+.contactButtonContainer > .btn-reset {
+	float: left;
+	clear: right;
+	background-color: #ffffff !important;
+	border-radius: 0px;
+	border: 1px solid #27301E !important ;
+    color: #27301E !important;
+	margin: -6px 0px 0px 10px;
+}
+
+.contactButtonContainer > .btn-reset:hover {
+	border-radius: 0px;
+	border: 0px;
+    color: #ffffff !important;
+	background-color: #27301E !important;
+}
+
+.scrollThroughForClientsPage {
+	font-size: 1.2em !important;
+	margin: 10px 0px 0px 0px !important;
+}
+
+.contactButtonContainer button {
+	padding: .6rem 1.5rem .6rem 1.5rem;
+	font-size: 1.1rem;
+
+	@include mq (sm) {
+		width: 100%;
+	}
+}
+
+.modal-dialog {
+	margin-top: 150px !important;
+	background-color: $white !important;
+	max-height: 500px !important;
+	overflow: scroll !important;
+  z-index: 100000 !important;
+}
+
+.modal-header {
+	background-color: $ultraLightGray !important;
+}
+
+.modal-footer {
+	background-color: $ultraLightGray !important;
+	width: 100% !important;
+}
+
+.modal-title {
+	font-family: $opensans !important;
+	font-size: 1.4em;
+	color: $westGreen;
+}
+
+.btn-locations1 {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.tableRow {
+	margin: 0px 0px 20px 0px !important;
+	display: block !important;
+}
+
+.tableRow span {
+	font-weight: bold !important;
+}
+
+.tableCell1 {
+	width: 100px;
+	text-align: right !important;
+	font-weight: bold;
+	padding: 0px 20px 0px 0px !important;
+}
+
+.tableCell2 {
+	line-height: 1.3em;
+	font-size: .9em;
+	padding: 0px 0px 0px 20px !important;
+}

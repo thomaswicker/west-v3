@@ -1,0 +1,552 @@
+/*
+____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ____   ___  _____ ___ _     _____ ____
+|  _ \|  _ \ / _ \|  ___| ____/ ___/ ___|_ _/ _ \| \ | |  / \  | |     |  _ \|  _ \ / _ \|  ___|_ _| |   | ____/ ___|
+| |_) | |_) | | | | |_  |  _| \___ \___ \| | | | |  \| | / _ \ | |     | |_) | |_) | | | | |_   | || |   |  _| \___ \
+|  __/|  _ <| |_| |  _| | |___ ___) |__) | | |_| | |\  |/ ___ \| |___  |  __/|  _ <| |_| |  _|  | || |___| |___ ___) |
+|_|   |_| \_\\___/|_|   |_____|____/____/___\___/|_| \_/_/   \_\_____| |_|   |_| \_\\___/|_|   |___|_____|_____|____/
+
+*/
+
+.main-wrapper-professional-profiles {
+    padding: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+    .container {
+        margin-top: -40px;
+    }
+}
+
+#professionalProfilesContainer {
+    float: left;
+    width: 100%;
+    padding: 0px !important;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 0px 30px 0px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 0px 15px 10px 15px !important;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+.professionalProfilesBodyContainer {
+    float: left;
+    width: 100%;
+    padding: 15px 0px 50px 0px;
+    margin: 0px 0px 60px 0px;
+    text-align: left;
+
+    /*768px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        padding: 15px 0px 50px 0px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 15px 0px 50px 0px;
+        margin: -15px 0px 40px 0px;
+    }
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin: 0px 0px 0px -20px;
+        color: $black;
+
+        /*768px --> 992px*/
+        @media only screen and (min-width:768px) and (max-width:992px) {
+            font-size: 2.2em;
+            margin: 0px 0px 0px -20px;
+            color: $black;
+        }
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: 1.5em;
+            margin: 30px 0px 0px -20px;
+            color: $black;
+        }
+    }
+}
+
+.professional-profiles-header {
+    float: left;
+    width: 100%;
+    height: 315px;
+    background-image: url(../images/professional_profiles_header.jpg);
+    background-size: cover;
+
+    /*768px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        height: 235px;
+        background-image: url(../images/professional_profiles_header.jpg);
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        height: 100px;
+        background-image: url(../images/professional_profiles_header_mobile.jpg);
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+#profileContainer {
+  h1 {
+    font-family: $opensans;
+    font-weight: 400;
+    color: #333;
+    text-transform: capitalize !important;
+  }
+}
+
+.profileContainer {
+    float: left;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    border: 1px solid $westGreen;
+    margin: 5px;
+    width: calc(25% - 10px);
+    background-clip: $white;
+
+    /*768px --> 992px*/
+    @media only screen and (min-width:993px) and (max-width:1200px) {
+        width: calc(25% - 10px);
+    }
+
+    /*768px --> 992px*/
+    @media only screen and (min-width:768px) and (max-width:992px) {
+        width: calc(50% - 10px);
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: $westGreen;
+        cursor: pointer;
+
+        h3, h4 {
+            color: $white;
+        }
+    }
+
+    h3 {
+        font-family: $opensans;
+        font-size: 1em;
+        font-weight: 500;
+        color: $black;
+
+        /*768px --> 992px*/
+        @media only screen and (min-width:768px) and (max-width:992px) {
+            font-size: 1.2em;
+        }
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: 1.2em;
+        }
+    }
+
+    h4 {
+        color: $westGreen;
+        font-family: $opensans;
+        font-size: .9em;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 5px;
+
+        /*768px --> 992px*/
+        @media only screen and (min-width:768px) and (max-width:992px) {
+            font-size: .9em;
+        }
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            font-size: .9em;
+            line-height: 1.3em;
+        }
+    }
+}
+
+/* ************************************************* END MEDIA QUERIES ************************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #################### NEW CSS FOR VERSION 3 ####################### //
+
+
+// Profile Landing Page CSS #####################################
+
+.professional-profiles-container {
+  float: left;
+  width: 100%;
+  padding-bottom: 30px;
+
+  .professional-profiles-header {
+    float: left;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .professional-profiles-list {
+    float: left;
+    width: 100%;
+    padding: 20px;
+
+    li.profile-tile {
+      float: left;
+      width: 25%;
+      margin: 5px;
+      padding: 10px 15px;
+      border: 1px solid $color-secondary;
+
+      &:hover {
+        background-color: $color-primary;
+        cursor: pointer;
+
+        a {
+          .pt--middle {
+            h2, h3, h4 {
+              color: $white;
+            }
+          }
+
+          .pt--right {
+            i.fa-arrow-right {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      a {
+        float: left;
+        width: 100%;
+
+        .pt--left {
+          float: left;
+          width: 55px;
+          text-align: cecenter;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+
+        .pt--middle {
+          float: left;
+          width: calc(100% - 95px);
+          padding-left: 10px;
+          text-align: left;
+
+          h2 {
+            float: left;
+            width: 100%;
+            padding-top: 8px;
+            margin-bottom: 4px;
+            font-family: $font-primary;
+            font-size: 18px;
+            color: $color-secondary;
+          }
+
+          h3 {
+            float: left;
+            width: 100%;
+            margin-bottom: 4px;
+            font-family: $font-secondary;
+            font-size: 15px;
+            font-weight: 600;
+            color: #202e0d;
+            font-style: italic;
+          }
+        }
+
+        .pt--right {
+          float: left;
+          width: 40px;
+          text-align: center;
+
+          i {
+            position: relative;
+            top: 20px;
+            right: 5px;
+
+            &.fa {
+
+            }
+
+            &.fa-arrow-right {
+              float: right;
+              font-size: 17px;
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .view-staff-directory-container {
+    float: left;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center;
+
+    .btn {
+      float: none;
+      width: auto;
+      display: inline;
+
+      i {
+
+      }
+
+      span {
+
+      }
+    }
+  }
+}
+
+
+// Single Profile Page CSS #####################################
+
+.professional-profile-detail {
+  float: left;
+  width: 100%;
+  padding: 100px 20px 30px 20px;
+
+  .ppd--header {
+    float: left;
+    width: 100%;
+
+    .btn-back-to-team {
+      float: left;
+      width: auto;
+      padding: 0;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $color-secondary;
+
+      &:hover {
+        color: $color-primary;
+
+        i {
+          color: $color-primary;
+        }
+      }
+
+      i {
+        margin-right: 4px;
+      }
+
+      span {
+
+      }
+    }
+  }
+
+  .ppd--left {
+    float: left;
+    width: 200px;
+    text-align: center;
+    padding-left: 25px;
+
+    img {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .profile-links {
+      float: left;
+      width: 100%;
+      text-align: center;
+
+      .btn {
+        float: none;
+        width: 100%;
+        padding: 10px 20px;
+        max-width: 180px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0;
+
+        i {
+          margin-right: 3px;
+        }
+
+        &.profile-email-address-btn {
+          background-color: $color-primary;
+
+          &:hover {
+            background-color: darken($color-primary, 10%);
+            cursor: pointer;
+            color: $white;
+          }
+        }
+
+        &.profile-linkedin-btn {
+          background-color: #0084bf;
+
+          &:hover {
+            background-color: darken(#0084bf, 10%);
+            cursor: pointer;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .ppd--middle {
+    float: left;
+    width: calc(100% - 550px);
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+
+    h2.profile-name {
+      float: left;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      padding-left: 0;
+      font-family: $font-primary;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 145%;
+    }
+
+    h3.profile-job-title {
+      float: left;
+      width: 100%;
+      margin-bottom: 0;
+      padding-left: 0;
+      font-family: $font-primary;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      color: $color-primary;
+    }
+
+    .profile-body-text {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 0;
+      font-family: $font-secondary;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 140%;
+
+      p {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .ppd--right {
+    float: left;
+    width: 350px;
+    padding-right: 25px;
+
+    h4 {
+      float: left;
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    ul {
+      float: left;
+      width: 100%;
+
+      li {
+        float: left;
+        width: 100%;
+
+        a {
+          float: left;
+          width: 100%;
+          padding: 15px 10px;
+          background-color: $white;
+          color: $black;
+          font-family: $font-primary;
+          font-size: 16px;
+          font-weight: 400;
+          border-bottom: 1px solid #DEDEDE;
+
+          &:hover {
+            background-color: lighten($color-primary, 40%);
+          }
+
+          &.active {
+            background-color: $color-primary;
+            color: $white;
+
+            &:hover {
+              background-color: $color-primary;
+              cursor: default;
+            }
+
+            i {
+              color: $white;
+            }
+          }
+
+          i {
+            margin-right: 4px;
+            color: $color-primary;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

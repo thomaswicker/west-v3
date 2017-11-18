@@ -1,0 +1,724 @@
+/*
+_____ _____    _    __  __
+|_   _| ____|  / \  |  \/  |
+ | | |  _|   / _ \ | |\/| |
+ | | | |___ / ___ \| |  | |
+ |_| |_____/_/   \_\_|  |_|
+
+*/
+
+span.bod-tag {
+  padding: 2px 8px 2px 8px;
+  background-color: #555;
+  color: white;
+  font-size: .9rem;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.bod-container {
+  float: left;
+  clear: both;
+  width: 300px;
+  margin-top: 2rem;
+
+  span {
+    float: left;
+  }
+
+  p {
+    float: left;
+    margin-left: .4rem;
+    font-size: 1rem;
+    color: black;
+  }
+}
+
+.team-group-wrap {
+  h4 {
+    float: left;
+    width: 100%;
+    font-family: $raleway;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: $westGreen;
+    padding: 10px 0px 5px 0px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 1.3rem;
+
+    @include mq (md) {
+      font-size: .95rem;
+    }
+
+    @include mq (sm) {
+      font-size: 1.2rem;
+    }
+  }
+
+  h5 {
+    float: left;
+    width: 100%;
+    font-weight: 300;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    line-height: 1.3rem;
+    color: $charcoal;
+
+    @include mq (md) {
+      font-size: .9rem;
+    }
+
+    @include mq (sm) {
+      font-size: 1rem;
+    }
+  }
+
+  p small, small {
+    float: left;
+    width: 100%;
+    font-family: $arial;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1.3em;
+    color: #999;
+    text-transform: uppercase;
+  }
+
+  a {
+    width: 100%;
+    float: left;
+    padding: .6rem;
+    background-color: $white;
+    border: 1px solid #ddd;
+
+    img {
+      width: 100%;
+      margin: 0rem;
+      padding: 0rem;
+      opacity: .75; -webkit-filter: grayscale(100%);
+
+      &:hover {
+        opacity: 1; -webkit-filter: none;
+      }
+    }
+
+    @include mq (md) {
+      padding: .2rem;
+    }
+  }
+}
+
+.team-member-details {
+  h4, h5, p {
+    text-align: center;
+  }
+}
+
+.team-column-1 {
+  float: left;
+  width: 100%;
+  margin-top: .5rem;
+
+  .team-group-wrap {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .team-member-wrap {
+      position: relative;
+      float: left;
+      min-height: 280px;
+      padding: 10px 0px 10px 0px;
+
+      span.bod-tag {
+        position: absolute;
+        top: 21px;
+        left: 10px;
+      }
+
+      &:nth-child(1) {
+        width: 48%;
+        margin-right: 1%;
+      }
+
+      &:nth-child(2) {
+        width: 48%;
+        margin-left: 1%;
+      }
+    }
+  }
+}
+
+.team-column-2 {
+  float: left;
+  width: 100%;
+  margin-top: .5rem;
+
+  .team-group-wrap {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .team-member-wrap {
+      position: relative;
+      float: left;
+      min-height: 280px;
+      padding: 10px 0px 10px 0px;
+
+      span.bod-tag {
+        position: absolute;
+        top: 21px;
+        left: 10px;
+      }
+
+      &:nth-child(1) {
+        float: left;
+        width: 30%;
+        margin-right: 1.5%;
+      }
+
+      &:nth-child(2) {
+        float: left;
+        width: 30%;
+        margin-left: 1.5%;
+      }
+
+      &:nth-child(3) {
+        float: left;
+        width: 30%;
+        margin-left: 1.5%;
+      }
+    }
+  }
+}
+
+.team-column-3 {
+  float: left;
+  width: 100%;
+  margin-top: 1rem;
+
+  .team-group-wrap {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .team-member-wrap {
+      position: relative;
+      float: left;
+      min-height: 280px;
+      padding: 10px 0px 10px 0px;
+
+      @include mq (md) {
+        min-height: 230px;
+      }
+
+      span.bod-tag {
+        position: absolute;
+        top: 21px;
+        left: 10px;
+      }
+
+      &:nth-child(1) {
+        width: 24%;
+        margin-right: 1%;
+      }
+
+      &:nth-child(2) {
+        width: 24%;
+        margin-right: 1%;
+      }
+
+      &:nth-child(3) {
+        width: 24%;
+        margin-right: 1%;
+      }
+
+      &:nth-child(4) {
+        width: 24%;
+        margin-right: 1%;
+      }
+    }
+  }
+}
+
+.team-column-4 {
+  float: left;
+  width: 100%;
+  margin-top: .5rem;
+
+  @include mq (sm) {
+    margin-top: .3rem;
+  }
+
+  .team-group-wrap {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .team-member-wrap {
+      position: relative;
+      float: left;
+      min-height: 280px;
+      padding: 10px 0px 10px 0px;
+
+      @include mq (md) {
+        min-height: none;
+      }
+
+      span.bod-tag {
+        position: absolute;
+        top: 21px;
+        left: 10px;
+      }
+
+      &:nth-child(1) {
+        float: left;
+        width: 30%;
+        margin-right: 1.5%;
+      }
+
+      &:nth-child(2) {
+        float: left;
+        width: 30%;
+        margin-left: 1.5%;
+      }
+
+      &:nth-child(3) {
+        float: left;
+        width: 30%;
+        margin-left: 1.5%;
+      }
+    }
+  }
+}
+
+.team-column-1, .team-column-2, .team-column-3, .team-column-4 {
+
+  .team-member-wrap {
+    @include mq (sm) {
+      width: 100% !important;
+      max-width: none;
+    }
+  }
+}
+
+
+.main-wrapper-team {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  padding: 110px 0px 60px 0px;
+
+  @include mq (lg) {
+    width: 90%;
+    padding: 110px 0px 60px 0px;
+  }
+
+  @include mq (md) {
+    width: 90%;
+  }
+
+  @include mq (sm) {
+    width: 95%;
+    padding: 110px 10px 30px 10px;
+  }
+
+  header.team-title {
+    float: left;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.team-title {
+  float: left;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 20px;
+
+  h5 {
+    font-family: $opensans;
+    text-transform: capitalize;
+    padding: 20px 0px 5px 0px;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+
+    @include mq (sm) {
+
+    }
+  }
+
+  h6 {
+    padding: 0px 0px 10px 0px;
+    color: $westGreen;
+    overflow: hidden;
+    font-family: $opensans;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;;
+    line-height: 1.4rem;
+    border-bottom: 1px solid $westGreen;
+  }
+}
+
+// /*
+// _____ _____    _    __  __
+// |_   _| ____|  / \  |  \/  |
+//  | | |  _|   / _ \ | |\/| |
+//  | | | |___ / ___ \| |  | |
+//  |_| |_____/_/   \_\_|  |_|
+//
+// */
+//
+// span.bod-tag {
+//   padding: 2px 8px 2px 8px;
+//   background-color: #555;
+//   color: white;
+//   font-size: .9rem;
+//   font-weight: bold;
+//   z-index: 999;
+// }
+//
+// .bod-container {
+//   float: left;
+//   clear: both;
+//   width: 300px;
+//   margin-top: 2rem;
+//
+//   span {
+//     float: left;
+//   }
+//
+//   p {
+//     float: left;
+//     margin-left: .4rem;
+//     font-size: 1rem;
+//     color: black;
+//   }
+// }
+//
+// .team-group-wrap {
+//   h4 {
+//     float: left;
+//     width: 100%;
+//     font-family: $raleway;
+//     font-weight: 500;
+//     font-size: 1.3rem;
+//     color: $westGreen;
+//     padding: 10px 0px 5px 0px;
+//     border-bottom: 1px solid #cccccc;
+//     line-height: 1.3rem;
+//
+//     @include mq (md) {
+//       font-size: .95rem;
+//     }
+//
+//     @include mq (sm) {
+//       font-size: 1.2rem;
+//     }
+//   }
+//
+//   h5 {
+//     float: left;
+//     width: 100%;
+//     font-weight: 300;
+//     padding: 5px 0px 5px 0px;
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: .9rem;
+//     line-height: 1.3rem;
+//     color: $charcoal;
+//
+//     @include mq (md) {
+//       font-size: .9rem;
+//     }
+//
+//     @include mq (sm) {
+//       font-size: 1rem;
+//     }
+//   }
+//
+//   p small, small {
+//     float: left;
+//     width: 100%;
+//     font-family: $arial;
+//     font-weight: 600;
+//     font-size: .75rem;
+//     line-height: 1.3em;
+//     color: #999;
+//     text-transform: uppercase;
+//   }
+//
+//   a {
+//     width: 100%;
+//     float: left;
+//     padding: .6rem;
+//     background-color: $white;
+//     border: 1px solid #ddd;
+//
+//     img {
+//       width: 100%;
+//       margin: 0rem;
+//       padding: 0rem;
+//       opacity: .75; -webkit-filter: grayscale(100%);
+//
+//       &:hover {
+//         opacity: 1; -webkit-filter: none;
+//       }
+//     }
+//
+//     @include mq (md) {
+//       padding: .2rem;
+//     }
+//   }
+// }
+//
+// .team-column-1 {
+//   float: left;
+//   width: 100%;
+//   margin-top: .5rem;
+//
+//   .team-group-wrap {
+//     max-width: 750px;
+//     margin-left: auto;
+//     margin-right: auto;
+//
+//     .team-member-wrap {
+//       position: relative;
+//       float: left;
+//       min-height: 280px;
+//       padding: 10px 0px 10px 0px;
+//
+//       span.bod-tag {
+//         position: absolute;
+//         top: 21px;
+//         left: 10px;
+//       }
+//
+//       &:nth-child(1) {
+//         width: 48%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(2) {
+//         width: 48%;
+//         margin-left: 1%;
+//       }
+//     }
+//   }
+// }
+//
+// .team-column-2 {
+//   float: left;
+//   width: 100%;
+//   margin-top: .5rem;
+//
+//   .team-group-wrap {
+//     width: 100%;
+//     margin-left: auto;
+//     margin-right: auto;
+//
+//     .team-member-wrap {
+//       position: relative;
+//       float: left;
+//       min-height: 280px;
+//       padding: 10px 0px 10px 0px;
+//
+//       span.bod-tag {
+//         position: absolute;
+//         top: 21px;
+//         left: 10px;
+//       }
+//
+//       &:nth-child(1) {
+//         width: 24%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(2) {
+//         width: 24%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(3) {
+//         width: 24%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(4) {
+//         width: 24%;
+//       }
+//     }
+//   }
+// }
+//
+// .team-column-3 {
+//   float: left;
+//   width: 100%;
+//   margin-top: 1rem;
+//
+//   .team-group-wrap {
+//     width: 100%;
+//     margin-left: auto;
+//     margin-right: auto;
+//
+//     .team-member-wrap {
+//       position: relative;
+//       float: left;
+//       min-height: 280px;
+//       padding: 10px 0px 10px 0px;
+//
+//       @include mq (md) {
+//         min-height: 230px;
+//       }
+//
+//       span.bod-tag {
+//         position: absolute;
+//         top: 21px;
+//         left: 10px;
+//       }
+//
+//       &:nth-child(1) {
+//         width: 19%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(2) {
+//         width: 19%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(3) {
+//         width: 19%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(4) {
+//         width: 19%;
+//         margin-right: 1%;
+//       }
+//
+//       &:nth-child(5) {
+//         width: 19%;
+//       }
+//     }
+//   }
+// }
+//
+// .team-column-4 {
+//   float: left;
+//   width: 100%;
+//   margin-top: .5rem;
+//
+//   @include mq (sm) {
+//     margin-top: .3rem;
+//   }
+//
+//   .team-group-wrap {
+//     max-width: 550px;
+//     margin-left: auto;
+//     margin-right: auto;
+//
+//     .team-member-wrap {
+//       position: relative;
+//       float: left;
+//       min-height: 280px;
+//       padding: 10px 0px 10px 0px;
+//
+//       @include mq (md) {
+//         min-height: none;
+//       }
+//
+//       span.bod-tag {
+//         position: absolute;
+//         top: 21px;
+//         left: 10px;
+//       }
+//
+//       &:nth-child(1) {
+//         width: 48%;
+//         margin-right: 1.5%;
+//       }
+//
+//       &:nth-child(2) {
+//         width: 48%;
+//         margin-left: 1.5%;
+//       }
+//     }
+//   }
+// }
+//
+// .team-column-1, .team-column-2, .team-column-3, .team-column-4 {
+//
+//   .team-member-wrap {
+//     @include mq (sm) {
+//       width: 100% !important;
+//       max-width: none;
+//     }
+//   }
+// }
+//
+//
+// .main-wrapper-team {
+//   width: 80%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 5rem;
+//   padding: 110px 0px 60px 0px;
+//
+//   @include mq (lg) {
+//     width: 90%;
+//     padding: 110px 0px 60px 0px;
+//   }
+//
+//   @include mq (md) {
+//     width: 90%;
+//   }
+//
+//   @include mq (sm) {
+//     width: 95%;
+//     padding: 110px 10px 30px 10px;
+//   }
+//
+//   header.team-title {
+//     float: left;
+//     height: auto;
+//     width: 100%;
+//   }
+// }
+//
+// .team-title {
+//   float: left;
+//   width: 100%;
+//   text-align: left;
+//   padding-bottom: 20px;
+//
+//   h5 {
+//     font-family: $opensans;
+//     text-transform: capitalize;
+//     padding: 20px 0px 5px 0px;
+//     color: #333;
+//     font-size: 1.5rem;
+//     font-weight: 400;
+//     line-height: 1.7rem;
+//
+//     @include mq (sm) {
+//
+//     }
+//   }
+//
+//   h6 {
+//     padding: 0px 0px 10px 0px;
+//     color: $westGreen;
+//     overflow: hidden;
+//     font-family: $opensans;
+//     font-size: 1.1rem;
+//     font-weight: 400;
+//     font-style: italic;;
+//     line-height: 1.4rem;
+//     border-bottom: 1px solid $westGreen;
+//   }
+// }

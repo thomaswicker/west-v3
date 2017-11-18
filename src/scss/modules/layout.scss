@@ -1,0 +1,128 @@
+/*
+ _        _ __   _____  _   _ _____
+| |      / \\ \ / / _ \| | | |_   _|
+| |     / _ \\ V / | | | | | | | |
+| |___ / ___ \| || |_| | |_| | | |
+|_____/_/   \_\_| \___/ \___/  |_|
+
+*/
+
+.body-container {
+  float: left;
+  width: 100%;
+  position: relative;
+  top: 80px;
+  float: left;
+  width: 100%;
+  padding-bottom: 50px;
+
+  .body-container--inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .bci--left {
+      float: left;
+      width: calc(100% - 450px);
+      padding: 50px 80px 50px 80px;
+
+      @include mq(md) {
+        float: left;
+        width: 100%;
+        padding: 30px 40px 30px 40px;
+      }
+
+      @include mq(sm) {
+        float: left;
+        width: 100%;
+        padding: 20px 40px 30px 40px;
+      }
+
+      h1.main-title {
+
+      }
+
+      h2.main-subtitle {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%;
+      }
+
+      .body-content-text {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        font-family: $font-secondary;
+        font-size: 16px;
+        color: $black;
+        line-height: 135%;
+
+        .bct--left {
+          float: left;
+          width: 80%;
+          padding-right: 30px;
+
+          h1.main-title {
+            margin-bottom: 0;
+          }
+        }
+
+        .bct--right {
+          float: left;
+          width: 20%;
+
+          img {
+            max-width: 200px;
+          }
+        }
+
+        p {
+          float: left;
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-family: $font-secondary;
+          font-size: 16px;
+          color: $black;
+          line-height: 135%;
+        }
+      }
+
+      ul.bulleted-list {
+        float: left;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        list-style-type: disc;
+
+        li {
+          float: left;
+          clear: both;
+          margin-top: 12px;
+          margin-left: 17px;
+          font-family: $font-secondary;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .bci--right {
+      float: left;
+      width: 450px;
+      padding: 30px 50px 40px 0;
+
+      @include mq(md) {
+        display: none;
+      }
+
+      @include mq(sm) {
+        display: none;
+      }
+    }
+  }
+}

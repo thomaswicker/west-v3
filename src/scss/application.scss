@@ -1,0 +1,418 @@
+/*
+ ____ _______   ___     _____ ____
+/ ___|_   _\ \ / / |   | ____/ ___|
+\___ \ | |  \ V /| |   |  _| \___ \
+ ___) || |   | | | |___| |___ ___) |
+|____/ |_|   |_| |_____|_____|____/
+
+*/
+
+/**
+ *
+ * #########%% BASE %%#########
+ ~
+ * RESET...............Resetting all styles to default
+ * NORMALIZE...........Normalize.css
+ * MAIN................General catch all for generic styles
+ * GRIDS...............Potion's Fluid Grid system
+ * TYPE................Font declarations
+ * HELPERS.............A series of helper classes to use on demand
+
+ * #########%% GLOBAL %%#########
+ ~
+ * MIXINS..............Mixins to be used by other SASS files globally
+ * VARS................Variable definitions to be used by other SASS files globally
+
+ * #########%% MODULES %%#########
+ ~
+ * ACCORDIONS..........Accordions and vanishing content classes
+ * ALERTS..............Alert classes
+ * BUTTONS.............Button classes
+ * CODE................<code> block classes
+ * FORMS...............Form classes
+ * HEADINGS............Headings classes
+ * ICONS...............Icons classes
+ * IMAGES..............Image classes
+ * LISTS...............Styling for order and unordered lists
+ * MODALS..............Styles for modal pop ups
+ * NAV.................Starter nav styles
+ * MAGICTABS...........Potion's responsive tab to accordions
+ * RULES...............Styling for <hr> tags
+ * SUPERHEROS..........Styling for header banners or heros but in a super way!
+ * TABLES..............Table classes
+ * STYLEGUIDES.........Sytles only relating to the styleguide sample sheet, does not affect Potion
+ */
+
+
+/* ## Base ## */
+@import "base/reset";
+@import "base/normalize";
+@import "base/main";
+@import "base/grids";
+@import "base/type";
+@import "base/helpers";
+
+/* ## Global ## */
+@import "global/vars.scss";
+
+/* ## Modules ## */
+@import "modules/buttons.scss";
+@import "modules/headers.scss";
+@import "modules/footers.scss";
+@import "modules/layout.scss";
+@import "modules/projectprofiles.scss";
+@import "modules/sidebar.scss";
+@import "modules/sm-nav.scss";
+@import "modules/superhero.scss";
+
+/* ## Pages ## */
+@import "pages/about.scss";
+@import "pages/about-west-careers.scss";
+@import "pages/bookstore.scss";
+@import "pages/careers.scss";
+@import "pages/computerprograms.scss";
+@import "pages/culture.scss";
+@import "pages/events.scss";
+@import "pages/home.scss";
+@import "pages/locations.scss";
+@import "pages/markets.scss";
+@import "pages/personnel.scss";
+@import "pages/professional-profiles.scss";
+@import "pages/profile-page.scss";
+@import "pages/publications.scss";
+@import "pages/reports.scss";
+@import "pages/safety.scss";
+@import "pages/services.scss";
+@import "pages/staff.scss";
+@import "pages/team.scss";
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $opensans;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch !important;
+
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    overflow-x: hidden;
+  }
+}
+
+p, span, a {
+  font-family: $opensans;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+i {
+  padding: 0px 0px 0px 5px;
+}
+
+
+/* -------------------------- END GENERIC GLOBAL CSS -------------------------- */
+
+
+/* -------------------------- BEGIN CYCLONE SLIDER CSS -------------------------- */
+
+.featuredImageSlider {
+  position: relative;
+  top: 53px;
+  float: left;
+  clear: right;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  max-height: 380px;
+  overflow: hidden;
+  background-color: $black !important;
+  z-index: 1;
+
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    width: 120% !important;
+    height: 110px !important;
+  }
+}
+
+.cycloneslider-slides {
+  max-height: 380px !important;
+  background-color: $black !important;
+
+  /*0px --> 450px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    width: 120% !important;
+    height: 110px !important;
+  }
+}
+
+.cycloneslider-slides img{
+  max-width: none !important;
+  max-height: 300px;
+
+  /*0px --> 450px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    width: 120% !important;
+    height: 110px !important;
+  }
+}
+
+.cycloneslider-caption {
+  margin: -50px 0px 0px 0px !important;
+  text-align: right !important;
+}
+
+.cycloneslider-caption-title {
+  display: none;
+}
+
+.cycloneslider-caption-description {
+  text-align: right !important;
+  font-family: $opensans !important;
+  font-size: 1.4em !important;
+  font-weight: lighter !important;
+  text-transform: uppercase !important;
+  background-color: $black !important;
+  color: $white !important;
+  padding: 5px 20px 5px 50px!important;
+  font-family: $opensans !important;
+
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
+}
+
+.cycloneslider-caption-more {
+  font-size: .75em !important;
+  padding: 5px 20px 5px 20px!important;
+
+  background-color: $westGreen !important;
+  color: $white !important;
+  font-family: $opensans !important;
+
+  &:hover {
+    background-color: $white !important;
+    color: $westGreen !important;
+  }
+}
+
+.cycloneslider-pager {
+  display: none !important;
+}
+
+.cycloneslider {
+  padding: 0px !important;
+  margin: 0px !important;
+  max-height: 380px;
+  background-color: $black !important;
+
+  /*0px --> 450px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    height: 110px !important;
+  }
+}
+
+/* -------------------------- END CYCLONE SLIDER CSS -------------------------- */
+
+
+
+.viewPDFContainer {
+  float: left;
+  width: 100%;
+  background-color: $westGreen;
+  border-top: 2px solid darken($westGreen, 15%);
+  border-bottom: 2px solid darken($westGreen, 15%);
+  padding: 20px 30px 20px 30px;
+  margin-top: 15px;
+
+  p {
+    color: $white !important;
+    margin-top: 10px;
+  }
+
+  input {
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 1.1em;
+    color: darken($westGreen, 25%);
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid $white;
+
+    i {
+      margin-right: 8px;
+    }
+
+    @media only screen and (min-width:0px) and (max-width:768px) {
+      font-size: .95em;
+    }
+
+  }
+}
+
+.your-email, .your-name {
+  margin-top:  -20px;
+}
+
+.wpcf7-response-output {
+  background-color: $white;
+  color: $westGreen;
+  padding: 12px 18px 12px 18px !important;
+}
+
+.wpcf7-validation-errors {
+  border: 2px solid red !important;
+  color: red;
+  padding: 12px 18px 12px 18px !important;
+}
+
+.wpcf7-submit {
+  background-color: darken($westGreen, 15%);
+  text-transform: uppercase;
+  color: $white;
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    background-color: darken($westGreen, 25%);
+  }
+}
+
+.et-icon {
+  span {
+    color: $white;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: darken($westGreen, 25%);
+    padding: 12px 18px 12px 18px !important;
+    border: 1px solid $white;
+
+    &:hover {
+      color: darken($westGreen, 15%);
+    }
+  }
+}
+
+.wpcf7-form-control-wrap {
+  input {
+    width: 80%;
+
+    @media only screen and (min-width:0px) and (max-width:768px) {
+      width: 140px !important;
+
+    }
+  }
+}
+
+@import "bootstrap_overrides.scss";
+
+
+
+li.active {
+  a {
+    color: $white !important;
+    background-color: $westGreen !important;
+
+    &:hover {
+      cursor: default !important;
+    }
+  }
+}
+
+.navbar-nav > .active {
+  color: $white !important;
+  background-color: $westGreen !important;
+
+  &:hover {
+    color: $white !important;
+    cursor: default !important;
+  }
+}
+
+.navbar-nav > .active > a {
+  color: $white !important;
+  background-color: $westGreen !important;
+
+  &:hover {
+    color: $white !important;
+    cursor: default !important;
+  }
+}
+
+.servicesSidebar > li.sidebarActive > a {
+  color: $white !important;
+
+  &:hover {
+    cursor: default !important;
+    background-color: #555 !important;
+  }
+}
+
+.box img {
+  box-shadow: none !important;
+}
+
+.navbar .navbar-nav >.active > a:hover {
+  color: $white !important;
+}
+
+.navbar .navbar-nav, .nav {
+  background-color: transparent !important;
+}
+
+@include mq (sm) {
+  .navbar-nav li {
+    background-color: $white !important;
+  }
+
+  .navbar-nav li a {
+    color: darken($westGreen, 15%) !important;
+  }
+}
+
+.download-icon {
+	float: left;
+	background-color: #49691f;
+	color: white;
+	border: 2px solid #49691f;
+	margin-top: 14px;
+	padding: 7px 13px 7px 13px;
+
+	&:before  {
+    font-family: fontawesome ;
+    content: "\f019";
+    color: white;
+    margin-right: .5em;
+}
+
+	&:hover {
+		background-color: darken(#49691f, 15%);
+		color: white;
+		border-color: darken(#49691f, 15%);
+	}
+}
+
+.wpcf7-response-output {
+	margin-top: 13px !important;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+	background-color: transparent;
+	color: white;
+	border: 0px !important;
+}
+
+.wpcf7-submit {
+	padding: 7px 13px;
+}
+
+#header {
+  z-index: 1000000 !important;
+}

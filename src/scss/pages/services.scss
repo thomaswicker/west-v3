@@ -1,0 +1,1749 @@
+/*
+____  _____ ______     _____ ____ _____ ____
+/ ___|| ____|  _ \ \   / /_ _/ ___| ____/ ___|
+\___ \|  _| | |_) \ \ / / | | |   |  _| \___ \
+___) | |___|  _ < \ V /  | | |___| |___ ___) |
+|____/|_____|_| \_\ \_/  |___\____|_____|____/
+
+*/
+
+.project-profiles-header {
+  float: left;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 3px 10px;
+  background: black;
+
+  h5 {
+    float: left;
+    font-family: Arial !important;
+    font-size: 13px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: 145%;
+    color: white !important;
+    text-transform: uppercase;
+    border-bottom: 0px;
+  }
+}
+
+.project-profiles-sidebar-container {
+  float: left;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  .ppsc--inner {
+    float: left;
+    width: 100%;
+
+    a {
+      max-width: 250px;
+
+      img {
+        max-width: 250px;
+        border: 2px solid black;
+      }
+    }
+
+    p {
+      line-height: 135%;
+    }
+  }
+}
+
+.taes-nav-box {
+  float: left;
+  list-style: none;
+  margin: -1rem 0rem 1.8rem 0rem;
+  border-radius: 0rem;
+
+  li {
+   float: left;
+   width: 100%;
+   font-size: .95rem;
+   color: #36454F;
+   padding: 0rem 0rem 0rem .3rem!important;
+
+   &:hover {
+     background-color: #72A430;
+
+     a {
+       color: $white !important;
+
+       i {
+         color: $white;
+       }
+     }
+   }
+
+   a {
+     float: left;
+     width: 100%;
+     font-size: .95rem;
+     color: #36454F;
+     padding: .7rem 0rem .7rem 0rem !important;
+     border-bottom: 1px solid #ddd;
+
+     i {
+       color: #72A430;
+       font-size: 1.4rem;
+       margin-right: 1rem;
+     }
+   }
+ }
+}
+
+.taes-subtitle {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+  display: block;
+  overflow: hidden;
+
+  h5 {
+    font-family: $raleway;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0px 10px 0px;
+    font-weight: 300;
+    color: $westGreen !important;
+    overflow: hidden;
+    font-size: 1.2rem !important;
+    line-height: 25px;
+    width: 90%;
+    border-bottom: 1px solid $westGreen;
+    font-weight: 500;
+  }
+}
+
+li:hover {
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+.floatLeft {
+    float: right;
+}
+
+.floatRight {
+    float: right;
+}
+
+ .servicesImage {
+   border: 1px solid #ddd;
+    margin: 10px 10px 20px 30px;
+ }
+
+.main-wrapper {
+    padding: 90px 0px 0px 0px;
+}
+
+.services-wrapper {
+    padding: 25px 0px 25px 0px;
+}
+
+.services {
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 0px 10px 25px 10px;
+}
+
+.services-thumb {
+  position: relative;
+
+  img {
+    width: 100% !important;
+    box-shadow: none !important;
+  }
+}
+
+.services-details {
+  padding: 25px;
+  border: 1px solid #ddd;
+
+  h4{
+    color: #333 !important;
+    text-transform: capitalize !important;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    font-family: $opensans !important;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 0px 0px 10px 0px;
+    line-height: 1.4em;
+  }
+}
+
+.services-details .post-title:before {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #ecf0f1;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.services-details .post-title {
+    margin-top: 0;
+    position: relative;
+    font-family: $raleway;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.5em;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.services-details > p {
+    color: #000000;
+    font-size: .9em;
+    line-height: 1.3em;
+    margin: 20px 0px 0px 0px;
+}
+
+.servicesSubTitle {
+    font-weight: bold;
+    font-size: 1em !important;
+    padding: 0px 0px 0px 0px;
+}
+
+.servicesSubTitle2 {
+    font-weight: bold;
+    font-size: 1.2em !important;
+}
+
+.servicesList {
+    margin: 20px 0px 0px 10px;
+
+    li {
+        font-size: .9em;
+        line-height: 1.7em;
+        list-style: square;
+        color: $black;
+        font-family: $raleway;
+        margin: 10px 0px 10px 30px;
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+            margin: 10px 0px 10px 5px;
+        }
+    }
+
+    li span {
+        font-weight: bold;
+    }
+}
+
+.services-meta {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.services-title {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+
+    h5 {
+        font-family: $raleway;
+        text-transform: uppercase;
+        position: relative;
+        padding: 20px 0px 10px 0px;
+        font-weight: 300;
+        color: $westGreen !important;
+        overflow: hidden;
+        font-size: 1.2rem !important;
+        line-height: 25px;
+        width: 90%;
+        border-bottom: 1px solid $westGreen;
+        font-weight: 500;
+    }
+}
+
+.box {
+    position: relative;
+    z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box img {
+    position: relative;
+    float: left;
+    padding: 0;
+    border: 2px solid #efefef;
+    margin: 0 30px 30px 0;
+    background: #fff;
+}
+
+
+
+.servicesHeader2 {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 10px 0px -20px 0px;
+    color: $black;
+    display: block;
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        margin: 20px 0px -20px 0px;
+    }
+}
+
+.servicesHeader3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 10px 0px -20px 0px;
+    color: $black;
+    display: block;
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        margin: 20px 0px -20px 0px;
+    }
+}
+
+.servicesBodyText {
+    line-height: 1.4em !important;
+    color: $charcoal !important;
+}
+
+ #avianAndBat1 {
+    width: 225px;
+    height: 145px;
+    margin: 15px 10px 20px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 15px 10px 30px 70px;
+    }
+}
+
+#aerialSurvey1 {
+    width: 225px;
+    height: 145px;
+    margin: 15px 10px 30px 25px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 15px 10px 30px 70px;
+    }
+}
+
+#aerialSurvey2 {
+    float: right;
+    clear: left;
+    width: 190px;
+    height: 125px;
+    margin: 10px 10px 30px 40px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 15px 10px 30px 70px;
+    }
+}
+
+#aerialSurvey3 {
+    width: 200px;
+    height: 135px;
+    margin: 25px 10px 30px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 15px 10px 30px 70px;
+    }
+}
+
+#batResearchAndMonitoring1 {
+    float: right;
+    width: 225px;
+    height: 175px;
+    margin: 2px 25px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 0px;
+    }
+}
+
+#batResearchAndMonitoring2 {
+    float: right;
+    width: 275px;
+    height: 185px;
+    margin: 2px 25px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 10px;
+    }
+}
+
+#gis1 {
+    float: right;
+    width: 200px;
+    height: 160px;
+    margin: 20px 45px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 0px;
+    }
+}
+
+#gis2 {
+    float: right;
+    clear: left;
+    width: 220px;
+    height: 140px;
+    margin: 20px 45px 30px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 0px;
+    }
+}
+
+#naturalResources1 {
+    float: right;
+    width: 200px;
+    height: 300px;
+    margin: 20px 45px 30px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#naturalResources2 {
+    float: right;
+    clear: left;
+    width: 260px;
+    height: 210px;
+    margin: 20px 0px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 50px 30px 10px;
+    }
+}
+
+#naturalResources3 {
+    float: right;
+    clear: left;
+    width: 165px;
+    height: 242px;
+    margin: 20px 0px 20px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 50px 30px 10px;
+    }
+}
+
+#avianAndBatProtection1 {
+    float: right;
+    clear: left;
+    width: 205px;
+    height: 150px;
+    margin: 10px 0px 20px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#avianAndBatProtection2 {
+    float: right;
+    clear: left;
+    width: 205px;
+    height: 150px;
+    margin: 5px 0px 20px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 10px;
+    }
+}
+
+#nepa1 {
+    float: right;
+    width: 230px;
+    height: 276px;
+    margin: 20px 0px 20px 40px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 0px;
+    }
+}
+
+#nepa2 {
+    float: right;
+    width: 200px;
+    height: 267px;
+    margin: 20px 0px 30px 40px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 10px;
+    }
+}
+
+#oilAndGasSupport1 {
+    float: right;
+    clear: left;
+    width: 230px;
+    height: 175px;
+    margin: 20px 0px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 30px 30px -5px;
+    }
+}
+
+#oilAndGasSupport2 {
+    float: right;
+    clear: left;
+    width: 215px;
+    height: 145px;
+    margin: 20px 0px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 15px 20px 30px 0px;
+    }
+}
+
+#habitatConservation1 {
+    float: right;
+    width: 200px;
+    height: 150px;
+    margin: 20px 34px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 30px;
+    }
+}
+
+#habitatConservation2 {
+    float: right;
+    clear: left;
+    width: 215px;
+    height: 145px;
+    margin: 20px 0px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#statsAndBiometrics1 {
+    float: right;
+    width: 230px;
+    height: 160px;
+    margin: 20px 0px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 5px;
+    }
+}
+
+#statsAndBiometrics2 {
+    float: right;
+    width: 275px;
+    height: 270px;
+    margin: 20px 0px 20px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 5px;
+    }
+}
+
+#transmissionLines1 {
+    float: right;
+    width: 225px;
+    height: 260px;
+    margin: 15px 0px 15px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 30px 30px 30px 15px;
+    }
+}
+
+#transmissionLines2 {
+    float: right;
+    clear: left;
+    width: 225px;
+    height: 260px;
+    margin: 15px 0px 15px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#vegetationSampling1 {
+    float: right;
+    clear: left;
+    width: 245px;
+    height: 185px;
+    margin: 5px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#vegetationSampling2 {
+    float: right;
+    clear: left;
+    width: 245px;
+    height: 185px;
+    margin: 15px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 50px 30px 5px;
+    }
+}
+
+#wetlandsAndWater1 {
+    float: right;
+    width: 245px;
+    height: 185px;
+    margin: 15px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#wetlandsAndWater2 {
+    float: right;
+    width: 245px;
+    height: 185px;
+    margin: 15px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 50px 30px 0px;
+    }
+}
+
+#wildlifeResearch1 {
+    float: right;
+    clear: left;
+    width: 175px;
+    height: 235px;
+    margin: 5px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#wildlifeResearch2 {
+    float: right;
+    clear: left;
+    width: 165px;
+    height: 275px;
+    margin: 10px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 50px 30px 0px;
+    }
+}
+
+#windEnergy1 {
+    float: right;
+    clear: left;
+    width: 165px;
+    height: 275px;
+    margin: 10px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#windEnergy2 {
+    float: right;
+    clear: left;
+    width: 165px;
+    height: 245px;
+    margin: 10px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+#windEnergy3 {
+    float: right;
+    clear: left;
+    width: 165px;
+    height: 145px;
+    margin: 10px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#windEnergy4 {
+    float: right;
+    clear: left;
+    width: 165px;
+    height: 145px;
+    margin: 20px 0px 35px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#windEnergy5 {
+    float: right;
+    clear: left;
+    width: 205px;
+    height: 205px;
+    margin: 10px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+#windEnergy6 {
+    float: right;
+    clear: left;
+    width: 225px;
+    height: 225px;
+    margin: 0px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+#windEnergy7 {
+    float: right;
+    clear: left;
+    width: 185px;
+    height: 255px;
+    margin: 10px 0px 25px 35px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 30px 0px 30px 0px;
+    }
+}
+
+#environmentalImage1 {
+    width: 165px;
+    height: 225px;
+    margin: 15px 10px 30px 25px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#environmentalImage2 {
+    width: 135px;
+    height: 195px;
+    margin: 15px 10px 30px 25px;
+    float: right;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: none;
+    }
+}
+
+#environmentalImage3 {
+    width: 215px;
+    height: 145px;
+    margin: 15px 10px 30px 25px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 15px 10px 30px 30px;
+    }
+}
+
+.services-sidebar-box {
+  float: left;
+  width: 100%;
+}
+
+.services-title-recent-news {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+
+  h5 {
+    font-family: $raleway;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0px 10px 0px;
+    font-weight: 300;
+    color: $westGreen !important;
+    overflow: hidden;
+    font-size: 1.2rem !important;
+    line-height: 25px;
+    width: 90%;
+    border-bottom: 1px solid $westGreen;
+    font-weight: 500;
+  }
+}
+
+
+.services-news-box {
+  display: block;
+  float: left;
+  clear: both;
+  width: 90%;
+  max-height: 250px;
+  overflow-y: auto;
+  list-style-type: none;
+  border: 2px solid $westGreen;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 1.25rem;
+
+  li {
+
+    h3 {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      padding-bottom: .6rem;
+      margin-bottom: .5rem;
+      border-bottom: 1px solid #ddd;
+      font-family: $opensans;
+      font-weight: 500;
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+
+    p {
+      display: block;
+      font-size: .8rem;
+      line-height: 1.2rem;
+      font-family: $arial;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.servicesImage {
+  border: 1px solid #ddd;
+  margin: 10px 10px 20px 30px;
+}
+
+.main-wrapper {
+  padding: 90px 0px 0px 0px;
+}
+
+.services-wrapper {
+  padding: 25px 0px 25px 0px;
+}
+
+.services {
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 0px 10px 25px 10px;
+}
+
+.services-thumb {
+  position: relative;
+}
+
+.services-details {
+  padding: 25px;
+  border: 1px solid #ddd;
+}
+
+
+.services-details .post-title:before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #ecf0f1;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.services-details .post-title {
+  margin-top: 0;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.services-details > p {
+  color: #000000;
+  font-size: .9em;
+  line-height: 1.3em;
+  margin: 20px 0px 0px 0px;
+}
+
+.servicesSubTitle {
+  font-weight: bold;
+  font-size: 1em !important;
+  padding: 0px 0px 0px 0px;
+}
+
+.servicesSubTitle2 {
+  font-weight: bold;
+  font-size: 1.2em !important;
+}
+
+.servicesList {
+  margin: 20px 0px 0px 10px;
+
+  li {
+    font-size: .9em;
+    line-height: 1.7em;
+    list-style: square;
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    margin: 10px 0px 10px 30px;
+    /*0px --> 768px*/
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .servicesList li {
+    margin: 10px 0px 10px 5px;
+  }
+}
+
+.servicesList li span {
+  font-weight: bold;
+}
+
+.services-meta {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 0;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.services-title {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.services-title h5 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  padding: 20px 0px 10px 0px;
+  font-weight: 300;
+  color: #72A430 !important;
+  overflow: hidden;
+  font-size: 1.2rem !important;
+  line-height: 25px;
+  width: 90%;
+  border-bottom: 1px solid #72A430;
+  font-weight: 500;
+}
+
+/* -------- BEGIN SERVICES SIDEBAR CSS --------- */
+
+/* -------- Not sure what .sidebar is styling, it's not for Services. Follow up on this.  --------- */
+
+.sidebar {
+  padding: 1.1rem 0rem 0rem 2rem;
+  margin: 0rem -1.1rem 0rem 1.1rem;
+}
+
+/* -------- END --------- */
+
+.servicesSidebar {
+  float: left;
+  list-style: none;
+  margin: -2.3rem 0rem 0rem 0rem;
+  border-radius: 0rem;
+
+  li {
+   float: left;
+   width: 100%;
+   font-size: .95rem;
+   color: #36454F;
+   padding: 0rem !important;
+
+   &:hover {
+     background-color: #72A430;
+
+     a {
+       color: $white !important;
+
+       i {
+         color: $white;
+         margin-right: .6rem;
+       }
+     }
+   }
+
+   a {
+     float: left;
+     width: 100%;
+     font-size: .95rem;
+     color: #36454F;
+     padding: .7rem 0rem .7rem 0rem !important;
+     border-bottom: 1px solid #ddd;
+
+     i {
+       color: #72A430;
+       font-size: 1.4rem;
+       margin-right: .6rem;
+     }
+   }
+ }
+}
+
+.sidebarActive {
+  font-size: .95rem !important;
+  color: $white !important;
+  background-color: #555 !important;
+  padding: 1.1rem 0rem 1.5rem 0rem;
+  border: 0px;
+
+  &:hover {
+    cursor: default !important;
+    background-color: #555 !important;
+  }
+
+  a {
+    color: $white !important;
+
+    i {
+      color: $white !important;
+    }
+  }
+}
+
+/* -------- END SERVICES SIDEBAR CSS --------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############# NEW SERVICES PAGE CSS ############# */
+
+.services-page-container {
+  float: left;
+  width: 100%;
+  padding-top: 50px;
+
+  h3 {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: $font-primary;
+    font-size: 22px;
+    font-weight: 500;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  .spc--header {
+    float: left;
+    width: 100%;
+    height: 275px;
+
+    .main-header-title {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 275px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 125px;
+        padding-left: 100px;
+        font-size: 50px;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px $black;
+        text-align: left;
+        line-height: 145%;
+        color: $white;
+        z-index: 2;
+      }
+
+      &:after {
+        content: "XXXX";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 275px;
+        background-color: rgba(114, 164, 48, .3);
+        z-index: 1;
+      }
+
+      &.aerialsurveyandtelemetry {
+        background-position: 0px -60px;
+
+        &:before {
+          content: "Aerial Survey & Telemetry";
+        }
+      }
+
+      &.avianspeciesresearchandmanagement {
+        background-position: 0px -260px;
+
+        &:before {
+          content: "Avian Species Research & Management";
+        }
+      }
+
+      &.avianbatprotectionplans {
+        background-position: 0px -260px;
+
+        &:before {
+          content: "Avian Protection Plans";
+        }
+      }
+
+      &.biggameresearchandmonitoring {
+        background-position: 0px -100px;
+
+        &:before {
+          content: "Big Game Research & Monitoring";
+        }
+      }
+
+      &.conservationandmitigationbanking {
+        &:before {
+          content: "Conservation and Mitigation Banking";
+        }
+      }
+
+      &.deserttortoisemanagement {
+        background-position: 0px 20px;
+
+        &:before {
+          content: "Desert Tortoise Management";
+        }
+      }
+
+      &.gis {
+        background-position: 0px -250px;
+
+        &:before {
+          content: "Geographic Information Systems";
+        }
+      }
+
+      &.habitatconservationplans {
+        &:before {
+          content: "Habitat Conservation Plans";
+        }
+      }
+
+      &.nepa {
+        &:before {
+          content: "National Environmental Policy Act";
+        }
+      }
+
+      &.nrda {
+        &:before {
+          content: "Natural Resource Damage Assessments";
+        }
+      }
+
+      &.statisticsandbiometrics {
+        &:before {
+          content: "Statistics & Biometrics";
+        }
+      }
+
+      &.vegetationsamplingandplantsurveys {
+        &:before {
+          content: "Vegetation Sampling & Plant Surveys";
+        }
+      }
+
+      &.wetlandsandwaterquality {
+        &:before {
+          content: "Wetlands & Water Quality";
+        }
+      }
+
+      &.wildliferesearchandmanagement {
+        &:before {
+          content: "Wildlife Research & Management";
+        }
+      }
+    }
+  }
+
+  .spc--inner {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .spc--inner-left {
+      float: left;
+      width: calc(100% - 325px);
+      padding: 40px 50px 50px 0;
+
+      img.services-feature-image {
+        float: right;
+      }
+
+      h1.main-title {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: $black;
+        font-family: $font-primary;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 145%;
+      }
+
+      .body-content {
+        float: left;
+        width: 100%;
+        padding-bottom: 20px;
+        font-family: $font-secondary;
+        font-size: 14px;
+        color: $black;
+        line-height: 140%;
+
+        .bc--left {
+          float: left;
+          width: calc(100% - 250px);
+          padding-right: 25px;
+        }
+
+        .bc--right {
+          float: left;
+          width: 250px;
+          text-align: center;
+          padding-left: 25px;
+
+          img {
+            float: left;
+            width: 100%;
+            max-width: 180px;
+          }
+        }
+      }
+
+      p {
+        float: left;
+        width: 100%;
+        padding-bottom: 20px;
+        font-family: $font-secondary;
+        font-size: 16px;
+        color: $black;
+        line-height: 140%;
+      }
+
+      h4.title-of-list {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 600;
+        color: $black;
+      }
+
+      ul {
+        float: left;
+        width: 100%;
+        list-style-type: disc;
+
+        li {
+          float: left;
+          width: 100%;
+          margin-left: 20px;
+          padding: 5px 8px 5px 0px;
+          font-family: $font-primary;
+          font-size: 16px;
+          color: $black;
+
+          &:first-child {
+            margin-top: 6px;
+          }
+
+          a {
+            float: left;
+            width: 100%;
+          }
+        }
+      }
+
+      h2.subtitle {
+        float: left;
+        width: 100%;
+        font-family: $font-primary;
+        color: $black;
+      }
+
+      p.body-content-extra-section {
+        float: left;
+        width: 100%;
+        font-family: $font-secondary;
+        color: $black;
+      }
+    }
+
+
+    .spc--inner-right {
+      float: left;
+      width: 325px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+
+      .recent-news-container {
+        .spc--right-news {
+          float: left;
+          width: 100%;
+          max-height: 325px;
+          padding: 20px 25px;
+          background-color: #EEEEEE;
+          overflow-y: auto;
+
+          ul {
+            float: left;
+            width: 100%;
+
+            li {
+              float: left;
+              width: 100%;
+
+              h4 {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+                font-family: $font-primary;
+                font-size: 17px;
+                font-weight: 600;
+              }
+
+              p {
+                float: left;
+                width: 100%;
+                font-size: 14px;
+                line-height: 145%;;
+
+                a {
+                  font-family: $font-secondary;
+                  font-size: 15px;
+                  font-style: italic;
+                  color: $color-primary;
+                  word-break: break-word;
+                }
+              }
+
+              a {
+                color: black;
+                font-size: 20px;
+                word-break: break-word;
+              }
+            }
+          }
+        }
+      }
+
+      .services-subnav-container {
+        .services-subnav-sidebar {
+          float: left;
+          width: 100%;
+
+          &.aerialsurveyandtelemetry {
+            .aerialsurveyandtelemetry-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.avianspeciesresearchandmanagement {
+            .avianspeciesresearchandmanagement-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.avianbatprotectionplans {
+            .avianbatprotectionplans-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.batresearchandmonitoring {
+            .batresearchandmonitoring-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.biggameresearchandmonitoring {
+            .biggameresearchandmonitoring-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.conservationandmitigationbanking {
+            .conservationandmitigationbanking-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.deserttortoisemanagement {
+            .deserttortoisemanagement-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.gis {
+            .gis-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.habitatconservationplans {
+            .habitatconservationplans-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.nepa {
+            .nepa-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.nrda {
+            .nrda-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.statisticsandbiometrics {
+            .statisticsandbiometrics-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.vegetationsamplingandplantsurveys {
+            .vegetationsamplingandplantsurveys-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.wetlandsandwaterquality {
+            .wetlandsandwaterquality-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.wildliferesearchandmanagement {
+            .wildliferesearchandmanagement-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          li {
+            float: left;
+            width: 100%;
+
+            &.last-link {
+              a {
+                border-bottom: 0px;
+              }
+            }
+
+            a {
+              float: left;
+              width: 100%;
+              padding: 8px 15px 8px 5px;
+              font-family: $font-primary;
+              font-size: 16px;
+              background-color: $white;
+              color: $black;
+              border-bottom: 1px solid #DEDEDE;
+              line-height: 140%;
+
+              &:hover {
+                background-color: #DEDEDE;
+                color: $black;
+              }
+
+              &:before {
+                content: "\f105";
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                padding-left: 5px;
+                font-family: $font-tertiary;
+                font-size: 20px;
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,404 @@
+/*
+____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
+|  _ \| | | | __ )| |   |_ _/ ___|  / \|_   _|_ _/ _ \| \ | / ___|
+| |_) | | | |  _ \| |    | | |     / _ \ | |  | | | | |  \| \___ \
+|  __/| |_| | |_) | |___ | | |___ / ___ \| |  | | |_| | |\  |___) |
+|_|    \___/|____/|_____|___\____/_/   \_\_| |___\___/|_| \_|____/
+
+*/
+
+#bookstoreContainer {
+    padding: 0px !important;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 0px 30px 0px;
+
+    ul {
+        margin: -30px 0px 0px -20px;
+    }
+
+    li {
+        font-size: 1.1em !important;
+        color: #555555 !important;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 0px !important;
+        margin: 20px 0px 30px 0px;
+    }
+}
+
+.bookstoreBodyContainer {
+    float: left;
+    clear: right;
+    width: 100%;
+    margin: 30px 0px 120px 0px;
+    padding: 10px 10px 60px 10px;
+    border: 1px solid #ddd;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 10px 0px 30px 0px;
+        margin: 10px 0px 30px 0px;
+    }
+}
+
+.bookstoreContainerHeader {
+   font-size: 1.4em !important;
+    color: #000000 !important;
+    font-weight: 600;
+}
+
+.bookstoreContainerSubheader {
+    font-size: 1.3em !important;
+    color: #72A430 !important;
+    font-weight: 200;
+    font-style: italic !important;
+}
+
+.bookstoreContainerHeader2 {
+    font-size: 1.1em !important;
+    color: #000000 !important;
+    font-weight: 600;
+    margin: 20px 0px 0px 0px
+}
+
+.bookstoreContainerList a{
+    font-weight: 100 !important;
+    font-size: .9em !important;
+    color: #72A430 !important;
+    text-decoration:underline;
+}
+
+.bookstoreContainerList a:hover {
+    font-weight: 100 !important;
+    font-size: .9em !important;
+    color: #000000 !important;
+    text-decoration:underline;
+}
+
+#bookstoreTop h1 {
+    font-family: 'Raleway', sans-serif !important;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 300;
+    color: #000;
+    overflow: hidden;
+    font-size: 2.2em;
+    line-height: 1.4em;
+    margin: 10px 0px -5px 30px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: 1.5em;
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+#bookstoreTop h2 {
+    position: relative;
+    margin: 0;
+    font-weight: 100;
+    font-style: italic;
+    color: $westGreen;
+    font-size: 1.1em;
+    line-height: 1.4em !important;
+    margin: 0px 0px 30px 30px;
+    padding: 0px 0px 12px 0px;
+    border-bottom: 1px solid $lightGray;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .9em;
+        margin: 0px 0px 30px 10px;
+    }
+}
+
+.bookstore {
+    margin: 15px 0px 0px 0px !important;
+    padding: 20px 40px 30px 30px;
+}
+
+.bookstore p{
+    font-size: 1.2em;
+    color: #666666;
+}
+
+.bookstoreImage {
+    width: 145px;
+    height: 163px;
+    margin: -12px 0px 0px -10px;
+}
+
+.bookstoreContainerRightLine1 {
+    font-size: 1.2em !important;
+    font-weight: 600;
+    color: #000000 !important;
+    margin: 0px 0px 0px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: 1em !important;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.bookstoreContainerRightLine2 {
+    font-size: 1.0em !important;
+    font-weight: 600;
+    color: #555555 !important;
+    margin: 10px 0px 0px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .9em !important;
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+.bookstoreContainerRightLine3 {
+    font-size: 1.1em !important;
+    font-weight: 100;
+    color: #555555 !important;
+    margin: 10px 0px 0px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        font-size: .9em !important;
+        margin: 10px 0px 0px 0px;
+    }
+
+}
+
+.bookstoreContainerRightLineLink {
+    font-size: 1.0em !important;
+    font-weight: 600;
+    color: #72A430 !important;
+    margin: 10px 0px 0px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+.bookstoreBookStoreBodyText {
+    margin: 20px 0px 20px 20px;
+    font-size: 1em !important;
+    line-height: 1.5em !important;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        margin: 0px 0px 30px 0px;
+        font-size: .9em !important;
+        line-height: 1.4em !important;
+    }
+}
+
+.bookstoreBodyContainer {
+    padding: 30px 20px 0px 20px;
+
+    /*0px --> 768px*/
+    @media only screen and (min-width:0px) and (max-width:767px) {
+        padding: 30px 10px 0px 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############# NEW PUBLICATIONS PAGE CSS ############# */
+
+.publications-and-reports-page-container {
+
+  .parpc--inner {
+    .parpc-page--inner-left {
+      h1 {
+        margin-top: 10px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      .publications-report-subheader {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+        font-family: $font-primary;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-top: 2px solid #CCC;
+      }
+
+      ul.books-list, ul.publications-list {
+        float: left;
+        width: 100%;
+
+        li.publication-list-item  {
+          float: left;
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #DDDDDD;
+
+          &.active {
+            .pbi--left .email-before-download-container {
+              height: 200px;
+              padding: 15px 20px;
+
+              label, h3, p {
+                display: block;
+              }
+            }
+          }
+
+          .pbi--left {
+            float: left;
+            width: calc(100% - 70px);
+            padding-right: 30px;
+
+            .email-before-download-container {
+              float: left;
+              width: 100%;
+              height: 0;
+              margin-top: 15px;
+              padding: 0;
+              background-color: #DEDEDE;
+              transition: all 300ms ease-in-out;
+
+              .wpcf7-form-control-wrap {
+                float: left;
+                width: 100%;
+                min-height: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+              }
+
+              label {
+                float: left;
+                width: 100%;
+                margin-bottom: 5px;
+                display: none;
+              }
+
+              h3 {
+                display: none;
+
+                i {
+
+                }
+
+                span {
+
+                }
+              }
+
+              p {
+                float: left;
+                width: 100%;
+                font-family: $font-primary;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                display: none;
+              }
+            }
+
+            .publication-title {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              font-family: $font-secondary;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 140%;
+            }
+
+            .publication-details {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              font-family: $font-secondary;
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 135%;
+              color: #333333;
+            }
+          }
+
+          .pbi--right {
+            float: left;
+            width: 70px;
+
+            a {
+              float: left;
+              margin-top: 10px;
+              padding: 10px 15px;
+              border-radius: 5px;
+              text-align: center;
+
+              &:before {
+                width: 35px;
+                height: 35px;
+                color: white;
+              }
+
+              &.book-icon {
+                background-color: red;
+
+                &:before {
+                  content: "BOOK";
+                }
+              }
+
+              &.pdf-icon {
+                background-color: purple;
+
+                &:before {
+                  content: "PDF";
+                }
+              }
+
+              &.link-icon {
+                background-color: blue;
+
+                &:before {
+                  content: "LINK";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .parpc-page--inner-right {
+      ul {
+        li {
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}

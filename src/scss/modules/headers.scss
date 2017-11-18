@@ -1,0 +1,289 @@
+/*
+_   _ _____    _    ____  _____ ____  ____
+| | | | ____|  / \  |  _ \| ____|  _ \/ ___|
+| |_| |  _|   / _ \ | | | |  _| | |_) \___ \
+|  _  | |___ / ___ \| |_| | |___|  _ < ___) |
+|_| |_|_____/_/   \_\____/|_____|_| \_\____/
+
+*/
+
+#navbarBrand img{
+    margin: 5px 0px 5px 0px;
+}
+
+#header {
+  width: 100%;
+  border-bottom: 4px solid $white;
+  box-shadow: 3px 3px 5px $charcoal;
+  margin-bottom: 0;
+  border-radius: 0px;
+  background-color: $westGreen;
+  background-size: cover;
+  position: fixed;
+  z-index: 1000000 !important;
+
+  /*768px --> 992px*/
+  @media only screen and (min-width:768px) and (max-width:992px) {
+
+  }
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+      background-color: darken($westGreen, 30%) !important;
+      background-image: none !important;
+  }
+}
+
+.navbar {
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-size: cover;
+    background-image: url(../images/navRowShading_LightGreen_topography.png);
+    z-index: 1000;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: #555;
+    z-index: 1000;
+}
+
+.navbar-collapse {
+    float: right;
+    margin: 25px 0px 0px 0px;
+}
+
+.navbar-toggle {
+    border-radius: 0px;
+    margin: 20px 20px 0px 0px;
+}
+
+.mainSlideshow {
+    width: 100%;
+    height: 220px;
+    background-color: $lightGray;
+}
+
+.navbar-nav li a {
+    text-transform: uppercase;
+    font-size: .8em;
+    color: $white !important;
+    padding: 0px 15px 0px 15px;
+    height: 100%;
+    z-index: 1000;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -1px;
+    border-radius: 0px;
+    padding: 0px;
+    z-index: 1000 !important;
+}
+
+.dropdown-menu {
+    background-color: $white;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display:block;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content:" ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: $lightGray;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: $white;
+}
+
+.dropdown-submenu .pull-left {
+    float: none;
+}
+
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    border-radius: 0px;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px 20px 10px 20px;
+    color: $westGreen !important;
+    border-bottom: 1px solid $ultraLightGray;
+}
+
+.dropdown-menu > li > a:hover {
+    color: $white !important;
+    background-color: $westGreen;
+    border-bottom: 1px solid $ultraLightGray;
+}
+
+.navbar-nav > li > a:hover {
+    color: $westGreen !important;
+}
+
+
+
+/* ************************************************* BEGIN MEDIA QUERIES ************************************************* */
+
+
+/*768px --> 992px*/
+@media only screen and (min-width:768px) and (max-width:992px) {
+
+.navbar-nav li {
+    font-size: .9em;
+}
+
+}
+
+/*0px --> 768px*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    background-image: none !important;
+    background-color: darken( $westGreen, 30%);
+}
+
+.navbar-background {
+    background-repeat: repeat-x;
+    border-bottom: 1px solid $white;
+    background-color: transparent !important;
+    color: $westGreen !important;
+}
+
+.navbar-nav li {
+    background-color: $white !important;
+
+}
+
+
+.navbar-nav li a {
+    text-transform: uppercase;
+    font-size: .85em;
+    padding: 10px 15px 10px 25px;
+    border-bottom: 1px solid $lightGray;
+    color: $westGreen !important;
+}
+
+#navbarBrand img{
+    margin: 5px 0px 5px 20px;
+}
+
+.navbar-collapse {
+    float: none;
+}
+
+.dropdown li a, .dropdown-menu li a, .dropdown-menu li a{
+        color: darken($westGreen, 20%) !important;
+        font-size: .8em;
+        padding: 0px;
+        background-color: $white !important;
+
+        &:hover {
+            background-color: $westGreen !important;
+            color: $white !important;
+        }
+    }
+}
+
+.dropdown li a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a:last-child {
+    border-bottom: none;
+}
+
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: $white !important;
+    background-color: transparent !important;
+
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    color: $white !important;
+}
+
+/*0px --> 768px*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+
+.navbar-nav>.active>a {
+    color: darken($westGreen, 20%) !important;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav>.active>a:hover {
+    color: darken($westGreen, 20%) !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-image: none !important;
+    background-color: darken($westGreen, 20%) !important;
+    color: $white !important;
+}
+
+.dropdown li a, .dropdown-menu li a, .dropdown-menu li a {
+    font-size: .95em !important;
+    padding-left: 40px !important;
+}
+
+
+}
+
+/* ************************************************* END MEDIA QUERIES ************************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1.main-header {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: $font-primary;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 145%;
+}
+
+h2.main-subheader {
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+  color: #2a4b7d;
+  line-height: 135%;
+}

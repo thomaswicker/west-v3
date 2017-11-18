@@ -1,0 +1,46 @@
+/*
+ * Custom Login Page Stylesheet
+ */
+
+/* The background
+ * This can be image or color, note the !important at the end.
+ */
+body.login {
+	background-color: #72A430;
+	background-image: url('http://www.west-inc.com/wp-content/themes/west_theme/images/bg_topography_grn.jpg');
+	height: 100%;
+	background-size: cover;
+}
+
+/* Title image (The "WordPress Logo") Mus use image as a Background!
+ * Remember to update the height and width your image's dimensions 
+ */
+#login h1 a {	
+	background:url(http://www.west-inc.com/wp-content/themes/west_theme/images/login_logo.png) 0 0 no-repeat;
+	width:300px;
+	height:104px;
+	margin: 0px 0px 10px 100px;
+}
+
+#login h1:after {
+	content: "www.west-inc.com";
+	font-size: .75em;
+	font-weight: 100;
+	color: #72A430;
+	margin-bottom: 10px;
+	padding: 15px 0px 25px 0px !important;
+}
+
+#user_login:focus, #user_pass:focus {
+	border: 2px solid #72A430 !important;
+}
+
+body.login div#login p#backtoblog a {
+    color: #72A430 !important;
+    font-size: .9em;
+}
+
+p.message {
+	margin: 15px 0px 25px 0px !important;
+
+}
