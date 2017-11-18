@@ -722,3 +722,132 @@ span.bod-tag {
 //     border-bottom: 1px solid $westGreen;
 //   }
 // }
+
+
+
+
+
+
+
+.our-team-landing-container {
+  float: left;
+  width: 100%;
+
+  .otlc--inner {
+    float: left;
+    width: 100%;
+
+    h1.our-team-landing-header {
+      float: left;
+      width: 100%;
+    }
+
+    .our-team--row-1 {
+      float: left;
+      width: 100%;
+      background-color: #EEEEEE;
+    }
+
+    .our-team--row-2 {
+      float: left;
+      width: 100%;
+      background-color: #DDDDDD;
+    }
+
+    .our-team--row-3 {
+      float: left;
+      width: 100%;
+      background-color: #CCCCCC;
+    }
+
+    .team-member-tile {
+      float: left;
+      max-width: 300px;
+      padding: 20px;
+      border: 2px solid #BBBBBB;
+
+      .team-member-photo {
+        float: left;
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: all 200ms ease-in-out;
+        opacity: .8;
+        overflow-y: hidden;
+
+        &:hover {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+          opacity: 1;
+        }
+
+        &.tile-1 {
+          background-position: -15px -20px;
+          background-size: 112%;
+        }
+
+        &.tile-2 {
+          background-position: -15px -20px;
+          background-size: 112%;
+        }
+
+        &.tile-3 {
+          background-position: 0px -35px;
+        }
+
+        &.tile-4 {
+
+        }
+
+        &.tile-5 {
+
+        }
+
+        &.tile-6 {
+          background-position: -13px -80px;
+          background-size: 112%;
+        }
+
+        &.tile-7 {
+
+        }
+
+        &.tile-8 {
+          background-position: 0px -40px;
+        }
+
+        &.tile-9 {
+          background-position: -13px -80px;
+          background-size: 112%;
+        }
+
+        &.tile-10 {
+          background-position: 0px -40px;
+        }
+      }
+
+      img {
+        float: left;
+        width: 100%;
+      }
+
+      .team-member-name{
+        float: left;
+        width: 100%;
+      }
+
+      .team-member-job-title {
+        float: left;
+        width: 100%;
+      }
+
+      .bod-title {
+        float: left;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -10,8 +10,7 @@ var autoprefixer 	= require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
 		rename 				= require('gulp-rename'),
     sass          = require('gulp-sass'),
-		uglify        = require('gulp-uglify'),
-    browserSync   = require('browser-sync').create();
+		uglify        = require('gulp-uglify');
 
 var currentdate = new Date();
 var datetime = currentdate.getDate() + "/"
@@ -39,9 +38,6 @@ gulp.task('sass', function(){
     .pipe(cssnano())
 		.pipe(gulp.dest('css'))
     .pipe(notify({ message: '\n_______________________________________________________\n %%% SASS COMPILED %%%\n_______________________________________________________' }))
-    .pipe(browserSync.reload({ // Reloading with Browser Sync
-      stream: true
-    }));
 });
 
 // Compile Javascript & Minify
@@ -55,22 +51,10 @@ gulp.task('javascript', function() {
 		 }))
 		 .pipe(gulp.dest('js'))
      .pipe(notify({ message: '\n_______________________________________________________\n %%% JAVSCRIPT  COMPILED %%%\n_______________________________________________________' }))
-     .pipe(browserSync.reload({ // Reloading with Browser Sync
-       stream: true
-     }));
-})
-
-// Livereload to browser
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: './'
-    },
-  })
 })
 
 // Watch & Rerun Gulp
-gulp.task('watch', ['browserSync', 'sass', 'javascript'], function() {
+gulp.task('watch', function() {
   gulp.watch(sassSources, ['sass']);
   gulp.watch(jsSources, ['javascript']);
 });

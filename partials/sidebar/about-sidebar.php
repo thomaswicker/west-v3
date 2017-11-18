@@ -10,7 +10,7 @@
 		</li>
 
 		<li class="about-subnav--team">
-			<a href="">
+			<a href="http://www.west-inc.com/about/our-team/">
 				<i class="fa fa-chevron-right"></i>
 				WEST Core Team
 			</a>
