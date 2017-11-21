@@ -747,12 +747,33 @@ __  __    _    ____  _  _______ _____ ____
 
 
 
+
+
+
+
+
+
+
+
 /* ############# NEW MARKETS PAGE CSS ############# */
 
 .markets-page-container {
+  position: relative;
   float: left;
   width: 100%;
   padding-top: 50px;
+
+  @include mq(lg) {
+
+  }
+
+  @include mq(md) {
+    padding-top: 30px;
+  }
+
+  @include mq(sm) {
+    padding-top: 30px;
+  }
 
   h3 {
     float: left;
@@ -769,15 +790,39 @@ __  __    _    ____  _  _______ _____ ____
   .mpc--header {
     float: left;
     width: 100%;
-    height: 275px;
+    height: 450px;
+
+    @include mq(lg) {
+
+    }
+
+    @include mq(md) {
+      height: 300px;
+    }
+
+    @include mq(sm) {
+      height: 300px;
+    }
 
     .main-header-title {
       position: relative;
       float: left;
       width: 100%;
-      height: 275px;
+      height: 450px;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+        height: 300px;
+      }
+
+      @include mq(sm) {
+        height: 300px;
+      }
 
       &:before {
         content: "";
@@ -786,15 +831,35 @@ __  __    _    ____  _  _______ _____ ____
         right: 0;
         bottom: 0;
         left: 0;
-        padding-top: 125px;
-        padding-left: 100px;
+        padding-top: 325px;
+        padding-left: 85px;
         font-size: 50px;
         font-weight: 300;
-        text-shadow: 1px 1px 1px $black;
+        text-shadow: 2px 2px 2px $black;
         text-align: left;
         line-height: 145%;
         color: $white;
         z-index: 2;
+
+        @include mq(lg) {
+          padding-left: 50px;
+        }
+
+        @include mq(md) {
+          padding-top: 225px;
+          padding-left: 35px;
+          font-size: 40px;
+          font-weight: 300;
+          text-shadow: 1px 1px 1px $black;
+        }
+
+        @include mq(sm) {
+          padding-top: 190px;
+          padding-left: 35px;
+          font-size: 30px;
+          font-weight: 300;
+          text-shadow: 1px 1px 1px $black;
+        }
       }
 
       &:after {
@@ -804,13 +869,24 @@ __  __    _    ____  _  _______ _____ ____
         right: 0;
         bottom: 0;
         left: 0;
-        height: 275px;
-        background-color: rgba(114, 164, 48, .3);
+        height: 450px;
         z-index: 1;
+
+        @include mq(lg) {
+
+        }
+
+        @include mq(md) {
+          height: 300px;
+        }
+
+        @include mq(sm) {
+          height: 300px;
+        }
       }
 
       &.windpower {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "Wind Power";
@@ -818,7 +894,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &.solarpower {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "Solar Power";
@@ -826,7 +902,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &.internationalmarkets {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "International Markets";
@@ -834,7 +910,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &.powerlines {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "Power Lines";
@@ -842,7 +918,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &.oilandgas {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "Oil and Gas";
@@ -850,7 +926,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &.pipelines {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "Pipelines";
@@ -858,27 +934,94 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &.mining {
-        background-position: 0px -60px;
+        background-position: 0 0;
 
         &:before {
           content: "Mining";
+        }
+      }
+
+      &.armycorpsofengineers {
+        background-position: 0 0;
+
+        &:before {
+          content: "Army Corps of Engineers";
+        }
+      }
+
+      &.government {
+        background-position: 0 0;
+
+        &:before {
+          content: "Government";
+        }
+      }
+
+      &.usfws {
+        background-position: 0 0;
+
+        &:before {
+          content: "USFWS";
+        }
+      }
+
+      &.blm {
+        background-position: 0 0;
+
+        &:before {
+          content: "Bureau of Land Management";
+        }
+      }
+
+      &.usforestservice {
+        background-position: 0 0;
+
+        &:before {
+          content: "US Forest Service";
         }
       }
     }
   }
 
   .mpc--inner {
-    max-width: 1600px;
+    max-width: 2540px;
     margin-left: auto;
     margin-right: auto;
 
     .mpc--inner-left {
       float: left;
-      width: calc(100% - 325px);
-      padding: 40px 50px 50px 0;
+      width: calc(100% - 450px);
+      padding: 40px 90px 50px 90px;
+
+      @include mq(lg) {
+        width: calc(100% - 390px);
+        padding: 40px 40px 50px 40px;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: 30px 40px 50px 40px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px 40px 20px 40px;
+      }
 
       img.services-feature-image {
         float: right;
+
+        @include mq(lg) {
+
+        }
+
+        @include mq(md) {
+          display: none;
+        }
+
+        @include mq(sm) {
+          display: none;
+        }
       }
 
       h1.main-title {
@@ -906,6 +1049,20 @@ __  __    _    ____  _  _______ _____ ____
           float: left;
           width: calc(100% - 250px);
           padding-right: 25px;
+
+          @include mq(lg) {
+            width: calc(100% - 225px);
+          }
+
+          @include mq(md) {
+            width: 100%;
+            padding-right: 0;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+            padding-right: 0;
+          }
         }
 
         .bc--right {
@@ -914,10 +1071,34 @@ __  __    _    ____  _  _______ _____ ____
           text-align: center;
           padding-left: 25px;
 
+          @include mq(lg) {
+            width: 225px;
+          }
+
+          @include mq(md) {
+            width: 100%;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+          }
+
           img {
             float: left;
             width: 100%;
-            max-width: 180px;
+            max-width: 250px;
+
+            @include mq(lg) {
+              margin-top: 30px;
+            }
+
+            @include mq(md) {
+              margin-top: 30px;
+            }
+
+            @include mq(sm) {
+              margin-top: 30px;
+            }
           }
         }
       }
@@ -932,6 +1113,17 @@ __  __    _    ____  _  _______ _____ ____
         line-height: 140%;
       }
 
+      h2.subtitle {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 600;
+        color: $black;
+      }
+
       h3.body-text-header {
         font-family: $font-1;
         font-size: 18px;
@@ -943,7 +1135,7 @@ __  __    _    ____  _  _______ _____ ____
         float: left;
         width: 100%;
         margin-top: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         font-family: $font-primary;
         font-size: 20px;
         font-weight: 600;
@@ -993,11 +1185,56 @@ __  __    _    ____  _  _______ _____ ____
 
     .mpc--inner-right {
       float: left;
-      width: 325px;
-      padding-top: 20px;
-      padding-bottom: 40px;
+      width: 450px;
+      padding: 50px 90px 40px 0;
+
+      @include mq(lg) {
+        width: 390px;
+        padding: 50px 40px 40px 20px;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: 0px 30px 40px 30px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding: 20px 30px 40px 30px;
+      }
+
+      .representative-clients {
+        float: left;
+        width: 100%;
+        margin-top: 25px;
+
+        h3 {
+
+        }
+
+        ul {
+          float: left;
+          width: 100%;
+          max-height: 500px;
+          padding: 15px 20px;
+          border: 2px solid $color-primary;
+          overflow-y: auto;
+
+          li {
+            float: left;
+            width: 100%;
+            margin-top: 5px;
+            line-height: 140%;
+          }
+        }
+      }
 
       .markets-subnav-container {
+        h3 {
+          margin-top: 0;
+          padding-top: 0;
+        }
+
         ul.markets-subnav-sidebar {
           float: left;
           width: 100%;

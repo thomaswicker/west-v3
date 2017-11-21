@@ -7,30 +7,39 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
 
 */
 
-.sm-nav {
+.social-media-nav {
   position: absolute;
-  top: initial;
+  top: 467px;
   right: 0;
-  bottom: 0;
   float: right;
-  width: 200px;
-  background: #fff;
-  border-top: 2px solid $color-primary;
-  border-left: 2px solid $color-primary;
+  font-size: 14px;
+  transition: all 200ms cubic-bezier(.4,1.84,.94,.95);
+  border: 0 !important;
+  background-color: $white;
+  z-index: 10000;
+
+  @include mq(lg) {
+    top: 467px;
+  }
+
+  @include mq(md) {
+    top: 296px;
+  }
+
+  @include mq(sm) {
+    top: 296px;
+  }
 
   li {
     float: left;
-    width: 25%;
-    text-align: center;
 
     a {
       float: left;
-      width: 100%;
-      padding: 10px 20px;
-      background-color: $white;
+      padding: 8px 12px;
+      color: $color-primary;
 
       i {
-        padding-left: 0 !important;
+        padding-left: 0;
         font-size: 18px;
         color: $color-primary;
       }
@@ -43,25 +52,5 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
         }
       }
     }
-  }
-
-  @include mq(md) {
-    top: 0px;
-    float: left;
-    width: 100%;
-    background: $color-tertiary;
-    border-top: none;
-    border-left: none;
-
-  }
-
-  @include mq(sm) {
-    top: 0px;
-    float: left;
-    width: 100%;
-    background: $color-tertiary;
-    border-top: none;
-    border-left: none;
-    border-bottom: 1px solid $color-primary;
   }
 }

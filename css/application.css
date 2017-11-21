@@ -1744,7 +1744,7 @@ _______   ______  _____
   color: #bbbbbb; }
 
 .text-water {
-  color: #2a98c6; }
+  color: #0071a9; }
 
 .text-xlight {
   color: #bbbbbb; }
@@ -1855,7 +1855,7 @@ _______   ______  _____
   color: #72A430; }
 
 .text-color.secondary {
-  color: #0071a9; }
+  color: #2C3621; }
 
 .text-color.red-potion {
   color: #E90000; }
@@ -1864,7 +1864,7 @@ _______   ______  _____
   color: #72A430; }
 
 .text-color.blue-potion {
-  color: #2a98c6; }
+  color: #0071a9; }
 
 .text-color.orange-potion {
   color: #f57e20; }
@@ -2196,7 +2196,7 @@ _______   ______  _____
   background-color: #72A430; }
 
 .bg-color.secondary {
-  background-color: #0071a9; }
+  background-color: #2C3621; }
 
 .bg-color.red-potion {
   background-color: #E90000; }
@@ -2205,7 +2205,7 @@ _______   ______  _____
   background-color: #72A430; }
 
 .bg-color.blue-potion {
-  background-color: #2a98c6; }
+  background-color: #0071a9; }
 
 .bg-color.orange-potion {
   background-color: #f57e20; }
@@ -2468,9 +2468,9 @@ ____  _   _ _____ _____ ___  _   _ ____
   padding: 20px 25px;
   border: 2px solid #72A430;
   border-radius: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
   background: #72A430;
   color: #FFFFFF;
@@ -2493,12 +2493,12 @@ ____  _   _ _____ _____ ___  _   _ ____
       border: 2px solid #49691f;
       background: #49691f; }
   .btn.btn-secondary, .button.btn-secondary, button.btn-secondary {
-    border: 2px solid #0071a9;
-    background: #0071a9;
+    border: 2px solid #2C3621;
+    background: #2C3621;
     color: #FFFFFF; }
     .btn.btn-secondary:hover, .button.btn-secondary:hover, button.btn-secondary:hover {
-      border: 2px solid #003e5d;
-      background: #003e5d; }
+      border: 2px solid #050704;
+      background: #050704; }
   .btn.btn-red, .button.btn-red, button.btn-red {
     border: 2px solid #E90000;
     background: #E90000;
@@ -2514,12 +2514,12 @@ ____  _   _ _____ _____ ___  _   _ ____
       border: 2px solid #49691f;
       background: #49691f; }
   .btn.btn-blue, .button.btn-blue, button.btn-blue {
-    border: 2px solid #2a98c6;
-    background: #2a98c6;
+    border: 2px solid #0071a9;
+    background: #0071a9;
     color: #FFFFFF; }
     .btn.btn-blue:hover, .button.btn-blue:hover, button.btn-blue:hover {
-      border: 2px solid #1d6887;
-      background: #1d6887; }
+      border: 2px solid #003e5d;
+      background: #003e5d; }
   .btn.btn-orange, .button.btn-orange, button.btn-orange {
     border: 2px solid #f57e20;
     background: #f57e20;
@@ -2565,21 +2565,21 @@ ____  _   _ _____ _____ ___  _   _ ____
     padding: .75rem 1.25rem;
     font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px; }
   .btn.btn-mini, .button.btn-mini, button.btn-mini {
     min-width: 0;
     padding: 7px 14px;
     font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px; }
   .btn.btn-small, .button.btn-small, button.btn-small {
     min-width: 0;
     padding: 15px 15px;
     font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px; }
   .btn.btn-full, .button.btn-full, button.btn-full {
     display: block;
@@ -2606,12 +2606,12 @@ ____  _   _ _____ _____ ___  _   _ ____
     background-color: #49691f;
     color: #FFFFFF; }
   .btn-outline.btn-secondary {
-    border: 2px solid #0071a9;
-    color: #0071a9;
+    border: 2px solid #2C3621;
+    color: #2C3621;
     background-color: #FFFFFF; }
     .btn-outline.btn-secondary:hover {
-      border: 2px solid #003e5d;
-      background-color: #003e5d;
+      border: 2px solid #050704;
+      background-color: #050704;
       color: #FFFFFF; }
   .btn-outline.btn-red {
     border: 2px solid #E90000;
@@ -2630,12 +2630,12 @@ ____  _   _ _____ _____ ___  _   _ ____
       background-color: #49691f;
       color: #FFFFFF; }
   .btn-outline.btn-blue {
-    border: 2px solid #2a98c6;
-    color: #2a98c6;
+    border: 2px solid #0071a9;
+    color: #0071a9;
     background-color: #FFFFFF; }
     .btn-outline.btn-blue:hover {
-      border: 2px solid #1d6887;
-      background-color: #1d6887;
+      border: 2px solid #003e5d;
+      background-color: #003e5d;
       color: #FFFFFF; }
   .btn-outline.btn-orange {
     border: 2px solid #f57e20;
@@ -2699,18 +2699,36 @@ _   _ _____    _    ____  _____ ____  ____
 |_| |_|_____/_/   \_\____/|_____|_| \_\____/
 
 */
-#navbarBrand img {
-  margin: 5px 0px 5px 0px; }
+.navbar-brand-icon img {
+  position: relative;
+  left: 15px;
+  max-width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.navbar-brand-icon span {
+  position: relative;
+  top: -25px;
+  left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: white; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .navbar-brand-icon span {
+      display: none; } }
+  @media only screen and (max-width: 40em) {
+    .navbar-brand-icon span {
+      display: none; } }
 
 #header {
-  width: 100%;
-  border-bottom: 4px solid #FFFFFF;
-  box-shadow: 3px 3px 5px #36454F;
-  margin-bottom: 0;
-  border-radius: 0px;
-  background-color: #72A430;
-  background-size: cover;
   position: fixed;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 0;
+  background-color: #72A430;
   z-index: 1000000 !important;
   /*768px --> 992px*/
   /*0px --> 768px*/ }
@@ -2723,8 +2741,7 @@ _   _ _____    _    ____  _____ ____  ____
   padding: 0px;
   margin-bottom: 0px;
   border-radius: 0px;
-  background-size: cover;
-  background-image: url(../images/navRowShading_LightGreen_topography.png);
+  background-color: #2C3621;
   z-index: 1000; }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -2834,8 +2851,6 @@ _   _ _____    _    ____  _____ ____  ____
     padding: 10px 15px 10px 25px;
     border-bottom: 1px solid #BBBBBB;
     color: #72A430 !important; }
-  #navbarBrand img {
-    margin: 5px 0px 5px 20px; }
   .navbar-collapse {
     float: none; }
   .dropdown li a, .dropdown-menu li a, .dropdown-menu li a {
@@ -2896,6 +2911,16 @@ h2.main-subheader {
   color: #2a4b7d;
   line-height: 135%; }
 
+.bold-subtitle {
+  float: left;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 135%;
+  text-transform: uppercase; }
+
 /*
 _____ ___   ___ _____ _____ ____  ____
 |  ___/ _ \ / _ \_   _| ____|  _ \/ ___|
@@ -2903,282 +2928,221 @@ _____ ___   ___ _____ _____ ____  ____
 |_|   \___/ \___/ |_| |_____|_| \_\____/
 
 */
-.footer_middle {
-  display: block;
-  padding: 0px;
-  text-align: left; }
-  .footer_middle hr {
-    left: 0;
-    width: 90%; }
-
-#twitter-widget-0 {
-  background-color: transparent !important;
-  max-width: 200px !important; }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    #twitter-widget-0 {
-      width: 500px !important; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    #twitter-widget-0 {
-      width: 500px !important; } }
-
-.e-entry-title {
-  font-size: .9em !important;
-  line-height: 1.3em !important; }
-
-.social-links {
-  padding-left: 0;
-  list-style: none;
-  font-size: 15px;
-  margin: 0;
-  width: 100%; }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .social-links {
-      padding: 20px 0px 0px 20px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .social-links {
-      padding: 0px 0px 0px 20px; } }
-
-.twitterFooter {
-  width: 100%;
-  margin: 20px 0px 0px 0px; }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .twitterFooter {
-      padding: 0px 0px 30px 20px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .twitterFooter {
-      margin: 20px 0px 30px 20px; } }
-
-.social-links > li {
-  display: inline-block; }
-
-.social-links > li a {
-  color: #7f8c8d;
-  width: 30px;
-  height: 30px;
-  display: block;
-  text-align: center;
-  line-height: 30px;
-  border: 1px solid #bdc3c7; }
-
-.social-links > li a.facebook:hover {
-  background-color: #2f5a9a;
-  color: #fff !important;
-  border-color: #2f5a9a; }
-
-.social-links > li a.twitter:hover {
-  background-color: #3abdd1;
-  color: #fff !important;
-  border-color: #3abdd1; }
-
-.social-links > li a.linkedin:hover {
-  background-color: #197BB4;
-  color: #fff !important;
-  border-color: #197BB4; }
-
-.social-links > li a.flickr:hover {
-  background-color: #E30061;
-  color: #fff !important;
-  border-color: #E30061; }
-
-.footerSection {
-  overflow: hidden;
+.footer {
   position: relative;
-  padding-bottom: 20px; }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .footerSection {
-      padding: 0px 0px 3px 20px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .footerSection {
-      padding: 0px 0px 20px 20px; } }
-  .footerSection h5 {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    padding: 20px 0px 10px 0px;
-    font-weight: 300;
-    color: #000000 !important;
-    overflow: hidden;
-    font-size: 1.1em !important;
-    line-height: 25px;
-    width: 80%;
-    border-bottom: 1px solid #72A430; }
-
-.footerSection2 {
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 20px; }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .footerSection2 {
-      padding: 0px 0px 20px 30px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .footerSection2 {
-      padding: 0px 0px 20px 30px; } }
-  .footerSection2 h5 {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    padding: 20px 0px 10px 0px;
-    font-weight: 300;
-    color: #000000 !important;
-    overflow: hidden;
-    font-size: 1.1em !important;
-    line-height: 25px;
-    width: 80%;
-    border-bottom: 1px solid #72A430; }
-  .footerSection2 img {
-    max-width: 400px; }
-
-#footer-1 {
-  width: 100%;
-  background-color: #E4DCCD;
-  float: left;
-  clear: right;
   bottom: 0;
-  position: relative;
-  padding: 20px 0px 20px 0px;
-  border-top: 2px solid #BBBBBB; }
-
-#footer-1 .widget {
-  padding: 20px 0; }
-
-.widget-list {
-  padding-left: 0;
-  list-style: none;
-  margin-bottom: 0;
-  padding: 20px;
-  border: 2px solid #ecf0f1;
-  border-radius: 3px; }
-
-#footer-1 .widget-list {
-  padding: 0;
-  border: 0; }
-
-.widget-list > li {
-  padding: 5px 0;
-  border-bottom: 1px solid #ecf0f1; }
-
-#footer-1 .widget-list > li:last-child {
-  padding-bottom: 0; }
-
-#footer-1 .widget-list > li:first-child {
-  padding-top: 0; }
-
-.widget-list > li:last-child {
-  border-bottom: 0; }
-
-#footer-1 .widget-list > li {
-  border-color: rgba(255, 255, 255, 0.1); }
-
-.widget-list > li:before {
-  font-family: 'FontAwesome';
-  content: "\f105";
-  margin-right: 15px;
-  margin-left: 10px;
-  font-size: 14px; }
-
-#footer-2 {
+  float: left;
   width: 100%;
-  background-color: #000000;
+  padding: 30px 0px 30px 0px;
+  background-color: rgba(228, 220, 205, 0.9);
+  background-image: url("../img/topography-bg.jpg");
+  background-repeat: repeat; }
+  .footer .footer--left, .footer .footer--middle, .footer .footer--right {
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 12px #555;
+    border: 3px solid #FFFFFF; }
+    .footer .footer--left h4, .footer .footer--middle h4, .footer .footer--right h4 {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 15px 0 15px 15px;
+      font-family: "Roboto", sans-serif;
+      font-size: 19px;
+      font-weight: 300;
+      color: #FFFFFF;
+      background-color: #554D3F;
+      text-align: left; }
+      .footer .footer--left h4 i, .footer .footer--middle h4 i, .footer .footer--right h4 i {
+        margin-right: 4px; }
+  .footer .footer--left {
+    float: left;
+    width: calc(33.333% - 60px);
+    margin-left: 30px;
+    margin-right: 30px; }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .footer .footer--left {
+        width: calc(33.333% - 30px);
+        margin-left: 15px;
+        margin-right: 15px; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .footer .footer--left {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px; } }
+    @media only screen and (max-width: 40em) {
+      .footer .footer--left {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px; } }
+    .footer .footer--left #twitter-widget-0 {
+      background-color: transparent !important; }
+    .footer .footer--left .e-entry-title {
+      font-size: .9em !important;
+      line-height: 1.3em !important; }
+    .footer .footer--left .twitter-footer {
+      width: 100%;
+      margin: 20px 0 0 0;
+      padding-left: 15px;
+      padding-right: 25px; }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        .footer .footer--left .twitter-footer {
+          padding: 0 0 30px 20px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .footer .footer--left .twitter-footer {
+          margin: 20px 0 30px 20px; } }
+    .footer .footer--left .social-links > li {
+      display: inline-block; }
+    .footer .footer--left .social-links > li a {
+      color: #7f8c8d;
+      width: 30px;
+      height: 30px;
+      display: block;
+      text-align: center;
+      line-height: 30px;
+      border: 1px solid #bdc3c7; }
+    .footer .footer--left .social-links > li a.facebook:hover {
+      background-color: #2f5a9a;
+      color: #fff !important;
+      border-color: #2f5a9a; }
+    .footer .footer--left .social-links > li a.twitter:hover {
+      background-color: #3abdd1;
+      color: #fff !important;
+      border-color: #3abdd1; }
+    .footer .footer--left .social-links > li a.linkedin:hover {
+      background-color: #197BB4;
+      color: #fff !important;
+      border-color: #197BB4; }
+    .footer .footer--left .social-links > li a.flickr:hover {
+      background-color: #E30061;
+      color: #fff !important;
+      border-color: #E30061; }
+  .footer .footer--middle {
+    float: left;
+    width: calc(33.333% - 60px);
+    margin-left: 30px;
+    margin-right: 30px; }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .footer .footer--middle {
+        width: calc(33.333% - 30px);
+        margin-left: 15px;
+        margin-right: 15px; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .footer .footer--middle {
+        width: calc(100% - 30px);
+        margin: 25px 15px 0 15px; } }
+    @media only screen and (max-width: 40em) {
+      .footer .footer--middle {
+        width: calc(100% - 30px);
+        margin: 25px 15px 0 15px; } }
+    .footer .footer--middle .footer-events {
+      display: block;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px; }
+      .footer .footer--middle .footer-events a {
+        color: #72A430 !important; }
+      .footer .footer--middle .footer-events h2 {
+        display: block;
+        width: 100%;
+        margin: 0 0 3px 0;
+        padding: 0 0 3px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000; }
+      .footer .footer--middle .footer-events h3 {
+        width: 80%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: .90em;
+        line-height: 1.3em;
+        font-style: italic;
+        color: #72A430;
+        padding: 5px 0px 0px 20px; }
+      .footer .footer--middle .footer-events p {
+        width: 90%;
+        font-family: "Raleway", sans-serif;
+        font-size: .8em;
+        line-height: 1.4em;
+        color: #000000;
+        padding: 0px 0px 10px 0px; }
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+          .footer .footer--middle .footer-events p {
+            padding: 0px 0px 3px 30px; } }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .footer .footer--middle .footer-events p {
+            padding: 0px 0px 3px 30px; } }
+      .footer .footer--middle .footer-events span {
+        width: 90%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        color: #49691f !important;
+        padding: 10px 0px 20px 20px; }
+      .footer .footer--middle .footer-events img {
+        display: none; }
+  .footer .footer--right {
+    float: left;
+    width: calc(33.333% - 60px);
+    margin-left: 30px;
+    margin-right: 30px; }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .footer .footer--right {
+        width: calc(33.333% - 30px);
+        margin-left: 15px;
+        margin-right: 15px; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .footer .footer--right {
+        width: calc(100% - 30px);
+        margin: 25px 15px 0 15px; } }
+    @media only screen and (max-width: 40em) {
+      .footer .footer--right {
+        width: calc(100% - 30px);
+        margin: 25px 15px 0 15px; } }
+    .footer .footer--right .flickr-photos {
+      padding: 0 10px 10px 10px; }
+    .footer .footer--right .widget-list > li:before {
+      font-family: 'FontAwesome';
+      content: "\f105";
+      margin-right: 15px;
+      margin-left: 10px;
+      font-size: 14px; }
+    .footer .footer--right .quick-flickr-item {
+      margin: 10px 0px 0px 0px; }
+    .footer .footer--right .quick-flickr-item img {
+      float: left;
+      clear: right;
+      width: 60px;
+      height: 60px;
+      margin: 5px 5px 5px 5px; }
+
+.footer-alt {
   float: left;
-  clear: right;
-  bottom: 0;
-  padding: 25px 0; }
+  width: 100%;
+  padding: 15px 0;
+  background-color: #000000; }
+  .footer-alt .footer-alt--left {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #DEDEDE; }
+  .footer-alt .footer-alt--right {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+    text-align: right; }
+    .footer-alt .footer-alt--right a {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: #FFFFFF; }
+      .footer-alt .footer-alt--right a:hover {
+        color: #72A430;
+        cursor: pointer; }
 
-.footer-links-wrapper {
-  font-weight: 100 !important;
-  font-size: 1em;
-  color: #72A430 !important;
-  text-align: right; }
-
-.footer-links-wrapper li > a {
-  font-weight: 100 !important;
-  font-size: 1em;
-  color: #72A430 !important; }
-
-.footer-links-wrapper li > a:hover {
-  font-weight: 100 !important;
-  font-size: 1em;
-  color: #FFFFFF !important; }
-
-.footer-info-wrapper {
-  float: left;
-  clear: right;
-  font-weight: 100 !important;
-  font-size: .8em;
-  color: #BBBBBB; }
-
-.footer-links-wrapper {
-  float: left;
-  clear: right;
-  font-weight: 100 !important;
-  font-size: .8em;
-  color: #72A430 !important;
-  text-align: right; }
-
-.quick-flickr-item {
-  margin: 10px 0px 0px 0px; }
-
-.quick-flickr-item img {
-  float: left;
-  clear: right;
-  width: 60px;
-  height: 60px;
-  margin: 5px 5px 5px 5px; }
-
-.footerPostContainer {
-  display: block;
-  width: 100%; }
-  .footerPostContainer a {
-    color: #72A430 !important; }
-  .footerPostContainer h2 {
-    display: block;
-    width: 90%;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 100;
-    font-size: 1.1em;
-    line-height: 1.3em;
-    color: #000000 !important;
-    padding: 0px 0px 3px 0px;
-    margin: 0px 0px 3px 0px; }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .footerPostContainer h2 {
-        padding: 0px 0px 3px 30px; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .footerPostContainer h2 {
-        padding: 0px 0px 3px 30px; } }
-  .footerPostContainer h3 {
-    width: 80%;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: .90em;
-    line-height: 1.3em;
-    font-style: italic;
-    color: #72A430;
-    padding: 5px 0px 0px 20px; }
-  .footerPostContainer p {
-    width: 90%;
-    font-family: "Raleway", sans-serif;
-    font-size: .8em;
-    line-height: 1.4em;
-    color: #000000;
-    padding: 0px 0px 10px 0px; }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .footerPostContainer p {
-        padding: 0px 0px 3px 30px; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .footerPostContainer p {
-        padding: 0px 0px 3px 30px; } }
-  .footerPostContainer span {
-    width: 90%;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    color: #49691f !important;
-    padding: 10px 0px 20px 20px; }
-  .footerPostContainer img {
-    display: none; }
-
-/* -------------------------- END FOOTER AREA -------------------------- */
 /*
  _        _ __   _____  _   _ _____
 | |      / \\ \ / / _ \| | | |_   _|
@@ -3188,13 +3152,10 @@ _____ ___   ___ _____ _____ ____  ____
 
 */
 .body-container {
-  float: left;
-  width: 100%;
   position: relative;
-  top: 80px;
   float: left;
   width: 100%;
-  padding-bottom: 50px; }
+  padding-bottom: 20px; }
   .body-container .body-container--inner {
     width: 100%;
     margin-left: auto;
@@ -3202,26 +3163,35 @@ _____ ___   ___ _____ _____ ____  ____
     .body-container .body-container--inner .bci--left {
       float: left;
       width: calc(100% - 450px);
-      padding: 50px 80px 50px 80px; }
+      padding: 10px 80px 50px 80px; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .body-container .body-container--inner .bci--left {
+          padding: 10px 55px 30px 55px; } }
       @media only screen and (min-width: 40.063em) and (max-width: 64em) {
         .body-container .body-container--inner .bci--left {
-          float: left;
           width: 100%;
           padding: 30px 40px 30px 40px; } }
       @media only screen and (max-width: 40em) {
         .body-container .body-container--inner .bci--left {
-          float: left;
           width: 100%;
-          padding: 20px 40px 30px 40px; } }
+          padding: 30px 20px 30px 20px; } }
+      .body-container .body-container--inner .bci--left h1.main-title {
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 140%; }
       .body-container .body-container--inner .bci--left h2.main-subtitle {
         float: left;
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 5px;
         font-family: "Roboto", sans-serif;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 145%; }
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 140%;
+        color: #72A430; }
       .body-container .body-container--inner .bci--left .body-content-text {
         float: left;
         width: 100%;
@@ -3266,13 +3236,15 @@ _____ ___   ___ _____ _____ ____  ____
     .body-container .body-container--inner .bci--right {
       float: left;
       width: 450px;
-      padding: 30px 50px 40px 0; }
+      padding: 30px 40px 40px 40px; }
       @media only screen and (min-width: 40.063em) and (max-width: 64em) {
         .body-container .body-container--inner .bci--right {
-          display: none; } }
+          width: 100%;
+          padding: 20px 40px 40px 40px; } }
       @media only screen and (max-width: 40em) {
         .body-container .body-container--inner .bci--right {
-          display: none; } }
+          width: 100%;
+          padding: 20px 20px 40px 20px; } }
 
 /*
 ____  ____   ___      _ _____ ____ _____   ____  ____   ___  _____ ___ _     _____ ____
@@ -3285,16 +3257,19 @@ ____  ____   ___      _ _____ ____ _____   ____  ____   ___  _____ ___ _     ___
   float: left;
   width: 100%;
   margin-top: 20px; }
+  .project-profiles-container h4 {
+    margin-top: 0; }
   .project-profiles-container .project-profiles {
     float: left;
-    width: 100%; }
+    width: 100%;
+    list-style-type: none; }
     .project-profiles-container .project-profiles li {
       float: left;
       width: 100%;
       margin-top: 20px; }
       .project-profiles-container .project-profiles li a {
         float: left;
-        width: 100%; }
+        width: auto; }
         .project-profiles-container .project-profiles li a img {
           float: left;
           width: 100%;
@@ -3393,7 +3368,7 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       width: 100%;
       padding: 12px 25px 12px 10px;
       font-size: 16px;
-      color: #0071a9;
+      color: #2C3621;
       line-height: 140%; }
       @media only screen and (min-width: 64.063em) and (max-width: 90em) {
         .sidebar-container ul.subnav-sidebar li a {
@@ -3429,50 +3404,39 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
 |____/ \___/ \____|___/_/   \_\_____| |_|  |_|_____|____/___/_/   \_\ |_| \_/_/   \_\_/
 
 */
-.sm-nav {
+.social-media-nav {
   position: absolute;
-  top: initial;
+  top: 467px;
   right: 0;
-  bottom: 0;
   float: right;
-  width: 200px;
-  background: #fff;
-  border-top: 2px solid #72A430;
-  border-left: 2px solid #72A430; }
-  .sm-nav li {
-    float: left;
-    width: 25%;
-    text-align: center; }
-    .sm-nav li a {
+  font-size: 14px;
+  transition: all 200ms cubic-bezier(0.4, 1.84, 0.94, 0.95);
+  border: 0 !important;
+  background-color: #FFFFFF;
+  z-index: 10000; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .social-media-nav {
+      top: 467px; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .social-media-nav {
+      top: 296px; } }
+  @media only screen and (max-width: 40em) {
+    .social-media-nav {
+      top: 296px; } }
+  .social-media-nav li {
+    float: left; }
+    .social-media-nav li a {
       float: left;
-      width: 100%;
-      padding: 10px 20px;
-      background-color: #FFFFFF; }
-      .sm-nav li a i {
-        padding-left: 0 !important;
+      padding: 8px 12px;
+      color: #72A430; }
+      .social-media-nav li a i {
+        padding-left: 0;
         font-size: 18px;
         color: #72A430; }
-      .sm-nav li a:hover {
+      .social-media-nav li a:hover {
         background-color: #72A430; }
-        .sm-nav li a:hover i {
+        .social-media-nav li a:hover i {
           color: #FFFFFF; }
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    .sm-nav {
-      top: 0px;
-      float: left;
-      width: 100%;
-      background: #e4dccd;
-      border-top: none;
-      border-left: none; } }
-  @media only screen and (max-width: 40em) {
-    .sm-nav {
-      top: 0px;
-      float: left;
-      width: 100%;
-      background: #e4dccd;
-      border-top: none;
-      border-left: none;
-      border-bottom: 1px solid #72A430; } }
 
 /*
  ____  _   _ ____  _____ ____  _   _ _____ ____   ___
@@ -3481,13 +3445,37 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
 |____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/
 
 */
+/* ############# NEW HOME PAGE CSS ############# */
+.contact-us-btn {
+  position: absolute;
+  top: 0;
+  right: -233px;
+  float: right;
+  padding-right: 150px !important;
+  font-size: 14px;
+  transition: all 200ms cubic-bezier(0.4, 1.84, 0.94, 0.95);
+  border: 0 !important;
+  z-index: 10000; }
+  .contact-us-btn:hover {
+    right: -120px;
+    border: 0 !important;
+    background-color: #80b836 !important;
+    cursor: pointer; }
+  .contact-us-btn.services {
+    top: 0; }
+  .contact-us-btn.markets {
+    top: 0; }
+  .contact-us-btn i {
+    margin-right: 12px;
+    font-size: 17px; }
+
 .superhero {
   position: relative;
   float: left;
   width: 100%;
-  min-height: 400px;
-  margin-top: 40px;
-  background-size: cover; }
+  margin-top: 72px;
+  background-size: cover;
+  z-index: 1; }
   .superhero .superhero-title {
     position: absolute;
     bottom: 35%;
@@ -4067,12 +4055,12 @@ _   _  ___  __  __ _____
   /*0px --> 767px*/ }
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     .homePageBodyContainer {
-      padding: 30px 120px 0px 120px;
+      padding: 90px 120px 0px 120px;
       margin: 0px 0px 40px 0px; } }
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     .homePageBodyContainer {
       width: 100% !important;
-      padding: 50px 60px 30px 60px;
+      padding: 80px 60px 30px 60px;
       margin: 0px 0px 40px 0px; } }
   @media only screen and (max-width: 40em) {
     .homePageBodyContainer {
@@ -4288,7 +4276,44 @@ _   _  ___  __  __ _____
   font-style: italic; }
 
 /* -------------------------- END HOME PAGE -------------------------- */
-/* ############# NEW HOME PAGE CSS ############# */
+.home-page-container .hpc--inner p {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 135%;
+  letter-spacing: normal; }
+
+.home-page-container .hpc--inner .hpc-page--inner-left {
+  border-right: 1px solid #DEDEDE; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .home-page-container .hpc--inner .hpc-page--inner-left {
+      border-right: 0px;
+      border-top: 1px solid #DEDEDE; } }
+  @media only screen and (max-width: 40em) {
+    .home-page-container .hpc--inner .hpc-page--inner-left {
+      border-right: 0px;
+      border-top: 1px solid #DEDEDE; } }
+  .home-page-container .hpc--inner .hpc-page--inner-left .main-subtitle {
+    margin-bottom: 5px; }
+
+.home-page-container .hpc--inner .hpc-page--inner-right .sidebar-contact-box {
+  float: left;
+  width: 100%; }
+  .home-page-container .hpc--inner .hpc-page--inner-right .sidebar-contact-box span {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    font-style: italic;
+    color: #000000; }
+
 /*
 _     ___   ____    _  _____ ___ ___  _   _ ____
 | |   / _ \ / ___|  / \|_   _|_ _/ _ \| \ | / ___|
@@ -5133,9 +5158,16 @@ __  __    _    ____  _  _______ _____ ____
 
 /* ############# NEW MARKETS PAGE CSS ############# */
 .markets-page-container {
+  position: relative;
   float: left;
   width: 100%;
   padding-top: 50px; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .markets-page-container {
+      padding-top: 30px; } }
+  @media only screen and (max-width: 40em) {
+    .markets-page-container {
+      padding-top: 30px; } }
   .markets-page-container h3 {
     float: left;
     width: 100%;
@@ -5149,14 +5181,26 @@ __  __    _    ____  _  _______ _____ ____
   .markets-page-container .mpc--header {
     float: left;
     width: 100%;
-    height: 275px; }
+    height: 450px; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .markets-page-container .mpc--header {
+        height: 300px; } }
+    @media only screen and (max-width: 40em) {
+      .markets-page-container .mpc--header {
+        height: 300px; } }
     .markets-page-container .mpc--header .main-header-title {
       position: relative;
       float: left;
       width: 100%;
-      height: 275px;
+      height: 450px;
       background-size: cover;
       background-repeat: no-repeat; }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .markets-page-container .mpc--header .main-header-title {
+          height: 300px; } }
+      @media only screen and (max-width: 40em) {
+        .markets-page-container .mpc--header .main-header-title {
+          height: 300px; } }
       .markets-page-container .mpc--header .main-header-title:before {
         content: "";
         position: absolute;
@@ -5164,15 +5208,32 @@ __  __    _    ____  _  _______ _____ ____
         right: 0;
         bottom: 0;
         left: 0;
-        padding-top: 125px;
-        padding-left: 100px;
+        padding-top: 325px;
+        padding-left: 85px;
         font-size: 50px;
         font-weight: 300;
-        text-shadow: 1px 1px 1px #000000;
+        text-shadow: 2px 2px 2px #000000;
         text-align: left;
         line-height: 145%;
         color: #FFFFFF;
         z-index: 2; }
+        @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+          .markets-page-container .mpc--header .main-header-title:before {
+            padding-left: 50px; } }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .markets-page-container .mpc--header .main-header-title:before {
+            padding-top: 225px;
+            padding-left: 35px;
+            font-size: 40px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px #000000; } }
+        @media only screen and (max-width: 40em) {
+          .markets-page-container .mpc--header .main-header-title:before {
+            padding-top: 190px;
+            padding-left: 35px;
+            font-size: 30px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px #000000; } }
       .markets-page-container .mpc--header .main-header-title:after {
         content: "XXXX";
         position: absolute;
@@ -5180,47 +5241,90 @@ __  __    _    ____  _  _______ _____ ____
         right: 0;
         bottom: 0;
         left: 0;
-        height: 275px;
-        background-color: rgba(114, 164, 48, 0.3);
+        height: 450px;
         z-index: 1; }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .markets-page-container .mpc--header .main-header-title:after {
+            height: 300px; } }
+        @media only screen and (max-width: 40em) {
+          .markets-page-container .mpc--header .main-header-title:after {
+            height: 300px; } }
       .markets-page-container .mpc--header .main-header-title.windpower {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.windpower:before {
           content: "Wind Power"; }
       .markets-page-container .mpc--header .main-header-title.solarpower {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.solarpower:before {
           content: "Solar Power"; }
       .markets-page-container .mpc--header .main-header-title.internationalmarkets {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.internationalmarkets:before {
           content: "International Markets"; }
       .markets-page-container .mpc--header .main-header-title.powerlines {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.powerlines:before {
           content: "Power Lines"; }
       .markets-page-container .mpc--header .main-header-title.oilandgas {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.oilandgas:before {
           content: "Oil and Gas"; }
       .markets-page-container .mpc--header .main-header-title.pipelines {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.pipelines:before {
           content: "Pipelines"; }
       .markets-page-container .mpc--header .main-header-title.mining {
-        background-position: 0px -60px; }
+        background-position: 0 0; }
         .markets-page-container .mpc--header .main-header-title.mining:before {
           content: "Mining"; }
+      .markets-page-container .mpc--header .main-header-title.armycorpsofengineers {
+        background-position: 0 0; }
+        .markets-page-container .mpc--header .main-header-title.armycorpsofengineers:before {
+          content: "Army Corps of Engineers"; }
+      .markets-page-container .mpc--header .main-header-title.government {
+        background-position: 0 0; }
+        .markets-page-container .mpc--header .main-header-title.government:before {
+          content: "Government"; }
+      .markets-page-container .mpc--header .main-header-title.usfws {
+        background-position: 0 0; }
+        .markets-page-container .mpc--header .main-header-title.usfws:before {
+          content: "USFWS"; }
+      .markets-page-container .mpc--header .main-header-title.blm {
+        background-position: 0 0; }
+        .markets-page-container .mpc--header .main-header-title.blm:before {
+          content: "Bureau of Land Management"; }
+      .markets-page-container .mpc--header .main-header-title.usforestservice {
+        background-position: 0 0; }
+        .markets-page-container .mpc--header .main-header-title.usforestservice:before {
+          content: "US Forest Service"; }
   .markets-page-container .mpc--inner {
-    max-width: 1600px;
+    max-width: 2540px;
     margin-left: auto;
     margin-right: auto; }
     .markets-page-container .mpc--inner .mpc--inner-left {
       float: left;
-      width: calc(100% - 325px);
-      padding: 40px 50px 50px 0; }
+      width: calc(100% - 450px);
+      padding: 40px 90px 50px 90px; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .markets-page-container .mpc--inner .mpc--inner-left {
+          width: calc(100% - 390px);
+          padding: 40px 40px 50px 40px; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .markets-page-container .mpc--inner .mpc--inner-left {
+          width: 100%;
+          padding: 30px 40px 50px 40px; } }
+      @media only screen and (max-width: 40em) {
+        .markets-page-container .mpc--inner .mpc--inner-left {
+          width: 100%;
+          padding: 10px 40px 20px 40px; } }
       .markets-page-container .mpc--inner .mpc--inner-left img.services-feature-image {
         float: right; }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .markets-page-container .mpc--inner .mpc--inner-left img.services-feature-image {
+            display: none; } }
+        @media only screen and (max-width: 40em) {
+          .markets-page-container .mpc--inner .mpc--inner-left img.services-feature-image {
+            display: none; } }
       .markets-page-container .mpc--inner .mpc--inner-left h1.main-title {
         float: left;
         width: 100%;
@@ -5243,15 +5347,44 @@ __  __    _    ____  _  _______ _____ ____
           float: left;
           width: calc(100% - 250px);
           padding-right: 25px; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--left {
+              width: calc(100% - 225px); } }
+          @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+            .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--left {
+              width: 100%;
+              padding-right: 0; } }
+          @media only screen and (max-width: 40em) {
+            .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--left {
+              width: 100%;
+              padding-right: 0; } }
         .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right {
           float: left;
           width: 250px;
           text-align: center;
           padding-left: 25px; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right {
+              width: 225px; } }
+          @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+            .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right {
+              width: 100%; } }
+          @media only screen and (max-width: 40em) {
+            .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right {
+              width: 100%; } }
           .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right img {
             float: left;
             width: 100%;
-            max-width: 180px; }
+            max-width: 250px; }
+            @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+              .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right img {
+                margin-top: 30px; } }
+            @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+              .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right img {
+                margin-top: 30px; } }
+            @media only screen and (max-width: 40em) {
+              .markets-page-container .mpc--inner .mpc--inner-left .body-content .bc--right img {
+                margin-top: 30px; } }
       .markets-page-container .mpc--inner .mpc--inner-left p {
         float: left;
         width: 100%;
@@ -5260,6 +5393,15 @@ __  __    _    ____  _  _______ _____ ____
         font-size: 16px;
         color: #000000;
         line-height: 140%; }
+      .markets-page-container .mpc--inner .mpc--inner-left h2.subtitle {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000; }
       .markets-page-container .mpc--inner .mpc--inner-left h3.body-text-header {
         font-family: "Open Sans", sans-serif;
         font-size: 18px;
@@ -5269,7 +5411,7 @@ __  __    _    ____  _  _______ _____ ____
         float: left;
         width: 100%;
         margin-top: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         font-family: "Roboto", sans-serif;
         font-size: 20px;
         font-weight: 600;
@@ -5303,9 +5445,39 @@ __  __    _    ____  _  _______ _____ ____
         color: #000000; }
     .markets-page-container .mpc--inner .mpc--inner-right {
       float: left;
-      width: 325px;
-      padding-top: 20px;
-      padding-bottom: 40px; }
+      width: 450px;
+      padding: 50px 90px 40px 0; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .markets-page-container .mpc--inner .mpc--inner-right {
+          width: 390px;
+          padding: 50px 40px 40px 20px; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .markets-page-container .mpc--inner .mpc--inner-right {
+          width: 100%;
+          padding: 0px 30px 40px 30px; } }
+      @media only screen and (max-width: 40em) {
+        .markets-page-container .mpc--inner .mpc--inner-right {
+          width: 100%;
+          padding: 20px 30px 40px 30px; } }
+      .markets-page-container .mpc--inner .mpc--inner-right .representative-clients {
+        float: left;
+        width: 100%;
+        margin-top: 25px; }
+        .markets-page-container .mpc--inner .mpc--inner-right .representative-clients ul {
+          float: left;
+          width: 100%;
+          max-height: 500px;
+          padding: 15px 20px;
+          border: 2px solid #72A430;
+          overflow-y: auto; }
+          .markets-page-container .mpc--inner .mpc--inner-right .representative-clients ul li {
+            float: left;
+            width: 100%;
+            margin-top: 5px;
+            line-height: 140%; }
+      .markets-page-container .mpc--inner .mpc--inner-right .markets-subnav-container h3 {
+        margin-top: 0;
+        padding-top: 0; }
       .markets-page-container .mpc--inner .mpc--inner-right .markets-subnav-container ul.markets-subnav-sidebar {
         float: left;
         width: 100%; }
@@ -5885,7 +6057,7 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
       width: 25%;
       margin: 5px;
       padding: 10px 15px;
-      border: 1px solid #0071a9; }
+      border: 1px solid #2C3621; }
       .professional-profiles-container .professional-profiles-list li.profile-tile:hover {
         background-color: #72A430;
         cursor: pointer; }
@@ -5916,7 +6088,7 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
             margin-bottom: 4px;
             font-family: "Roboto", sans-serif;
             font-size: 18px;
-            color: #0071a9; }
+            color: #2C3621; }
           .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--middle h3 {
             float: left;
             width: 100%;
@@ -5963,7 +6135,7 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
       font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
-      color: #0071a9; }
+      color: #2C3621; }
       .professional-profile-detail .ppd--header .btn-back-to-team:hover {
         color: #72A430; }
         .professional-profile-detail .ppd--header .btn-back-to-team:hover i {
@@ -6894,18 +7066,17 @@ a:hover {
   position: relative;
   padding-bottom: 20px; }
   .services-title h5 {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
     position: relative;
-    padding: 20px 0px 10px 0px;
-    font-weight: 300;
-    color: #72A430 !important;
-    overflow: hidden;
-    font-size: 1.2rem !important;
-    line-height: 25px;
     width: 90%;
+    padding: 20px 0px 10px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #72A430 !important;
+    line-height: 25px;
     border-bottom: 1px solid #72A430;
-    font-weight: 500; }
+    overflow: hidden; }
 
 .box {
   position: relative;
@@ -7664,13 +7835,20 @@ a:hover {
 /* -------- END SERVICES SIDEBAR CSS --------- */
 /* ############# NEW SERVICES PAGE CSS ############# */
 .services-page-container {
+  position: relative;
   float: left;
   width: 100%;
   padding-top: 50px; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .services-page-container {
+      padding-top: 30px; } }
+  @media only screen and (max-width: 40em) {
+    .services-page-container {
+      padding-top: 30px; } }
   .services-page-container h3 {
     float: left;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
     font-size: 22px;
@@ -7680,14 +7858,26 @@ a:hover {
   .services-page-container .spc--header {
     float: left;
     width: 100%;
-    height: 275px; }
+    height: 450px; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .services-page-container .spc--header {
+        height: 300px; } }
+    @media only screen and (max-width: 40em) {
+      .services-page-container .spc--header {
+        height: 300px; } }
     .services-page-container .spc--header .main-header-title {
       position: relative;
       float: left;
       width: 100%;
-      height: 275px;
+      height: 450px;
       background-size: cover;
       background-repeat: no-repeat; }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .services-page-container .spc--header .main-header-title {
+          height: 300px; } }
+      @media only screen and (max-width: 40em) {
+        .services-page-container .spc--header .main-header-title {
+          height: 300px; } }
       .services-page-container .spc--header .main-header-title:before {
         content: "";
         position: absolute;
@@ -7695,15 +7885,32 @@ a:hover {
         right: 0;
         bottom: 0;
         left: 0;
-        padding-top: 125px;
-        padding-left: 100px;
+        padding-top: 325px;
+        padding-left: 85px;
         font-size: 50px;
         font-weight: 300;
-        text-shadow: 1px 1px 1px #000000;
+        text-shadow: 2px 2px 2px #000000;
         text-align: left;
         line-height: 145%;
         color: #FFFFFF;
         z-index: 2; }
+        @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+          .services-page-container .spc--header .main-header-title:before {
+            padding-left: 50px; } }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .services-page-container .spc--header .main-header-title:before {
+            padding-top: 225px;
+            padding-left: 35px;
+            font-size: 40px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px #000000; } }
+        @media only screen and (max-width: 40em) {
+          .services-page-container .spc--header .main-header-title:before {
+            padding-top: 190px;
+            padding-left: 35px;
+            font-size: 30px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px #000000; } }
       .services-page-container .spc--header .main-header-title:after {
         content: "XXXX";
         position: absolute;
@@ -7711,59 +7918,129 @@ a:hover {
         right: 0;
         bottom: 0;
         left: 0;
-        height: 275px;
-        background-color: rgba(114, 164, 48, 0.3);
+        height: 450px;
         z-index: 1; }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .services-page-container .spc--header .main-header-title:after {
+            height: 300px; } }
+        @media only screen and (max-width: 40em) {
+          .services-page-container .spc--header .main-header-title:after {
+            height: 300px; } }
       .services-page-container .spc--header .main-header-title.aerialsurveyandtelemetry {
-        background-position: 0px -60px; }
+        background-position: -900px 0px; }
         .services-page-container .spc--header .main-header-title.aerialsurveyandtelemetry:before {
           content: "Aerial Survey & Telemetry"; }
+        .services-page-container .spc--header .main-header-title.aerialsurveyandtelemetry:after {
+          background-color: rgba(14, 82, 132, 0.55); }
       .services-page-container .spc--header .main-header-title.avianspeciesresearchandmanagement {
-        background-position: 0px -260px; }
+        background-position: -500px 0; }
         .services-page-container .spc--header .main-header-title.avianspeciesresearchandmanagement:before {
           content: "Avian Species Research & Management"; }
       .services-page-container .spc--header .main-header-title.avianbatprotectionplans {
-        background-position: 0px -260px; }
+        background-position: 0px 0px; }
         .services-page-container .spc--header .main-header-title.avianbatprotectionplans:before {
           content: "Avian Protection Plans"; }
+        .services-page-container .spc--header .main-header-title.avianbatprotectionplans:after {
+          background-color: rgba(114, 164, 48, 0.6); }
+      .services-page-container .spc--header .main-header-title.batresearchandmonitoring {
+        background-position: 0px 0px; }
+        .services-page-container .spc--header .main-header-title.batresearchandmonitoring:before {
+          content: "Bat Research & Monitoring"; }
+        .services-page-container .spc--header .main-header-title.batresearchandmonitoring:after {
+          background-color: rgba(153, 124, 100, 0.4); }
       .services-page-container .spc--header .main-header-title.biggameresearchandmonitoring {
-        background-position: 0px -100px; }
+        background-position: 0px 0px; }
         .services-page-container .spc--header .main-header-title.biggameresearchandmonitoring:before {
           content: "Big Game Research & Monitoring"; }
       .services-page-container .spc--header .main-header-title.conservationandmitigationbanking:before {
         content: "Conservation and Mitigation Banking"; }
+      .services-page-container .spc--header .main-header-title.conservationandmitigationbanking:after {
+        background-color: rgba(114, 164, 48, 0.6); }
       .services-page-container .spc--header .main-header-title.deserttortoisemanagement {
-        background-position: 0px 20px; }
+        background-position: -300px 20px; }
         .services-page-container .spc--header .main-header-title.deserttortoisemanagement:before {
           content: "Desert Tortoise Management"; }
+        .services-page-container .spc--header .main-header-title.deserttortoisemanagement:after {
+          background-color: rgba(153, 124, 100, 0.5); }
+      .services-page-container .spc--header .main-header-title.eagleservices {
+        background-position: 0px 20px; }
+        .services-page-container .spc--header .main-header-title.eagleservices:before {
+          content: "Eagle Services"; }
+        .services-page-container .spc--header .main-header-title.eagleservices:after {
+          background-color: rgba(255, 255, 255, 0.4); }
       .services-page-container .spc--header .main-header-title.gis {
-        background-position: 0px -250px; }
+        background-position: 0px 0px; }
         .services-page-container .spc--header .main-header-title.gis:before {
           content: "Geographic Information Systems"; }
+        .services-page-container .spc--header .main-header-title.gis:after {
+          background-color: rgba(14, 82, 132, 0.6);
+          background: -webkit-linear-gradient(#2CEBFB, #010E1A);
+          /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#2CEBFB, #010E1A);
+          /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#2CEBFB, #010E1A);
+          /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#2CEBFB, #010E1A);
+          /* Standard syntax */
+          opacity: .6; }
       .services-page-container .spc--header .main-header-title.habitatconservationplans:before {
         content: "Habitat Conservation Plans"; }
       .services-page-container .spc--header .main-header-title.nepa:before {
         content: "National Environmental Policy Act"; }
       .services-page-container .spc--header .main-header-title.nrda:before {
         content: "Natural Resource Damage Assessments"; }
+      .services-page-container .spc--header .main-header-title.prariegrouseresearchandmonitoring:before {
+        content: "Prarie Grouse Research & Management"; }
+      .services-page-container .spc--header .main-header-title.prariegrouseresearchandmonitoring:after {
+        background-color: rgba(14, 82, 132, 0.5); }
       .services-page-container .spc--header .main-header-title.statisticsandbiometrics:before {
         content: "Statistics & Biometrics"; }
+      .services-page-container .spc--header .main-header-title.statisticsandbiometrics:after {
+        background-color: rgba(114, 164, 48, 0.5); }
       .services-page-container .spc--header .main-header-title.vegetationsamplingandplantsurveys:before {
         content: "Vegetation Sampling & Plant Surveys"; }
+      .services-page-container .spc--header .main-header-title.vegetationsamplingandplantsurveys:after {
+        background-color: rgba(114, 164, 48, 0.4); }
       .services-page-container .spc--header .main-header-title.wetlandsandwaterquality:before {
         content: "Wetlands & Water Quality"; }
+      .services-page-container .spc--header .main-header-title.wetlandsandwaterquality:after {
+        background-color: rgba(1, 58, 100, 0.6); }
+      .services-page-container .spc--header .main-header-title.whoopingcranemanagement:before {
+        content: "Whooping Crane Management"; }
+      .services-page-container .spc--header .main-header-title.whoopingcranemanagement:after {
+        background-color: rgba(114, 164, 48, 0.4); }
       .services-page-container .spc--header .main-header-title.wildliferesearchandmanagement:before {
         content: "Wildlife Research & Management"; }
+      .services-page-container .spc--header .main-header-title.wildliferesearchandmanagement:after {
+        background-color: rgba(44, 54, 33, 0.4); }
   .services-page-container .spc--inner {
-    max-width: 1600px;
+    max-width: 2540px;
     margin-left: auto;
     margin-right: auto; }
     .services-page-container .spc--inner .spc--inner-left {
       float: left;
-      width: calc(100% - 325px);
-      padding: 40px 50px 50px 0; }
+      width: calc(100% - 450px);
+      padding: 40px 90px 50px 90px; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .services-page-container .spc--inner .spc--inner-left {
+          width: calc(100% - 390px);
+          padding: 40px 40px 50px 40px; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .services-page-container .spc--inner .spc--inner-left {
+          width: 100%;
+          padding: 30px 40px 50px 40px; } }
+      @media only screen and (max-width: 40em) {
+        .services-page-container .spc--inner .spc--inner-left {
+          width: 100%;
+          padding: 10px 40px 50px 40px; } }
       .services-page-container .spc--inner .spc--inner-left img.services-feature-image {
         float: right; }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .services-page-container .spc--inner .spc--inner-left img.services-feature-image {
+            display: none; } }
+        @media only screen and (max-width: 40em) {
+          .services-page-container .spc--inner .spc--inner-left img.services-feature-image {
+            display: none; } }
       .services-page-container .spc--inner .spc--inner-left h1.main-title {
         float: left;
         width: 100%;
@@ -7774,6 +8051,15 @@ a:hover {
         font-size: 28px;
         font-weight: 300;
         line-height: 145%; }
+        @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+          .services-page-container .spc--inner .spc--inner-left h1.main-title {
+            margin-top: 0; } }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .services-page-container .spc--inner .spc--inner-left h1.main-title {
+            margin-top: 0; } }
+        @media only screen and (max-width: 40em) {
+          .services-page-container .spc--inner .spc--inner-left h1.main-title {
+            margin-top: 0; } }
       .services-page-container .spc--inner .spc--inner-left .body-content {
         float: left;
         width: 100%;
@@ -7786,15 +8072,38 @@ a:hover {
           float: left;
           width: calc(100% - 250px);
           padding-right: 25px; }
+          .services-page-container .spc--inner .spc--inner-left .body-content .bc--left .image-inside-body-content-two {
+            margin-top: 20px; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .services-page-container .spc--inner .spc--inner-left .body-content .bc--left {
+              width: calc(100% - 225px); } }
+          @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+            .services-page-container .spc--inner .spc--inner-left .body-content .bc--left {
+              width: 100%;
+              padding-right: 0; } }
+          @media only screen and (max-width: 40em) {
+            .services-page-container .spc--inner .spc--inner-left .body-content .bc--left {
+              width: 100%;
+              padding-right: 0; } }
         .services-page-container .spc--inner .spc--inner-left .body-content .bc--right {
           float: left;
           width: 250px;
           text-align: center;
           padding-left: 25px; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .services-page-container .spc--inner .spc--inner-left .body-content .bc--right {
+              width: 225px; } }
+          @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+            .services-page-container .spc--inner .spc--inner-left .body-content .bc--right {
+              width: 100%; } }
+          @media only screen and (max-width: 40em) {
+            .services-page-container .spc--inner .spc--inner-left .body-content .bc--right {
+              width: 100%; } }
           .services-page-container .spc--inner .spc--inner-left .body-content .bc--right img {
             float: left;
             width: 100%;
-            max-width: 180px; }
+            max-width: 250px;
+            margin-top: 30px; }
       .services-page-container .spc--inner .spc--inner-left p {
         float: left;
         width: 100%;
@@ -7803,11 +8112,20 @@ a:hover {
         font-size: 16px;
         color: #000000;
         line-height: 140%; }
+      .services-page-container .spc--inner .spc--inner-left h2.subtitle {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000; }
       .services-page-container .spc--inner .spc--inner-left h4.title-of-list {
         float: left;
         width: 100%;
         margin-top: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         font-family: "Roboto", sans-serif;
         font-size: 20px;
         font-weight: 600;
@@ -7829,6 +8147,15 @@ a:hover {
           .services-page-container .spc--inner .spc--inner-left ul li a {
             float: left;
             width: 100%; }
+        .services-page-container .spc--inner .spc--inner-left ul.project-profiles {
+          padding-left: 0;
+          list-style-type: none; }
+          .services-page-container .spc--inner .spc--inner-left ul.project-profiles li {
+            float: left;
+            margin-left: 0;
+            margin-right: 25px; }
+            .services-page-container .spc--inner .spc--inner-left ul.project-profiles li a {
+              width: auto; }
       .services-page-container .spc--inner .spc--inner-left h2.subtitle {
         float: left;
         width: 100%;
@@ -7841,47 +8168,80 @@ a:hover {
         color: #000000; }
     .services-page-container .spc--inner .spc--inner-right {
       float: left;
-      width: 325px;
-      padding-top: 20px;
-      padding-bottom: 40px; }
-      .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news {
+      width: 450px;
+      padding: 30px 90px 40px 0; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .services-page-container .spc--inner .spc--inner-right {
+          width: 390px;
+          padding: 30px 40px 40px 20px; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .services-page-container .spc--inner .spc--inner-right {
+          width: 100%;
+          padding: 0px 30px 40px 30px; } }
+      @media only screen and (max-width: 40em) {
+        .services-page-container .spc--inner .spc--inner-right {
+          width: 100%;
+          padding: 50px 30px 40px 30px; } }
+      .services-page-container .spc--inner .spc--inner-right .recent-news-container {
         float: left;
         width: 100%;
-        max-height: 325px;
-        padding: 20px 25px;
-        background-color: #EEEEEE;
-        overflow-y: auto; }
-        .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul {
+        margin-top: 15px; }
+        .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news {
           float: left;
-          width: 100%; }
-          .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li {
+          width: 100%;
+          max-height: 325px;
+          padding: 20px 25px;
+          background-color: #EEEEEE;
+          overflow-y: auto; }
+          @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+            .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news {
+              max-height: none; } }
+          @media only screen and (max-width: 40em) {
+            .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news {
+              max-height: none; } }
+          .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul {
             float: left;
             width: 100%; }
-            .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li h4 {
+            .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li {
               float: left;
-              width: 100%;
-              margin-bottom: 10px;
-              font-family: "Roboto", sans-serif;
-              font-size: 17px;
-              font-weight: 600; }
-            .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li p {
-              float: left;
-              width: 100%;
-              font-size: 14px;
-              line-height: 145%; }
-              .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li p a {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 15px;
-                font-style: italic;
-                color: #72A430;
+              width: 100%; }
+              .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li h4 {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+                font-family: "Roboto", sans-serif;
+                font-size: 17px;
+                font-weight: 600; }
+              .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li p {
+                float: left;
+                width: 100%;
+                font-size: 14px;
+                line-height: 145%; }
+                .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li p a {
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 15px;
+                  font-style: italic;
+                  color: #72A430;
+                  word-break: break-word; }
+              .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li a {
+                color: black;
+                font-size: 20px;
                 word-break: break-word; }
-            .services-page-container .spc--inner .spc--inner-right .recent-news-container .spc--right-news ul li a {
-              color: black;
-              font-size: 20px;
-              word-break: break-word; }
       .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar {
         float: left;
         width: 100%; }
+        .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar .ssc--subnav {
+          float: left;
+          width: calc(100% - 20px);
+          height: auto;
+          margin-left: 20px; }
+          .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar .ssc--subnav li {
+            float: left;
+            width: 100%; }
+            .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar .ssc--subnav li a {
+              float: left;
+              width: 100%;
+              font-size: 15px; }
         .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.aerialsurveyandtelemetry .aerialsurveyandtelemetry-link a {
           background-color: #72A430;
           color: #FFFFFF; }
@@ -7889,9 +8249,26 @@ a:hover {
             color: #FFFFFF; }
         .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianspeciesresearchandmanagement .avianspeciesresearchandmanagement-link a {
           background-color: #72A430;
-          color: #FFFFFF; }
+          color: #FFFFFF;
+          font-family: "Roboto", sans-serif; }
           .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianspeciesresearchandmanagement .avianspeciesresearchandmanagement-link a:before {
             color: #FFFFFF; }
+        .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianspeciesresearchandmanagement .avianspeciesresearchandmanagement-link .ssc--subnav li i {
+          color: #000000; }
+        .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianspeciesresearchandmanagement .avianspeciesresearchandmanagement-link .ssc--subnav li a {
+          background-color: #FFFFFF;
+          color: #000000; }
+          .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianspeciesresearchandmanagement .avianspeciesresearchandmanagement-link .ssc--subnav li a:hover {
+            float: left;
+            width: 100%;
+            padding: 8px 15px 8px 5px;
+            font-family: "Roboto", sans-serif;
+            background-color: #DEDEDE;
+            color: #000000;
+            border-bottom: 1px solid #dedede;
+            line-height: 140%; }
+          .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianspeciesresearchandmanagement .avianspeciesresearchandmanagement-link .ssc--subnav li a:before {
+            color: #000000; }
         .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.avianbatprotectionplans .avianbatprotectionplans-link a {
           background-color: #72A430;
           color: #FFFFFF; }
@@ -7917,6 +8294,11 @@ a:hover {
           color: #FFFFFF; }
           .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.deserttortoisemanagement .deserttortoisemanagement-link a:before {
             color: #FFFFFF; }
+        .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.eagleservices .ssc--subnav li a.eagle-services {
+          background-color: #72A430;
+          color: #FFFFFF; }
+          .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.eagleservices .ssc--subnav li a.eagle-services:before {
+            color: #FFFFFF; }
         .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.gis .gis-link a {
           background-color: #72A430;
           color: #FFFFFF; }
@@ -7937,6 +8319,11 @@ a:hover {
           color: #FFFFFF; }
           .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.nrda .nrda-link a:before {
             color: #FFFFFF; }
+        .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.prariegrouseresearchandmonitoring .ssc--subnav li a.prariegrouseresearchandmonitoring {
+          background-color: #72A430;
+          color: #FFFFFF; }
+          .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.prariegrouseresearchandmonitoring .ssc--subnav li a.prariegrouseresearchandmonitoring:before {
+            color: #FFFFFF; }
         .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.statisticsandbiometrics .statisticsandbiometrics-link a {
           background-color: #72A430;
           color: #FFFFFF; }
@@ -7951,6 +8338,11 @@ a:hover {
           background-color: #72A430;
           color: #FFFFFF; }
           .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.wetlandsandwaterquality .wetlandsandwaterquality-link a:before {
+            color: #FFFFFF; }
+        .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.whoopingcranemanagement .ssc--subnav li a.whoopingcranemanagement {
+          background-color: #72A430;
+          color: #FFFFFF; }
+          .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.whoopingcranemanagement .ssc--subnav li a.whoopingcranemanagement:before {
             color: #FFFFFF; }
         .services-page-container .spc--inner .spc--inner-right .services-subnav-container .services-subnav-sidebar.wildliferesearchandmanagement .wildliferesearchandmanagement-link a {
           background-color: #72A430;
@@ -8088,7 +8480,7 @@ __ _) || |/ ___ \|  _| |  _|
       width: calc(20% - 10px);
       margin: 5px;
       padding: 10px 15px;
-      border: 1px solid #0071a9; }
+      border: 1px solid #2C3621; }
       .staff-landing-container .staff-landing-list .staff-tile .staff-tile--left {
         float: left;
         width: 55px; }
@@ -8105,7 +8497,7 @@ __ _) || |/ ___ \|  _| |  _|
         margin-bottom: 4px;
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        color: #0071a9; }
+        color: #2C3621; }
       .staff-landing-container .staff-landing-list .staff-tile h3 {
         float: left;
         width: 100%;
@@ -8526,22 +8918,36 @@ i {
       height: 110px !important; } }
 
 .cycloneslider-caption {
-  margin: -50px 0px 0px 0px !important;
-  text-align: right !important; }
+  margin: -60px 0px 0px 0px !important;
+  text-align: right !important;
+  background-color: transparent !important;
+  opacity: 1 !important; }
 
 .cycloneslider-caption-title {
   display: none; }
 
-.cycloneslider-caption-description {
-  text-align: right !important;
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 1.4em !important;
-  font-weight: lighter !important;
-  text-transform: uppercase !important;
-  background-color: #000000 !important;
+.cycloneslider-next, .cycloneslider-prev {
+  padding: 5px 10px !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
   color: #FFFFFF !important;
-  padding: 5px 20px 5px 50px !important;
-  font-family: "Open Sans", sans-serif !important;
+  text-transform: uppercase !important;
+  background: #2C3621 !important;
+  border-radius: 0 !important;
+  transition: all 150ms ease-in-out; }
+  .cycloneslider-next:hover, .cycloneslider-prev:hover {
+    background: #72A430 !important; }
+
+.cycloneslider-caption-description {
+  padding: 5px 20px 35px 50px !important;
+  text-align: left !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+  text-shadow: 2px 2px 2px #000;
+  background-color: transparent !important;
+  color: #FFFFFF !important;
   /*0px --> 767px*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .cycloneslider-caption-description {

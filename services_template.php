@@ -16,6 +16,13 @@ Template Name: Services Page __TEMPLATE__
 		</header>
 	<?php endif; ?>
 
+	<a href="http://www.west-inc.com/locations/" class="contact-us-btn services btn btn-primary btn-small">
+	  <i class="fa fa-phone"></i>
+	  <span>Contact Us</span>
+	</a>
+
+	<?php get_template_part('partials/sm-nav'); ?>
+
 	<section class="spc--inner">
 		<article class="spc--inner-left">
 			<?php if( get_field('page_title') ): ?>
@@ -57,20 +64,20 @@ Template Name: Services Page __TEMPLATE__
 
 						<?php endif; ?>
 						<!-- END CODE SNIPPET THAT LOOPS THROUGH BULLED CONTENT FROM THE WORDPRESS UI -->
-						
-					</div>
-			<?php endif; ?>
 
-			<?php if( get_field('image_inside_body_content') ): ?>
-				<div class="bc--right">
-					<img class='services-feature-image' src='<?php the_field( 'image_inside_body_content' ); ?>' alt="<?php the_field( 'page_title' ); 	?> Image">
-				</div>
-			<?php endif; ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if( get_field('image_inside_body_content') ): ?>
+					<div class="bc--right">
+						<img class='services-feature-image' src='<?php the_field( 'image_inside_body_content' ); ?>' alt="<?php the_field( 'page_title' ); 	?> Image">
+					</div>
+				<?php endif; ?>
 			</section>
 
-			<?php if( get_field('page_subtitle') ): ?>
+			<?php if( get_field('subtitle') ): ?>
 				<h2 class="subtitle">
-					<?php the_field( 'page_subtitle' ); ?>
+					<?php the_field( 'subtitle' ); ?>
 				</h2>
 			<?php endif; ?>
 
@@ -80,60 +87,63 @@ Template Name: Services Page __TEMPLATE__
 				</p>
 			<?php endif; ?>
 
+			<?php if( get_field('image_inside_body_content_two') ): ?>
+				<img class='image-inside-body-content-two' src='<?php the_field( 'image_inside_body_content_two' ); ?>' alt="<?php the_field( 'page_title' ); 	?> Image">
+			<?php endif; ?>
+
+			<?php if( have_rows('project_profiles') ): ?>
+				<div class="project-profiles-container">
+					<h4 class="title-of-list">Project Profiles</h4>
+
+					<ul class="project-profiles">
+						<?php while( have_rows('project_profiles') ): the_row();
+								// vars
+								$image = get_sub_field('project_profile_image');
+							?>
+
+							<li class="detail">
+								<?php if( $image ): ?>
+									<a href="<?php echo $image; ?>" target="_blank">
+										<img class="services-feature-image" src="<?php echo $image; ?>" alt="<?php echo $image; ?>" />
+									</a>
+								<?php endif; ?>
+									<?php echo $content; ?>
+							</li>
+							<?php endwhile; ?>
+						</ul>
+					</div>
+				<?php endif; ?>
+
 		</article>
 
 		<aside class="spc--inner-right">
-			<?php if( get_field('news') ): ?>
-				<section class="recent-news-container">
-					<h3>Recent News</h3>
-
-					<section class="spc--right-news">
-						<?php
-							$post_objects = get_field('news');
-
-							if( $post_objects ): ?>
-							    <ul>
-							    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-							        <?php setup_postdata($post); ?>
-							        <li>
-												<h4><?php the_field( 'news_title' ); ?></h4>
-												<p><?php the_field('news_content'); ?></p>
-							        </li>
-							    <?php endforeach; ?>
-							    </ul>
-							    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-							<?php endif;
-
-							/*
-							*  Loop through post objects (assuming this is a multi-select field) ( don't setup postdata )
-							*  Using this method, the $post object is never changed so all functions need a seccond parameter of the post ID in question.
-							*/
-
-							$post_objects = get_field('news');
-
-							if( $post_objects ): ?>
-							    <ul>
-							    <?php foreach( $post_objects as $post_object): ?>
-							        <li>
-												<h4><a href="<?php the_permalink(); ?>"><?php the_field( 'news_title' ); ?></a></h4>
-												<p><?php the_field('news_content'); ?></[span]>
-							        </li>
-							    <?php endforeach; ?>
-							    </ul>
-							<?php endif;
-						?>
-					</section>
-				</section>
-			<?php endif; ?>
-
 			<section class="services-subnav-container">
 				<h3>Our Services</h3>
 
 				<ul class="services-subnav-sidebar <?php the_field( 'subnav_active_label' ); ?>">
 					<li class="avianspeciesresearchandmanagement-link">
-						<a href="http://www.west-inc.com/avian-species-research-and-management/">
+						<a href="http://www.west-inc.com/avian-species-research-and-management/" class="ssc-subnav-toggle">
 							Avian Species Research & Management
 						</a>
+						<ul class="ssc--subnav">
+							<li>
+								<a href="http://www.west-inc.com/services/avian-species-research-and-management/eagle-services/" class="eagle-services">
+									Eagle Services
+								</a>
+							</li>
+
+							<li>
+								<a href="http://www.west-inc.com/services/avian-species-research-and-management/prairie-grouse-research-and-management/" class="prariegrouseresearchandmonitoring">
+									Prairie Grouse Research & Management
+								</a>
+							</li>
+
+							<li>
+								<a href="http://www.west-inc.com/services/avian-species-research-and-management/whooping-crane-management/" class="whoopingcranemanagement">
+									Whooping Crane Management
+								</a>
+							</li>
+						</ul>
 					</li>
 
 					<li class="aerialsurveyandtelemetry-link">
@@ -215,42 +225,53 @@ Template Name: Services Page __TEMPLATE__
 							Wildlife Research & Management
 						</a>
 					</li>
-
 				</ul>
-			</section>
 
+				<?php if( get_field('news') ): ?>
+					<section class="recent-news-container">
+						<h3>Recent News</h3>
 
-			<?php if( have_rows('project_profiles') ): ?>
-				<div class="project-profiles-container">
-					<h3>Project Profiles</h3>
+						<section class="spc--right-news">
+							<?php
+								$post_objects = get_field('news');
 
-						<ul class="project-profiles">
-							<?php while( have_rows('project_profiles') ): the_row();
+								if( $post_objects ): ?>
+										<ul>
+										<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+												<?php setup_postdata($post); ?>
+												<li>
+													<h4><?php the_field( 'news_title' ); ?></h4>
+													<p><?php the_field('news_content'); ?></p>
+												</li>
+										<?php endforeach; ?>
+										</ul>
+										<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+								<?php endif;
 
-								// vars
-								$image = get_sub_field('project_profile_image');
+								/*
+								*  Loop through post objects (assuming this is a multi-select field) ( don't setup postdata )
+								*  Using this method, the $post object is never changed so all functions need a seccond parameter of the post ID in question.
+								*/
 
-								?>
+								$post_objects = get_field('news');
 
-								<li class="detail">
-
-									<?php if( $image ): ?>
-										<a href="<?php echo $image; ?>" target="_blank">
-											<img class="services-feature-image" src="<?php echo $image; ?>" alt="<?php echo $image; ?>" />
-										</a>
-									<?php endif; ?>
-
-								    <?php echo $content; ?>
-
-								</li>
-								<?php endwhile; ?>
-							</ul>
-						</div>
+								if( $post_objects ): ?>
+										<ul>
+										<?php foreach( $post_objects as $post_object): ?>
+												<li>
+													<h4><a href="<?php the_permalink(); ?>"><?php the_field( 'news_title' ); ?></a></h4>
+													<p><?php the_field('news_content'); ?></[span]>
+												</li>
+										<?php endforeach; ?>
+										</ul>
+								<?php endif; ?>
+						</section>
+					</section>
 				<?php endif; ?>
 
+			</section>
 		</aside>
 	</section>
-
 </section>
 
 <?php get_footer(); ?>

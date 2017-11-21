@@ -11,25 +11,16 @@
 					<h5>Social Media</h5>
 				</div><!-- /.subpage-title -->
 
-				<ul class="social-links">
-
-					<li><a class="facebook" href="https://www.facebook.com/pages/Western-EcoSystems-Technology-WEST-Inc/125604770807646"><i class="fa fa-facebook"></i></a></li>
-					<li><a class="twitter" href="https://twitter.com/WestEcoSystems"><i class="fa fa-twitter"></i></a></li>
-					<li><a class="linkedin" href="http://www.linkedin.com/company/1458419"><i class="fa fa-linkedin"></i></a></li>
-					<li><a class="flickr" href="http://www.flickr.com/photos/58961170@N06/"><i class="fa fa-flickr"></i></a></li>
-					
-				</ul><!-- /.social-links -->
-
 				<div class="twitterFooter">
 
-					<?php if ( dynamic_sidebar('footer_left') ) : ?>					
+					<?php if ( dynamic_sidebar('footer_left') ) : ?>
 
-					<?php else: ?>				
-						<h5>Twitter</h5>	
+					<?php else: ?>
+						<h5>Twitter</h5>
 						<p>Install TwiGet Twitter Plugin and place widget to go here</p>
 					<?php endif; ?>
 
-				</div>	
+				</div>
 
 
 			</div><!-- /.col-md-3 -->
@@ -62,7 +53,7 @@
                 	<hr style="border: 1px solid #dddddd;">
 
 	            <?php endwhile; else: ?>
-	                
+
 	                <p>There are no Events to show</p>
 
 	            <?php endif; ?>
@@ -75,14 +66,14 @@
 
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footer_right">
 				<div class="footerSection">
-					<?php if ( dynamic_sidebar('footer_right') ) : ?>					
+					<?php if ( dynamic_sidebar('footer_right') ) : ?>
 
-					<?php else: ?>					
+					<?php else: ?>
 						<p>There are no Flickr images to show</p>
 					<?php endif; ?>
 				</div><!-- /.subpage-title -->
-				
-			</div><!-- /.col-md-3 footer_right -->	
+
+			</div><!-- /.col-md-3 footer_right -->
 
 		</div><!-- /.row -->
 
@@ -135,8 +126,8 @@
     });
     $(window).smartresize(function () {
         $container.isotope('reLayout');
-    });  
- });    
+    });
+ });
 
 </script>
 

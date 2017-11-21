@@ -8,13 +8,10 @@
 */
 
 .body-container {
-  float: left;
-  width: 100%;
   position: relative;
-  top: 80px;
   float: left;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 
   .body-container--inner {
     width: 100%;
@@ -24,33 +21,41 @@
     .bci--left {
       float: left;
       width: calc(100% - 450px);
-      padding: 50px 80px 50px 80px;
+      padding: 10px 80px 50px 80px;
+
+      @include mq(lg) {
+        padding: 10px 55px 30px 55px;
+      }
 
       @include mq(md) {
-        float: left;
         width: 100%;
         padding: 30px 40px 30px 40px;
       }
 
       @include mq(sm) {
-        float: left;
         width: 100%;
-        padding: 20px 40px 30px 40px;
+        padding: 30px 20px 30px 20px;
       }
 
       h1.main-title {
-
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+        font-family: $font-primary;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 140%;
       }
 
       h2.main-subtitle {
         float: left;
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 5px;
         font-family: $font-primary;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 145%;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 140%;
+        color: $color-primary;
       }
 
       .body-content-text {
@@ -114,14 +119,16 @@
     .bci--right {
       float: left;
       width: 450px;
-      padding: 30px 50px 40px 0;
+      padding: 30px 40px 40px 40px;
 
       @include mq(md) {
-        display: none;
+        width: 100%;
+        padding: 20px 40px 40px 40px;
       }
 
       @include mq(sm) {
-        display: none;
+        width: 100%;
+        padding: 20px 20px 40px 20px;
       }
     }
   }

@@ -12,9 +12,14 @@ ____  ____   ___      _ _____ ____ _____   ____  ____   ___  _____ ___ _     ___
   width: 100%;
   margin-top: 20px;
 
+  h4 {
+    margin-top: 0;
+  }
+
   .project-profiles {
     float: left;
     width: 100%;
+    list-style-type: none;
 
     li {
       float: left;
@@ -23,7 +28,7 @@ ____  ____   ___      _ _____ ____ _____   ____  ____   ___  _____ ___ _     ___
 
       a {
         float: left;
-        width: 100%;
+        width: auto;
 
         img {
           float: left;

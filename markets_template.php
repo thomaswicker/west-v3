@@ -16,6 +16,13 @@ Template Name: Markets Page __TEMPLATE__
 		</header>
 	<?php endif; ?>
 
+	<a href="http://www.west-inc.com/locations/" class="contact-us-btn markets btn btn-primary btn-small">
+		<i class="fa fa-phone"></i>
+		<span>Contact Us</span>
+	</a>
+
+	<?php get_template_part('partials/sm-nav'); ?>
+
 	<section class="mpc--inner">
 		<article class="mpc--inner-left">
 			<?php if( get_field('page_title') ): ?>
@@ -197,6 +204,75 @@ Template Name: Markets Page __TEMPLATE__
 						</li>
 					</ul>
 				<?php endif; ?>
+			</section>
+
+			<section class="representative-clients">
+				<h3>Representative Clients</h3>
+
+				<ul class="list-of-clients">
+					<li>Alameda County, CA</li>
+					<li>Bonneville Power Administration</li>
+					<li>Bureau of Indian Affairs</li>
+					<li>Bureau of Land Management</li>
+					<li>City of Buffalo, WY</li>
+					<li>City of Casper, WY</li>
+					<li>City of Cheyenne, WY</li>
+					<li>City of Fort Collins, CO</li>
+					<li>City of Greeley, CO</li>
+					<li>City of Laramie, WY</li>
+					<li>Atlantic Richfield CNFER – Minister of Natural Resources</li>
+					<li>Denali National Park</li>
+					<li>Department of Energy – Casper, WY</li>
+					<li>Dickinson County Baseline</li>
+					<li>F.E. Warren AFB</li>
+					<li>Federal Highway Administration</li>
+					<li>Government of the Northwest Territories</li>
+					<li>Kittitas County, Washington</li>
+					<li>Klickitat County, Washington</li>
+					<li>Missouri Department of Conservation</li>
+					<li>Montana Department of Transportation</li>
+					<li>National Marine Fisheries Serv.</li>
+					<li>National Renewable Energy Laboratory</li>
+					<li>Nebraska Department of Roads</li>
+					<li>NOAA</li>
+					<li>North Cascades National Park</li>
+					<li>Northeast Fisheries Science Center</li>
+					<li>Office of Surface Mining</li>
+					<li>Olympic National Park</li>
+					<li>Oregon Department of Fish &amp; Wildlife</li>
+					<li>Province of British Columbia</li>
+					<li>Province of Saskatchewan</li>
+					<li>Rock River School–Albany County School Dist. #1</li>
+					<li>Rocky Mtn. Forest &amp; Range Experiment.Station</li>
+					<li>State of Alaska</li>
+					<li>State of Colorado</li>
+					<li>State of Idaho</li>
+					<li>State of Michigan</li>
+					<li>State of Missouri</li>
+					<li>State of Montana</li>
+					<li>State of Nebraska</li>
+					<li>State of Wyoming</li>
+					<li>Town of Torrington, WY</li>
+					<li>U.S. Army Corp of Engineers</li>
+					<li>U.S. Bureau of Reclamation</li>
+					<li>U.S. Dept of Agriculture</li>
+					<li>U.S. Dept of Commerce – Juneau</li>
+					<li>U.S. Dept of Interior Office of Surface Mining</li>
+					<li>U.S. Dept of Justice – Envir. Enforcement Sect</li>
+					<li>U.S. Environmental Protection Agency</li>
+					<li>U.S. Fish &amp; Wildlife Service</li>
+					<li>U.S. Forest Service</li>
+					<li>U.S. National Biological Service</li>
+					<li>U.S. National Park Service</li>
+					<li>U.S.G.S. Biological Resources Division</li>
+					<li>Umatilla National Forest</li>
+					<li>UMESC – Upper Midwest Envir. Sciences Center</li>
+					<li>Wrangell St. Elias National Park</li>
+					<li>Wyoming Department of Environmental Quality</li>
+					<li>Wyoming Department of Transportation</li>
+					<li>Wyoming Game and Fish Department</li>
+					<li>Wyoming Water Development Commission</li>
+				</ul>
 			</section>
 
 			<?php if( have_rows('project_profiles') ): ?>

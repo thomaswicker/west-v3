@@ -164,24 +164,41 @@ i {
 }
 
 .cycloneslider-caption {
-  margin: -50px 0px 0px 0px !important;
+  margin: -60px 0px 0px 0px !important;
   text-align: right !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
 }
 
 .cycloneslider-caption-title {
   display: none;
 }
 
-.cycloneslider-caption-description {
-  text-align: right !important;
-  font-family: $opensans !important;
-  font-size: 1.4em !important;
-  font-weight: lighter !important;
-  text-transform: uppercase !important;
-  background-color: $black !important;
+.cycloneslider-next, .cycloneslider-prev {
+  padding: 5px 10px !important;
+  font-family: $font-primary !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
   color: $white !important;
-  padding: 5px 20px 5px 50px!important;
-  font-family: $opensans !important;
+  text-transform: uppercase !important;
+  background: $color-secondary !important;
+  border-radius: 0 !important;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background: $color-primary !important;
+  }
+}
+
+.cycloneslider-caption-description {
+  padding: 5px 20px 35px 50px!important;
+  text-align: left !important;
+  font-family: $font-primary !important;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+  text-shadow: 2px 2px 2px #000;
+  background-color: transparent !important;
+  color: $white !important;
 
   /*0px --> 767px*/
   @media only screen and (min-width:0px) and (max-width:767px) {

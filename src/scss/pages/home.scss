@@ -18,14 +18,14 @@ _   _  ___  __  __ _____
 
   /*993px --> 1200px*/
   @include mq(lg) {
-    padding: 30px 120px 0px 120px;
+    padding: 90px 120px 0px 120px;
     margin: 0px 0px 40px 0px;
   }
 
   /*768px --> 992px*/
   @include mq(md) {
     width: 100% !important;
-    padding: 50px 60px 30px 60px;
+    padding: 80px 60px 30px 60px;
     margin: 0px 0px 40px 0px;
   }
 
@@ -321,30 +321,77 @@ _   _  ___  __  __ _____
 
 
 
-/* ############# NEW HOME PAGE CSS ############# */
 
 .home-page-container {
   .hpc--header {
 
   }
 
-  .hpc--inner-left {
-    .main-title {
-
+  .hpc--inner {
+    p {
+      float: left;
+      width: 100%;
+      margin: $unit-xs 0;
+      @include font($font: $font-secondary, $style: normal, $size: 17px, $weight: $font-weight-normal);
+      line-height: 135%;
+      letter-spacing: normal;
     }
 
-    .bc--left {
-      h4.title-of-list {
+    .hpc-page--inner-left {
+      border-right: 1px solid #DEDEDE;
 
+      @include mq(md) {
+        border-right: 0px;
+        border-top: 1px solid #DEDEDE;
+      }
+
+      @include mq(sm) {
+        border-right: 0px;
+        border-top: 1px solid #DEDEDE;
+      }
+
+      .main-subtitle {
+        margin-bottom: 5px;
       }
     }
 
-    .bc--right {
+    .hpc-page--inner-right {
+      .sidebar-contact-box {
+        float: left;
+        width: 100%;
 
+        span {
+          float: left;
+          width: 100%;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          font-family: $font-primary;
+          font-weight: 500;
+          font-size: 17px;
+          font-style: italic;
+          color: $black;
+
+          // @include mq(xl) {
+          //   color: red;
+          // }
+          //
+          // @include mq(lg) {
+          //   color: blue;
+          // }
+          //
+          // @include mq(md) {
+          //   color: orange;
+          // }
+          //
+          // @include mq(sm) {
+          //   color: teal;
+          // }
+        }
+
+        a {
+
+        }
+      }
     }
-  }
-
-  .hpc--inner-right {
-
   }
 }

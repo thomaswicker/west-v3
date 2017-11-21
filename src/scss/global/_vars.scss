@@ -51,12 +51,6 @@
 
 
 
-
-
-
-
-
-
 /*
  __     ___    ____  ___    _    ____  _     _____ ____
  \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
@@ -94,15 +88,17 @@ $black:             #000000;
 // Standard color palette
 $red-potion:        #E90000;
 $green-potion:      #72A430;
-$blue-potion:       #2a98c6;
+$blue-potion:       #0071a9;
 $teal-potion:       #0DABA7;
 $orange-potion:     #f57e20;
 $yellow-potion:     $teal-potion;
 $purple-potion:     #a06eaf;
+$brown-potion:      #554D3F;
+$tan-potion:        #E4DCCD;
 
 // Set your global app/site variables here
 $color-primary:     $green-potion;
-$color-secondary:   #0071a9;
+$color-secondary:   #2C3621;
 $color-tertiary:    #e4dccd;
 
 
@@ -113,7 +109,7 @@ $charcoal: #36454F;
 $black: #000000;
 $white: #FFFFFF;
 $twWhite: #ffffff;
-$tan: #E4DCCD;
+$tan: $tan-potion;
 
 // Element color styling variables
 $link:              $color-secondary;

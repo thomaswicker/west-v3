@@ -280,9 +280,9 @@ ____  _   _ _____ _____ ___  _   _ ____
   padding: $unit $unit-md;
   border: 2px solid $color-primary;
   border-radius: 0;
-  font-family: $font-1;
-  font-size: $font-size;
-  font-weight: 500;
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
   background: $color-primary;
   color: $white;
@@ -434,21 +434,21 @@ ____  _   _ _____ _____ ___  _   _ ____
   &.btn-small {
     min-width: 0;
     padding: .75rem 1.25rem;
-    @include font($font: $font-1, $style: normal, $size: $font-size-sm, $weight: 500);
+    @include font($font: $font-1, $style: normal, $size: $font-size-sm, $weight: 600);
   }
 
   // creates a miniature size button
   &.btn-mini {
     min-width: 0;
     padding: 7px 14px;
-    @include font($font: $font-1, $style: normal, $size: 12px, $weight: 500);
+    @include font($font: $font-1, $style: normal, $size: 12px, $weight: 600);
   }
 
   // creates a small size button
   &.btn-small {
     min-width: 0;
     padding: $unit-sm $unit-sm;
-    @include font($font: $font-1, $style: normal, $size: $font-size-base, $weight: 500);
+    @include font($font: $font-1, $style: normal, $size: $font-size-base, $weight: 600);
   }
 
   // button that spans/fills the width of the container
