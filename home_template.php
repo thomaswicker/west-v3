@@ -6,48 +6,61 @@ Template Name: Home Page __TEMPLATE__
 
 <?php get_header(); ?>
 
-<section class="home-page-container">
-  <?php if( get_field('main_header_image') ): ?>
-    <header class="hpc--header">
-      <?php if( get_field('page_title') ): ?>
-        <div class="main-header-title <?php the_field( 'subnav_active_label' ); ?>" style="background-image: url('<?php the_field( 'main_header_image' ); ?>')">
-        </div>
-      <?php endif; ?>
-    </header>
-  <?php endif; ?>
+<section class="superhero home">
+  <?php if( function_exists('cyclone_slider') ) cyclone_slider('westslides'); ?>
+</section>
 
-  <section class="hpc--inner">
-    <article class="hpc--inner-left">
+<a href="http://www.west-inc.com/locations/" class="contact-us-btn btn btn-primary btn-small">
+  <i class="fa fa-phone"></i>
+  <span>Contact Us</span>
+</a>
+
+<section class="body-container home-page-container">
+  <section class="body-container--inner hpc--inner">
+    <article class="bci--left hpc-page--inner-left">
       <?php if( get_field('page_title') ): ?>
         <h1 class="main-title">
           <?php the_field( 'page_title' ); ?>
         </h1>
       <?php endif; ?>
 
-      <?php if( get_field('page_title') ): ?>
+      <?php if( get_field('page_subtitle') ): ?>
         <h2 class="main-subtitle">
-          <?php the_field( 'page_title' ); ?>
+          <?php the_field( 'page_subtitle' ); ?>
         </h2>
       <?php endif; ?>
 
       <?php if( get_field('body_content') ): ?>
-				<?php the_field( 'body_content' ); ?>
+  			<?php the_field( 'body_content' ); ?>
       <?php endif; ?>
     </article>
 
-    <aside class="hpc--inner-right">
+    <aside class="bci--right hpc-page--inner-right">
+      <?php if( get_field('sidebar_image') ): ?>
+        <img class='home-page-sidebar-image' src='<?php the_field( 'sidebar_image' ); ?>' alt="<?php the_field( 'sidebar_image' ); 	?> Image">
+      <?php endif; ?>
+
       <?php if( get_field('sidebar_title') ): ?>
-        <?php the_field( 'sidebar_title' ); ?>
+        <h3 class="bold-subtitle">
+          <?php the_field( 'sidebar_title' ); ?>
+        </h3>
       <?php endif; ?>
 
       <?php if( get_field('sidebar_content') ): ?>
         <?php the_field( 'sidebar_content' ); ?>
       <?php endif; ?>
 
-      <?php if( get_field('sidebar_image') ): ?>
-        <img class='home-page-sidebar-image' src='<?php the_field( 'sidebar_image' ); ?>' alt="<?php the_field( 'sidebar_image' ); 	?> Image">
-      <?php endif; ?>
+      <div class="sidebar-contact-box">
+        <span>Contact us with your project inquiries.</span>
+
+        <a href="#" class="btn btn-primary btn-small">
+          Contact
+        </a>
+      </div>
+
     </aside>
+  </section>
+
 </section>
 
 <?php get_footer(); ?>

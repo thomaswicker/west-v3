@@ -8,7 +8,7 @@ Template Name: RSF Proceedings __TEMPLATE__
 
 <section class="body-container publications-and-reports-page-container">
   <section class="body-container--inner parpc--inner">
-    <article class="bci--left parpc-page--inner-left">
+    <article class="bci--left parpc-page--inner-left rsf-inner--left">
 
       <?php if( get_field('page_title') ): ?>
         <h1 class="main-header">
@@ -78,25 +78,11 @@ Template Name: RSF Proceedings __TEMPLATE__
                   <?php if( get_field('publication_details') ): ?>
                     <p class="publication-details"><?php the_field( 'publication_details' ); ?></p>
                   <?php endif; ?>
-
-                  <?php if( get_field('email_before_download_link') ): ?>
-                    <aside class="email-before-download-container">
-                      <h3>
-                        <i class="fa fa-envelope"></i>
-                        <span>Please provide your name and email before downloading this PDF:</span>
-                      </h3>
-
-                      <div class="<?php the_field( 'email_before_download_link' ); ?>)">
-                        <?php echo do_shortcode('[email-download download_id="'.get_field('email_before_download_link').'" contact_form_id="2022"]'); ?>
-                      </div>
-
-                    </aside>
-                  <?php endif; ?>
                 </div>
 
                 <div class="pbi--right">
-                  <?php if( get_field('publication_link') ): ?>
-                    <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
+                  <?php if( get_field('icon_link_image') ): ?>
+                    <a href="<?php the_field( 'email_before_download_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
                   <?php endif; ?>
                 </div>
               </li>

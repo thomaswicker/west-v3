@@ -11,8 +11,13 @@
 	   	container.before( '<div class="backBTN"><a href="http://www.west-inc.com/team/"><img src="http://www.west-inc.com/wp-content/themes/west_theme/images/backBTN_up.png" alt="Back to Professional Profiles" id="Back to Personnel"></a></div>' );
 	   }
 
-		 $('.pbi--right a.pdf-icon').on('click', function (e) {
+		 $('.email-before-download-container .pbi--right a.pdf-icon').on('click', function (e) {
 			 e.preventDefault();
 			 $(this).parent().parent().toggleClass('active');
 		 });
+
+		 // $('.ssc-subnav-toggle').on('click', function (e) {
+			//  e.preventDefault();
+			//  $('.ssc-subnav').toggleClass('active');
+		 // });
 	});

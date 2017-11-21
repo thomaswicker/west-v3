@@ -10,7 +10,8 @@ Template Name: Home Page Template
 
    <div id="contactUsRibbonServices">
 		 <a href="http://www.west-inc.com/locations/" class="btn btn-success">
-			 <i class="fa fa-phone" style="margin-right: 8px"></i>Contact Uss
+			 <i class="fa fa-phone" style="margin-right: 8px"></i>
+       <span>Contact Us</span>
 		 </a>
 	 </div>
 

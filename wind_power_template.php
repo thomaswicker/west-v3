@@ -95,7 +95,7 @@ Template Name: Wind Power __TEMPLATE__
                 </div>
 
                 <div class="pbi--right">
-                  <?php if( get_field('publication_link') ): ?>
+                  <?php if( get_field('icon_link_image') ): ?>
                     <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
                   <?php endif; ?>
                 </div>

@@ -8,7 +8,7 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
 
 <section class="body-container publications-and-reports-page-container">
   <section class="body-container--inner parpc--inner">
-    <article class="bci--left parpc-page--inner-left">
+    <article class="bci--left parpc-page--inner-left email-before-download-container">
 
       <?php if( get_field('page_title') ): ?>
         <h1 class="main-header">
@@ -26,7 +26,10 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
         $args = array(
           'meta_key'   => 'publication_category',
           'meta_value'   => 'wildlife-research-and-monitoring',
-          'post_type' => 'publications'
+          'post_type' => 'publications',
+          'posts_per_page' => -1,
+          'orderby'=>'title',
+          'order'=>'ASC'
         );
 
         $theField = get_field('publication_id');
@@ -51,9 +54,7 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
                 </div>
 
                 <div class="pbi--right">
-                  <?php if( get_field('publication_link') ): ?>
-                    <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
-                  <?php endif; ?>
+                  <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
                 </div>
               </li>
             <?php endif; ?>
@@ -95,9 +96,35 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
                 </div>
 
                 <div class="pbi--right">
-                  <?php if( get_field('publication_link') ): ?>
-                    <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
+                  <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
+                </div>
+              </li>
+            <?php endif; ?>
+
+          <?php endwhile; else: ?>
+            <p>There are no publications to show or something went wrong. Please try back again later.</p>
+          <?php endif; ?>
+        </ul>
+
+
+        <h3 class="publications-report-subheader">Reports (sorted by year and lead author)</h3>
+        <ul class="publications-list">
+          <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+            <?php if( get_field('publication_type') == 'report' ): ?>
+              <li class="publication-list-item">
+                <div class="pbi--left">
+                  <?php if( get_field('publication_title') ): ?>
+                    <h3 class="publication-title"><?php the_field( 'publication_title' ); ?></h3>
                   <?php endif; ?>
+
+                  <?php if( get_field('publication_details') ): ?>
+                    <p class="publication-details"><?php the_field( 'publication_details' ); ?></p>
+                  <?php endif; ?>
+                </div>
+
+                <div class="pbi--right">
+                  <a href="<?php the_field( 'publication_link' ); ?>" target="_blank" class="<?php the_field( 'icon_link_image' ); ?>"></a>
                 </div>
               </li>
             <?php endif; ?>

@@ -363,7 +363,7 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
               }
 
               &.book-icon {
-                background-color: red;
+                background-color: green;
 
                 &:before {
                   content: "BOOK";
@@ -371,7 +371,7 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
               }
 
               &.pdf-icon {
-                background-color: purple;
+                background-color: red;
 
                 &:before {
                   content: "PDF";
@@ -379,10 +379,18 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
               }
 
               &.link-icon {
-                background-color: blue;
+                background-color: lightblue;
 
                 &:before {
                   content: "LINK";
+                }
+              }
+
+              &.msc-icon {
+                background-color: #CCCCC;
+
+                &:before {
+                  content: "MSC";
                 }
               }
             }

@@ -6376,17 +6376,21 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
           height: 35px;
           color: white; }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon {
-          background-color: red; }
+          background-color: green; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon:before {
             content: "BOOK"; }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon {
-          background-color: purple; }
+          background-color: red; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon:before {
             content: "PDF"; }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon {
-          background-color: blue; }
+          background-color: lightblue; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon:before {
             content: "LINK"; }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon {
+          background-color: #CCCCC; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon:before {
+            content: "MSC"; }
 
 /*
 ____  _____ ____   ___  ____ _____ ____
