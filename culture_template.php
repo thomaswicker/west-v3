@@ -10,8 +10,17 @@ Template Name: Culture __TEMPLATE__
 
   <?php get_template_part('partials/superhero/superhero-culture'); ?>
 
+  <?php get_template_part('partials/callout-btn'); ?>
+
+  <div class="sm-nav--culture"><?php get_template_part('partials/sm-nav'); ?></div>
+
   <section class="body-container--inner culture-page--inner">
     <article class="bci--left culture-page--inner-left">
+      <?php if( get_field('page_subtitle') ): ?>
+        <h1 class="main-title">
+          <?php the_field( 'page_title' ); ?>
+        </h1>
+      <?php endif; ?>
 
       <?php if( get_field('page_subtitle') ): ?>
         <h2 class="main-subtitle">

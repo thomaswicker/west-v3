@@ -1255,6 +1255,12 @@ a:hover {
       height: 450px;
       background-size: cover;
       background-repeat: no-repeat;
+      animation: grayscale 3s ease-in-out forwards 2s ;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: url(#greyscale);
+      filter: gray;
+      filter: grayscale(100%);
 
       @include mq(lg) {
 
@@ -1307,7 +1313,7 @@ a:hover {
       }
 
       &:after {
-        content: "XXXX";
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -1330,14 +1336,14 @@ a:hover {
       }
 
       &.aerialsurveyandtelemetry {
-        background-position: -900px 0px;
+        background-position: 0px 5px;
 
         &:before {
           content: "Aerial Survey & Telemetry";
         }
 
         &:after {
-          background-color: rgba(14, 82, 132, .55);
+          background-color: rgba(14, 82, 132, .45);
         }
       }
 

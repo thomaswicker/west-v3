@@ -28,11 +28,15 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
   }
 
   &.services {
-    top: 0;
+    top: 90px;
   }
 
   &.markets {
     top: 0;
+  }
+
+  &.safety {
+    right: -253px;
   }
 
   i {
@@ -51,31 +55,90 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
   width: 100%;
   margin-top: 72px;
   background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
+
+  @include mq(lg) {
+    object-fit: cover;
+  }
+
+  @include mq(md) {
+    object-fit: cover;
+  }
+
+  @include mq(sm) {
+    object-fit: contain;
+  }
 
   .superhero-title {
     position: absolute;
-    bottom: 35%;
+    top: 320px;
     float: left;
     width: 100%;
-    padding-left: 75px;
+    padding-left: 85px;
     padding-right: 50px;
     font-family: $font-primary;
     font-size: 60px;
     font-weight: 300;
     color: $white;
+    line-height: 135%;
     text-shadow: 1px 1px 1px $black;
+    z-index: 100000;
+
+    @include mq(xl) {
+      padding-left: 85px;
+      // color: blue;
+    }
+
+    @include mq(lg) {
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 50px;
+      // color: green;
+    }
+
+    @include mq(md) {
+      top: 330px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 40px;
+      // color: red;
+    }
+
+    @include mq(sm) {
+      top: 280px;
+      padding-left: 35px;
+      padding-right: 35px;
+      font-size: 40px;
+      line-height: 125%;
+    }
+  }
+
+  &.tall {
+    min-height: 450px;
   }
 
   &.profile-page--header {
-    background-position: 0px -150px;
+    background-position: 0 -350px;
+
+    @include mq(lg) {
+      background-position: 0 -250px;
+    }
+
+    @include mq(md) {
+      background-position: 0 0;
+    }
+
+    @include mq(sm) {
+      background-position: 0 0;
+    }
   }
 
   &.culture-page--header {
-    background-position: 0px -50px;
+    background-position: 0px 0px;
   }
 
   &.safety-page--header {
-    background-position: 0px -170px;
+    background-position: 0px 0px;
   }
 }

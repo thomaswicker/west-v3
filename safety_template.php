@@ -7,10 +7,21 @@ Template Name: Safety __TEMPLATE__
 <?php get_header(); ?>
 
 <section class="body-container safety-page-container">
+
   <?php get_template_part('partials/superhero/superhero-safety'); ?>
+
+  <?php get_template_part('partials/callout-btn'); ?>
+
+  <div class="sm-nav--safety"><?php get_template_part('partials/sm-nav'); ?></div>
 
   <section class="body-container--inner safety-page--inner">
     <article class="bci--left safety-page--inner-left">
+      <?php if( get_field('page_subtitle') ): ?>
+        <h1 class="main-title">
+          <?php the_field( 'page_title' ); ?>
+        </h1>
+      <?php endif; ?>
+
       <?php if( get_field('page_subtitle') ): ?>
         <h2 class="main-subtitle">
           <?php the_field( 'page_subtitle' ); ?>

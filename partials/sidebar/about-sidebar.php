@@ -3,7 +3,7 @@
 
 	<ul class="subnav-sidebar <?php the_field( 'subnav_active_label' ); ?>">
 		<li class="about-subnav--profile">
-			<a href="http://www.west-inc.com/about/profile-page-new/">
+			<a href="http://www.west-inc.com/about/profile-page/">
 				<i class="fa fa-chevron-right"></i>
 				Profile
 			</a>
@@ -24,7 +24,7 @@
 		</li>
 
 		<li class="about-subnav--culture">
-			<a href="http://www.west-inc.com/about/culture-page-new/">
+			<a href="http://www.west-inc.com/about/culture-page/">
 				<i class="fa fa-chevron-right"></i>
 				Culture
 			</a>
@@ -58,5 +58,4 @@
 			</a>
 		</li>
 	</ul>
-
 </div>

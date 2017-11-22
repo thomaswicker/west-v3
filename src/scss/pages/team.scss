@@ -737,116 +737,539 @@ span.bod-tag {
     float: left;
     width: 100%;
 
-    h1.our-team-landing-header {
-      float: left;
-      width: 100%;
-    }
-
-    .our-team--row-1 {
-      float: left;
-      width: 100%;
-      background-color: #EEEEEE;
-    }
-
-    .our-team--row-2 {
-      float: left;
-      width: 100%;
-      background-color: #DDDDDD;
-    }
-
-    .our-team--row-3 {
-      float: left;
-      width: 100%;
-      background-color: #CCCCCC;
-    }
-
-    .team-member-tile {
-      float: left;
-      max-width: 300px;
-      padding: 20px;
-      border: 2px solid #BBBBBB;
-
-      .team-member-photo {
+    .otlc-page--inner-left {
+      .otlc--header {
         float: left;
         width: 100%;
-        height: 200px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        transition: all 200ms ease-in-out;
-        opacity: .8;
-        overflow-y: hidden;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-left: 0;
 
-        &:hover {
-          -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-          opacity: 1;
-        }
-
-        &.tile-1 {
-          background-position: -15px -20px;
-          background-size: 112%;
-        }
-
-        &.tile-2 {
-          background-position: -15px -20px;
-          background-size: 112%;
-        }
-
-        &.tile-3 {
-          background-position: 0px -35px;
-        }
-
-        &.tile-4 {
+        @include mq(md) {
 
         }
 
-        &.tile-5 {
-
+        @include mq(sm) {
+          padding-top: 0;
         }
 
-        &.tile-6 {
-          background-position: -13px -80px;
-          background-size: 112%;
+        .main-title {
+          float: left;
+          width: 100%;
+
+          @include mq(xl) {
+
+          }
+
+          @include mq(lg) {
+
+          }
+
+          @include mq(md) {
+
+          }
+
+          @include mq(sm) {
+
+          }
         }
 
-        &.tile-7 {
+        .main-subtitle {
+          float: left;
+          width: 100%;
 
-        }
+          @include mq(xl) {
 
-        &.tile-8 {
-          background-position: 0px -40px;
-        }
+          }
 
-        &.tile-9 {
-          background-position: -13px -80px;
-          background-size: 112%;
-        }
+          @include mq(lg) {
 
-        &.tile-10 {
-          background-position: 0px -40px;
+          }
+
+          @include mq(md) {
+            font-size: 18px;
+          }
+
+          @include mq(sm) {
+            font-size: 15px;
+          }
         }
       }
 
-      img {
-        float: left;
-        width: 100%;
+      .our-team--row {
+
       }
 
-      .team-member-name{
+      .our-team--row-1 {
         float: left;
         width: 100%;
+
+        .our-team--row-1--inner {
+          float: left;
+          width: 100%;
+          text-align: center;
+
+          @include mq(xl) {
+            float: left;
+            width: 100%;
+          }
+
+          @include mq(lg) {
+            float: left;
+            width: 100%;
+          }
+
+          @include mq(md) {
+            float: left;
+            width: 100%;
+          }
+
+          @include mq(sm) {
+            float: left;
+            width: 100%;
+          }
+        }
       }
 
-      .team-member-job-title {
+      .our-team--row-2 {
         float: left;
         width: 100%;
+
+        .our-team--row-2--inner {
+          float: left;
+          width: 100%;
+
+          @include mq(xl) {
+            float: left;
+            width: 100%;
+            max-width: none;
+          }
+
+          @include mq(lg) {
+            float: left;
+            width: 100%;
+            max-width: none;
+          }
+
+          @include mq(md) {
+            float: left;
+            width: 100%;
+            max-width: none;
+          }
+
+          @include mq(sm) {
+            float: left;
+            width: 100%;
+            max-width: none;
+          }
+
+          .team-member-tile {
+            @include mq(xl) {
+              // background-color: red;
+            }
+
+            @include mq(lg) {
+              // background-color: blue;
+            }
+
+            @include mq(md) {
+              // background-color: orange;
+            }
+
+            @include mq(sm) {
+              // background-color: pink;
+            }
+          }
+        }
       }
 
-      .bod-title {
+      .our-team--row-3 {
         float: left;
         width: 100%;
+
+        .our-team--row-3--inner {
+          float: left;
+          width: 100%;
+
+          @include mq(xl) {
+            float: left;
+            width: 100%;
+          }
+
+          @include mq(lg) {
+            float: left;
+            width: 100%;
+          }
+
+          @include mq(md) {
+            float: left;
+            width: 100%;
+          }
+
+          @include mq(sm) {
+            float: left;
+            width: 100%;
+          }
+        }
+      }
+
+      .team-member-tile {
+        position: relative;
+        float: left;
+        width: calc(50% - 20px);
+        max-width: none;
+        min-height: 0;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 20px;
+        border: 2px solid #CDCDCD;
+
+        @include mq(xl) {
+          width: calc(50% - 20px);
+          max-width: none;
+          min-height: 0;
+          margin-bottom: 10px;
+          margin-right: 10px;
+        }
+
+        @include mq(lg) {
+          float: left;
+          width: 100%;
+          max-width: none;
+          min-height: 0;
+          margin-right: 0;
+          margin-bottom: 12px;
+          padding: 15px;
+        }
+
+        @include mq(md) {
+          float: left;
+          width: 100%;
+          max-width: none;
+          min-height: 0;
+          margin-right: 0;
+          margin-bottom: 12px;
+          padding: 8px;
+        }
+
+        @include mq(sm) {
+          float: left;
+          width: 100%;
+          max-width: none;
+          min-height: 0;
+          margin-right: 0;
+          margin-bottom: 12px;
+          padding: 8px;
+        }
+
+        a.team-photo-arrow {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 80px;
+          height: 50px;
+
+          @include mq(md) {
+
+          }
+
+          @include mq(sm) {
+            display: none;
+          }
+
+          i {
+            position: relative;
+            right: 0;
+            top: 20px;
+            font-size: 20px;
+            color: $color-primary;
+          }
+
+          &:hover {
+
+            i {
+              animation: pulsearrow 500ms ease-in-out infinite;
+              color: $black;
+            }
+          }
+        }
+
+        .team-member-photo {
+          float: left;
+          width: 150px;
+          height: 150px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          transition: all 200ms ease-in-out;
+          opacity: .8;
+          overflow-y: hidden;
+
+          @include mq(xl) {
+            width: 150px;
+            height: 150px;
+          }
+
+          @include mq(lg) {
+            width: 150px;
+            height: 150px;
+          }
+
+          @include mq(md) {
+            width: 125px;
+            height: 150px;
+          }
+
+          @include mq(sm) {
+            width: 125px;
+            height: 100px;
+          }
+
+          &:hover {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            opacity: 1;
+          }
+
+          &.tile-1 {
+            background-position: -15px -20px;
+            background-size: 112%;
+          }
+
+          &.tile-2 {
+            background-position: -15px -20px;
+            background-size: 112%;
+          }
+
+          &.tile-3 {
+            background-position: 0px -35px;
+          }
+
+          &.tile-4 {
+
+          }
+
+          &.tile-5 {
+
+          }
+
+          &.tile-6 {
+            background-position: -13px -80px;
+            background-size: 112%;
+          }
+
+          &.tile-7 {
+
+          }
+
+          &.tile-8 {
+            background-position: 0px -40px;
+          }
+
+          &.tile-9 {
+            background-position: -13px -80px;
+            background-size: 112%;
+          }
+
+          &.tile-10 {
+            background-position: 0px -40px;
+          }
+        }
+
+        img {
+          float: left;
+          width: 100%;
+        }
+
+        .team-member-name{
+          float: left;
+          width: calc(100% - 175px);
+          margin-bottom: 5px;
+          padding-left: 20px;
+          font-size: 26px;
+          text-align: left;
+          font-family: $font-primary;
+
+          @include mq(xl) {
+            width: calc(100% - 175px);
+            padding-left: 20px;
+            font-size: 26px;
+            text-align: left;
+          }
+
+          @include mq(lg) {
+            width: calc(100% - 175px);
+            padding-left: 20px;
+            font-size: 26px;
+            text-align: left;
+          }
+
+          @include mq(md) {
+            width: calc(100% - 125px);
+            margin-top: 5px;
+            padding-left: 20px;
+            padding-right: 10px;
+            font-size: 26px;
+            text-align: left;
+          }
+
+          @include mq(sm) {
+            width: calc(100% - 100px);
+            margin-top: 5px;
+            padding-left: 20px;
+            padding-right: 10px;
+            font-size: 20px;
+            text-align: left;
+          }
+        }
+
+        .team-member-job-title {
+          float: left;
+          width: calc(100% - 175px);
+          margin-top: 5px;
+          padding-left: 20px;
+          font-size: 18px;
+          text-align: left;
+          font-family: $font-primary;
+
+          @include mq(xl) {
+            width: calc(100% - 175px);
+            margin-top: 5px;
+            padding-left: 20px;
+            font-size: 18px;
+            text-align: left;
+          }
+
+          @include mq(lg) {
+            width: calc(100% - 175px);
+            margin-top: 5px;
+            padding-left: 20px;
+            font-size: 18px;
+            text-align: left;
+          }
+
+          @include mq(md) {
+            width: calc(100% - 125px);
+            margin-top: 5px;
+            padding-left: 20px;
+            padding-right: 10px;
+            font-size: 16px;
+            text-align: left;
+          }
+
+          @include mq(sm) {
+            width: calc(100% - 100px);
+            margin-top: 5px;
+            padding-left: 20px;
+            padding-right: 10px;
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+
+        .bod-title {
+          float: left;
+          width: calc(100% - 175px);
+          margin-top: 18px;
+          padding-left: 20px;
+          text-align: left;
+
+          @include mq(xl) {
+            width: calc(100% - 175px);
+            padding-left: 20px;
+            text-align: left;
+
+
+          }
+
+          @include mq(lg) {
+            width: calc(100% - 175px);
+            padding-left: 20px;
+            text-align: left;
+
+
+          }
+
+          @include mq(md) {
+            width: calc(100% - 125px);
+            padding-left: 20px;
+            padding-right: 10px;
+            text-align: left;
+          }
+
+          @include mq(sm) {
+            width: calc(100% - 100px);
+            padding-left: 20px;
+            padding-right: 10px;
+            text-align: left;
+          }
+
+          &:before {
+            content: "Board of Directors";
+            padding: 3px 10px;
+            background-color: $color-primary;
+            color: $white;
+            text-transform: uppercase;
+            font-family: $font-primary;
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .otlc-page--inner-right {
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      @include mq(sm) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .sidebar-container {
+        @include mq(lg) {
+
+        }
+
+        @include mq(md) {
+          h3 {
+            padding-left: 10px;
+          }
+        }
+
+        @include mq(sm) {
+          h3 {
+            padding-left: 10px;
+          }
+        }
+
+        ul.subnav-sidebar {
+          @include mq(lg) {
+
+          }
+
+          @include mq(md) {
+            padding-left: 0;
+            border-left: 0;
+
+            h3 {
+              padding-left: 0;
+            }
+          }
+
+          @include mq(sm) {
+            padding-left: 0;
+            border-left: 0;
+          }
+        }
       }
     }
   }

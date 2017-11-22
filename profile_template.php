@@ -9,8 +9,18 @@ Template Name: Profile Page __TEMPLATE__
 <section class="body-container profile-page-container">
   <?php get_template_part('partials/superhero/superhero-profile'); ?>
 
+  <?php get_template_part('partials/callout-btn'); ?>
+
+  <div class="sm-nav--profile"><?php get_template_part('partials/sm-nav'); ?></div>
+
   <section class="body-container--inner ppc--inner">
     <article class="bci--left ppc--inner-left">
+      <?php if( get_field('page_title') ): ?>
+        <h1 class="main-title">
+          <?php the_field( 'page_title' ); ?>
+        </h1>
+      <?php endif; ?>
+
       <?php if( get_field('page_subtitle') ): ?>
         <h2 class="main-subtitle">
           <?php the_field( 'page_subtitle' ); ?>

@@ -811,6 +811,12 @@ __  __    _    ____  _  _______ _____ ____
       height: 450px;
       background-size: cover;
       background-repeat: no-repeat;
+      animation: grayscale 3s ease-in-out forwards 2s ;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: url(#greyscale);
+      filter: gray;
+      filter: grayscale(100%);
 
       @include mq(lg) {
 
@@ -863,7 +869,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       &:after {
-        content: "XXXX";
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -891,6 +897,10 @@ __  __    _    ____  _  _______ _____ ____
         &:before {
           content: "Wind Power";
         }
+
+        &:after {
+          background-color: rgba(14, 82, 132, .3);
+        }
       }
 
       &.solarpower {
@@ -898,6 +908,10 @@ __  __    _    ____  _  _______ _____ ____
 
         &:before {
           content: "Solar Power";
+        }
+
+        &:after {
+          background-color: rgba(14, 82, 132, .5);
         }
       }
 
@@ -907,6 +921,10 @@ __  __    _    ____  _  _______ _____ ____
         &:before {
           content: "International Markets";
         }
+
+        &:after {
+          background-color: rgba(114, 164, 48, .6);
+        }
       }
 
       &.powerlines {
@@ -914,6 +932,11 @@ __  __    _    ____  _  _______ _____ ____
 
         &:before {
           content: "Power Lines";
+        }
+
+
+        &:after {
+          background-color: rgba(14, 82, 132, .55);
         }
       }
 
@@ -923,6 +946,10 @@ __  __    _    ____  _  _______ _____ ____
         &:before {
           content: "Oil and Gas";
         }
+
+        &:after {
+          background-color: rgba(238, 114, 37, .55);
+        }
       }
 
       &.pipelines {
@@ -931,6 +958,10 @@ __  __    _    ____  _  _______ _____ ____
         &:before {
           content: "Pipelines";
         }
+
+        &:after {
+          background-color: rgba(114, 164, 48, .45);
+        }
       }
 
       &.mining {
@@ -938,6 +969,10 @@ __  __    _    ____  _  _______ _____ ____
 
         &:before {
           content: "Mining";
+        }
+
+        &:after {
+          background-color: rgba(238, 114, 37, .4);
         }
       }
 

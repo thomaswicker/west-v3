@@ -8,21 +8,119 @@
 */
 
 .profile-page-container {
-  .ppc--header {
-    .main-header-title {
+  .profile-page--header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    .superhero-title {
+      top: 320px;
+      padding-left: 75px;
+      padding-right: 50px;
+
+      @include mq(xl) {
+        padding-left: 75px;
+      }
+
+      @include mq(lg) {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 50px;
+      }
+
+      @include mq(md) {
+        top: 310px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 40px;
+      }
+
+      @include mq(sm) {
+        top: 280px;
+        padding-left: 25px;
+        padding-right: 35px;
+        font-size: 40px;
+        line-height: 125%;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 450px;
+      background-color: rgba(0, 0, 0, .25);
+      z-index: 1;
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+
+      }
     }
   }
 
-  .ppc--inner {
+  .profile-page--inner {
     .ppc--inner-left {
-      h1.main-title {
+      float: left;
+      width: calc(100% - 450px);
+      padding: 40px 90px 50px 90px;
 
+      @include mq(lg) {
+        width: calc(100% - 390px);
+        padding: 40px 40px 50px 40px;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: 30px 40px 20px 40px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px 40px 10px 40px;
+      }
+
+      ul.bulleted-list li {
+        &:hover {
+          list-style-type: disc !important;
+        }
       }
     }
 
     .ppc--inner-right {
+      float: left;
+      width: 450px;
+      padding: 30px 90px 40px 0;
 
+      @include mq(lg) {
+        width: 390px;
+        padding: 30px 40px 40px 20px;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: 0px 30px 40px 0px;
+        border-left: 0px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px 20px 30px 0;
+        border-left: 0px;
+      }
     }
   }
 }

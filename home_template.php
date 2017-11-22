@@ -10,10 +10,9 @@ Template Name: Home Page __TEMPLATE__
   <?php if( function_exists('cyclone_slider') ) cyclone_slider('westslides'); ?>
 </section>
 
-<a href="http://www.west-inc.com/locations/" class="contact-us-btn btn btn-primary btn-small">
-  <i class="fa fa-phone"></i>
-  <span>Contact Us</span>
-</a>
+<?php get_template_part('partials/callout-btn'); ?>
+
+<div style="position: relative; top: -13px;"><?php get_template_part('partials/sm-nav'); ?></div>
 
 <section class="body-container home-page-container">
   <section class="body-container--inner hpc--inner">
@@ -53,7 +52,7 @@ Template Name: Home Page __TEMPLATE__
       <div class="sidebar-contact-box">
         <span>Contact us with your project inquiries.</span>
 
-        <a href="#" class="btn btn-primary btn-small">
+        <a href="http://www.west-inc.com/locations" class="btn btn-primary btn-small">
           Contact
         </a>
       </div>
