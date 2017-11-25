@@ -58,7 +58,7 @@ Template Name: Book Store (Landing Page) __TEMPLATE__
               <?php endif; ?>
 
               <?php if( get_field('book_button_link') ): ?>
-                <a href="<?php the_field( 'book_button_link' ); ?>" class="btn btn-primary" target="_blank">
+                <a href="<?php the_field( 'book_button_link' ); ?>" class="btn btn-mini btn-primary" target="_blank">
                   <?php the_field( 'book_button_label' ); ?>
                 </a>
               <?php endif; ?>

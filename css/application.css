@@ -3444,6 +3444,13 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
     margin-top: 20px;
     border-top: 1px dotted #888888; } }
 
+.sidebar-container.second-sidebar {
+  float: left;
+  width: 100%;
+  margin-top: 30px; }
+  .sidebar-container.second-sidebar h3 {
+    font-size: 20px; }
+
 .sidebar-container h3 {
   float: left;
   width: 100%;
@@ -3509,27 +3516,65 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
   .sidebar-container ul.subnav-sidebar.wildlife-research-and-monitoring li.publications-subnav--wildlife a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.wildlife-research-and-monitoring li.publications-subnav--wildlife a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.wildlife-research-and-monitoring li.publications-subnav--wildlife a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.rsf-proceedings li.publications-subnav--rsf a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.rsf-proceedings li.publications-subnav--rsf a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.rsf-proceedings li.publications-subnav--rsf a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.statistics-and-biometrics li.publications-subnav--stats a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.statistics-and-biometrics li.publications-subnav--stats a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.statistics-and-biometrics li.publications-subnav--stats a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.wind-power li.publications-subnav--wind a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.wind-power li.publications-subnav--wind a i {
+      color: #FFFFFF;
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.bookstore li.publications-subnav--bookstore a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.bookstore li.publications-subnav--bookstore a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.bookstore li.publications-subnav--bookstore a:hover {
+      cursor: default; }
+  .sidebar-container ul.subnav-sidebar.publications-and-reports.second li.publications-subnav--publications-and-reports a {
+    background-color: #777777;
+    color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.publications-and-reports.second li.publications-subnav--publications-and-reports a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.publications-and-reports.second li.publications-subnav--publications-and-reports a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.publications-and-reports li.publications-subnav--publications-and-reports a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.publications-and-reports li.publications-subnav--publications-and-reports a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.publications-and-reports li.publications-subnav--publications-and-reports a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.computer-programs li.publications-subnav--computer-programs a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.computer-programs li.publications-subnav--computer-programs a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.computer-programs li.publications-subnav--computer-programs a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar.media li.publications-subnav--media a {
     background-color: #72A430;
     color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.media li.publications-subnav--media a i {
+      color: #FFFFFF; }
+    .sidebar-container ul.subnav-sidebar.media li.publications-subnav--media a:hover {
+      cursor: default; }
   .sidebar-container ul.subnav-sidebar li {
     float: left;
     width: 100%;
@@ -3623,6 +3668,19 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
       top: 192px; } }
   @media only screen and (max-width: 47.9375em) {
     .sm-nav--safety {
+      top: 192px; } }
+
+.sm-nav--careers {
+  position: relative;
+  top: 21px; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .sm-nav--careers {
+      top: 21px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .sm-nav--careers {
+      top: 192px; } }
+  @media only screen and (max-width: 47.9375em) {
+    .sm-nav--careers {
       top: 192px; } }
 
 .sm-nav--culture {
@@ -4136,67 +4194,67 @@ _    ____   ___  _   _ _____   _   _ ____
 
 */
 /* ############# NEW BOOKSTORE PAGE CSS ############# */
-.bookstore-page-container .bspc--inner .bspc-page--inner-left h1 {
-  margin-top: 10px; }
-
-.bookstore-page-container .bspc--inner .bspc-page--inner-left h2 {
-  margin-bottom: 20px; }
-
-.bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list {
-  float: left;
-  width: 100%; }
-  .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item {
+.bookstore-page-container {
+  padding-top: 100px; }
+  .bookstore-page-container .bspc--inner .bspc-page--inner-left h1 {
+    margin-top: 10px; }
+  .bookstore-page-container .bspc--inner .bspc-page--inner-left h2 {
+    margin-bottom: 20px; }
+  .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list {
     float: left;
-    width: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #DDDDDD; }
-    .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left {
+    width: 100%; }
+    .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item {
       float: left;
-      width: 100px; }
-      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left img {
-        max-width: 100px; }
-    .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right {
-      float: left;
-      width: calc(100% - 100px);
-      padding-left: 30px; }
-      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h3.book-title {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #DDDDDD; }
+      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left {
         float: left;
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 140%; }
-      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h4.book-details {
+        width: 100px; }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left img {
+          max-width: 100px; }
+      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right {
         float: left;
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 135%;
-        color: #333333; }
-      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h5.book-metadata {
-        float: left;
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-style: italic;
-        font-weight: 500;
-        line-height: 135%; }
-      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right p {
-        float: left;
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: 5400;
-        line-height: 135%;
-        color: #000000; }
-      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right .btn {
-        margin-top: 20px; }
+        width: calc(100% - 100px);
+        padding-left: 30px; }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h3.book-title {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 140%; }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h4.book-details {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 135%;
+          color: #333333; }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h5.book-metadata {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-style: italic;
+          font-weight: 500;
+          line-height: 135%; }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right p {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 5400;
+          line-height: 135%;
+          color: #000000; }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right .btn {
+          margin-top: 5px; }
 
 /*
   ____    _    ____  _____ _____ ____  ____
@@ -4205,26 +4263,40 @@ _    ____   ___  _   _ _____   _   _ ____
  \____/_/   \_\_| \_\_____|_____|_| \_\____/
 
 */
-.careers-page-container .careers-page--inner .careers-page--inner-left h1.main-title {
-  margin-bottom: 0; }
+.careers-page-container .careers-page--header {
+  background-position: -100px 0; }
+  @media only screen and (min-width: 90.063em) and (max-width: 124em) {
+    .careers-page-container .careers-page--header {
+      background-position: -200px 0; } }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .careers-page-container .careers-page--header {
+      background-position: -400px 0; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .careers-page-container .careers-page--header {
+      background-position: -600px 0; } }
+  @media only screen and (max-width: 47.9375em) {
+    .careers-page-container .careers-page--header {
+      background-position: -800px 0; } }
 
-.careers-page-container .careers-page--inner .careers-page--inner-left .body-content p {
-  float: left;
-  width: 100%;
-  margin-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 140%; }
-
-.careers-page-container .careers-page--inner .careers-page--inner-left .title-of-list {
-  float: left;
-  width: 100%;
-  margin-top: 25px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 600; }
-
-.careers-page-container .careers-page--inner .careers-page--inner-left .btn {
-  margin-top: 20px; }
+.careers-page-container .careers-page--inner .careers-page--inner-left {
+  padding-top: 20px; }
+  .careers-page-container .careers-page--inner .careers-page--inner-left h1.main-title {
+    margin-bottom: 0; }
+  .careers-page-container .careers-page--inner .careers-page--inner-left .body-content p {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 140%; }
+  .careers-page-container .careers-page--inner .careers-page--inner-left .title-of-list {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600; }
+  .careers-page-container .careers-page--inner .careers-page--inner-left .btn {
+    margin-top: 20px; }
 
 .careers-page-container .careers-page--inner .careers-page--inner-right .sidebar-text {
   float: left;
@@ -4248,50 +4320,50 @@ _    ____   ___  _   _ _____   _   _ ____
 
 */
 /* ############# NEW COMPUTER PROGRAMS PAGE CSS ############# */
-.computer-programs-page-container .cppc--inner .cppc-page--inner-left h1 {
-  margin-top: 10px; }
-
-.computer-programs-page-container .cppc--inner .cppc-page--inner-left h2 {
-  margin-top: 0;
-  margin-bottom: 10px; }
-
-.computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list {
-  float: left;
-  width: 100%; }
-  .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item {
+.computer-programs-page-container {
+  padding-top: 100px; }
+  .computer-programs-page-container .cppc--inner .cppc-page--inner-left h1 {
+    margin-top: 10px; }
+  .computer-programs-page-container .cppc--inner .cppc-page--inner-left h2 {
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list {
     float: left;
-    width: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #DDDDDD; }
-    .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left {
+    width: 100%; }
+    .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item {
       float: left;
-      width: calc(100% - 150px);
-      padding-right: 30px; }
-      .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left h3.title-of-computer-program {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #DDDDDD; }
+      .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left {
         float: left;
-        width: 100%;
-        margin-bottom: 0;
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 140%; }
-      .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left p {
+        width: calc(100% - 150px);
+        padding-right: 30px; }
+        .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left h3.title-of-computer-program {
+          float: left;
+          width: 100%;
+          margin-bottom: 0;
+          font-family: "Roboto", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 140%; }
+        .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left p {
+          float: left;
+          width: 100%;
+          margin-top: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 135%;
+          color: #333333; }
+      .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right {
         float: left;
-        width: 100%;
-        margin-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 135%;
-        color: #333333; }
-    .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right {
-      float: left;
-      width: 150px; }
-      .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right a {
-        float: left;
-        width: 100%;
-        margin-bottom: 10px; }
+        width: 150px; }
+        .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right a {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px; }
 
 /*
   ____ _   _ _   _____ _   _ ____  _____
@@ -7120,117 +7192,116 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
       padding: 30px 10px 0px 5px; } }
 
 /* ############# NEW PUBLICATIONS PAGE CSS ############# */
-.publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h1 {
-  margin-top: 10px; }
-
-.publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h2 {
-  margin-top: 0; }
-
-.publications-and-reports-page-container .parpc--inner .parpc-page--inner-left .publications-report-subheader {
-  float: left;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding-top: 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-top: 2px solid #CCC; }
-
-.publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list {
-  float: left;
-  width: 100%; }
-  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item {
+.publications-and-reports-page-container {
+  padding-top: 100px; }
+  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h1 {
+    margin-top: 10px; }
+  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h2 {
+    margin-top: 0; }
+  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left .publications-report-subheader {
     float: left;
     width: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #DDDDDD; }
-    .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container {
-      height: 200px;
-      padding: 15px 20px; }
-      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container p {
-        display: block; }
-    .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-top: 2px solid #CCC; }
+  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list {
+    float: left;
+    width: 100%; }
+    .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item {
       float: left;
-      width: calc(100% - 70px);
-      padding-right: 30px; }
-      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #DDDDDD; }
+      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container {
+        height: 200px;
+        padding: 15px 20px; }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container p {
+          display: block; }
+      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left {
         float: left;
-        width: 100%;
-        height: 0;
-        margin-top: 15px;
-        padding: 0;
-        background-color: #DEDEDE;
-        transition: all 300ms ease-in-out; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-form-control-wrap, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-form-control-wrap {
+        width: calc(100% - 70px);
+        padding-right: 30px; }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container {
           float: left;
           width: 100%;
-          min-height: 30px;
+          height: 0;
+          margin-top: 15px;
+          padding: 0;
+          background-color: #DEDEDE;
+          transition: all 300ms ease-in-out; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-form-control-wrap, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-form-control-wrap {
+            float: left;
+            width: 100%;
+            min-height: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container label {
+            float: left;
+            width: 100%;
+            margin-bottom: 5px;
+            display: none; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container h3 {
+            display: none; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container p {
+            float: left;
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: none; }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-title, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-title {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 140%; }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-details, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-details {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 135%;
+          color: #333333; }
+      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right {
+        float: left;
+        width: 70px; }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a {
+          float: left;
           margin-top: 10px;
-          margin-bottom: 10px; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container label {
-          float: left;
-          width: 100%;
-          margin-bottom: 5px;
-          display: none; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container h3 {
-          display: none; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container p {
-          float: left;
-          width: 100%;
-          font-family: "Roboto", sans-serif;
-          font-size: 12px;
-          font-weight: bold;
-          text-transform: uppercase;
-          display: none; }
-      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-title, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-title {
-        float: left;
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 140%; }
-      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-details, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-details {
-        float: left;
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 135%;
-        color: #333333; }
-    .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right {
-      float: left;
-      width: 70px; }
-      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a {
-        float: left;
-        margin-top: 10px;
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-align: center; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a:before {
-          width: 35px;
-          height: 35px;
-          color: white; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon {
-          background-color: green; }
-          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon:before {
-            content: "BOOK"; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon {
-          background-color: red; }
-          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon:before {
-            content: "PDF"; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon {
-          background-color: lightblue; }
-          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon:before {
-            content: "LINK"; }
-        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon {
-          background-color: #CCCCC; }
-          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon:before {
-            content: "MSC"; }
+          padding: 10px 15px;
+          border-radius: 5px;
+          text-align: center; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a:before {
+            width: 35px;
+            height: 35px;
+            color: white; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon {
+            background-color: green; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon:before {
+              content: "BOOK"; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon {
+            background-color: red; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon:before {
+              content: "PDF"; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon {
+            background-color: lightblue; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon:before {
+              content: "LINK"; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon {
+            background-color: #CCCCC; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon:before {
+              content: "MSC"; }
 
 /*
 ____  _____ ____   ___  ____ _____ ____

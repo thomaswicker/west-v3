@@ -18,6 +18,16 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
     border-top: 1px dotted #888888;
   }
 
+  &.second-sidebar {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
   h3 {
     float: left;
     width: 100%;
@@ -142,6 +152,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--wildlife a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 
@@ -149,6 +167,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--rsf a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 
@@ -156,6 +182,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--stats a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 
@@ -163,6 +197,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--wind a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+         cursor: default; }
+
+              &:ho  ver {
+
+        }
       }
     }
 
@@ -171,13 +213,44 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--bookstore a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 
     &.publications-and-reports {
+      &.second {
+        li.publications-subnav--publications-and-reports a {
+          background-color: #777777;
+          color: $white;
+
+          i {
+            color: $white;
+          }
+
+          &:hover {
+            cursor: default;
+          }
+        }
+      }
+
       li.publications-subnav--publications-and-reports a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 
@@ -185,6 +258,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--computer-programs a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 
@@ -192,6 +273,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       li.publications-subnav--media a {
         background-color: $color-primary;
         color: $white;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          cursor: default;
+        }
       }
     }
 

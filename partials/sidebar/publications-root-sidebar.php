@@ -22,12 +22,5 @@
 				Computer Programs
 			</a>
 		</li>
-
-		<li class="publications-subnav--media last-item">
-			<a href="http://www.west-inc.com/publications-reports/media">
-				<i class="fa fa-chevron-right"></i>
-				Media
-			</a>
-		</li>
 	</ul>
 </div>

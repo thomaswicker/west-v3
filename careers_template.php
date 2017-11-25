@@ -7,7 +7,12 @@ Template Name: Careers __TEMPLATE__
 <?php get_header(); ?>
 
 <section class="body-container careers-page-container">
+
   <?php get_template_part('partials/superhero/superhero-careers'); ?>
+
+  <?php get_template_part('partials/callout-btn'); ?>
+
+  <div class="sm-nav--careers"><?php get_template_part('partials/sm-nav'); ?></div>
 
   <section class="body-container--inner careers-page--inner">
     <article class="bci--left careers-page--inner-left">
@@ -47,7 +52,7 @@ Template Name: Careers __TEMPLATE__
 
           </ul>
 
-          <a class="btn btn-primary" href="http://westinc.catsone.com/careers/" target="_blank">View Available Careers <i class="fa fa-arrow-right" style="margin-left4px;"></i></a>
+          <a class="btn btn-mini btn-primary" href="http://westinc.catsone.com/careers/" target="_blank">View Available Careers <i class="fa fa-arrow-right" style="margin-left4px;"></i></a>
 
         <?php endif; ?>
       <?php endif; ?>

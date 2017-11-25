@@ -54,7 +54,7 @@ Template Name: Computer Programs (Landing Page)__TEMPLATE__
 
                 ?>
 
-                  <a href="<?php echo $buttonLink; ?>" target="_blank" class="btn btn-<?php echo $buttonClass; ?>">
+                  <a href="<?php echo $buttonLink; ?>" target="_blank" class="btn btn-mini btn-<?php echo $buttonClass; ?>">
                     <?php echo $buttonName; ?>
                   </a>
                 <?php endwhile; ?>

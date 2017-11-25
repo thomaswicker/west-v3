@@ -10,6 +10,8 @@
 /* ############# NEW BOOKSTORE PAGE CSS ############# */
 
 .bookstore-page-container {
+  padding-top: 100px;
+
   .bspc--inner {
     .bspc-page--inner-left {
       h1 {
@@ -89,7 +91,7 @@
             }
 
             .btn {
-              margin-top: 20px;
+              margin-top: 5px;
             }
           }
         }

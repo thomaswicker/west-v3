@@ -72,6 +72,23 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
   }
 }
 
+.sm-nav--careers {
+  position: relative;
+  top: 21px;
+
+  @include mq(lg) {
+    top: 21px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
 .sm-nav--culture {
   position: relative;
   top: 21px;

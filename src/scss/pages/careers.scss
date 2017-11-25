@@ -9,6 +9,24 @@
 
 .careers-page-container {
   .careers-page--header {
+    background-position: -100px 0;
+
+    @include mq(xl) {
+      background-position: -200px 0;
+    }
+
+    @include mq(lg) {
+      background-position: -400px 0;
+    }
+
+    @include mq(md) {
+      background-position: -600px 0;
+    }
+
+    @include mq(sm) {
+      background-position: -800px 0;
+    }
+
     .main-header-title {
 
     }
@@ -16,6 +34,8 @@
 
   .careers-page--inner {
     .careers-page--inner-left {
+      padding-top: 20px;
+
       h1.main-title {
         margin-bottom: 0;
       }
