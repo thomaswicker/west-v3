@@ -50,7 +50,7 @@ gulp.task('javascript', function() {
 				console.log(e);
 		 }))
 		 .pipe(gulp.dest('js'))
-     .pipe(notify({ message: '\n_______________________________________________________\n %%% JAVSCRIPT  COMPILED %%%\n_______________________________________________________' }))
+     .pipe(notify({ message: '\n_______________________________________________________\n %%% JAVASCRIPT  COMPILED %%%\n_______________________________________________________' }))
 })
 
 // Watch & Rerun Gulp

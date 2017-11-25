@@ -84,15 +84,36 @@
           width: 20%;
 
           @include mq(lg) {
-
+            img {
+              max-width: 150px;
+            }
           }
 
           @include mq(md) {
             width: 100%;
+
+            img {
+              max-width: 150px;
+            }
           }
 
           @include mq(sm) {
             width: 100%;
+          }
+
+          img {
+            @include mq(lg) {
+              max-width: 150px !important;
+            }
+
+            @include mq(md) {
+              max-width: 150px !important;
+            }
+
+            @include mq(sm) {
+              width: 100%;
+              max-width: 500px;
+            }
           }
 
           .body-content {
@@ -151,6 +172,19 @@
                 width: 100%;
                 max-width: 250px;
                 margin-top: 30px;
+
+                @include mq(lg) {
+                  max-width: 150px;
+                }
+
+                @include mq(md) {
+                  max-width: 150px;
+                }
+
+                @include mq(sm) {
+                  width: 100%;
+                  max-width: 500px;
+                }
               }
             }
           }

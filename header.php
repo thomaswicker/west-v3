@@ -43,11 +43,8 @@
 <body <?php body_class(); ?>>
  <header id="header" class="header">
     <nav class="navbar navbar-default navbar-background" role="navigation">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+      <button class="navbar--toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <i class="fa fa-bars"></i>
       </button>
 
       <a id="navbarBrand" href="http://www.west-inc.com/" class="navbar-brand-icon">

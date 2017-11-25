@@ -962,6 +962,70 @@ span.bod-tag {
           padding: 8px;
         }
 
+        &.Joel .team-member-photo {
+          background-position: 0px -20px;
+
+          @include mq(sm) {
+            background-position: -5px -20px;
+          }
+        }
+
+        &.Ryan .team-member-photo {
+          background-position: 0px -20px;
+
+          @include mq(sm) {
+            background-position: 0px -25px;
+          }
+        }
+
+        &.Kimberly .team-member-photo {
+          background-position: 0px -20px;
+        }
+
+        &.Shay .team-member-photo {
+
+        }
+
+        &.Suzanne .team-member-photo {
+          background-position: 0px -50px;
+        }
+
+        &.JR .team-member-photo {
+          background-position: -20px 0px;
+
+          @include mq(sm) {
+            background-position: -5px 0px;
+          }
+        }
+
+        &.Clayton .team-member-photo {
+          background-position: -20px 0px;
+
+          @include mq(sm) {
+            background-position: -5px 0px;
+          }
+        }
+
+        &.David .team-member-photo {
+          background-position: 0px -10px;
+
+          @include mq(sm) {
+            background-position: 0px -15px;
+          }
+        }
+
+        &.Lyman .team-member-photo {
+          background-position: 0px -20px;
+
+          @include mq(sm) {
+            background-position: 0px 5px;
+          }
+        }
+
+        &.Dale .team-member-photo {
+
+        }
+
         a.team-photo-arrow {
           position: absolute;
           top: 0;
@@ -978,15 +1042,14 @@ span.bod-tag {
           }
 
           i {
-            position: relative;
-            right: 0;
+            position: absolute;
             top: 20px;
-            font-size: 20px;
+            right: 25px;
+            font-size: 22px;
             color: $color-primary;
           }
 
           &:hover {
-
             i {
               animation: pulsearrow 500ms ease-in-out infinite;
               color: $black;
@@ -1031,50 +1094,6 @@ span.bod-tag {
             filter: grayscale(0%);
             opacity: 1;
           }
-
-          &.tile-1 {
-            background-position: -15px -20px;
-            background-size: 112%;
-          }
-
-          &.tile-2 {
-            background-position: -15px -20px;
-            background-size: 112%;
-          }
-
-          &.tile-3 {
-            background-position: 0px -35px;
-          }
-
-          &.tile-4 {
-
-          }
-
-          &.tile-5 {
-
-          }
-
-          &.tile-6 {
-            background-position: -13px -80px;
-            background-size: 112%;
-          }
-
-          &.tile-7 {
-
-          }
-
-          &.tile-8 {
-            background-position: 0px -40px;
-          }
-
-          &.tile-9 {
-            background-position: -13px -80px;
-            background-size: 112%;
-          }
-
-          &.tile-10 {
-            background-position: 0px -40px;
-          }
         }
 
         img {
@@ -1085,6 +1104,7 @@ span.bod-tag {
         .team-member-name{
           float: left;
           width: calc(100% - 175px);
+          margin-top: 10px;
           margin-bottom: 5px;
           padding-left: 20px;
           font-size: 26px;
@@ -1115,7 +1135,7 @@ span.bod-tag {
           }
 
           @include mq(sm) {
-            width: calc(100% - 100px);
+            width: calc(100% - 125px);
             margin-top: 5px;
             padding-left: 20px;
             padding-right: 10px;
@@ -1159,7 +1179,7 @@ span.bod-tag {
           }
 
           @include mq(sm) {
-            width: calc(100% - 100px);
+            width: calc(100% - 125px);
             margin-top: 5px;
             padding-left: 20px;
             padding-right: 10px;
@@ -1179,16 +1199,12 @@ span.bod-tag {
             width: calc(100% - 175px);
             padding-left: 20px;
             text-align: left;
-
-
           }
 
           @include mq(lg) {
             width: calc(100% - 175px);
             padding-left: 20px;
             text-align: left;
-
-
           }
 
           @include mq(md) {
@@ -1199,7 +1215,7 @@ span.bod-tag {
           }
 
           @include mq(sm) {
-            width: calc(100% - 100px);
+            width: calc(100% - 125px);
             padding-left: 20px;
             padding-right: 10px;
             text-align: left;

@@ -99,6 +99,7 @@ $tan-potion:        #E4DCCD;
 // Set your global app/site variables here
 $color-primary:     $green-potion;
 $color-secondary:   #2C3621;
+$color-secondary-alt: #234069;
 $color-tertiary:    #e4dccd;
 
 
@@ -237,10 +238,10 @@ $button-purple:    $purple-potion;
 
  // small range (0px --> 640px) ==> Good for mobile devices
  $sm-start:   0em;
- $sm-end:     40em;
+ $sm-end:     47.9375em;
 
  // medium range (641px --> 1024px) ==> Good for tablet devices
- $md-start:  40.063em;
+ $md-start:  48em;
  $md-end:    64em;
 
  // large range (1025px --> 1440px) ==> Good for portable & laptop devices

@@ -12,7 +12,7 @@ Template Name: Home Page __TEMPLATE__
 
 <?php get_template_part('partials/callout-btn'); ?>
 
-<div style="position: relative; top: -13px;"><?php get_template_part('partials/sm-nav'); ?></div>
+<div class="sm-nav--home"><?php get_template_part('partials/sm-nav'); ?></div>
 
 <section class="body-container home-page-container">
   <section class="body-container--inner hpc--inner">

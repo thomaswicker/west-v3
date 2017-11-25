@@ -2,8 +2,6 @@
 
 <?php get_header(); ?>
 
-<h1>ON THE STAFF SINGLE PAGE</h1>
-
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : the_post(); ?>
 
@@ -29,7 +27,7 @@
           <?php if( get_field('staff_member_linkedin_url') ): ?>
             <a href="<?php the_field( 'staff_member_linkedin_url' ); ?>" class="btn profile-linkedin-btn">
               <i class="fa fa-linkedin"></i>
-              <?php the_field( 'staff_member_short_name' ); ?>'s LinkedIn
+              LinkedIn
             </a>
           <?php endif; ?>
         </div>
@@ -50,34 +48,67 @@
       </section>
 
       <section class="ppd--right">
-        <h4>ABOUT WEST & TEAM</h4>
+        <div class="sidebar-container">
+          <h3>About WEST</h3>
 
-        <ul>
-          <li>
-            <a href="#" class="active">
-              <i class="fa fa-caret-right"></i>
-              Our Team
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-caret-right"></i>
-              Culture
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-caret-right"></i>
-              News & Events
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-caret-right"></i>
-              Contact Us
-            </a>
-          </li>
-        </ul>
+          <ul class="subnav-sidebar staff">
+            <li class="about-subnav--profile">
+              <a href="http://www.west-inc.com/about/profile-page/">
+                <i class="fa fa-chevron-right"></i>
+                Profile
+              </a>
+            </li>
+
+            <li class="about-subnav--team">
+              <a href="http://www.west-inc.com/about/our-team/">
+                <i class="fa fa-chevron-right"></i>
+                WEST Core Team
+              </a>
+            </li>
+
+            <li class="about-subnav--staff">
+              <a href="http://www.west-inc.com/about/staff/">
+                <i class="fa fa-chevron-right"></i>
+                Our Staff
+              </a>
+            </li>
+
+            <li class="about-subnav--culture">
+              <a href="http://www.west-inc.com/about/culture-page/">
+                <i class="fa fa-chevron-right"></i>
+                Culture
+              </a>
+            </li>
+
+            <li class="about-subnav--safety">
+              <a href="http://www.west-inc.com/about/safety-page/">
+                <i class="fa fa-chevron-right"></i>
+                Health & Safety
+              </a>
+            </li>
+
+            <li class="about-subnav--news">
+              <a href="http://www.west-inc.com/news-events/">
+                <i class="fa fa-chevron-right"></i>
+                News & Events
+              </a>
+            </li>
+
+            <li class="about-subnav--westulc">
+              <a href="http://west-ulc.ca/" target="_blank">
+                <i class="fa fa-chevron-right"></i>
+                WEST, ULC Canada
+              </a>
+            </li>
+
+            <li class="about-subnav--locations last-item">
+              <a href="http://www.west-inc.com/locations/">
+                <i class="fa fa-chevron-right"></i>
+                Locations
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
     </article>

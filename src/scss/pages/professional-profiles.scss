@@ -343,7 +343,11 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
 .professional-profile-detail {
   float: left;
   width: 100%;
-  padding: 100px 20px 30px 20px;
+  padding: 110px 20px 50px 20px;
+
+  @include mq(sm) {
+    padding: 35px 15px 50px 15px;
+  }
 
   .ppd--header {
     float: left;
@@ -369,10 +373,59 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
 
       i {
         margin-right: 4px;
+        color: $color-primary;
       }
 
       span {
 
+      }
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+        margin-top: 0;
+        background-color: #777777;
+        color: #fff;
+        width: 100%;
+        padding: 12px 20px;
+        text-align: center;
+
+        i {
+          color: $white;
+        }
+
+        &:hover {
+          background-color: #444444;
+          color: $white;
+
+          i {
+            color: $white;
+          }
+        }
+
+        &:active {
+          background-color: #444444;
+          color: $white;
+
+          i {
+            color: $white;
+          }
+        }
+
+        &:focus {
+          background-color: #444444;
+          color: $white;
+
+          i {
+            color: $white;
+          }
+        }
       }
     }
   }
@@ -383,10 +436,25 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
     text-align: center;
     padding-left: 25px;
 
+    @include mq(lg) {
+    }
+
+    @include mq(md) {
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      text-align: center;
+    }
+
     img {
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
+
+      @include mq(sm) {
+        margin-top: 50px;
+      }
     }
 
     .profile-links {
@@ -402,6 +470,7 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 13px;
         border: 0;
 
         i {
@@ -438,6 +507,21 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
     padding-right: 40px;
     text-align: left;
 
+    @include mq(lg) {
+    }
+
+    @include mq(md) {
+      width: calc(100% - 200px);
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
     h2.profile-name {
       float: left;
       width: 100%;
@@ -448,6 +532,16 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
       font-size: 32px;
       font-weight: 300;
       line-height: 145%;
+
+      @include mq(md) {
+        padding-left: 25px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+      }
     }
 
     h3.profile-job-title {
@@ -460,6 +554,15 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
       font-style: italic;
       font-weight: 400;
       color: $color-primary;
+
+      @include mq(md) {
+        padding-left: 25px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .profile-body-text {
@@ -472,6 +575,10 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
       font-size: 16px;
       font-weight: 500;
       line-height: 140%;
+
+      @include mq(md) {
+        padding-left: 25px;
+      }
 
       p {
         float: left;
@@ -492,20 +599,50 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
     width: 350px;
     padding-right: 25px;
 
-    h4 {
+    @include mq(lg) {
+    }
+
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    h3 {
       float: left;
       width: 100%;
-      margin-top: 25px;
+      margin-top: 0;
       margin-bottom: 20px;
       text-transform: uppercase;
       font-family: $font-primary;
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 500;
+
+      @include mq(md) {
+        margin-top: 45px;
+        padding-left: 25px;
+      }
+
+      @include mq(sm) {
+        margin-top: 45px;
+        padding-left: 0;
+      }
     }
 
     ul {
       float: left;
       width: 100%;
+
+      @include mq(md) {
+        padding-left: 25px;
+      }
+
+      @include mq(sm) {
+        padding-left: 0;
+      }
 
       li {
         float: left;

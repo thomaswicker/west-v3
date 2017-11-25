@@ -41,7 +41,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
           <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
             <?php if( get_field('order_of_placement') == '1' ): ?>
-              <article class="team-member-tile">
+              <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                 <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-1" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                 <?php if( get_field('team_member_name') ): ?>
@@ -64,7 +64,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
             <?php endif; ?>
 
             <?php if( get_field('order_of_placement') == '2' ): ?>
-              <article class="team-member-tile">
+              <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                 <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-2" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                 <?php if( get_field('team_member_name') ): ?>
@@ -100,7 +100,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
             <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <?php if( get_field('order_of_placement') == '3' ): ?>
-                <article class="team-member-tile">
+                <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                   <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-3" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                   <?php if( get_field('team_member_name') ): ?>
@@ -122,7 +122,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
               <?php endif; ?>
 
               <?php if( get_field('order_of_placement') == '4' ): ?>
-                <article class="team-member-tile">
+                <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                   <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank"class="team-member-photo tile-4" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                   <?php if( get_field('team_member_name') ): ?>
@@ -144,7 +144,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
               <?php endif; ?>
 
               <?php if( get_field('order_of_placement') == '5' ): ?>
-                <article class="team-member-tile">
+                <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                   <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-5" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                   <?php if( get_field('team_member_name') ): ?>
@@ -166,7 +166,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
               <?php endif; ?>
 
               <?php if( get_field('order_of_placement') == '6' ): ?>
-                <article class="team-member-tile">
+                <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                   <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-6" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                   <?php if( get_field('team_member_name') ): ?>
@@ -203,7 +203,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
               <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
                 <?php if( get_field('order_of_placement') == '7' ): ?>
-                  <article class="team-member-tile">
+                  <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                     <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-7" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                     <?php if( get_field('team_member_name') ): ?>
@@ -225,7 +225,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
                 <?php endif; ?>
 
                 <?php if( get_field('order_of_placement') == '8' ): ?>
-                  <article class="team-member-tile">
+                  <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                     <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-8" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                     <?php if( get_field('team_member_name') ): ?>
@@ -247,7 +247,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
                 <?php endif; ?>
 
                 <?php if( get_field('order_of_placement') == '9' ): ?>
-                  <article class="team-member-tile">
+                  <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                     <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-9" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                     <?php if( get_field('team_member_name') ): ?>
@@ -269,7 +269,7 @@ Template Name: Our Team Landing Page __TEMPLATE__
                 <?php endif; ?>
 
                 <?php if( get_field('order_of_placement') == '10' ): ?>
-                  <article class="team-member-tile">
+                  <article class="team-member-tile <?php the_field( 'team_member_shortname' ); ?>">
                     <a href="<?php the_field( 'team_member_bio_link' ); ?>" target="_blank" class="team-member-photo tile-10" style="background-image: url('<?php the_field( 'team_member_photo' ); ?>')"></a>
 
                     <?php if( get_field('team_member_name') ): ?>

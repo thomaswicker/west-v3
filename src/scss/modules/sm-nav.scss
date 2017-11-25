@@ -6,56 +6,6 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
 |____/ \___/ \____|___/_/   \_\_____| |_|  |_|_____|____/___/_/   \_\ |_| \_/_/   \_\_/
 
 */
-.sm-nav--safety {
-  position: relative;
-  top: 72px;
-
-  @include mq(lg) {
-    top: 72px;
-  }
-
-  @include mq(md) {
-    top: 192px;
-  }
-
-  @include mq(sm) {
-    top: 192px;
-  }
-}
-
-.sm-nav--culture {
-  position: relative;
-  top: 21px;
-
-  @include mq(lg) {
-    top: 21px;
-  }
-
-  @include mq(md) {
-    top: 192px;
-  }
-
-  @include mq(sm) {
-    top: 192px;
-  }
-}
-
-.sm-nav--profile {
-  position: relative;
-  top: 21px;
-
-  @include mq(lg) {
-    top: 21px;
-  }
-
-  @include mq(md) {
-    top: 192px;
-  }
-
-  @include mq(sm) {
-    top: 192px;
-  }
-}
 
 .social-media-nav {
   position: absolute;
@@ -102,5 +52,120 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
         }
       }
     }
+  }
+}
+
+.sm-nav--safety {
+  position: relative;
+  top: 72px;
+
+  @include mq(lg) {
+    top: 72px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
+.sm-nav--culture {
+  position: relative;
+  top: 21px;
+
+  @include mq(lg) {
+    top: 21px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
+.sm-nav--home {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 100000000;
+
+  .social-media-nav {
+    position: static;
+    float: right;
+    width: 160px;
+    margin-top: -44px;
+    padding-right: 0px;
+    background-color: #FFFFFF;
+  }
+
+  @include mq(lg) {
+    margin-top: 0px;
+  }
+
+  @include mq(md) {
+    margin-top: 0px;
+  }
+
+  @include mq(sm) {
+    display: none;
+  }
+}
+
+.sm-nav--team {
+  position: relative;
+  top: 21px;
+
+  @include mq(lg) {
+    top: 21px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
+.sm-nav--events {
+  position: relative;
+  top: 21px;
+
+  @include mq(lg) {
+    top: 21px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
+.sm-nav--profile {
+  position: relative;
+  top: 21px;
+
+  @include mq(lg) {
+    top: 21px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
   }
 }

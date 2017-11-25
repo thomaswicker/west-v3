@@ -8,6 +8,16 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
 */
 
 .sidebar-container {
+  @include mq(md) {
+    margin-top: 20px;
+    border-top: 1px dotted #888888;
+  }
+
+  @include mq(sm) {
+    margin-top: 20px;
+    border-top: 1px dotted #888888;
+  }
+
   h3 {
     float: left;
     width: 100%;
@@ -26,6 +36,18 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
     border-left: 1px solid #DEDEDE;
     padding-left: 40px;
 
+    @include mq(lg) {
+
+    }
+
+    @include mq(md) {
+      border-left: 0px;
+    }
+
+    @include mq(sm) {
+      border-left: 0px;
+    }
+
     //ABOUT SIDEBAR
     &.profile {
       li.about-subnav--profile a {
@@ -40,6 +62,17 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
 
     &.team {
       li.about-subnav--team a {
+        background-color: $color-primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.staff {
+      li.about-subnav--staff a {
         background-color: $color-primary;
         color: $white;
 

@@ -11,7 +11,7 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
 /* ############# NEW HOME PAGE CSS ############# */
 .contact-us-btn {
   position: absolute;
-  top: 0;
+  top: 105px;
   right: -233px;
   float: right;
   padding-right: 150px !important;
@@ -47,6 +47,19 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
   span {
 
   }
+
+  @include mq(sm) {
+    display: none;
+  }
+}
+
+.superhero-staff {
+  flex: 1;
+  min-height: 450px;
+  margin-top: 72px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .superhero {
@@ -59,15 +72,15 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
   z-index: 1;
 
   @include mq(lg) {
-    object-fit: cover;
+    object-fit: contain;
   }
 
   @include mq(md) {
-    object-fit: cover;
+    object-fit: contain;
   }
 
   @include mq(sm) {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .superhero-title {
@@ -135,6 +148,10 @@ ___ ) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
   }
 
   &.culture-page--header {
+    background-position: 0px 0px;
+  }
+
+  &.superhero-news-and-events {
     background-position: 0px 0px;
   }
 

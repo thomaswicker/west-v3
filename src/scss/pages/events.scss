@@ -7,67 +7,198 @@ _______     _______ _   _ _____ ____
 
 */
 
-.eventsBodyContainer {
-  float: left;
-  clear: right;
-  width: 100%;
-  padding: 0px 0px 30px 0px;
+.events-page-container {
+  .social-media-nav {
+    top: 416px;
 
-  h2 {
-    font-family: $opensans;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    color: #555;
-    padding: 0px 0px 5px 0px;
+    @include mq(lg) {
+      top: 416px;
+    }
+
+    @include mq(md) {
+      top: 296px;
+    }
+
+    @include mq(sm) {
+      top: 296px;
+    }
   }
 
-  h3 {
-    font-family: $raleway;
-    font-weight: 500;
-    font-size: .95em;
-    line-height: 1.3em;
-    font-style: italic;
-    color: $westGreen;
-    padding: 5px 0px 0px 0px;
+  .events-page--header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .superhero-title {
+
+
+      @include mq(xl) {
+
+      }
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 450px;
+      background-color: rgba(14, 82, 132, .45);
+      z-index: 1;
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+
+      }
+    }
   }
 
-  p {
-    font-family: $raleway;
-    font-size: .9em;
-    line-height: 1.4em;
-    color: $black;
-    padding: 0px 0px 10px 0px;
-  }
+  .events-page--inner {
+    .events-page--inner-left {
+      float: left;
+      width: calc(100% - 450px);
+      padding: 40px 90px 50px 90px;
 
-  span{
-    font-family: $raleway;
-    font-weight: 500;
-    font-size: 1.1em;
-    color: darken($westGreen, 15%) !important;
-    padding: 20px 0px 20px 0px;
-  }
+      @include mq(lg) {
+        width: calc(100% - 390px);
+        padding: 40px 40px 50px 40px;
+      }
 
-  li {
-    padding: 30px 40px 40px 40px;
-    margin: 30px 0px 30px 0px;
-    border: 1px solid #ddd;
-  }
+      @include mq(md) {
+        width: 100%;
+        padding: 30px 40px 20px 40px;
+      }
 
-  img {
-    margin: 15px 0px 0px 0px;
-    max-width: 400px;
-    height: auto;
-    background: $white;
-    padding: 8px;
-    border: 1px solid #ddd;
-  }
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px 40px 10px 40px;
+      }
 
-  /*0px --> 768px*/
-  @media only screen and (min-width:0px) and (max-width:767px) {
-    padding: 10px 0px 30px 0px;
-    margin: 10px 0px 30px 0px;
+      .events-list {
+        float: left;
+        width: 100%;
+        padding: 0 0 30px 0;
+
+        h2 {
+          padding: 0 0 5px 0;
+          font-family: $opensans;
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+          color: #555;
+        }
+
+        h3 {
+          padding: 5px 0 0 0;
+          font-family: $raleway;
+          font-weight: 500;
+          font-size: .95em;
+          line-height: 1.3em;
+          font-style: italic;
+          color: $color-primary;
+        }
+
+        p {
+          padding: 0 0 10px 0;
+          font-family: $raleway;
+          font-size: .9em;
+          line-height: 1.4em;
+          color: $black;
+        }
+
+        span{
+          padding: 20px 0 20px 0;
+          font-family: $raleway;
+          font-weight: 500;
+          font-size: 1.1em;
+          color: darken($color-primary, 15%) !important;
+        }
+
+        li {
+          margin: 30px 0 30px 0;
+          padding: 30px 40px 40px 40px;
+          border: 1px solid #ddd;
+        }
+
+        img {
+          margin: 15px 0 0 0;
+          max-width: 400px;
+          height: auto;
+          padding: 8px;
+          background: $white;
+          border: 1px solid #ddd;
+        }
+
+        /*0px --> 768px*/
+        @media only screen and (min-width:0px) and (max-width:767px) {
+          padding: 10px 0 30px 0;
+          margin: 10px 0 30px 0;
+        }
+      }
+    }
+
+    .events-page--inner-right {
+      float: left;
+      width: 450px;
+      padding: 30px 90px 40px 0;
+
+      @include mq(lg) {
+        width: 390px;
+        padding: 30px 40px 40px 20px;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: 0px 30px 40px 0px;
+        border-left: 0px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px 20px 30px 0;
+        border-left: 0px;
+      }
+
+      .sidebar-container {
+        .subnav-sidebar {
+          @include mq(lg) {
+
+          }
+
+          @include mq(md) {
+            border-left: 0px;
+          }
+
+          @include mq(sm) {
+            padding-left: 25px;
+            border-left: 0px;
+          }
+        }
+      }
+    }
   }
 }
-
-/* -------------------------- END EVENTS CSS -------------------------- */

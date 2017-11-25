@@ -297,8 +297,8 @@ ____  _   _ _____ _____ ___  _   _ ____
   }
 
   &:hover {
-    border: 2px solid darken($color-primary, 15%);
-    background: darken($color-primary, 15%);
+    border: 2px solid lighten($color-primary, 15%);
+    background: lighten($color-primary, 15%);
   }
 
   // primary button
@@ -308,20 +308,20 @@ ____  _   _ _____ _____ ___  _   _ ____
     color: $white;
 
     &:hover {
-      border: 2px solid darken($color-primary, 15%);
-      background: darken($color-primary, 15%);
+      border: 2px solid lighten($color-primary, 15%);
+      background: lighten($color-primary, 15%);
     }
   }
 
   // secondary button
   &.btn-secondary {
-    border: 2px solid $color-secondary;
-    background: $color-secondary;
+    border: 2px solid $color-secondary-alt;
+    background: $color-secondary-alt;
     color: $white;
 
     &:hover {
-      border: 2px solid darken($color-secondary, 15%);
-      background: darken($color-secondary, 15%);
+      border: 2px solid lighten($color-secondary-alt, 15%);
+      background: lighten($color-secondary-alt, 15%);
     }
   }
 
@@ -420,13 +420,12 @@ ____  _   _ _____ _____ ___  _   _ ____
   }
 
   &.btn-inline {
-    padding: 0;
     background-color: transparent;
-    color: $orange-potion;
+    color: $color-secondary-alt;
     border: 0;
 
     &:hover {
-      color: darken($orange-potion, 20%);
+      color: lighten($color-secondary-alt, 15%);
     }
   }
 

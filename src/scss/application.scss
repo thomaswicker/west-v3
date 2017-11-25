@@ -143,8 +143,9 @@ i {
 }
 
 .cycloneslider-slides {
+  position: relative;
   max-height: 450px !important;
-  background-color: $black !important;
+  background-color: $white !important;
 
   /*0px --> 450px*/
   @media only screen and (min-width:0px) and (max-width:450px) {
@@ -166,10 +167,45 @@ i {
 }
 
 .cycloneslider-caption {
+  max-height: 100px !important;
   margin: -60px 0px 0px 0px !important;
   text-align: right !important;
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, .25) !important;
   opacity: 1 !important;
+
+  @include mq(xl) {
+    max-height: 100px !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+
+  @include mq(lg) {
+    max-height: 100px !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+
+  @include mq(md) {
+    max-height: 100px !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+
+  @include mq(sm) {
+    max-height: 30px !important;
+    margin: -160px 0px 0px 0px !important;
+    background-color: rgba(255, 255, 255, .45) !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
 }
 
 .cycloneslider-caption-title {
@@ -190,10 +226,16 @@ i {
   &:hover {
     background: $color-primary !important;
   }
+
+  @include mq(sm) {
+    opacity: 1 !important;
+  }
 }
 
 .cycloneslider-caption-description {
-  padding: 5px 20px 35px 50px!important;
+  position: relative;
+  top: 20px;
+  padding: 5px 20px 35px 50px !important;
   text-align: left !important;
   font-family: $font-primary !important;
   font-size: 48px !important;
@@ -202,9 +244,18 @@ i {
   background-color: transparent !important;
   color: $white !important;
 
-  /*0px --> 767px*/
-  @media only screen and (min-width:0px) and (max-width:767px) {
-    display: none;
+  @include mq(lg) {
+    font-size: 38px !important;
+  }
+
+  @include mq(md) {
+    font-size: 24px !important;
+    padding: 5px 20px 35px 40px !important;
+  }
+
+  @include mq(sm) {
+    padding: 5px 40px 35px 20px !important;
+    font-size: 15px !important;
   }
 }
 
@@ -233,9 +284,16 @@ i {
   background-color: $black !important;
   box-shadow: none !important;
 
-  /*0px --> 450px*/
-  @media only screen and (min-width:0px) and (max-width:450px) {
-    height: 240px !important;
+  @include mq(lg) {
+
+  }
+
+  @include mq(md) {
+    max-height: 200px;
+  }
+
+  @include mq(sm) {
+    max-height: 50px;
   }
 }
 

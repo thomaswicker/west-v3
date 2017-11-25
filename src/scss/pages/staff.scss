@@ -124,80 +124,355 @@ __ _) || |/ ___ \|  _| |  _|
 // Staff Landing Page CSS ##################################### //
 
 .staff-landing-container {
-  float: left;
-  width: 100%;
+  display: flex;
   padding: 130px 25px 30px 25px;
 
-  .staff-landing-header {
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-    font-family: $font-primary;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 140%;
+  @include mq(lg) {
+
   }
 
-  .staff-landing-list {
-    float: left;
-    width: 100%;
-    padding: 20px;
+  @include mq(md) {
+    padding: 90px 10px 30px 10px;
+  }
 
-    .staff-tile {
-      float: left;
-      width: calc(20% - 10px);
-      margin: 5px;
-      padding: 10px 15px;
-      border: 1px solid $color-secondary;
+  @include mq(sm) {
+    padding: 90px 5px 30px 5px;
+  }
 
-      .staff-tile--left {
-        float: left;
-        width: 55px;
+  > * {
+    flex: 1 100%;
+  }
 
-        img {
-          max-width: 55px;
+  .staff-landing-header {
+    flex: 1;
+
+    @include mq(sm) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .slc--inner {
+    display: flex;
+
+    @include mq(sm) {
+      flex-wrap: wrap;
+    }
+
+    .slc--inner-left {
+      flex: 8;
+      padding-right: 50px;
+      padding-left: 50px;
+
+      @include mq(lg) {
+        flex: 7;
+        padding-right: 10px;
+        padding-left: 10px
+      }
+
+      @include mq(md) {
+        flex: 5;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+      @include mq(sm) {
+        flex: 1 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+
+    .slc--inner-right {
+      flex: 2;
+
+      @include mq(lg) {
+        flex: 3;
+      }
+
+      @include mq(md) {
+        flex: 5;
+
+        h3 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        .subnav-sidebar {
+          padding-left: 15px;
+          padding-right: 15px;
+          border-left: 0px;
         }
       }
 
-      .staff-tile--right {
-        float: left;
-        width: calc(100% - 55px);
-        padding-left: 20px;
-      }
+      @include mq(sm) {
+        flex: 1 100%;
+        padding-top: 30px;
 
-      h2 {
-        float: left;
-        width: 100%;
-        padding-top: 4px;
-        margin-bottom: 4px;
-        font-family: $font-primary;
-        font-size: 18px;
-        color: $color-secondary;
-      }
+        h3 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
 
-      h3 {
-        float: left;
-        width: 100%;
-        margin-bottom: 4px;
-        font-family: $font-secondary;
+        .subnav-sidebar {
+          padding-left: 15px;
+          padding-right: 15px;
+          border-left: 0px;
+        }
+      }
+    }
+
+    h1.main-title {
+      float: none;
+      display: flex;
+      padding-left: 8px;
+    }
+
+    h2.main-subtitle {
+      float: none;
+      display: flex;
+      padding-left: 8px;
+      padding-bottom: 20px;
+      line-height: 140%;
+
+      @include mq(sm) {
         font-size: 15px;
-        font-weight: 600;
-        color: #202e0d;
-        font-style: italic;
+      }
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+
+      @include mq(md) {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
-      .btn {
-        margin-top: 10px;
-        padding: 4px 13px;
-        border: 0px;
-        font-weight: 600;
+      @include mq(sm) {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
 
-        &:hover {
-          padding: 4px 13px;
+      input {
+        flex: 2;
+        height: 80px;
+        margin-right: 250px;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        font-size: 30px;
+        font-weight: 300;
+        border: 1px solid $color-secondary-alt;
+        color: #888888;
+
+        &:focus {
+          border: 2px solid $color-primary;
+          color: #222222;
         }
 
-        &.btn-secondary {
-          margin-left: 8px;
+        @include mq(xl) {
+          margin-right: 150px;
+        }
+
+        @include mq(lg) {
+          margin-right: 45px;
+        }
+
+        @include mq(md) {
+          width: 100%;
+          margin-right: 50px;
+          margin-bottom: 0;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          height: 40px;
+          margin-right: 0px;
+          margin-bottom: 0;
+          padding: 10px 8px;
+          font-size: 20px;
+        }
+      }
+
+      .btn-container {
+        min-width: 250px;
+        margin-top: 10px;
+        margin-left: auto;
+        padding-right: 10px;
+
+        @include mq(md) {
+          display: block;
+          width: 100%;
+          min-width: 250px;
+          margin-top: 15px;
+        }
+
+        @include mq(sm) {
+          display: block;
+          width: 100%;
+          min-width: 250px;
+          margin-top: 15px;
+        }
+
+        i {
+          display: none;
+        }
+
+        i.fa-sort-desc {
+          position: relative;
+          top: -2px;
+        }
+
+        i.fa-sort-asc {
+          position: relative;
+          top: 2px;
+        }
+
+        .sort-name, .sort-title {
+          @include mq(sm) {
+            flex: 1;
+            margin-top: 15px;
+          }
+
+          &.active {
+            background-color: lighten($color-secondary-alt, 15%);
+
+            i {
+              display: inline;
+            }
+          }
+        }
+
+        .sort-name {
+          margin-right: 20px;
+        }
+
+        .sort-title {
+
+        }
+      }
+    }
+
+    .staff-landing-list {
+      display: flex;
+      flex-wrap: wrap;
+      // padding: 20px;
+
+      @include mq(md) {
+        width: 100%;
+        padding-top: 25px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding-top: 25px;
+      }
+
+      .staff-tile {
+        flex: 2;
+        min-width: 250px;
+        min-height: 100px;
+        margin: 8px;
+        border: 1px solid #AAAAAA;
+
+        .staff-tile--left {
+          float: left;
+          width: 75px;
+          min-height: 100px;
+          padding-top: 8px;
+          text-align: center;
+
+          img {
+            max-width: 55px;
+          }
+        }
+
+        .staff-tile--right {
+          float: left;
+          width: calc(100% - 75px);
+          min-height: 100px;
+          padding: 10px 15px 10px 5px;
+        }
+
+        h2 {
+          float: left;
+          width: 100%;
+          padding-top: 2px;
+          margin-bottom: 0;
+          font-family: $font-primary;
+          font-size: 17px;
+          font-weight: 500;
+          color: $color-secondary;
+          line-height: 145%;
+
+          @include mq(sm) {
+            font-size: 19px;
+          }
+        }
+
+        h3 {
+          float: left;
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: 4px;
+          font-family: $font-secondary;
+          font-size: 13px;
+          font-weight: 400;
+          color: #777;
+          line-height: 140%;
+
+          @include mq(sm) {
+            font-size: 15px;
+          }
+        }
+
+        .btn {
+          clear: both;
+          margin-top: 10px;
+          padding: 4px 13px;
+          border: 0px;
+          font-size: 13px;
+          font-weight: 600;
+
+          &:hover {
+            padding: 4px 13px;
+          }
+
+          &.btn-secondary {
+            margin-left: 8px;
+          }
+
+          &.btn-inline {
+            padding-left: 0;
+
+            @include mq(lg) {
+
+            }
+
+            @include mq(md) {
+
+            }
+
+            @include mq(sm) {
+              background-color: $color-secondary-alt;
+              color: $white;
+
+              i {
+                color: $white;
+              }
+
+              &:hover {
+                background-color: lighten($color-secondary-alt, 15%);
+              }
+            }
+          }
         }
       }
     }
