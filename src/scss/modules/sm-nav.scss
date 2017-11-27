@@ -55,6 +55,23 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
   }
 }
 
+.sm-nav--locations {
+  position: relative;
+  top: 72px;
+
+  @include mq(lg) {
+    top: 72px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
 .sm-nav--safety {
   position: relative;
   top: 72px;
@@ -78,6 +95,23 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
 
   @include mq(lg) {
     top: 21px;
+  }
+
+  @include mq(md) {
+    top: 192px;
+  }
+
+  @include mq(sm) {
+    top: 192px;
+  }
+}
+
+.sm-nav--news {
+  position: relative;
+  top: 72px;
+
+  @include mq(lg) {
+    top: 72px;
   }
 
   @include mq(md) {

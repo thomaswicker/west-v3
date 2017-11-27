@@ -25,6 +25,7 @@
       ul.bookstore-list {
         float: left;
         width: 100%;
+        margin-top: 20px;
 
         li.list-item  {
           float: left;
@@ -33,9 +34,87 @@
           padding-bottom: 10px;
           border-bottom: 1px solid #DDDDDD;
 
+          &:last-child {
+            border-bottom: 0;
+          }
+
           .pbi--left {
             float: left;
             width: 100px;
+
+            @include mq(lg) {
+
+            }
+
+            @include mq(md) {
+              width: 100%;
+              padding-right: 0;
+            }
+
+            @include mq(sm) {
+              width: 100%;
+              padding-right: 0;
+            }
+
+            h3.book-title{
+              float: left;
+              width: 100%;
+              margin-bottom: 0px;
+              padding-right: 15px;
+              font-family: $font-primary;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%;
+              color: $black;
+
+              @include mq(lg) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+
+              @include mq(md) {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+
+              @include mq(sm) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+            }
+
+            h4.book-details {
+              float: left;
+              width: 100%;
+              font-family: $font-secondary;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 135%;
+              color: #444444;
+
+              @include mq(lg) {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 135%;
+              }
+
+              @include mq(md) {
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 135%;
+              }
+
+              @include mq(sm) {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 140%;
+              }
+            }
 
             img {
               max-width: 100px;
@@ -47,16 +126,45 @@
             width: calc(100% - 100px);
             padding-left: 30px;
 
+            @include mq(md) {
+              width: 100%;
+              padding-left: 0;
+            }
+
+            @include mq(sm) {
+              width: 100%;
+              padding-left: 0;
+            }
+
             h3.book-title {
               float: left;
               width: 100%;
-              margin-bottom: 10px;
-              font-family: $font-secondary;
+              margin-bottom: 0px;
+              padding-right: 15px;
+              font-family: $font-primary;
               font-size: 18px;
-              font-weight: 600;
+              font-weight: 500;
               line-height: 140%;
-            }
+              color: $black;
 
+              @include mq(lg) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+
+              @include mq(md) {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+
+              @include mq(sm) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+            }
             h4.book-details {
               float: left;
               width: 100%;

@@ -11,13 +11,13 @@ Template Name: Statistics & Biometrics __TEMPLATE__
     <article class="bci--left parpc-page--inner-left">
 
       <?php if( get_field('page_title') ): ?>
-        <h1 class="main-header">
+        <h1 class="main-title">
           <?php the_field( 'page_title' ); ?>
         </h1>
       <?php endif; ?>
 
       <?php if( get_field('page_subtitle') ): ?>
-        <h2 class="main-subheader">
+        <h2 class="main-subtitle">
           <?php the_field( 'page_subtitle' ); ?>
         </h2>
       <?php endif; ?>
@@ -26,7 +26,10 @@ Template Name: Statistics & Biometrics __TEMPLATE__
         $args = array(
           'meta_key'   => 'publication_category',
           'meta_value'   => 'statistics-and-biometrics',
-          'post_type' => 'publications'
+          'post_type' => 'publications',
+          'posts_per_page' => -1,
+          'orderby'=>'title',
+          'order'=>'ASC'
         );
 
         $theField = get_field('publication_id');
@@ -59,7 +62,7 @@ Template Name: Statistics & Biometrics __TEMPLATE__
             <?php endif; ?>
 
           <?php endwhile; else: ?>
-            <p>There are no books to show or something went wrong. Please try back again later.</p>
+            <p class="warning-text">There are no books to show or something went wrong. Please try back again later.</p>
           <?php endif; ?>
         </ul>
 
@@ -103,7 +106,7 @@ Template Name: Statistics & Biometrics __TEMPLATE__
             <?php endif; ?>
 
           <?php endwhile; else: ?>
-            <p>There are no publications to show or something went wrong. Please try back again later.</p>
+            <p class="warning-text">There are no publications to show or something went wrong. Please try back again later.</p>
           <?php endif; ?>
         </ul>
 

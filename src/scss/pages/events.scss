@@ -81,21 +81,17 @@ _______     _______ _   _ _____ ____
     .events-page--inner-left {
       float: left;
       width: calc(100% - 450px);
-      padding: 40px 90px 50px 90px;
 
       @include mq(lg) {
         width: calc(100% - 390px);
-        padding: 40px 40px 50px 40px;
       }
 
       @include mq(md) {
         width: 100%;
-        padding: 30px 40px 20px 40px;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 10px 40px 10px 40px;
       }
 
       .events-list {
@@ -103,54 +99,83 @@ _______     _______ _   _ _____ ____
         width: 100%;
         padding: 0 0 30px 0;
 
-        h2 {
-          padding: 0 0 5px 0;
-          font-family: $opensans;
-          font-weight: 400;
-          font-size: 1.4rem;
-          line-height: 1.6rem;
-          color: #555;
-        }
-
-        h3 {
-          padding: 5px 0 0 0;
-          font-family: $raleway;
-          font-weight: 500;
-          font-size: .95em;
-          line-height: 1.3em;
-          font-style: italic;
-          color: $color-primary;
-        }
-
-        p {
-          padding: 0 0 10px 0;
-          font-family: $raleway;
-          font-size: .9em;
-          line-height: 1.4em;
-          color: $black;
-        }
-
-        span{
-          padding: 20px 0 20px 0;
-          font-family: $raleway;
-          font-weight: 500;
-          font-size: 1.1em;
-          color: darken($color-primary, 15%) !important;
-        }
-
         li {
           margin: 30px 0 30px 0;
-          padding: 30px 40px 40px 40px;
-          border: 1px solid #ddd;
-        }
+          padding: 10px 25px 10px 25px;
+          border-bottom: 1px solid #ddd;
 
-        img {
-          margin: 15px 0 0 0;
-          max-width: 400px;
-          height: auto;
-          padding: 8px;
-          background: $white;
-          border: 1px solid #ddd;
+          @include mq(md) {
+            padding: 10px 15px 10px 15px;
+          }
+
+          @include mq(sm) {
+            padding: 10px 5px 10px 5px;
+          }
+
+          h2 {
+            float: left;
+            width: 100%;
+            margin-bottom: 0px;
+            padding-right: 15px;
+            font-family: $font-primary;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 140%;
+            color: $black;
+
+            @include mq(lg) {
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 140%;
+            }
+
+            @include mq(md) {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%;
+            }
+
+            @include mq(sm) {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%;
+            }
+          }
+
+          h3 {
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: $font-secondary;
+            font-size: 15px;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 135%;
+            color: #444444;
+          }
+
+          p {
+            padding: 0 0 10px 0;
+            font-family: $raleway;
+            font-size: .9em;
+            line-height: 1.4em;
+            color: $black;
+          }
+
+          span{
+            padding: 20px 0 20px 0;
+            font-family: $raleway;
+            font-weight: 500;
+            font-size: 1.1em;
+            color: darken($color-primary, 15%) !important;
+          }
+
+          img {
+            max-width: 400px;
+            height: auto;
+            margin: 15px 0 0 0;
+          }
         }
 
         /*0px --> 768px*/
@@ -164,22 +189,18 @@ _______     _______ _   _ _____ ____
     .events-page--inner-right {
       float: left;
       width: 450px;
-      padding: 30px 90px 40px 0;
 
       @include mq(lg) {
         width: 390px;
-        padding: 30px 40px 40px 20px;
       }
 
       @include mq(md) {
         width: 100%;
-        padding: 0px 30px 40px 0px;
         border-left: 0px;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 10px 20px 30px 0;
         border-left: 0px;
       }
 

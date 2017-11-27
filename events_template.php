@@ -12,7 +12,7 @@ Template Name: Events __TEMPLATE __
 
   <?php get_template_part('partials/callout-btn'); ?>
 
-  <div class="sm-nav--events">
+  <div class="sm-nav--news">
     <?php get_template_part('partials/sm-nav'); ?>
   </div>
 
@@ -21,29 +21,90 @@ Template Name: Events __TEMPLATE __
       <ul class="events-list">
           <?php
             $args = array(
-                'post_type' => 'events'
+              'post_type' => 'events',
+              'posts_per_page' => -1,
+              'orderby'=>'title',
+              'order'=>'ASC'
             );
             $the_query = new WP_Query( $args );
           ?>
 
           <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
             <li>
-                <h2><a href="<?php the_permalink() ;?>"><?php the_title() ;?></a></h2>
-                <h3><?php the_field( 'subtitle' ); ?></h3>
-                <hr style="border: 1px solid #dddddd;">
-                <p><?php the_field( 'description' ); ?></p>
-                <span><?php the_field( 'links' ); ?></span>
+              <h2><?php the_title() ;?></h2>
+              <h3><?php the_field( 'subtitle' ); ?></h3>
+              <p><?php the_field( 'description' ); ?></p>
+              <span><?php the_field( 'links' ); ?></span>
             </li>
 
             <?php endwhile; else: ?>
-              <p class="warning-text">There are no posts or pages here</p>
+            <p class='warning-text'>There are no events to show or something went wrong. Please try again later.</p>
           <?php endif; ?>
-      </ul><!-- / eventsBodyContainer -->
+      </ul>
     </article>
 
     <aside class="bci--right events-page--inner-right">
-      <?php get_template_part('partials/sidebar/about-sidebar'); ?>
+      <div class="sidebar-container">
+      	<h3>About WEST</h3>
+
+      	<ul class="subnav-sidebar news">
+      		<li class="about-subnav--profile">
+      			<a href="http://www.west-inc.com/about/profile-page/">
+      				<i class="fa fa-chevron-right"></i>
+      				Profile
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--team">
+      			<a href="http://www.west-inc.com/about/our-team/">
+      				<i class="fa fa-chevron-right"></i>
+      				WEST Core Team
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--staff">
+      			<a href="http://www.west-inc.com/about/staff/">
+      				<i class="fa fa-chevron-right"></i>
+      				Our Staff
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--culture">
+      			<a href="http://www.west-inc.com/about/culture-page/">
+      				<i class="fa fa-chevron-right"></i>
+      				Culture
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--safety">
+      			<a href="http://www.west-inc.com/about/safety-page/">
+      				<i class="fa fa-chevron-right"></i>
+      				Health & Safety
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--news">
+      			<a href="http://www.west-inc.com/news-events/">
+      				<i class="fa fa-chevron-right"></i>
+      				News & Events
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--westulc">
+      			<a href="http://west-ulc.ca/" target="_blank">
+      				<i class="fa fa-chevron-right"></i>
+      				WEST, ULC Canada
+      			</a>
+      		</li>
+
+      		<li class="about-subnav--locations last-item">
+      			<a href="http://www.west-inc.com/locations/">
+      				<i class="fa fa-chevron-right"></i>
+      				Locations
+      			</a>
+      		</li>
+      	</ul>
+      </div>
     </aside>
   </section>
 

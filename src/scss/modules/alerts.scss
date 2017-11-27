@@ -1,0 +1,26 @@
+/*
+    _    _     _____ ____ _____ ____
+   / \  | |   | ____|  _ \_   _/ ___|
+  / _ \ | |   |  _| | |_) || | \___ \
+ / ___ \| |___| |___|  _ < | |  ___) |
+/_/   \_\_____|_____|_| \_\|_| |____/
+
+*/
+
+.warning-text {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background-color: orange;
+  color: $white;
+
+  &:before {
+    content: "\f071";
+    margin-right: 5px;
+    font-family: FontAwesome;
+    color: $white;
+  }
+}

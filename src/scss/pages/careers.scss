@@ -9,10 +9,10 @@
 
 .careers-page-container {
   .careers-page--header {
-    background-position: -100px 0;
+    background-position: 0px 0;
 
     @include mq(xl) {
-      background-position: -200px 0;
+      background-position: 0px 0;
     }
 
     @include mq(lg) {

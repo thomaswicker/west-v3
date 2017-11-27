@@ -11,20 +11,23 @@ Template Name: Computer Programs (Landing Page)__TEMPLATE__
     <article class="bci--left cppc-page--inner-left">
 
       <?php if( get_field('page_title') ): ?>
-        <h1 class="main-header">
+        <h1 class="main-title">
           <?php the_field( 'page_title' ); ?>
         </h1>
       <?php endif; ?>
 
       <?php if( get_field('page_subtitle') ): ?>
-        <h2 class="main-subheader">
+        <h2 class="main-subtitle">
           <?php the_field( 'page_subtitle' ); ?>
         </h2>
       <?php endif; ?>
 
       <?php
         $args = array(
-          'post_type' => 'computerprograms'
+          'post_type' => 'computerprograms',
+          'posts_per_page' => -1,
+          'orderby'=>'title',
+          'order'=>'ASC'
         );
 
         $the_query = new WP_Query( $args );
@@ -51,18 +54,17 @@ Template Name: Computer Programs (Landing Page)__TEMPLATE__
                   $buttonName = get_sub_field('button_name');
                   $buttonLink = get_sub_field('button_link');
                   $buttonClass = get_sub_field('button_class');
-
                 ?>
 
-                  <a href="<?php echo $buttonLink; ?>" target="_blank" class="btn btn-mini btn-<?php echo $buttonClass; ?>">
-                    <?php echo $buttonName; ?>
-                  </a>
+                <a href="<?php echo $buttonLink; ?>" target="_blank" class="btn btn-mini btn-<?php echo $buttonClass; ?>">
+                  <?php echo $buttonName; ?>
+                </a>
                 <?php endwhile; ?>
               <?php endif; ?>
             </div>
 
             <?php endwhile; else: ?>
-              <p>There are no computer programs to show or something went wrong. Please try back again later.</p>
+              <p class="warning-text">There are no computer programs to show or something went wrong. Please try back again later.</p>
             <?php endif; ?>
           </li>
         </ul>

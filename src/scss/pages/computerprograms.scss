@@ -11,7 +11,7 @@
 
 .computer-programs-page-container {
   padding-top: 100px;
-  
+
   .cppc--inner {
     .cppc-page--inner-left {
       h1 {
@@ -26,6 +26,7 @@
       ul.computer-programs-list {
         float: left;
         width: 100%;
+        margin-top: 20px;
 
         li.list-item  {
           float: left;
@@ -37,16 +38,49 @@
           .pbi--left {
             float: left;
             width: calc(100% - 150px);
-            padding-right: 30px;
+            padding-right: 50px;
+
+            @include mq(lg) {
+
+            }
+
+            @include mq(md) {
+
+            }
+
+            @include mq(sm) {
+              width: 100%;
+              padding-right: 0;
+            }
 
             h3.title-of-computer-program {
               float: left;
               width: 100%;
-              margin-bottom: 0;
+              margin-bottom: 0px;
+              padding-right: 15px;
               font-family: $font-primary;
               font-size: 18px;
-              font-weight: 600;
+              font-weight: 500;
               line-height: 140%;
+              color: $black;
+
+              @include mq(lg) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+
+              @include mq(md) {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 140%;
+              }
+
+              @include mq(sm) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 140%;
+              }
             }
 
             p {
@@ -54,7 +88,7 @@
               width: 100%;
               margin-top: 10px;
               font-family: $font-secondary;
-              font-size: 17px;
+              font-size: 15px;
               font-weight: 500;
               line-height: 135%;
               color: #333333;
@@ -65,10 +99,25 @@
             float: left;
             width: 150px;
 
+            @include mq(md) {
+
+            }
+
+            @include mq(sm) {
+              width: 100%;
+            }
+
             a {
               float: left;
               width: 100%;
               margin-bottom: 10px;
+
+              @include mq(sm) {
+                width: auto;
+                margin-top: 20px;
+                margin-right: 10px;
+                padding: 10px 30px;
+              }
             }
           }
         }

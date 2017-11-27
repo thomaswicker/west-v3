@@ -2262,6 +2262,28 @@ _______   ______  _____
    ========================================================================== */
 /* ## Modules ## */
 /*
+    _    _     _____ ____ _____ ____
+   / \  | |   | ____|  _ \_   _/ ___|
+  / _ \ | |   |  _| | |_) || | \___  / ___ \| |___| |___|  _ < | |  ___) |
+/_/   \_\_____|_____|_| \_\|_| |____/
+
+*/
+.warning-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background-color: orange;
+  color: #FFFFFF; }
+  .warning-text:before {
+    content: "\f071";
+    margin-right: 5px;
+    font-family: FontAwesome;
+    color: #FFFFFF; }
+
+/*
     _    _   _ ___ __  __    _  _____ ___ ___  _   _ ____
    / \  | \ | |_ _|  \/  |  / \|_   _|_ _/ _ \| \ | / ___|
   / _ \ |  \| || || |\/| | / _ \ | |  | | | | |  \| \___  / ___ \| |\  || || |  | |/ ___ \| |  | | |_| | |\  |___) |
@@ -2619,8 +2641,8 @@ ____  _   _ _____ _____ ___  _   _ ____
     font-size: 13px; }
 
 /* ==========================================================================
-   %% Styling for Outlined Buttons %%
-   ========================================================================== */
+%% Styling for Outlined Buttons %%
+========================================================================== */
 .btn-outline {
   background: #FFFFFF;
   border: 2px solid #72A430;
@@ -2723,7 +2745,7 @@ _   _ _____    _    ____  _____ ____  ____
 |_| |_|_____/_/   \_\____/|_____|_| \_\____/
 
 */
-h1.main-title {
+h1.main-title, h1.main-header {
   float: left;
   width: 100%;
   margin-bottom: 5px;
@@ -2732,13 +2754,15 @@ h1.main-title {
   font-weight: 300;
   line-height: 140%; }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
-    h1.main-title {
-      font-size: 25px; } }
+    h1.main-title, h1.main-header {
+      font-size: 27px;
+      font-weight: 500; } }
   @media only screen and (max-width: 47.9375em) {
-    h1.main-title {
-      font-size: 22px; } }
+    h1.main-title, h1.main-header {
+      font-size: 25px;
+      font-weight: 500; } }
 
-h2.main-subtitle {
+h2.main-subtitle, h1.main-subheader {
   float: left;
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -2748,11 +2772,21 @@ h2.main-subtitle {
   line-height: 140%;
   color: #72A430; }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
-    h2.main-subtitle {
+    h2.main-subtitle, h1.main-subheader {
       font-size: 18px; } }
   @media only screen and (max-width: 47.9375em) {
-    h2.main-subtitle {
+    h2.main-subtitle, h1.main-subheader {
       font-size: 16px; } }
+
+.bold-subtitle {
+  float: left;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 135%;
+  text-transform: uppercase; }
 
 .navbar-brand-icon img {
   position: relative;
@@ -2821,21 +2855,41 @@ h2.main-subtitle {
   float: left;
   display: none;
   min-width: 0;
-  max-width: 50px;
-  padding: 5px;
-  border: 1px solid #72a430;
+  width: 25px;
+  height: 35px;
+  padding: 20px;
+  border: 1px solid #72A430;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
-  background: #72a430;
+  background: #72A430;
   color: #fff;
   transition: all .3s ease; }
+  .navbar--toggle:hover {
+    border: 1px solid #49691f;
+    background-color: #49691f;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff; }
+  .navbar--toggle:focus {
+    border: 1px solid #72A430;
+    outline: 0;
+    box-shadow: 0px; }
+  .navbar--toggle:active {
+    border: 1px solid #72A430;
+    outline: 0;
+    box-shadow: 0px; }
   @media only screen and (max-width: 47.9375em) {
     .navbar--toggle {
       display: block; } }
   .navbar--toggle i {
+    position: relative;
+    top: -10px;
+    left: -8px;
     padding-left: 0;
     font-size: 20px; }
 
@@ -2927,13 +2981,13 @@ h2.main-subtitle {
     background-color: transparent !important;
     color: #72A430 !important; }
   .navbar-nav li {
-    background-color: #FFFFFF !important; }
-  .navbar-nav li a {
-    text-transform: uppercase;
-    font-size: .85em;
-    padding: 10px 15px 10px 25px;
-    border-bottom: 1px solid #BBBBBB;
-    color: #72A430 !important; }
+    background-color: #111111 !important; }
+    .navbar-nav li a {
+      text-transform: uppercase;
+      font-size: 15px;
+      padding: 10px 15px 10px 25px;
+      border-bottom: 1px solid #555555;
+      color: #FFFFFF !important; }
   .navbar-collapse {
     float: none; }
   .dropdown li a, .dropdown-menu li a, .dropdown-menu li a {
@@ -2975,34 +3029,11 @@ h2.main-subtitle {
     padding-left: 40px !important; } }
 
 /* ************************************************* END MEDIA QUERIES ************************************************* */
-h1.main-header {
-  float: left;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 145%; }
-
-h2.main-subheader {
-  float: left;
-  width: 100%;
-  font-size: 17px;
-  font-weight: 600;
-  font-style: italic;
-  color: #2a4b7d;
-  line-height: 135%; }
-
-.bold-subtitle {
-  float: left;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #000000;
-  line-height: 135%;
-  text-transform: uppercase; }
+.dropdown-menu > .active > a {
+  background-color: #72A430 !important;
+  color: #FFFFFF !important; }
+  .dropdown-menu > .active > a:hover {
+    cursor: default !important; }
 
 /*
 _____ ___   ___ _____ _____ ____  ____
@@ -3125,18 +3156,19 @@ _____ ___   ___ _____ _____ ____  ____
       .footer .footer--middle .footer-events a {
         color: #72A430 !important; }
       .footer .footer--middle .footer-events h2 {
-        display: block;
+        float: left;
         width: 100%;
         margin: 0 0 3px 0;
         padding: 0 0 3px 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
-        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
         line-height: 140%;
         color: #000000; }
       .footer .footer--middle .footer-events h3 {
-        width: 80%;
-        font-family: "Raleway", sans-serif;
+        float: left;
+        width: 100%;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: .90em;
         line-height: 1.3em;
@@ -3144,12 +3176,13 @@ _____ ___   ___ _____ _____ ____  ____
         color: #72A430;
         padding: 5px 0px 0px 20px; }
       .footer .footer--middle .footer-events p {
-        width: 90%;
-        font-family: "Raleway", sans-serif;
-        font-size: .8em;
-        line-height: 1.4em;
-        color: #000000;
-        padding: 0px 0px 10px 0px; }
+        float: left;
+        width: 100%;
+        padding: 0px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 140%;
+        color: #000000; }
         @media only screen and (min-width: 768px) and (max-width: 992px) {
           .footer .footer--middle .footer-events p {
             padding: 0px 0px 3px 30px; } }
@@ -3157,12 +3190,7 @@ _____ ___   ___ _____ _____ ____  ____
           .footer .footer--middle .footer-events p {
             padding: 0px 0px 3px 30px; } }
       .footer .footer--middle .footer-events span {
-        width: 90%;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        font-size: 1em;
-        color: #49691f !important;
-        padding: 10px 0px 20px 20px; }
+        display: none; }
       .footer .footer--middle .footer-events img {
         display: none; }
   .footer .footer--right {
@@ -3238,11 +3266,17 @@ _____ ___   ___ _____ _____ ____  ____
   position: relative;
   float: left;
   width: 100%;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  overflow-y: auto;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
   .body-container .body-container--inner {
     width: 100%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    overflow-y: auto;
+    /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; }
     .body-container .body-container--inner .bci--left {
       float: left;
       width: calc(100% - 450px);
@@ -3259,7 +3293,7 @@ _____ ___   ___ _____ _____ ____  ____
       @media only screen and (max-width: 47.9375em) {
         .body-container .body-container--inner .bci--left {
           width: 100%;
-          padding: 30px 20px 30px 20px; }
+          padding: 10px 20px 10px 20px; }
           .body-container .body-container--inner .bci--left img {
             display: none; } }
       .body-container .body-container--inner .bci--left .body-content-text {
@@ -3397,7 +3431,7 @@ _____ ___   ___ _____ _____ ____  ____
       @media only screen and (max-width: 47.9375em) {
         .body-container .body-container--inner .bci--right {
           width: 100%;
-          padding: 20px 20px 40px 20px; } }
+          padding: 0 20px 40px 20px; } }
 
 /*
 ____  ____   ___      _ _____ ____ _____   ____  ____   ___  _____ ___ _     _____ ____
@@ -3461,6 +3495,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: 500; }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .sidebar-container h3 {
+      padding-left: 0;
+      border-left: 0px; } }
+  @media only screen and (max-width: 47.9375em) {
+    .sidebar-container h3 {
+      padding-left: 0;
+      border-left: 0px; } }
 
 .sidebar-container ul.subnav-sidebar {
   float: left;
@@ -3469,9 +3511,13 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
   padding-left: 40px; }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
     .sidebar-container ul.subnav-sidebar {
+      margin-top: 0;
+      padding-left: 0;
       border-left: 0px; } }
   @media only screen and (max-width: 47.9375em) {
     .sidebar-container ul.subnav-sidebar {
+      margin-top: 0;
+      padding-left: 0;
       border-left: 0px; } }
   .sidebar-container ul.subnav-sidebar.profile li.about-subnav--profile a {
     background-color: #72A430;
@@ -3657,6 +3703,19 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
         .social-media-nav li a:hover i {
           color: #FFFFFF; }
 
+.sm-nav--locations {
+  position: relative;
+  top: 72px; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .sm-nav--locations {
+      top: 72px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .sm-nav--locations {
+      top: 192px; } }
+  @media only screen and (max-width: 47.9375em) {
+    .sm-nav--locations {
+      top: 192px; } }
+
 .sm-nav--safety {
   position: relative;
   top: 72px; }
@@ -3681,6 +3740,19 @@ __ _) | |_| | |___ | | / ___ \| |___  | |  | | |___| |_| | | / ___ \  | |\  |/ _
       top: 192px; } }
   @media only screen and (max-width: 47.9375em) {
     .sm-nav--careers {
+      top: 192px; } }
+
+.sm-nav--news {
+  position: relative;
+  top: 72px; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .sm-nav--news {
+      top: 72px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .sm-nav--news {
+      top: 192px; } }
+  @media only screen and (max-width: 47.9375em) {
+    .sm-nav--news {
       top: 192px; } }
 
 .sm-nav--culture {
@@ -4202,30 +4274,116 @@ _    ____   ___  _   _ _____   _   _ ____
     margin-bottom: 20px; }
   .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list {
     float: left;
-    width: 100%; }
+    width: 100%;
+    margin-top: 20px; }
     .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item {
       float: left;
       width: 100%;
       margin-bottom: 20px;
       padding-bottom: 10px;
       border-bottom: 1px solid #DDDDDD; }
+      .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item:last-child {
+        border-bottom: 0; }
       .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left {
         float: left;
         width: 100px; }
+        @media only screen and (min-width: 48em) and (max-width: 64em) {
+          .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left {
+            width: 100%;
+            padding-right: 0; } }
+        @media only screen and (max-width: 47.9375em) {
+          .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left {
+            width: 100%;
+            padding-right: 0; } }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h3.book-title {
+          float: left;
+          width: 100%;
+          margin-bottom: 0px;
+          padding-right: 15px;
+          font-family: "Roboto", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 140%;
+          color: #000000; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h3.book-title {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (min-width: 48em) and (max-width: 64em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h3.book-title {
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (max-width: 47.9375em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h3.book-title {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
+        .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h4.book-details {
+          float: left;
+          width: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 135%;
+          color: #444444; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h4.book-details {
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 135%; } }
+          @media only screen and (min-width: 48em) and (max-width: 64em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h4.book-details {
+              margin-top: 10px;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 135%; } }
+          @media only screen and (max-width: 47.9375em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left h4.book-details {
+              margin-top: 10px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 140%; } }
         .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--left img {
           max-width: 100px; }
       .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right {
         float: left;
         width: calc(100% - 100px);
         padding-left: 30px; }
+        @media only screen and (min-width: 48em) and (max-width: 64em) {
+          .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right {
+            width: 100%;
+            padding-left: 0; } }
+        @media only screen and (max-width: 47.9375em) {
+          .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right {
+            width: 100%;
+            padding-left: 0; } }
         .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h3.book-title {
           float: left;
           width: 100%;
-          margin-bottom: 10px;
-          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 0px;
+          padding-right: 15px;
+          font-family: "Roboto", sans-serif;
           font-size: 18px;
-          font-weight: 600;
-          line-height: 140%; }
+          font-weight: 500;
+          line-height: 140%;
+          color: #000000; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h3.book-title {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (min-width: 48em) and (max-width: 64em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h3.book-title {
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (max-width: 47.9375em) {
+            .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h3.book-title {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
         .bookstore-page-container .bspc--inner .bspc-page--inner-left ul.bookstore-list li.list-item .pbi--right h4.book-details {
           float: left;
           width: 100%;
@@ -4264,10 +4422,10 @@ _    ____   ___  _   _ _____   _   _ ____
 
 */
 .careers-page-container .careers-page--header {
-  background-position: -100px 0; }
+  background-position: 0px 0; }
   @media only screen and (min-width: 90.063em) and (max-width: 124em) {
     .careers-page-container .careers-page--header {
-      background-position: -200px 0; } }
+      background-position: 0px 0; } }
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     .careers-page-container .careers-page--header {
       background-position: -400px 0; } }
@@ -4329,7 +4487,8 @@ _    ____   ___  _   _ _____   _   _ ____
     margin-bottom: 10px; }
   .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list {
     float: left;
-    width: 100%; }
+    width: 100%;
+    margin-top: 20px; }
     .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item {
       float: left;
       width: 100%;
@@ -4339,31 +4498,61 @@ _    ____   ___  _   _ _____   _   _ ____
       .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left {
         float: left;
         width: calc(100% - 150px);
-        padding-right: 30px; }
+        padding-right: 50px; }
+        @media only screen and (max-width: 47.9375em) {
+          .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left {
+            width: 100%;
+            padding-right: 0; } }
         .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left h3.title-of-computer-program {
           float: left;
           width: 100%;
-          margin-bottom: 0;
+          margin-bottom: 0px;
+          padding-right: 15px;
           font-family: "Roboto", sans-serif;
           font-size: 18px;
-          font-weight: 600;
-          line-height: 140%; }
+          font-weight: 500;
+          line-height: 140%;
+          color: #000000; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left h3.title-of-computer-program {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (min-width: 48em) and (max-width: 64em) {
+            .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left h3.title-of-computer-program {
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (max-width: 47.9375em) {
+            .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left h3.title-of-computer-program {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
         .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--left p {
           float: left;
           width: 100%;
           margin-top: 10px;
           font-family: Arial, Helvetica, sans-serif;
-          font-size: 17px;
+          font-size: 15px;
           font-weight: 500;
           line-height: 135%;
           color: #333333; }
       .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right {
         float: left;
         width: 150px; }
+        @media only screen and (max-width: 47.9375em) {
+          .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right {
+            width: 100%; } }
         .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right a {
           float: left;
           width: 100%;
           margin-bottom: 10px; }
+          @media only screen and (max-width: 47.9375em) {
+            .computer-programs-page-container .cppc--inner .cppc-page--inner-left ul.computer-programs-list li.list-item .pbi--right a {
+              width: auto;
+              margin-top: 20px;
+              margin-right: 10px;
+              padding: 10px 30px; } }
 
 /*
   ____ _   _ _   _____ _   _ ____  _____
@@ -4500,63 +4689,83 @@ _______     _______ _   _ _____ ____
 
 .events-page-container .events-page--inner .events-page--inner-left {
   float: left;
-  width: calc(100% - 450px);
-  padding: 40px 90px 50px 90px; }
+  width: calc(100% - 450px); }
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     .events-page-container .events-page--inner .events-page--inner-left {
-      width: calc(100% - 390px);
-      padding: 40px 40px 50px 40px; } }
+      width: calc(100% - 390px); } }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
     .events-page-container .events-page--inner .events-page--inner-left {
-      width: 100%;
-      padding: 30px 40px 20px 40px; } }
+      width: 100%; } }
   @media only screen and (max-width: 47.9375em) {
     .events-page-container .events-page--inner .events-page--inner-left {
-      width: 100%;
-      padding: 10px 40px 10px 40px; } }
+      width: 100%; } }
   .events-page-container .events-page--inner .events-page--inner-left .events-list {
     float: left;
     width: 100%;
     padding: 0 0 30px 0;
     /*0px --> 768px*/ }
-    .events-page-container .events-page--inner .events-page--inner-left .events-list h2 {
-      padding: 0 0 5px 0;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 1.6rem;
-      color: #555; }
-    .events-page-container .events-page--inner .events-page--inner-left .events-list h3 {
-      padding: 5px 0 0 0;
-      font-family: "Raleway", sans-serif;
-      font-weight: 500;
-      font-size: .95em;
-      line-height: 1.3em;
-      font-style: italic;
-      color: #72A430; }
-    .events-page-container .events-page--inner .events-page--inner-left .events-list p {
-      padding: 0 0 10px 0;
-      font-family: "Raleway", sans-serif;
-      font-size: .9em;
-      line-height: 1.4em;
-      color: #000000; }
-    .events-page-container .events-page--inner .events-page--inner-left .events-list span {
-      padding: 20px 0 20px 0;
-      font-family: "Raleway", sans-serif;
-      font-weight: 500;
-      font-size: 1.1em;
-      color: #49691f !important; }
     .events-page-container .events-page--inner .events-page--inner-left .events-list li {
       margin: 30px 0 30px 0;
-      padding: 30px 40px 40px 40px;
-      border: 1px solid #ddd; }
-    .events-page-container .events-page--inner .events-page--inner-left .events-list img {
-      margin: 15px 0 0 0;
-      max-width: 400px;
-      height: auto;
-      padding: 8px;
-      background: #FFFFFF;
-      border: 1px solid #ddd; }
+      padding: 10px 25px 10px 25px;
+      border-bottom: 1px solid #ddd; }
+      @media only screen and (min-width: 48em) and (max-width: 64em) {
+        .events-page-container .events-page--inner .events-page--inner-left .events-list li {
+          padding: 10px 15px 10px 15px; } }
+      @media only screen and (max-width: 47.9375em) {
+        .events-page-container .events-page--inner .events-page--inner-left .events-list li {
+          padding: 10px 5px 10px 5px; } }
+      .events-page-container .events-page--inner .events-page--inner-left .events-list li h2 {
+        float: left;
+        width: 100%;
+        margin-bottom: 0px;
+        padding-right: 15px;
+        font-family: "Roboto", sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #000000; }
+        @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+          .events-page-container .events-page--inner .events-page--inner-left .events-list li h2 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 140%; } }
+        @media only screen and (min-width: 48em) and (max-width: 64em) {
+          .events-page-container .events-page--inner .events-page--inner-left .events-list li h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 140%; } }
+        @media only screen and (max-width: 47.9375em) {
+          .events-page-container .events-page--inner .events-page--inner-left .events-list li h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 140%; } }
+      .events-page-container .events-page--inner .events-page--inner-left .events-list li h3 {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: italic;
+        line-height: 135%;
+        color: #444444; }
+      .events-page-container .events-page--inner .events-page--inner-left .events-list li p {
+        padding: 0 0 10px 0;
+        font-family: "Raleway", sans-serif;
+        font-size: .9em;
+        line-height: 1.4em;
+        color: #000000; }
+      .events-page-container .events-page--inner .events-page--inner-left .events-list li span {
+        padding: 20px 0 20px 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 1.1em;
+        color: #49691f !important; }
+      .events-page-container .events-page--inner .events-page--inner-left .events-list li img {
+        max-width: 400px;
+        height: auto;
+        margin: 15px 0 0 0; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .events-page-container .events-page--inner .events-page--inner-left .events-list {
         padding: 10px 0 30px 0;
@@ -4564,21 +4773,17 @@ _______     _______ _   _ _____ ____
 
 .events-page-container .events-page--inner .events-page--inner-right {
   float: left;
-  width: 450px;
-  padding: 30px 90px 40px 0; }
+  width: 450px; }
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     .events-page-container .events-page--inner .events-page--inner-right {
-      width: 390px;
-      padding: 30px 40px 40px 20px; } }
+      width: 390px; } }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
     .events-page-container .events-page--inner .events-page--inner-right {
       width: 100%;
-      padding: 0px 30px 40px 0px;
       border-left: 0px; } }
   @media only screen and (max-width: 47.9375em) {
     .events-page-container .events-page--inner .events-page--inner-right {
       width: 100%;
-      padding: 10px 20px 30px 0;
       border-left: 0px; } }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
     .events-page-container .events-page--inner .events-page--inner-right .sidebar-container .subnav-sidebar {
@@ -4876,21 +5081,10 @@ _     ___   ____    _  _____ ___ ___  _   _ ____
 */
 #google-map {
   width: 100%;
-  height: 300px;
+  height: 450px;
   min-width: 1000px;
   margin: -20px 0px -10px 0px;
-  padding: 5px 0px 290px 0px;
-  border-bottom: 2px solid #dddddd; }
-
-div.wpcf7-response-output {
-  float: left !important;
-  width: 100% !important;
-  padding: 7px 10px !important;
-  margin-top: 10px !important;
-  color: white !important;
-  background-color: #72A430 !important; }
-  div.wpcf7-response-output.wpcf7-validation-errors {
-    background-color: red !important; }
+  padding: 5px 0px 290px 0px; }
 
 span.wpcf7-not-valid-tip {
   float: left;
@@ -5136,6 +5330,83 @@ span.wpcf7-not-valid-tip {
   line-height: 1.3em;
   font-size: .9em;
   padding: 0px 0px 0px 20px !important; }
+
+.locations-page-container .locations-page--inner .locations-page--inner-left {
+  width: calc(100% - 450px);
+  padding-top: 50px;
+  padding-right: 40px; }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .locations-page-container .locations-page--inner .locations-page--inner-left {
+      width: 100%;
+      padding-top: 50px;
+      padding-right: 0; } }
+  @media only screen and (max-width: 47.9375em) {
+    .locations-page-container .locations-page--inner .locations-page--inner-left {
+      width: 100%;
+      padding-top: 50px;
+      padding-right: 0; } }
+  .locations-page-container .locations-page--inner .locations-page--inner-left .wpcf7-response-output {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #234069;
+    color: #FFFFFF;
+    border: 0px; }
+  .locations-page-container .locations-page--inner .locations-page--inner-left form {
+    float: left;
+    width: 100%; }
+    .locations-page-container .locations-page--inner .locations-page--inner-left form input {
+      float: left;
+      width: 100%;
+      max-width: 800px;
+      min-height: 33px;
+      padding-left: 10px;
+      border: 1px solid #333; }
+    .locations-page-container .locations-page--inner .locations-page--inner-left form label {
+      float: left;
+      width: 100%;
+      margin-top: 15px; }
+    .locations-page-container .locations-page--inner .locations-page--inner-left form textarea {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #333; }
+  .locations-page-container .locations-page--inner .locations-page--inner-left .wpcf7-submit {
+    float: left;
+    display: block;
+    min-width: 75px;
+    padding: 7px 14px;
+    border: 2px solid #72A430;
+    border-radius: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: #72A430;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transition: all .3s ease; }
+    .locations-page-container .locations-page--inner .locations-page--inner-left .wpcf7-submit:hover {
+      border: 2px solid #99cd54;
+      background: #99cd54; }
+
+.locations-page-container .locations-page--inner .locations-page--inner-right {
+  width: 450px; }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .locations-page-container .locations-page--inner .locations-page--inner-right {
+      width: 100%; } }
+  @media only screen and (max-width: 47.9375em) {
+    .locations-page-container .locations-page--inner .locations-page--inner-right {
+      width: 100%; } }
 
 /*
 __  __    _    ____  _  _______ _____ ____
@@ -7198,56 +7469,151 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
     margin-top: 10px; }
   .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h2 {
     margin-top: 0; }
-  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left .publications-report-subheader {
+  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h3.publications-report-subheader {
     float: left;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 15px;
-    padding-top: 10px;
+    padding: 8px 20px 8px 12px;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 600;
+    line-height: 140%;
     text-transform: uppercase;
-    border-top: 2px solid #CCC; }
+    background-color: #333333;
+    color: #FFFFFF; }
+  .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left h4.publications-report-subheader-alt {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px 20px 8px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 140%; }
   .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list {
     float: left;
     width: 100%; }
     .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item {
       float: left;
       width: 100%;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #DDDDDD; }
+      padding: 8px 15px 10px 15px; }
+      .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item:nth-child(even), .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item:nth-child(even) {
+        background-color: #EDEDED; }
       .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container {
-        height: 200px;
+        float: left;
+        width: 100%;
+        height: auto;
         padding: 15px 20px; }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item.active .pbi--left .email-before-download-container p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item.active .pbi--left .email-before-download-container p {
           display: block; }
       .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left {
         float: left;
-        width: calc(100% - 70px);
+        width: calc(100% - 90px);
         padding-right: 30px; }
+        @media only screen and (max-width: 47.9375em) {
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left {
+            width: 100%;
+            padding-right: 0; } }
+        .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left p {
+          font-size: 15px; }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container {
           float: left;
           width: 100%;
           height: 0;
           margin-top: 15px;
-          padding: 0;
-          background-color: #DEDEDE;
+          padding: 0 0 0 0;
+          background-color: #234069;
           transition: all 300ms ease-in-out; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .download-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .download-icon {
+            float: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding: 7px 13px 7px 13px;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #234069;
+            background-color: #00C1FF;
+            text-decoration: none; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .download-icon:hover, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .download-icon:hover {
+              background-color: #009acc;
+              color: #FFFFFF;
+              cursor: pointer;
+              text-decoration: underline; }
+              .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .download-icon:hover:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .download-icon:hover:before {
+                color: #FFFFFF !important;
+                text-decoration: none; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .download-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .download-icon:before {
+              content: "\f063";
+              margin-right: 4px;
+              font-family: FontAwesome;
+              color: #234069; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-submit, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-submit {
+            float: left;
+            display: block;
+            min-width: 75px;
+            margin-bottom: 15px;
+            padding: 7px 14px;
+            border: 2px solid #72A430;
+            border-radius: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            background: #72A430;
+            color: #FFFFFF;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            transition: all .3s ease; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-submit:hover, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-submit:hover {
+              border: 2px solid #99cd54;
+              background: #99cd54; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-form-control-wrap, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container .wpcf7-form-control-wrap {
             float: left;
             width: 100%;
             min-height: 30px;
             margin-top: 10px;
             margin-bottom: 10px; }
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container div.wpcf7-response-output, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container div.wpcf7-response-output {
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0;
+            padding: 12px 18px 12px 0;
+            color: #FFFFFF;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 500;
+            background-color: transparent;
+            border: 0px; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container div.wpcf7-response-output.wpcf7-validation-errors, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container div.wpcf7-response-output.wpcf7-validation-errors {
+              background-color: red !important; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container label, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container label {
             float: left;
             width: 100%;
             margin-bottom: 5px;
-            display: none; }
+            color: #FFFFFF !important; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container h3, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container h3 {
+            float: left;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
             display: none; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container h3 i, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container h3 i {
+              margin-right: 4px;
+              padding: 0;
+              color: #FFFFFF; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .email-before-download-container p, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .email-before-download-container p {
             float: left;
             width: 100%;
@@ -7255,47 +7621,97 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
+            color: #FFFFFF;
             display: none; }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-title, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-title {
           float: left;
           width: 100%;
-          margin-bottom: 10px;
-          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 0px;
+          padding-right: 15px;
+          font-family: "Roboto", sans-serif;
           font-size: 18px;
-          font-weight: 600;
-          line-height: 140%; }
+          font-weight: 500;
+          line-height: 140%;
+          color: #000000; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-title, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-title {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (min-width: 48em) and (max-width: 64em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-title, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-title {
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 140%; } }
+          @media only screen and (max-width: 47.9375em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-title, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-title {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 140%; } }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-details, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-details {
           float: left;
           width: 100%;
-          margin-bottom: 10px;
           font-family: Arial, Helvetica, sans-serif;
-          font-size: 17px;
+          font-size: 15px;
           font-weight: 500;
           line-height: 135%;
-          color: #333333; }
+          color: #444444; }
+          @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-details, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-details {
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 135%; } }
+          @media only screen and (min-width: 48em) and (max-width: 64em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-details, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-details {
+              margin-top: 10px;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 135%; } }
+          @media only screen and (max-width: 47.9375em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--left .publication-details, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--left .publication-details {
+              margin-top: 10px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 140%; } }
       .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right {
         float: left;
-        width: 70px; }
+        width: 90px;
+        text-align: center; }
+        @media only screen and (max-width: 47.9375em) {
+          .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right {
+            width: 100%; } }
         .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a {
           float: left;
-          margin-top: 10px;
+          min-width: 75px;
+          margin-top: 8px;
           padding: 10px 15px;
           border-radius: 5px;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
           text-align: center; }
+          @media only screen and (max-width: 47.9375em) {
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a {
+              padding: 10px 30px; } }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a:before {
             width: 35px;
             height: 35px;
             color: white; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon {
-            background-color: green; }
+            background-color: #72A430; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon:hover, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon:hover {
+              background-color: #8dc740; }
             .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.book-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.book-icon:before {
               content: "BOOK"; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon {
-            background-color: red; }
+            background-color: #e60000; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon:hover, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon:hover {
+              background-color: #ff1a1a; }
             .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.pdf-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.pdf-icon:before {
               content: "PDF"; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon {
-            background-color: lightblue; }
+            background-color: #3663a2; }
+            .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon:hover, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon:hover {
+              background-color: #497bc2; }
             .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.link-icon:before, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.link-icon:before {
               content: "LINK"; }
           .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.books-list li.publication-list-item .pbi--right a.msc-icon, .publications-and-reports-page-container .parpc--inner .parpc-page--inner-left ul.publications-list li.publication-list-item .pbi--right a.msc-icon {
@@ -8848,11 +9264,11 @@ a:hover {
       @media only screen and (min-width: 48em) and (max-width: 64em) {
         .services-page-container .spc--inner .spc--inner-left {
           width: 100%;
-          padding: 30px 40px 50px 40px; } }
+          padding: 30px 430px 50px 30px; } }
       @media only screen and (max-width: 47.9375em) {
         .services-page-container .spc--inner .spc--inner-left {
           width: 100%;
-          padding: 10px 40px 50px 40px; } }
+          padding: 30px 20px 0 20px; } }
       .services-page-container .spc--inner .spc--inner-left img.services-feature-image {
         float: right; }
         @media only screen and (min-width: 48em) and (max-width: 64em) {
@@ -9001,7 +9417,8 @@ a:hover {
       @media only screen and (max-width: 47.9375em) {
         .services-page-container .spc--inner .spc--inner-right {
           width: 100%;
-          padding: 50px 30px 40px 30px; } }
+          border-top: 1px dotted #DDDDDD;
+          padding: 20px 10px 40px 10px; } }
       .services-page-container .spc--inner .spc--inner-right .recent-news-container {
         float: left;
         width: 100%;
@@ -10155,29 +10572,13 @@ span.bod-tag {
         padding-left: 0;
         border-left: 0; } }
 
-html {
-  overflow-x: hidden; }
+/*
+  ____    _    ____  _____ _____ ____  ____
+ / ___|  / \  |  _ \| ____| ____|  _ \/ ___|
+| |     / _ \ | |_) |  _| |  _| | |_) \___ | |___ / ___ \|  _ <| |___| |___|  _ < ___) |
+ \____/_/   \_\_| \_\_____|_____|_| \_\____/
 
-body {
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch !important;
-  /*0px --> 767px*/ }
-  @media only screen and (min-width: 0px) and (max-width: 450px) {
-    body {
-      overflow-x: hidden; } }
-
-p, span, a {
-  font-family: "Open Sans", sans-serif; }
-
-a {
-  text-decoration: none;
-  list-style: none; }
-
-i {
-  padding: 0px 0px 0px 5px; }
-
-/* -------------------------- END GENERIC GLOBAL CSS -------------------------- */
+*/
 /* -------------------------- BEGIN CYCLONE SLIDER CSS -------------------------- */
 .featuredImageSlider {
   position: relative;
@@ -10314,147 +10715,25 @@ i {
     .cycloneslider {
       max-height: 50px; } }
 
-/* -------------------------- END CYCLONE SLIDER CSS -------------------------- */
-.viewPDFContainer {
-  float: left;
-  width: 100%;
-  background-color: #72A430;
-  border-top: 2px solid #49691f;
-  border-bottom: 2px solid #49691f;
-  padding: 20px 30px 20px 30px;
-  margin-top: 15px; }
-  .viewPDFContainer p {
-    color: #FFFFFF !important;
-    margin-top: 10px; }
-  .viewPDFContainer h3 {
-    width: 100%;
-    font-size: 1.1em;
-    color: #2d4113;
-    padding: 0px 0px 10px 0px;
-    border-bottom: 1px solid #FFFFFF; }
-    .viewPDFContainer h3 i {
-      margin-right: 8px; }
-    @media only screen and (min-width: 0px) and (max-width: 768px) {
-      .viewPDFContainer h3 {
-        font-size: .95em; } }
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
 
-.your-email, .your-name {
-  margin-top: -20px; }
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
 
-.wpcf7-response-output {
-  background-color: #FFFFFF;
-  color: #72A430;
-  padding: 12px 18px 12px 18px !important; }
+p, span, a {
+  font-family: "Roboto", sans-serif; }
 
-.wpcf7-validation-errors {
-  border: 2px solid red !important;
-  color: red;
-  padding: 12px 18px 12px 18px !important; }
+a {
+  text-decoration: none;
+  list-style: none; }
 
-.wpcf7-submit {
-  background-color: #49691f;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  box-shadow: none;
-  border: none; }
-  .wpcf7-submit:hover {
-    background-color: #2d4113; }
-
-.et-icon span {
-  color: #FFFFFF;
-  text-decoration: underline;
-  font-weight: bold;
-  background-color: #2d4113;
-  padding: 12px 18px 12px 18px !important;
-  border: 1px solid #FFFFFF; }
-  .et-icon span:hover {
-    color: #49691f; }
-
-.wpcf7-form-control-wrap input {
-  width: 80%; }
-  @media only screen and (min-width: 0px) and (max-width: 768px) {
-    .wpcf7-form-control-wrap input {
-      width: 140px !important; } }
-
-/*
-____   ___   ___ _____ ____ _____ ____      _    ____     _____     _______ ____  ____  ___ ____  _____ ____
-| __ ) / _ \ / _ \_   _/ ___|_   _|  _ \    / \  |  _ \   / _ \ \   / / ____|  _ \|  _ \|_ _|  _ \| ____/ ___|
-|  _ \| | | | | | || | \___ \ | | | |_) |  / _ \ | |_) | | | | \ \ / /|  _| | |_) | |_) || || | | |  _| \___ | |_) | |_| | |_| || |  ___) || | |  _ <  / ___ \|  __/  | |_| |\ V / | |___|  _ <|  _ < | || |_| | |___ ___) |
-|____/ \___/ \___/ |_| |____/ |_| |_| \_\/_/   \_\_|      \___/  \_/  |_____|_| \_\_| \_\___|____/|_____|____/
-
-*/
-.navbar-default {
-  border: 0px !important; }
-
-.container {
-  width: 100%;
-  max-width: 1600px !important; }
-
-li.active a {
-  color: #FFFFFF !important;
-  background-color: #72A430 !important; }
-  li.active a:hover {
-    cursor: default !important; }
-
-.navbar-nav > .active {
-  color: #FFFFFF !important;
-  background-color: #72A430 !important; }
-  .navbar-nav > .active:hover {
-    color: #FFFFFF !important;
-    cursor: default !important; }
-
-.navbar-nav > .active > a {
-  color: #FFFFFF !important;
-  background-color: #72A430 !important; }
-  .navbar-nav > .active > a:hover {
-    color: #FFFFFF !important;
-    cursor: default !important; }
-
-.servicesSidebar > li.sidebarActive > a {
-  color: #FFFFFF !important; }
-  .servicesSidebar > li.sidebarActive > a:hover {
-    cursor: default !important;
-    background-color: #555 !important; }
-
-.navbar .navbar-nav > .active > a:hover {
-  color: #FFFFFF !important; }
-
-.navbar .navbar-nav, .nav {
-  background-color: transparent !important; }
-
-@media only screen and (max-width: 47.9375em) {
-  .navbar-nav li {
-    background-color: #FFFFFF !important; }
-  .navbar-nav li a {
-    color: #49691f !important; } }
-
-.download-icon {
-  float: left;
-  background-color: #49691f;
-  color: white;
-  border: 2px solid #49691f;
-  margin-top: 14px;
-  padding: 7px 13px 7px 13px; }
-  .download-icon:before {
-    font-family: fontawesome;
-    content: "\f019";
-    color: white;
-    margin-right: .5em; }
-  .download-icon:hover {
-    background-color: #202e0e;
-    color: white;
-    border-color: #202e0e; }
-
-.wpcf7-response-output {
-  margin-top: 13px !important;
-  margin-left: 0px !important;
-  padding-left: 0px !important;
-  background-color: transparent;
-  color: white;
-  border: 0px !important; }
-
-.wpcf7-submit {
-  padding: 7px 13px; }
-
-#header {
-  z-index: 1000000 !important; }
+i {
+  padding: 0px 0px 0px 5px; }

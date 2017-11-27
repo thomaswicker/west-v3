@@ -8,248 +8,248 @@ ____  _   _ _____ _____ ___  _   _ ____
 */
 
 .btn-success {
-    background-color: $westGreen;
-    border: none !important;
-    text-transform: uppercase;
-    border-radius: 0px;
-    color: $white !important;
-    font-size: .85em;
+  background-color: $westGreen;
+  border: none !important;
+  text-transform: uppercase;
+  border-radius: 0px;
+  color: $white !important;
+  font-size: .85em;
 
-    &:hover {
-        background-color: darken($westGreen, 20%);
-    }
+  &:hover {
+    background-color: darken($westGreen, 20%);
+  }
 }
 
 .btn-info {
-    background-color: $westGreen !important;
-    border: none !important;
-    text-transform: uppercase;
-    border-radius: 0px;
-    color: $white !important;
-    font-size: .85em;
+  background-color: $westGreen !important;
+  border: none !important;
+  text-transform: uppercase;
+  border-radius: 0px;
+  color: $white !important;
+  font-size: .85em;
 
-    &:hover {
-        background-color: darken($westGreen, 20%) !important;
-    }
+  &:hover {
+    background-color: darken($westGreen, 20%) !important;
+  }
 }
 
 .btn-linkedin {
-    background-color: #55a5db !important;
-    border: none !important;
-    text-transform: uppercase;
-    border-radius: 0px;
-    color: $white !important;
-    font-size: .85em;
+  background-color: #55a5db !important;
+  border: none !important;
+  text-transform: uppercase;
+  border-radius: 0px;
+  color: $white !important;
+  font-size: .85em;
 
-    &:hover {
-        background-color: darken(#55a5db, 20%) !important;
-    }
+  &:hover {
+    background-color: darken(#55a5db, 20%) !important;
+  }
 }
 
 .btn-reset {
-    background-color: $westGreen !important;
-    border: none !important;
-    text-transform: uppercase;
-    border: 1px solid $lightGray;
-    border-radius: 0px;
-    color: $white !important;
-    font-size: .85em;
+  background-color: $westGreen !important;
+  border: none !important;
+  text-transform: uppercase;
+  border: 1px solid $lightGray;
+  border-radius: 0px;
+  color: $white !important;
+  font-size: .85em;
 
-    &:hover {
-        background-color: $charcoal !important;
-    }
+  &:hover {
+    background-color: $charcoal !important;
+  }
 }
 
 .btn-email {
-    padding: 8px 20px 8px 20px;
-    margin: 0px 0px 0px 25px;
+  padding: 8px 20px 8px 20px;
+  margin: 0px 0px 0px 25px;
 
-    i {
-        padding: 0px 8px 0px 0px;
-    }
+  i {
+    padding: 0px 8px 0px 0px;
+  }
 }
 
 .btn-stacked {
-    margin: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 #contactUsRibbon {
-    margin: -12px 0px 0px 0px;
-    right: 0;
-    position: fixed;
-    color: $white !important;
-    z-index: 999 !important;
+  margin: -12px 0px 0px 0px;
+  right: 0;
+  position: fixed;
+  color: $white !important;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonIndex {
-    margin: 0px;
-    right: 0;
-    position: fixed;
-    color: $white !important;
-    z-index: 999 !important;
+  margin: 0px;
+  right: 0;
+  position: fixed;
+  color: $white !important;
+  z-index: 999 !important;
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonServices {
-    margin: -14px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: -14px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonTeam {
-    margin: -34px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: -34px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonMarkets {
-    margin: -32px 0px 0px 0px !important;
-    right: 0;
-    position: fixed;
-    color: $white !important;
-    z-index: 999 !important;
+  margin: -32px 0px 0px 0px !important;
+  right: 0;
+  position: fixed;
+  color: $white !important;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonPersonnel {
-    margin: -34px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: -34px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonStaffDirectory {
-    margin: -33px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: -33px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonReports {
-    margin: -23px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: -23px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonMarkets {
-    margin: -43px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: -43px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 #contactUsRibbonLocations {
-    margin: 6px 0px 0px 0px;
-    color: $white !important;
-    right: 0;
-    position: fixed;
-    z-index: 999 !important;
+  margin: 6px 0px 0px 0px;
+  color: $white !important;
+  right: 0;
+  position: fixed;
+  z-index: 999 !important;
 
 
-    /*0px --> 767px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        display: none;
-    }
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    display: none;
+  }
 }
 
 .staffDirectoryButton {
-    float: left !important;
-    margin-right: 30px;
+  float: left !important;
+  margin-right: 30px;
 }
 
 .emailStaffMemberBTN {
-    display: block;
+  display: block;
 }
 
 #viewArticlesBTN {
-    margin: 10px 0px 0px 0px;
-    font-size: .7em;
+  margin: 10px 0px 0px 0px;
+  font-size: .7em;
 }
 
 .servicesBTN {
-    font-size: .8em !important;
-    margin: 15px 0px 0px 0px;
+  font-size: .8em !important;
+  margin: 15px 0px 0px 0px;
 }
 
 .emailStaffMemberBTN {
-    margin: 15px 0px 0px 25px;
+  margin: 15px 0px 0px 25px;
 }
 
 .backBTN {
-    left: 0;
-    position: fixed;
-    display: inline;
-    margin: 110px 0px 0px 0px;
-    z-index: 10000;
+  left: 0;
+  position: fixed;
+  display: inline;
+  margin: 110px 0px 0px 0px;
+  z-index: 10000;
 }
 
 .btn-bookstore {
-    margin: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 
-    /*0px --> 768px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        margin: 10px 0px 20px 0px;
-    }
+  /*0px --> 768px*/
+  @media only screen and (min-width:0px) and (max-width:767px) {
+    margin: 10px 0px 20px 0px;
+  }
 }
 
 /* -------------------------- END CUSTOM BUTTONS -------------------------- */
@@ -468,8 +468,8 @@ ____  _   _ _____ _____ ___  _   _ ____
 
 
 /* ==========================================================================
-   %% Styling for Outlined Buttons %%
-   ========================================================================== */
+%% Styling for Outlined Buttons %%
+========================================================================== */
 
 .btn-outline {
   background: $white;

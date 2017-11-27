@@ -1535,12 +1535,12 @@ a:hover {
 
       @include mq(md) {
         width: 100%;
-        padding: 30px 40px 50px 40px;
+        padding: 30px 430px 50px 30px;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 10px 40px 50px 40px;
+        padding: 30px 20px 0 20px;
       }
 
       img.services-feature-image {
@@ -1748,7 +1748,8 @@ a:hover {
 
       @include mq(sm) {
         width: 100%;
-        padding: 50px 30px 40px 30px;
+        border-top: 1px dotted #DDDDDD;
+        padding: 20px 10px 40px 10px;
       }
 
       .recent-news-container {

@@ -11,20 +11,23 @@ Template Name: Book Store (Landing Page) __TEMPLATE__
     <article class="bci--left bspc-page--inner-left">
 
       <?php if( get_field('page_title') ): ?>
-        <h1 class="main-header">
+        <h1 class="main-title">
           <?php the_field( 'page_title' ); ?>
         </h1>
       <?php endif; ?>
 
       <?php if( get_field('page_subtitle') ): ?>
-        <h2 class="main-subheader">
+        <h2 class="main-subtitle">
           <?php the_field( 'page_subtitle' ); ?>
         </h2>
       <?php endif; ?>
 
       <?php
         $args = array(
-          'post_type' => 'books'
+          'post_type' => 'books',
+          'posts_per_page' => -1,
+          'orderby'=>'title',
+          'order'=>'ASC'
         );
 
         $the_query = new WP_Query( $args );
@@ -65,7 +68,7 @@ Template Name: Book Store (Landing Page) __TEMPLATE__
             </div>
 
             <?php endwhile; else: ?>
-              <p>There are no books to show or something went wrong. Please try back again later.</p>
+              <p class="warning-text">There are no books to show or something went wrong. Please try back again later.</p>
             <?php endif; ?>
           </li>
         </ul>

@@ -155,39 +155,41 @@ _____ ___   ___ _____ _____ ____  ____
       padding-right: 25px;
 
       a {
-        color: $westGreen !important;
+        color: $color-primary !important;
       }
 
       h2 {
-        display: block;
+        float: left;
         width: 100%;
         margin: 0 0 3px 0;
         padding: 0 0 3px 0;
-        font-family: $font-secondary;
-        font-weight: 400;
-        font-size: 16px;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 18px;
         line-height: 140%;
         color: $black;
       }
 
       h3 {
-        width: 80%;
-        font-family: $raleway;
+        float: left;
+        width: 100%;
+        font-family: $font-primary;
         font-weight: 500;
         font-size: .90em;
         line-height: 1.3em;
         font-style: italic;
-        color: $westGreen;
+        color: $color-primary;
         padding: 5px 0px 0px 20px;
       }
 
       p {
-        width: 90%;
-        font-family: $raleway;
-        font-size: .8em;
-        line-height: 1.4em;
-        color: $black;
+        float: left;
+        width: 100%;
         padding: 0px 0px 10px 0px;
+        font-family: $font-secondary;
+        font-size: 15px;
+        line-height: 140%;
+        color: $black;
 
         @media only screen and (min-width:768px) and (max-width:992px) {
           padding: 0px 0px 3px 30px;
@@ -199,12 +201,7 @@ _____ ___   ___ _____ _____ ____  ____
       }
 
       span {
-        width: 90%;
-        font-family: $raleway;
-        font-weight: 500;
-        font-size: 1em;
-        color: darken($westGreen, 15%) !important;
-        padding: 10px 0px 20px 20px;
+        display: none;
       }
 
       img {

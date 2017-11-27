@@ -38,6 +38,16 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
     font-family: $font-primary;
     font-size: 25px;
     font-weight: 500;
+
+    @include mq(md) {
+      padding-left: 0;
+      border-left: 0px;
+    }
+
+    @include mq(sm) {
+      padding-left: 0;
+      border-left: 0px;
+    }
   }
 
   ul.subnav-sidebar {
@@ -51,10 +61,14 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
     }
 
     @include mq(md) {
+      margin-top: 0;
+      padding-left: 0;
       border-left: 0px;
     }
 
     @include mq(sm) {
+      margin-top: 0;
+      padding-left: 0;
       border-left: 0px;
     }
 
@@ -210,6 +224,7 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
 
     //PUBLICATIONS ROOT SIDEBAR
     &.bookstore {
+      
       li.publications-subnav--bookstore a {
         background-color: $color-primary;
         color: $white;

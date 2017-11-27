@@ -11,13 +11,13 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
     <article class="bci--left parpc-page--inner-left email-before-download-container">
 
       <?php if( get_field('page_title') ): ?>
-        <h1 class="main-header">
+        <h1 class="main-title">
           <?php the_field( 'page_title' ); ?>
         </h1>
       <?php endif; ?>
 
       <?php if( get_field('page_subtitle') ): ?>
-        <h2 class="main-subheader">
+        <h2 class="main-subtitle">
           <?php the_field( 'page_subtitle' ); ?>
         </h2>
       <?php endif; ?>
@@ -83,7 +83,7 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
                   <?php if( get_field('email_before_download_link') ): ?>
                     <aside class="email-before-download-container">
                       <h3>
-                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-exclamation-triangle"></i>
                         <span>Please provide your name and email before downloading this PDF:</span>
                       </h3>
 
@@ -102,12 +102,12 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
             <?php endif; ?>
 
           <?php endwhile; else: ?>
-            <p>There are no publications to show or something went wrong. Please try back again later.</p>
+            <p class="warning-text">There are no publications/reports to show or something went wrong. Please try back again later.</p>
           <?php endif; ?>
         </ul>
 
-
         <h3 class="publications-report-subheader">Reports (sorted by year and lead author)</h3>
+
         <ul class="publications-list">
           <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
@@ -121,6 +121,20 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
                   <?php if( get_field('publication_details') ): ?>
                     <p class="publication-details"><?php the_field( 'publication_details' ); ?></p>
                   <?php endif; ?>
+
+                  <?php if( get_field('email_before_download_link') ): ?>
+                    <aside class="email-before-download-container">
+                      <h3>
+                        <i class="fa fa-exclamation-triangle"></i>
+                        <span>Please provide your name and email before downloading this PDF:</span>
+                      </h3>
+
+                      <div class="<?php the_field( 'email_before_download_link' ); ?>)">
+                        <?php echo do_shortcode('[email-download download_id="'.get_field('email_before_download_link').'" contact_form_id="2022"]'); ?>
+                      </div>
+
+                    </aside>
+                  <?php endif; ?>
                 </div>
 
                 <div class="pbi--right">
@@ -130,7 +144,7 @@ Template Name: Wildlife Monitoring & Research __TEMPLATE__
             <?php endif; ?>
 
           <?php endwhile; else: ?>
-            <p>There are no publications to show or something went wrong. Please try back again later.</p>
+            <p class="warning-text">There are no publications to show or something went wrong. Please try back again later.</p>
           <?php endif; ?>
         </ul>
 

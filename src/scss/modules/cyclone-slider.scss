@@ -1,0 +1,185 @@
+/*
+  ____    _    ____  _____ _____ ____  ____
+ / ___|  / \  |  _ \| ____| ____|  _ \/ ___|
+| |     / _ \ | |_) |  _| |  _| | |_) \___ \
+| |___ / ___ \|  _ <| |___| |___|  _ < ___) |
+ \____/_/   \_\_| \_\_____|_____|_| \_\____/
+
+*/
+
+/* -------------------------- BEGIN CYCLONE SLIDER CSS -------------------------- */
+
+.featuredImageSlider {
+  position: relative;
+  top: 53px;
+  float: left;
+  clear: right;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+  background-color: $black !important;
+  z-index: 1;
+
+  /*0px --> 767px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    width: 120% !important;
+    height: 110px !important;
+  }
+}
+
+.cycloneslider-slides {
+  position: relative;
+  max-height: 450px !important;
+  background-color: $white !important;
+
+  /*0px --> 450px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    width: 120% !important;
+    height: 110px !important;
+  }
+}
+
+.cycloneslider-slides img{
+  max-width: none !important;
+  max-height: 450px;
+  box-shadow: none !important;
+
+  /*0px --> 450px*/
+  @media only screen and (min-width:0px) and (max-width:450px) {
+    width: 120% !important;
+    height: 110px !important;
+  }
+}
+
+.cycloneslider-caption {
+  max-height: 100px !important;
+  margin: -60px 0px 0px 0px !important;
+  text-align: right !important;
+  background-color: rgba(255, 255, 255, .25) !important;
+  opacity: 1 !important;
+
+  @include mq(xl) {
+    max-height: 100px !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+
+  @include mq(lg) {
+    max-height: 100px !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+
+  @include mq(md) {
+    max-height: 100px !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+
+  @include mq(sm) {
+    max-height: 30px !important;
+    margin: -160px 0px 0px 0px !important;
+    background-color: rgba(255, 255, 255, .45) !important;
+
+    .cycloneslider-caption-description {
+      top: -2px;
+    }
+  }
+}
+
+.cycloneslider-caption-title {
+  display: none;
+}
+
+.cycloneslider-next, .cycloneslider-prev {
+  padding: 5px 10px !important;
+  font-family: $font-primary !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: $white !important;
+  text-transform: uppercase !important;
+  background: $color-secondary !important;
+  border-radius: 0 !important;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background: $color-primary !important;
+  }
+
+  @include mq(sm) {
+    opacity: 1 !important;
+  }
+}
+
+.cycloneslider-caption-description {
+  position: relative;
+  top: 20px;
+  padding: 5px 20px 35px 50px !important;
+  text-align: left !important;
+  font-family: $font-primary !important;
+  font-size: 48px !important;
+  font-weight: 300 !important;
+  text-shadow: 2px 2px 2px #000;
+  background-color: transparent !important;
+  color: $white !important;
+
+  @include mq(lg) {
+    font-size: 38px !important;
+  }
+
+  @include mq(md) {
+    font-size: 24px !important;
+    padding: 5px 20px 35px 40px !important;
+  }
+
+  @include mq(sm) {
+    padding: 5px 40px 35px 20px !important;
+    font-size: 15px !important;
+  }
+}
+
+.cycloneslider-caption-more {
+  font-size: .75em !important;
+  padding: 5px 20px 5px 20px!important;
+
+  background-color: $westGreen !important;
+  color: $white !important;
+  font-family: $opensans !important;
+
+  &:hover {
+    background-color: $white !important;
+    color: $westGreen !important;
+  }
+}
+
+.cycloneslider-pager {
+  display: none !important;
+}
+
+.cycloneslider {
+  padding: 0px !important;
+  margin: 0px !important;
+  max-height: 450px;
+  background-color: $black !important;
+  box-shadow: none !important;
+
+  @include mq(lg) {
+
+  }
+
+  @include mq(md) {
+    max-height: 200px;
+  }
+
+  @include mq(sm) {
+    max-height: 50px;
+  }
+}
