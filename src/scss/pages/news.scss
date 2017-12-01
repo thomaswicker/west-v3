@@ -1,13 +1,13 @@
 /*
-_______     _______ _   _ _____ ____
-| ____\ \   / / ____| \ | |_   _/ ___|
-|  _|  \ \ / /|  _| |  \| | | | \___ \
-| |___  \ V / | |___| |\  | | |  ___) |
-|_____|  \_/  |_____|_| \_| |_| |____/
+ _   _ _______        ______
+| \ | | ____\ \      / / ___|
+|  \| |  _|  \ \ /\ / /\___ \
+| |\  | |___  \ V  V /  ___) |
+|_| \_|_____|  \_/\_/  |____/
 
 */
 
-.events-page-container {
+.news-page-container {
   .social-media-nav {
     top: 416px;
 
@@ -24,7 +24,7 @@ _______     _______ _   _ _____ ____
     }
   }
 
-  .events-page--header {
+  .news-page--header {
     position: relative;
     float: left;
     width: 100%;
@@ -77,8 +77,8 @@ _______     _______ _   _ _____ ____
     }
   }
 
-  .events-page--inner {
-    .events-page--inner-left {
+  .news-page--inner {
+    .news-page--inner-left {
       float: left;
       width: calc(100% - 450px);
 
@@ -94,7 +94,7 @@ _______     _______ _   _ _____ ____
         width: 100%;
       }
 
-      .events-list {
+      .news-list {
         float: left;
         width: 100%;
         padding: 0 0 30px 0;
@@ -187,7 +187,7 @@ _______     _______ _   _ _____ ____
       }
     }
 
-    .events-page--inner-right {
+    .news-page--inner-right {
       float: left;
       width: 450px;
 

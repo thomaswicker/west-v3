@@ -16,7 +16,7 @@
 	<section class="footer--middle">
 		<h4><i class="fa fa-newspaper-o"></i> News & Events</h4>
 
-		<article class="footer-events">
+		<ul class="footer-events">
 			<?php
 				$args = array(
 			  	'post_type' => 'events',
@@ -27,15 +27,24 @@
 			?>
 
 			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-			  <h2><?php the_title() ;?></h2>
-				<p><?php the_field ( 'description' ); ?></p>
-				<span><?php the_field( 'links' ); ?></span>
+				<li>
+					<h2><?php the_title() ;?></h2>
+
+					<?php if( get_field('description') ): ?>
+						<p><?php the_field( 'description' ); ?></p>
+					<?php endif; ?>
+
+					<?php if( get_field('links') ): ?>
+						<span><?php the_field( 'links' ); ?></span>
+					<?php endif; ?>
+				</li>
+
 				<hr style="border: 1px solid #dddddd;">
 
 			<?php endwhile; else: ?>
 			  <p class="warning-text">There are no Events to show or something went wrong. Please try again later.</p>
 			<?php endif; ?>
-	  </article>
+	  </ul>
 
 	</section>
 

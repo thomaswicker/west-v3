@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: Events __TEMPLATE __
+Template Name: News __TEMPLATE __
 */
 ?>
 
 <?php get_header(); ?>
 
-<section class="body-container events-page-container">
+<section class="body-container news-page-container">
 
   <?php get_template_part('partials/superhero/superhero-news-and-events'); ?>
 
@@ -16,12 +16,12 @@ Template Name: Events __TEMPLATE __
     <?php get_template_part('partials/sm-nav'); ?>
   </div>
 
-  <section class="body-container--inner events-page--inner">
-    <article class="bci--left events-page--inner-left">
-      <ul class="events-list">
+  <section class="body-container--inner news-page--inner">
+    <article class="bci--left news-page--inner-left">
+      <ul class="news-list">
           <?php
             $args = array(
-              'post_type' => 'events',
+              'post_type' => 'news',
               'order'=>'DESC'
             );
             $the_query = new WP_Query( $args );
@@ -29,28 +29,22 @@ Template Name: Events __TEMPLATE __
 
           <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <li>
-              <h2><?php the_title() ;?></h2>
-
-              <?php if( get_field('subtitle') ): ?>
-                <h3><?php the_field( 'subtitle' ); ?></h3>
+              <?php if( get_field('news_title') ): ?>
+                <h2> <?php the_field( 'news_title' ); ?></h2>
               <?php endif; ?>
 
-              <?php if( get_field('description') ): ?>
-                <p><?php the_field( 'description' ); ?></p>
-              <?php endif; ?>
-
-              <?php if( get_field('links') ): ?>
-                <span><?php the_field( 'links' ); ?></span>
+              <?php if( get_field('news_content') ): ?>
+                <?php the_field( 'news_content' ); ?>
               <?php endif; ?>
             </li>
 
             <?php endwhile; else: ?>
-            <p class='warning-text'>There are no events to show or something went wrong. Please try again later.</p>
+            <p class='warning-text'>There are no news items to show or something went wrong. Please try again later.</p>
           <?php endif; ?>
       </ul>
     </article>
 
-    <aside class="bci--right events-page--inner-right">
+    <aside class="bci--right news-page--inner-right">
       <div class="sidebar-container">
       	<h3>About WEST</h3>
 
@@ -91,7 +85,7 @@ Template Name: Events __TEMPLATE __
       		</li>
 
       		<li class="about-subnav--news">
-      			<a href="http://www.west-inc.com/news-events/">
+      			<a href="http://www.west-inc.com/news-news/">
       				<i class="fa fa-chevron-right"></i>
       				News & Events
       			</a>

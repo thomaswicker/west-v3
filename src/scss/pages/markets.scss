@@ -1182,6 +1182,19 @@ __  __    _    ____  _  _______ _____ ____
         width: 100%;
         list-style-type: disc;
 
+        &.project-profiles {
+          list-style-type: none;
+
+          li {
+            width: auto;
+            margin: 0 15px 0 0;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+
         li {
           float: left;
           width: 100%;
@@ -1498,34 +1511,6 @@ __  __    _    ____  _  _______ _____ ____
                 color: $black;
               }
             }
-          }
-        }
-      }
-    }
-  }
-
-  .project-profiles-container {
-    float: left;
-    width: 100%;
-    margin-top: 20px;
-
-    .project-profiles {
-      float: left;
-      width: 100%;
-
-      li {
-        float: left;
-        width: 100%;
-        margin-top: 20px;
-
-        a {
-          float: left;
-          width: 100%;
-
-          img {
-            float: left;
-            width: 100%;
-            max-width: 250px;
           }
         }
       }

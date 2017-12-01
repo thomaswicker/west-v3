@@ -87,6 +87,33 @@ Template Name: Markets Page __TEMPLATE__
 				</p>
 			<?php endif; ?>
 
+			<?php if( have_rows('project_profiles') ): ?>
+				<div class="project-profiles-container">
+					<h3>Project Profiles</h3>
+
+						<ul class="project-profiles">
+							<?php while( have_rows('project_profiles') ): the_row();
+
+								// vars
+								$image = get_sub_field('project_profile_image');
+
+								?>
+
+								<li class="detail">
+
+									<?php if( $image ): ?>
+										<a href="<?php echo $image; ?>" target="_blank">
+											<img class="markets-feature-image" src="<?php echo $image; ?>" alt="<?php echo $image; ?>" />
+										</a>
+									<?php endif; ?>
+
+								    <?php echo $content; ?>
+
+								</li>
+								<?php endwhile; ?>
+							</ul>
+						</div>
+				<?php endif; ?>
 		</article>
 
 		<aside class="mpc--inner-right">
@@ -274,34 +301,6 @@ Template Name: Markets Page __TEMPLATE__
 					<li>Wyoming Water Development Commission</li>
 				</ul>
 			</section>
-
-			<?php if( have_rows('project_profiles') ): ?>
-				<div class="project-profiles-container">
-					<h3>Project Profiles</h3>
-
-						<ul class="project-profiles">
-							<?php while( have_rows('project_profiles') ): the_row();
-
-								// vars
-								$image = get_sub_field('project_profile_image');
-
-								?>
-
-								<li class="detail">
-
-									<?php if( $image ): ?>
-										<a href="<?php echo $image; ?>" target="_blank">
-											<img class="markets-feature-image" src="<?php echo $image; ?>" alt="<?php echo $image; ?>" />
-										</a>
-									<?php endif; ?>
-
-								    <?php echo $content; ?>
-
-								</li>
-								<?php endwhile; ?>
-							</ul>
-						</div>
-				<?php endif; ?>
 
 		</aside>
 	</section>

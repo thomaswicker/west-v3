@@ -7,51 +7,6 @@ ___) | |___|  _ < \ V /  | | |___| |___ ___) |
 
 */
 
-.project-profiles-header {
-  float: left;
-  width: auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 3px 10px;
-  background: black;
-
-  h5 {
-    float: left;
-    font-family: Arial !important;
-    font-size: 13px !important;
-    font-style: normal !important;
-    font-weight: 800 !important;
-    line-height: 145%;
-    color: white !important;
-    text-transform: uppercase;
-    border-bottom: 0px;
-  }
-}
-
-.project-profiles-sidebar-container {
-  float: left;
-  width: 100%;
-  margin-bottom: 2rem;
-
-  .ppsc--inner {
-    float: left;
-    width: 100%;
-
-    a {
-      max-width: 250px;
-
-      img {
-        max-width: 250px;
-        border: 2px solid black;
-      }
-    }
-
-    p {
-      line-height: 135%;
-    }
-  }
-}
-
 .taes-nav-box {
   float: left;
   list-style: none;
@@ -1679,6 +1634,19 @@ a:hover {
         float: left;
         width: 100%;
         list-style-type: disc;
+
+        &.project-profiles {
+          list-style-type: none;
+
+          li {
+            width: auto;
+            margin: 0 15px 0 0;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
 
         li {
           float: left;
