@@ -60,8 +60,8 @@ Template Name: Staff Landing Page __TEMPLATE__
           <div class="staff-tile--right">
             <h2 class="name profile-name"  data-sort="name"><?php the_title(); ?></h2>
 
-            <?php if( get_field('staff_member_title') ): ?>
-              <h3 class="title staff-member-job-title" data-sort="title"><?php the_field( 'staff_member_title' ); ?></h3>
+            <?php if( get_field('staff_member_job_title') ): ?>
+              <h3 class="title staff-member-job-title" data-sort="title"><?php the_field( 'staff_member_job_title' ); ?></h3>
             <?php endif; ?>
 
             <?php if( get_field('staff_member_email_address') ): ?>
