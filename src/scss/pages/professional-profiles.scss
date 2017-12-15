@@ -7,196 +7,6 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
 
 */
 
-.main-wrapper-professional-profiles {
-    padding: 40px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-
-    .container {
-        margin-top: -40px;
-    }
-}
-
-#professionalProfilesContainer {
-    float: left;
-    width: 100%;
-    padding: 0px !important;
-    text-decoration: none;
-    list-style: none;
-    margin: 20px 0px 30px 0px;
-
-    /*0px --> 768px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        padding: 0px 15px 10px 15px !important;
-        margin: 20px 0px 30px 0px;
-    }
-}
-
-.professionalProfilesBodyContainer {
-    float: left;
-    width: 100%;
-    padding: 15px 0px 50px 0px;
-    margin: 0px 0px 60px 0px;
-    text-align: left;
-
-    /*768px --> 992px*/
-    @media only screen and (min-width:768px) and (max-width:992px) {
-        padding: 15px 0px 50px 0px;
-        margin: 0px 0px 20px 0px;
-    }
-
-    /*0px --> 768px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        padding: 15px 0px 50px 0px;
-        margin: -15px 0px 40px 0px;
-    }
-
-    h2 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 100;
-        font-size: 1.5em;
-        margin: 0px 0px 0px -20px;
-        color: $black;
-
-        /*768px --> 992px*/
-        @media only screen and (min-width:768px) and (max-width:992px) {
-            font-size: 2.2em;
-            margin: 0px 0px 0px -20px;
-            color: $black;
-        }
-
-        /*0px --> 768px*/
-        @media only screen and (min-width:0px) and (max-width:767px) {
-            font-size: 1.5em;
-            margin: 30px 0px 0px -20px;
-            color: $black;
-        }
-    }
-}
-
-.professional-profiles-header {
-    float: left;
-    width: 100%;
-    height: 315px;
-    background-image: url(../images/professional_profiles_header.jpg);
-    background-size: cover;
-
-    /*768px --> 992px*/
-    @media only screen and (min-width:768px) and (max-width:992px) {
-        height: 235px;
-        background-image: url(../images/professional_profiles_header.jpg);
-    }
-
-    /*0px --> 768px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        height: 100px;
-        background-image: url(../images/professional_profiles_header_mobile.jpg);
-    }
-
-    img {
-        width: 100%;
-    }
-}
-
-#profileContainer {
-  h1 {
-    font-family: $opensans;
-    font-weight: 400;
-    color: #333;
-    text-transform: capitalize !important;
-  }
-}
-
-.profileContainer {
-    float: left;
-    padding: 15px 0px 15px 0px;
-    text-align: center;
-    border: 1px solid $westGreen;
-    margin: 5px;
-    width: calc(25% - 10px);
-    background-clip: $white;
-
-    /*768px --> 992px*/
-    @media only screen and (min-width:993px) and (max-width:1200px) {
-        width: calc(25% - 10px);
-    }
-
-    /*768px --> 992px*/
-    @media only screen and (min-width:768px) and (max-width:992px) {
-        width: calc(50% - 10px);
-    }
-
-    /*0px --> 768px*/
-    @media only screen and (min-width:0px) and (max-width:767px) {
-        width: 100%;
-    }
-
-    &:hover {
-        background-color: $westGreen;
-        cursor: pointer;
-
-        h3, h4 {
-            color: $white;
-        }
-    }
-
-    h3 {
-        font-family: $opensans;
-        font-size: 1em;
-        font-weight: 500;
-        color: $black;
-
-        /*768px --> 992px*/
-        @media only screen and (min-width:768px) and (max-width:992px) {
-            font-size: 1.2em;
-        }
-
-        /*0px --> 768px*/
-        @media only screen and (min-width:0px) and (max-width:767px) {
-            font-size: 1.2em;
-        }
-    }
-
-    h4 {
-        color: $westGreen;
-        font-family: $opensans;
-        font-size: .9em;
-        font-weight: 400;
-        font-style: italic;
-        margin-top: 5px;
-
-        /*768px --> 992px*/
-        @media only screen and (min-width:768px) and (max-width:992px) {
-            font-size: .9em;
-        }
-
-        /*0px --> 768px*/
-        @media only screen and (min-width:0px) and (max-width:767px) {
-            font-size: .9em;
-            line-height: 1.3em;
-        }
-    }
-}
-
-/* ************************************************* END MEDIA QUERIES ************************************************* */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // #################### NEW CSS FOR VERSION 3 ####################### //
@@ -204,138 +14,363 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
 
 // Profile Landing Page CSS #####################################
 
-.professional-profiles-container {
-  float: left;
-  width: 100%;
-  padding-bottom: 30px;
+.professional-profiles-landing-container {
+  display: flex;
+  padding: 130px 25px 30px 25px;
 
-  .professional-profiles-header {
-    float: left;
-    width: 100%;
-    padding: 20px;
+  @include mq(lg) {
+
   }
 
-  .professional-profiles-list {
-    float: left;
-    width: 100%;
-    padding: 20px;
+  @include mq(md) {
+    padding: 90px 10px 30px 10px;
+  }
 
-    li.profile-tile {
-      float: left;
-      width: 25%;
-      margin: 5px;
-      padding: 10px 15px;
-      border: 1px solid $color-secondary;
+  @include mq(sm) {
+    padding: 90px 5px 30px 5px;
+  }
 
-      &:hover {
-        background-color: $color-primary;
-        cursor: pointer;
+  > * {
+    flex: 1 100%;
+  }
 
-        a {
-          .pt--middle {
-            h2, h3, h4 {
-              color: $white;
-            }
-          }
+  .professional-profiles-landing-header {
+    flex: 1;
 
-          .pt--right {
-            i.fa-arrow-right {
-              color: $white;
-            }
-          }
-        }
-      }
-
-      a {
-        float: left;
-        width: 100%;
-
-        .pt--left {
-          float: left;
-          width: 55px;
-          text-align: cecenter;
-
-          img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-          }
-        }
-
-        .pt--middle {
-          float: left;
-          width: calc(100% - 95px);
-          padding-left: 10px;
-          text-align: left;
-
-          h2 {
-            float: left;
-            width: 100%;
-            padding-top: 8px;
-            margin-bottom: 4px;
-            font-family: $font-primary;
-            font-size: 18px;
-            color: $color-secondary;
-          }
-
-          h3 {
-            float: left;
-            width: 100%;
-            margin-bottom: 4px;
-            font-family: $font-secondary;
-            font-size: 15px;
-            font-weight: 600;
-            color: #202e0d;
-            font-style: italic;
-          }
-        }
-
-        .pt--right {
-          float: left;
-          width: 40px;
-          text-align: center;
-
-          i {
-            position: relative;
-            top: 20px;
-            right: 5px;
-
-            &.fa {
-
-            }
-
-            &.fa-arrow-right {
-              float: right;
-              font-size: 17px;
-              color: $color-primary;
-            }
-          }
-        }
-      }
+    @include mq(sm) {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 
-  .view-staff-directory-container {
-    float: left;
-    width: 100%;
-    padding-top: 25px;
-    text-align: center;
+  .professional-profiles--inner {
+    display: flex;
 
-    .btn {
-      float: none;
-      width: auto;
-      display: inline;
+    @include mq(sm) {
+      flex-wrap: wrap;
+    }
 
-      i {
+    .professional-profiles--inner-left {
+      flex: 8;
+      padding-right: 50px;
+      padding-left: 50px;
 
+      @include mq(lg) {
+        flex: 7;
+        padding-right: 10px;
+        padding-left: 10px
       }
 
-      span {
+      @include mq(md) {
+        flex: 5;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
 
+      @include mq(sm) {
+        flex: 1 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+
+    .professional-profiles--inner-right {
+      flex: 2;
+
+      @include mq(lg) {
+        flex: 3;
+      }
+
+      @include mq(md) {
+        flex: 5;
+
+        h3 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        .subnav-sidebar {
+          padding-left: 15px;
+          padding-right: 15px;
+          border-left: 0px;
+        }
+      }
+
+      @include mq(sm) {
+        flex: 1 100%;
+        padding-top: 30px;
+
+        h3 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        .subnav-sidebar {
+          padding-left: 15px;
+          padding-right: 15px;
+          border-left: 0px;
+        }
+      }
+    }
+
+    h1.main-title {
+      float: none;
+      display: flex;
+      padding-left: 8px;
+    }
+
+    h2.main-subtitle {
+      float: none;
+      display: flex;
+      padding-left: 8px;
+      padding-bottom: 20px;
+      line-height: 140%;
+
+      @include mq(sm) {
+        font-size: 15px;
+      }
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+
+      @include mq(md) {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      @include mq(sm) {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      input {
+        flex: 2;
+        height: 80px;
+        margin-right: 250px;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        font-size: 30px;
+        font-weight: 300;
+        border: 1px solid $color-secondary-alt;
+        color: #888888;
+
+        &:focus {
+          border: 2px solid $color-primary;
+          color: #222222;
+        }
+
+        @include mq(xl) {
+          margin-right: 150px;
+        }
+
+        @include mq(lg) {
+          margin-right: 45px;
+        }
+
+        @include mq(md) {
+          width: 100%;
+          margin-right: 50px;
+          margin-bottom: 0;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          height: 40px;
+          margin-right: 0px;
+          margin-bottom: 0;
+          padding: 10px 8px;
+          font-size: 20px;
+        }
+      }
+
+      .btn-container {
+        min-width: 250px;
+        margin-top: 10px;
+        margin-left: auto;
+        padding-right: 10px;
+
+        @include mq(md) {
+          display: block;
+          width: 100%;
+          min-width: 250px;
+          margin-top: 15px;
+        }
+
+        @include mq(sm) {
+          display: block;
+          width: 100%;
+          min-width: 250px;
+          margin-top: 15px;
+        }
+
+        i {
+          display: none;
+        }
+
+        i.fa-sort-desc {
+          position: relative;
+          top: -2px;
+        }
+
+        i.fa-sort-asc {
+          position: relative;
+          top: 2px;
+        }
+
+        .sort-name, .sort-title {
+          @include mq(sm) {
+            flex: 1;
+            margin-top: 15px;
+          }
+
+          &.active {
+            background-color: lighten($color-secondary-alt, 15%);
+
+            i {
+              display: inline;
+            }
+          }
+        }
+
+        .sort-name {
+          margin-right: 20px;
+        }
+
+        .sort-title {
+
+        }
+      }
+    }
+
+    .professional-profiles-landing-list {
+      display: flex;
+      flex-wrap: wrap;
+      // padding: 20px;
+
+      @include mq(md) {
+        width: 100%;
+        padding-top: 25px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding-top: 25px;
+      }
+
+      .professional-profiles-tile {
+        flex: 2;
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 100px;
+        margin: 8px;
+        border: 1px solid #AAAAAA;
+
+        .professional-profiles-tile--left {
+          float: left;
+          width: 75px;
+          min-height: 100px;
+          padding-top: 8px;
+          text-align: center;
+
+          img {
+            max-width: 55px;
+          }
+        }
+
+        .professional-profiles-tile--right {
+          float: left;
+          width: calc(100% - 75px);
+          min-height: 100px;
+          padding: 10px 15px 10px 5px;
+        }
+
+        h2 {
+          float: left;
+          width: 100%;
+          padding-top: 2px;
+          margin-bottom: 0;
+          font-family: $font-primary;
+          font-size: 17px;
+          font-weight: 500;
+          color: $color-secondary;
+          line-height: 145%;
+
+          @include mq(sm) {
+            font-size: 19px;
+          }
+        }
+
+        h3 {
+          float: left;
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: 4px;
+          font-family: $font-secondary;
+          font-size: 13px;
+          font-weight: 400;
+          color: #777;
+          line-height: 140%;
+
+          @include mq(sm) {
+            font-size: 15px;
+          }
+        }
+
+        .btn {
+          clear: both;
+          margin-top: 10px;
+          padding: 4px 13px;
+          border: 0px;
+          font-size: 13px;
+          font-weight: 600;
+
+          &:hover {
+            padding: 4px 13px;
+          }
+
+          &.btn-secondary {
+            margin-left: 8px;
+          }
+
+          &.btn-inline {
+            padding-left: 0;
+
+            @include mq(lg) {
+
+            }
+
+            @include mq(md) {
+
+            }
+
+            @include mq(sm) {
+              background-color: $color-secondary-alt;
+              color: $white;
+
+              i {
+                color: $white;
+              }
+
+              &:hover {
+                background-color: lighten($color-secondary-alt, 15%);
+              }
+            }
+          }
+        }
       }
     }
   }
 }
+
 
 
 // Single Profile Page CSS #####################################

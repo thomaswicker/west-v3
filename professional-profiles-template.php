@@ -1,16 +1,16 @@
 <?php
 /*
-Template Name: Staff Landing Page __TEMPLATE__
+Template Name: Professional Profiles Landing Page __TEMPLATE__
 */
 ?>
 
 <?php get_header(); ?>
 
-<section class="staff-landing-container">
-  <section id="staff" class="slc--inner">
-    <article class="slc--inner-left">
+<section class="professional-profiles-landing-container">
+  <section id="professional-profiles" class="professional-profiles--inner">
+    <article class="professional-profiles--inner-left">
 
-      <header class="staff-landing-header">
+      <header class="professional-profiles-landing-header">
         <?php if( get_field('page_subtitle') ): ?>
           <h1 class="main-title">
             <?php the_field( 'page_title' ); ?>
@@ -38,12 +38,13 @@ Template Name: Staff Landing Page __TEMPLATE__
         </div>
       </header>
 
-      <ul class="list staff-landing-list">
+      <ul class="list professional-profiles-landing-list">
         <?php
           $args = array(
             'post_type' => 'staff',
             'posts_per_page' => -1,
-            'orderby'=>'title','order'=>'ASC'
+            'orderby'=>'title',
+            'order'=>'ASC'
           );
 
           $the_query = new WP_Query( $args );
@@ -51,27 +52,29 @@ Template Name: Staff Landing Page __TEMPLATE__
 
         <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-        <li class="staff-tile">
-          <div class="staff-tile--left">
-            <img src="<?php the_field( 'staff_member_photo' ); ?>" alt="Photo of <?php the_field( 'staff_member_short_name' ); ?>" class="staff-member-photo">
-          </div>
+          <?php if( get_field('staff_member_profile_page') == 'yes' ): ?>
+            <li class="professional-profiles-tile">
+              <div class="professional-profiles-tile--left">
+                <img src="<?php the_field( 'staff_member_photo' ); ?>" alt="Photo of <?php the_field( 'staff_member_short_name' ); ?>" class="professional-profiles-member-photo">
+              </div>
 
-          <div class="staff-tile--right">
-            <h2 class="name profile-name"  data-sort="name"><?php the_title(); ?></h2>
+              <div class="professional-profiles-tile--right">
+                <h2 class="name profile-name"  data-sort="name"><?php the_title(); ?></h2>
 
-            <?php if( get_field('staff_member_job_title') ): ?>
-              <h3 class="title staff-member-job-title" data-sort="title"><?php the_field( 'staff_member_job_title' ); ?></h3>
-            <?php endif; ?>
+                <?php if( get_field('staff_member_job_title') ): ?>
+                  <h3 class="title staff-member-job-title" data-sort="title"><?php the_field( 'staff_member_job_title' ); ?></h3>
+                <?php endif; ?>
 
-            <?php if( get_field('staff_member_email_address') ): ?>
-              <a href="mailto: <?php the_field( 'staff_member_email_address' ); ?>" class="btn btn-primary" alt="Email Me Button">Email</a>
-            <?php endif; ?>
+                <?php if( get_field('staff_member_email_address') ): ?>
+                  <a href="mailto: <?php the_field( 'staff_member_email_address' ); ?>" class="btn btn-primary" alt="Email Me Button">Email</a>
+                <?php endif; ?>
 
-            <?php if( get_field('staff_member_profile_page') == 'yes' ): ?>
-              <a href="<?php the_permalink(); ?>" class="btn btn-inline" alt="View Profile">View Profile <i class="fa fa-arrow-right"></i></a>
-            <?php endif; ?>
-          </div>
-        </li>
+                <?php if( get_field('staff_member_profile_page') == 'yes' ): ?>
+                  <a href="<?php the_permalink(); ?>" class="btn btn-inline" alt="View Profile">View Profile <i class="fa fa-arrow-right"></i></a>
+                <?php endif; ?>
+              </div>
+            </li>
+        <?php endif; ?>
 
         <?php endwhile; else: ?>
           <div class="failure-message">There are no staff members to display or something went wrong. Please try again later, we may be undergoing unscheduled maintenance.</div>
@@ -80,11 +83,11 @@ Template Name: Staff Landing Page __TEMPLATE__
       </ul>
     </article>
 
-    <aside class="slc--inner-right">
+    <aside class="professional-profiles--inner-right">
       <div class="sidebar-container">
         <h3>About WEST</h3>
 
-        <ul class="subnav-sidebar">
+        <ul class="subnav-sidebar staff">
           <li class="about-subnav--profile">
             <a href="http://www.west-inc.com/about/profile-page/">
               <i class="fa fa-chevron-right"></i>
@@ -142,8 +145,8 @@ Template Name: Staff Landing Page __TEMPLATE__
           </li>
         </ul>
 
-        <a href="http://www.west-inc.com/about/professional-profiles/" class="btn btn-view-staff">
-          <i class="fa fa-arrow-left" style="margin-right: 3px;"></i> Back to Professional Profiles
+        <a href="http://www.west-inc.com/about/staff/" class="btn btn-view-staff">
+          View Full Staff Directory <i class="fa fa-arrow-right"></i>
         </a>
       </div>
     </aside>

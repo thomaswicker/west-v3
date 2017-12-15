@@ -48,16 +48,16 @@
  | |___ ___) |__) | |  _ <| |___ ___) | |___  | |
   \____|____/____/  |_| \_\_____|____/|_____| |_|
 */
-@import "http://www.west-inc.com/wp-content/themes/west_theme/css/bootstrap.min.css";
-@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700";
-@import "http://fonts.googleapis.com/css?family=Raleway:400,100";
+@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700";
+@import "https://fonts.googleapis.com/css?family=Raleway:400,100";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
-@import "http://www.west-inc.com/wp-content/themes/west_theme/css/bootstrap.min.css";
-@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700";
-@import "http://fonts.googleapis.com/css?family=Raleway:400,100";
+@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700";
+@import "https://fonts.googleapis.com/css?family=Raleway:400,100";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
@@ -2738,6 +2738,36 @@ ____  _   _ _____ _____ ___  _   _ ____
     font-size: 18px;
     color: #FFFFFF; }
 
+.inline-news-link {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #234069;
+  border: 2px solid #234069;
+  color: #FFFFFF; }
+  .inline-news-link:hover, .inline-news-link:active, .inline-news-link:focus {
+    background-color: #3663a2;
+    border: 2px solid #3663a2;
+    color: #FFFFFF; }
+    .inline-news-link:hover i, .inline-news-link:active i, .inline-news-link:focus i {
+      color: #FFFFFF; }
+
+.btn-view-staff {
+  margin-top: 25px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background-color: #109ED9;
+  border: 2px solid #109ED9; }
+  .btn-view-staff:hover, .btn-view-staff:active, .btn-view-staff:focus {
+    background-color: #2db6ef;
+    border: 2px solid #2db6ef;
+    color: #FFFFFF; }
+    .btn-view-staff:hover i, .btn-view-staff:active i, .btn-view-staff:focus i {
+      color: #FFFFFF; }
+
 /*
 _   _ _____    _    ____  _____ ____  ____
 | | | | ____|  / \  |  _ \| ____|  _ \/ ___|
@@ -3105,6 +3135,11 @@ _____ ___   ___ _____ _____ ____  ____
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .footer .footer--left .twitter-footer {
           margin: 20px 0 30px 20px; } }
+      .footer .footer--left .twitter-footer .timeline-Tweet-text {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 15px !important;
+        line-height: 140% !important;
+        color: #000000 !important; }
     .footer .footer--left .social-links > li {
       display: inline-block; }
     .footer .footer--left .social-links > li a {
@@ -3113,8 +3148,7 @@ _____ ___   ___ _____ _____ ____  ____
       height: 30px;
       display: block;
       text-align: center;
-      line-height: 30px;
-      border: 1px solid #bdc3c7; }
+      line-height: 30px; }
     .footer .footer--left .social-links > li a.facebook:hover {
       background-color: #2f5a9a;
       color: #fff !important;
@@ -3149,53 +3183,56 @@ _____ ___   ___ _____ _____ ____  ____
       .footer .footer--middle {
         width: calc(100% - 30px);
         margin: 25px 15px 0 15px; } }
-    .footer .footer--middle .footer-events {
-      display: block;
+    .footer .footer--middle .footer-news {
+      float: left;
       width: 100%;
       padding-left: 25px;
       padding-right: 25px; }
-      .footer .footer--middle .footer-events a {
-        color: #72A430 !important; }
-      .footer .footer--middle .footer-events h2 {
+      .footer .footer--middle .footer-news li {
         float: left;
         width: 100%;
-        margin: 0 0 3px 0;
-        padding: 0 0 3px 0;
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 140%;
-        color: #000000; }
-      .footer .footer--middle .footer-events h3 {
-        float: left;
-        width: 100%;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: .90em;
-        line-height: 1.3em;
-        font-style: italic;
-        color: #72A430;
-        padding: 5px 0px 0px 20px; }
-      .footer .footer--middle .footer-events p {
-        float: left;
-        width: 100%;
-        padding: 0px 0px 10px 0px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        line-height: 140%;
-        color: #000000; }
-        @media only screen and (min-width: 768px) and (max-width: 992px) {
-          .footer .footer--middle .footer-events p {
-            padding: 0px 0px 3px 30px; } }
-        @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .footer .footer--middle .footer-events p {
-            padding: 0px 0px 3px 30px; } }
-      .footer .footer--middle .footer-events ul {
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #ddd; }
+        .footer .footer--middle .footer-news li h2 {
+          float: left;
+          width: 100%;
+          margin: 0 0 3px 0;
+          padding: 0 0 3px 0;
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 140%;
+          color: #000000; }
+        .footer .footer--middle .footer-news li h3 {
+          float: left;
+          width: 100%;
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: .90em;
+          line-height: 1.3em;
+          font-style: italic;
+          color: #72A430;
+          padding: 5px 0px 0px 20px; }
+        .footer .footer--middle .footer-news li span {
+          display: none; }
+        .footer .footer--middle .footer-news li img {
+          display: none; }
+        .footer .footer--middle .footer-news li p {
+          float: left;
+          width: 100%;
+          padding: 0px 0px 10px 0px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          line-height: 140%;
+          color: #000000; }
+          @media only screen and (min-width: 768px) and (max-width: 992px) {
+            .footer .footer--middle .footer-news li p {
+              padding: 0px 0px 3px 30px; } }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .footer .footer--middle .footer-news li p {
+              padding: 0px 0px 3px 30px; } }
+      .footer .footer--middle .footer-news ul {
         list-style-type: none !important; }
-      .footer .footer--middle .footer-events span {
-        display: none; }
-      .footer .footer--middle .footer-events img {
-        display: none; }
   .footer .footer--right {
     float: left;
     width: calc(33.333% - 60px);
@@ -6538,11 +6575,12 @@ __  __    _    ____  _  _______ _____ ____
   .news-page-container .news-page--inner .news-page--inner-left .news-list {
     float: left;
     width: 100%;
-    padding: 0 0 30px 0;
+    padding: 40px 0 30px 0;
     /*0px --> 768px*/ }
     .news-page-container .news-page--inner .news-page--inner-left .news-list li {
-      margin: 30px 0 30px 0;
-      padding: 10px 25px 10px 25px;
+      float: left;
+      width: 100%;
+      padding: 20px 25px 20px 25px;
       border-bottom: 1px solid #ddd; }
       @media only screen and (min-width: 48em) and (max-width: 64em) {
         .news-page-container .news-page--inner .news-page--inner-left .news-list li {
@@ -6603,6 +6641,21 @@ __  __    _    ____  _  _______ _____ ____
         height: auto;
         margin: 20px 0 0 0;
         display: block; }
+      .news-page-container .news-page--inner .news-page--inner-left .news-list li .inline-news-photo {
+        max-width: 400px;
+        height: auto;
+        margin: 20px 0 0 0;
+        display: block; }
+      .news-page-container .news-page--inner .news-page--inner-left .news-list li .inline-news-link {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #234069; }
+        .news-page-container .news-page--inner .news-page--inner-left .news-list li .inline-news-link:hover {
+          color: #3663a2;
+          text-decoration: underline; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .news-page-container .news-page--inner .news-page--inner-left .news-list {
         padding: 10px 0 30px 0;
@@ -6638,281 +6691,6 @@ ____  _____ ____  ____   ___  _   _ _   _ _____ _
 |_|   |_____|_| \_\____/ \___/|_| \_|_| \_|_____|_____|
 
 */
-.main-wrapper-staffdirectory {
-  margin: 0px 0px 60px 0px;
-  padding: 110px 0px 0px 0px; }
-
-.main-wrapper-staffMember {
-  margin: 0px 0px 60px 0px;
-  padding: 110px 0px 0px 0px; }
-
-.main-wrapper-personnel {
-  padding: 110px 0px 0px 0px;
-  margin: 0px 0px 0px 0px; }
-
-.personnel-title {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-  width: 80%; }
-  .personnel-title h5 {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    padding: 10px 0px 5px 0px;
-    color: #000000;
-    overflow: hidden;
-    font-size: 1.5em;
-    font-weight: 100;
-    line-height: 1.3em; }
-  .personnel-title h6 {
-    padding: 0px 0px 10px 0px;
-    color: #72A430;
-    overflow: hidden;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1em;
-    font-weight: 100;
-    font-style: italic;
-    line-height: 1.3em;
-    border-bottom: 1px solid #72A430; }
-
-.personnelBodyContainer {
-  float: left;
-  clear: right;
-  padding: 35px 40px 50px 30px;
-  margin: 0px 0px 60px 0px;
-  text-align: left;
-  box-shadow: 1px 1px 6px #36454F;
-  border: 1px solid #ecf0f1;
-  /*768px --> 992px*/
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .personnelBodyContainer {
-      padding: 35px 10px 50px 20px;
-      margin: 0px 0px 20px 0px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .personnelBodyContainer {
-      padding: 15px 10px 50px 20px;
-      margin: -15px 0px 40px 0px; } }
-  .personnelBodyContainer h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 1.9em;
-    margin: 0px 0px 0px -20px;
-    color: #000000;
-    /*768px --> 992px*/
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .personnelBodyContainer h3 {
-        font-size: 2.2em;
-        margin: 0px 0px 0px -20px;
-        color: #000000; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .personnelBodyContainer h3 {
-        font-size: 1.5em;
-        margin: 30px 0px 0px -20px;
-        color: #000000; } }
-  .personnelBodyContainer h4 {
-    color: #72A430 !important;
-    font-size: 1.3em;
-    font-weight: 100;
-    font-style: italic;
-    margin: 4px 0px 15px -20px;
-    /*768px --> 992px*/
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .personnelBodyContainer h4 {
-        font-size: 1.2em;
-        margin: 5px 0px 0px -20px;
-        color: #000000; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .personnelBodyContainer h4 {
-        font-size: 1em;
-        line-height: 1.3em;
-        margin: 5px 0px 0px -20px;
-        color: #000000; } }
-  .personnelBodyContainer img {
-    margin: 25px 0px 0px 25px;
-    padding: 0px 30px 0px 0px;
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .personnelBodyContainer img {
-        margin: 25px 50px 0px 5px;
-        padding: 0px 30px 0px 0px; } }
-
-.personnelBodyText {
-  font-size: .95em;
-  line-height: 1.4em;
-  margin: 15px 0px 0px -20px;
-  color: #36454F;
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .personnelBodyText {
-      font-size: .85em;
-      padding: 15px 10px 0px 0px; } }
-
-.personnelPage {
-  /*768px --> 992px*/
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .personnelPage {
-      margin: 0px -40px 0px 40px;
-      padding: 0px 10px 0px 30px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .personnelPage {
-      margin: 0px -40px 0px 20px;
-      padding: 0px 30px 0px 0px; } }
-
-.staffDirectoryBodyContainer {
-  width: 100%;
-  padding: 0px;
-  margin: 15px 0px 0px 0px;
-  border: 2px solid #eeeeee; }
-
-.personnelPageTitle {
-  margin: -20px 0px 0px 0px; }
-  .personnelPageTitle h5 {
-    font-size: 2em !important;
-    line-height: 1.3em !important;
-    margin: -20px 0px 0px 0px; }
-  .personnelPageTitle h6 {
-    line-height: 1.4em !important; }
-
-/* ---------- BEGIN SPECIFIC STAFF MEMBER PAGES ---------------- */
-.bioPhoto {
-  margin: -20px 0px 0px 0px; }
-  .bioPhoto img {
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .bioPhoto img {
-        width: 100%; } }
-
-.staffMemberBio {
-  padding: 0px 0px 0px 20px; }
-
-.staffMemberBio p {
-  color: #36454F;
-  font-size: .95em;
-  line-height: 1.5em; }
-
-/* ---------- END SPECIFIC STAFF MEMBER PAGES ---------------- */
-/* ---------- BEGIN STAFF DIRECTORY ---------------- */
-.staffDirectoryBodyContainer {
-  width: 100%;
-  padding: 0px; }
-
-.staffDirectorySortMenu {
-  margin: 0px 0px -20px 0px;
-  font-size: 1.2em; }
-
-.subheaderMainStaffDirectoryContainer li {
-  width: 188px;
-  text-decoration: none;
-  list-style: none;
-  border-top: 2px solid #BBBBBB;
-  border-bottom: 2px solid #BBBBBB;
-  background-color: #efefef;
-  margin: 15px 15px 0px 0px !important;
-  padding: 15px 20px 15px 20px; }
-
-.subheaderMainStaffDirectoryContainer li p {
-  font-size: 1em;
-  padding: 3px 0px 15px 0px; }
-
-.subheaderMainStaffDirectoryContainer li p span {
-  font-size: .9em;
-  color: #72A430;
-  font-style: italic; }
-
-#subheaderMainStaffDirectoryTop h1 {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-  font-weight: 100;
-  color: #000;
-  overflow: hidden;
-  font-size: 1.4em;
-  line-height: 1.4em;
-  margin: 0px 0px 0px 0px; }
-
-#subheaderMainStaffDirectoryTop h2 {
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  font-weight: 300;
-  font-style: italic;
-  color: #72A430;
-  font-size: 1em;
-  margin: 0px 0px 20px 0px; }
-
-/* Isotope Animating
- * -------------------------- */
-.isotope,
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s; }
-
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width; }
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  -ms-transition-property: -ms-transform, opacity;
-  -o-transition-property: -o-transform, opacity;
-  transition-property: transform, opacity; }
-
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s; }
-
-/* Portfolio Filter
- * -------------------------- */
-.portfolio-filter {
-  padding: 25px 0;
-  text-transform: uppercase;
-  font-size: 11px; }
-
-.portfolio-filter.nav-pills > li > a {
-  border-radius: 2px;
-  color: #72A430;
-  font-size: 1.1em !important;
-  padding: 10px 13px 10px 13px; }
-
-.portfolio-filter.nav-pills > li.active > a,
-.portfolio-filter.nav-pills > li.active > a:hover,
-.portfolio-filter.nav-pills > li.active > a:focus {
-  border-color: #72A430;
-  color: #FFFFFF;
-  background-color: #72A430; }
-
-/* ************************************************* BEGIN MEDIA QUERIES ************************************************* */
-/*992px --> 1200px*/
-/*768px --> 992px*/
-/*0px --> 768px*/
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .subheaderMainStaffDirectoryContainer {
-    padding: 0px; }
-  .main-wrapper-staffdirectory {
-    margin: 0px 0px 60px 0px; }
-  .subheaderMainStaffDirectoryContainer li {
-    width: 100%;
-    margin: 15px 0px 0px 0px !important;
-    padding: 15px 20px 15px 20px; } }
-
-/* ************************************************* END MEDIA QUERIES ************************************************* */
 /*
 ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ____   ___  _____ ___ _     _____ ____
 |  _ \|  _ \ / _ \|  ___| ____/ ___/ ___|_ _/ _ \| \ | |  / \  | |     |  _ \|  _ \ / _ \|  ___|_ _| |   | ____/ ___|
@@ -6920,220 +6698,249 @@ ____  ____   ___  _____ _____ ____ ____ ___ ___  _   _    _    _       ____  ___
 |_|   |_| \_\\___/|_|   |_____|____/____/___\___/|_| \_/_/   \_\_____| |_|   |_| \_\\___/|_|   |___|_____|_____|____/
 
 */
-.main-wrapper-professional-profiles {
-  padding: 40px 0px 0px 0px;
-  margin: 0px 0px 0px 0px; }
-  .main-wrapper-professional-profiles .container {
-    margin-top: -40px; }
-
-#professionalProfilesContainer {
-  float: left;
-  width: 100%;
-  padding: 0px !important;
-  text-decoration: none;
-  list-style: none;
-  margin: 20px 0px 30px 0px;
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    #professionalProfilesContainer {
-      padding: 0px 15px 10px 15px !important;
-      margin: 20px 0px 30px 0px; } }
-
-.professionalProfilesBodyContainer {
-  float: left;
-  width: 100%;
-  padding: 15px 0px 50px 0px;
-  margin: 0px 0px 60px 0px;
-  text-align: left;
-  /*768px --> 992px*/
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .professionalProfilesBodyContainer {
-      padding: 15px 0px 50px 0px;
-      margin: 0px 0px 20px 0px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .professionalProfilesBodyContainer {
-      padding: 15px 0px 50px 0px;
-      margin: -15px 0px 40px 0px; } }
-  .professionalProfilesBodyContainer h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 1.5em;
-    margin: 0px 0px 0px -20px;
-    color: #000000;
-    /*768px --> 992px*/
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .professionalProfilesBodyContainer h2 {
-        font-size: 2.2em;
-        margin: 0px 0px 0px -20px;
-        color: #000000; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .professionalProfilesBodyContainer h2 {
-        font-size: 1.5em;
-        margin: 30px 0px 0px -20px;
-        color: #000000; } }
-
-.professional-profiles-header {
-  float: left;
-  width: 100%;
-  height: 315px;
-  background-image: url(../images/professional_profiles_header.jpg);
-  background-size: cover;
-  /*768px --> 992px*/
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .professional-profiles-header {
-      height: 235px;
-      background-image: url(../images/professional_profiles_header.jpg); } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .professional-profiles-header {
-      height: 100px;
-      background-image: url(../images/professional_profiles_header_mobile.jpg); } }
-  .professional-profiles-header img {
-    width: 100%; }
-
-#profileContainer h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #333;
-  text-transform: capitalize !important; }
-
-.profileContainer {
-  float: left;
-  padding: 15px 0px 15px 0px;
-  text-align: center;
-  border: 1px solid #72A430;
-  margin: 5px;
-  width: calc(25% - 10px);
-  background-clip: #FFFFFF;
-  /*768px --> 992px*/
-  /*768px --> 992px*/
-  /*0px --> 768px*/ }
-  @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    .profileContainer {
-      width: calc(25% - 10px); } }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .profileContainer {
-      width: calc(50% - 10px); } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .profileContainer {
-      width: 100%; } }
-  .profileContainer:hover {
-    background-color: #72A430;
-    cursor: pointer; }
-    .profileContainer:hover h3, .profileContainer:hover h4 {
-      color: #FFFFFF; }
-  .profileContainer h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1em;
-    font-weight: 500;
-    color: #000000;
-    /*768px --> 992px*/
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .profileContainer h3 {
-        font-size: 1.2em; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .profileContainer h3 {
-        font-size: 1.2em; } }
-  .profileContainer h4 {
-    color: #72A430;
-    font-family: "Open Sans", sans-serif;
-    font-size: .9em;
-    font-weight: 400;
-    font-style: italic;
-    margin-top: 5px;
-    /*768px --> 992px*/
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .profileContainer h4 {
-        font-size: .9em; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .profileContainer h4 {
-        font-size: .9em;
-        line-height: 1.3em; } }
-
-/* ************************************************* END MEDIA QUERIES ************************************************* */
-.professional-profiles-container {
-  float: left;
-  width: 100%;
-  padding-bottom: 30px; }
-  .professional-profiles-container .professional-profiles-header {
-    float: left;
-    width: 100%;
-    padding: 20px; }
-  .professional-profiles-container .professional-profiles-list {
-    float: left;
-    width: 100%;
-    padding: 20px; }
-    .professional-profiles-container .professional-profiles-list li.profile-tile {
-      float: left;
-      width: 25%;
-      margin: 5px;
-      padding: 10px 15px;
-      border: 1px solid #2C3621; }
-      .professional-profiles-container .professional-profiles-list li.profile-tile:hover {
-        background-color: #72A430;
-        cursor: pointer; }
-        .professional-profiles-container .professional-profiles-list li.profile-tile:hover a .pt--middle h2, .professional-profiles-container .professional-profiles-list li.profile-tile:hover a .pt--middle h3, .professional-profiles-container .professional-profiles-list li.profile-tile:hover a .pt--middle h4 {
-          color: #FFFFFF; }
-        .professional-profiles-container .professional-profiles-list li.profile-tile:hover a .pt--right i.fa-arrow-right {
-          color: #FFFFFF; }
-      .professional-profiles-container .professional-profiles-list li.profile-tile a {
-        float: left;
-        width: 100%; }
-        .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--left {
-          float: left;
-          width: 55px;
-          text-align: cecenter; }
-          .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--left img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%; }
-        .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--middle {
-          float: left;
-          width: calc(100% - 95px);
-          padding-left: 10px;
-          text-align: left; }
-          .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--middle h2 {
-            float: left;
-            width: 100%;
-            padding-top: 8px;
-            margin-bottom: 4px;
-            font-family: "Roboto", sans-serif;
-            font-size: 18px;
-            color: #2C3621; }
-          .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--middle h3 {
-            float: left;
-            width: 100%;
-            margin-bottom: 4px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: #202e0d;
-            font-style: italic; }
-        .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--right {
-          float: left;
-          width: 40px;
-          text-align: center; }
-          .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--right i {
-            position: relative;
-            top: 20px;
-            right: 5px; }
-            .professional-profiles-container .professional-profiles-list li.profile-tile a .pt--right i.fa-arrow-right {
-              float: right;
-              font-size: 17px;
-              color: #72A430; }
-  .professional-profiles-container .view-staff-directory-container {
-    float: left;
-    width: 100%;
-    padding-top: 25px;
-    text-align: center; }
-    .professional-profiles-container .view-staff-directory-container .btn {
+.professional-profiles-landing-container {
+  display: flex;
+  padding: 130px 25px 30px 25px; }
+  @media only screen and (min-width: 48em) and (max-width: 64em) {
+    .professional-profiles-landing-container {
+      padding: 90px 10px 30px 10px; } }
+  @media only screen and (max-width: 47.9375em) {
+    .professional-profiles-landing-container {
+      padding: 90px 5px 30px 5px; } }
+  .professional-profiles-landing-container > * {
+    flex: 1 100%; }
+  .professional-profiles-landing-container .professional-profiles-landing-header {
+    flex: 1; }
+    @media only screen and (max-width: 47.9375em) {
+      .professional-profiles-landing-container .professional-profiles-landing-header {
+        padding-left: 5px;
+        padding-right: 5px; } }
+  .professional-profiles-landing-container .professional-profiles--inner {
+    display: flex; }
+    @media only screen and (max-width: 47.9375em) {
+      .professional-profiles-landing-container .professional-profiles--inner {
+        flex-wrap: wrap; } }
+    .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-left {
+      flex: 8;
+      padding-right: 50px;
+      padding-left: 50px; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-left {
+          flex: 7;
+          padding-right: 10px;
+          padding-left: 10px; } }
+      @media only screen and (min-width: 48em) and (max-width: 64em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-left {
+          flex: 5;
+          padding-right: 5px;
+          padding-left: 5px; } }
+      @media only screen and (max-width: 47.9375em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-left {
+          flex: 1 100%;
+          padding-right: 5px;
+          padding-left: 5px; } }
+    .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right {
+      flex: 2; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right {
+          flex: 3; } }
+      @media only screen and (min-width: 48em) and (max-width: 64em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right {
+          flex: 5; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right h3 {
+            padding-left: 15px;
+            padding-right: 15px; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right .subnav-sidebar {
+            padding-left: 15px;
+            padding-right: 15px;
+            border-left: 0px; } }
+      @media only screen and (max-width: 47.9375em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right {
+          flex: 1 100%;
+          padding-top: 30px; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right h3 {
+            padding-left: 15px;
+            padding-right: 15px; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles--inner-right .subnav-sidebar {
+            padding-left: 15px;
+            padding-right: 15px;
+            border-left: 0px; } }
+    .professional-profiles-landing-container .professional-profiles--inner h1.main-title {
       float: none;
-      width: auto;
-      display: inline; }
+      display: flex;
+      padding-left: 8px; }
+    .professional-profiles-landing-container .professional-profiles--inner h2.main-subtitle {
+      float: none;
+      display: flex;
+      padding-left: 8px;
+      padding-bottom: 20px;
+      line-height: 140%; }
+      @media only screen and (max-width: 47.9375em) {
+        .professional-profiles-landing-container .professional-profiles--inner h2.main-subtitle {
+          font-size: 15px; } }
+    .professional-profiles-landing-container .professional-profiles--inner .input-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px; }
+      @media only screen and (min-width: 48em) and (max-width: 64em) {
+        .professional-profiles-landing-container .professional-profiles--inner .input-container {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px;
+          padding-left: 5px;
+          padding-right: 5px; } }
+      @media only screen and (max-width: 47.9375em) {
+        .professional-profiles-landing-container .professional-profiles--inner .input-container {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px;
+          padding-left: 5px;
+          padding-right: 5px; } }
+      .professional-profiles-landing-container .professional-profiles--inner .input-container input {
+        flex: 2;
+        height: 80px;
+        margin-right: 250px;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        font-size: 30px;
+        font-weight: 300;
+        border: 1px solid #234069;
+        color: #888888; }
+        .professional-profiles-landing-container .professional-profiles--inner .input-container input:focus {
+          border: 2px solid #72A430;
+          color: #222222; }
+        @media only screen and (min-width: 90.063em) and (max-width: 124em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container input {
+            margin-right: 150px; } }
+        @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container input {
+            margin-right: 45px; } }
+        @media only screen and (min-width: 48em) and (max-width: 64em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container input {
+            width: 100%;
+            margin-right: 50px;
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 47.9375em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container input {
+            width: 100%;
+            height: 40px;
+            margin-right: 0px;
+            margin-bottom: 0;
+            padding: 10px 8px;
+            font-size: 20px; } }
+      .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container {
+        min-width: 250px;
+        margin-top: 10px;
+        margin-left: auto;
+        padding-right: 10px; }
+        @media only screen and (min-width: 48em) and (max-width: 64em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container {
+            display: block;
+            width: 100%;
+            min-width: 250px;
+            margin-top: 15px; } }
+        @media only screen and (max-width: 47.9375em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container {
+            display: block;
+            width: 100%;
+            min-width: 250px;
+            margin-top: 15px; } }
+        .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container i {
+          display: none; }
+        .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container i.fa-sort-desc {
+          position: relative;
+          top: -2px; }
+        .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container i.fa-sort-asc {
+          position: relative;
+          top: 2px; }
+        @media only screen and (max-width: 47.9375em) {
+          .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-name, .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-title {
+            flex: 1;
+            margin-top: 15px; } }
+        .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-name.active, .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-title.active {
+          background-color: #3663a2; }
+          .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-name.active i, .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-title.active i {
+            display: inline; }
+        .professional-profiles-landing-container .professional-profiles--inner .input-container .btn-container .sort-name {
+          margin-right: 20px; }
+    .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list {
+      display: flex;
+      flex-wrap: wrap; }
+      @media only screen and (min-width: 48em) and (max-width: 64em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list {
+          width: 100%;
+          padding-top: 25px; } }
+      @media only screen and (max-width: 47.9375em) {
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list {
+          width: 100%;
+          padding-top: 25px; } }
+      .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile {
+        flex: 2;
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 100px;
+        margin: 8px;
+        border: 1px solid #AAAAAA; }
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .professional-profiles-tile--left {
+          float: left;
+          width: 75px;
+          min-height: 100px;
+          padding-top: 8px;
+          text-align: center; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .professional-profiles-tile--left img {
+            max-width: 55px; }
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .professional-profiles-tile--right {
+          float: left;
+          width: calc(100% - 75px);
+          min-height: 100px;
+          padding: 10px 15px 10px 5px; }
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile h2 {
+          float: left;
+          width: 100%;
+          padding-top: 2px;
+          margin-bottom: 0;
+          font-family: "Roboto", sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          color: #2C3621;
+          line-height: 145%; }
+          @media only screen and (max-width: 47.9375em) {
+            .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile h2 {
+              font-size: 19px; } }
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile h3 {
+          float: left;
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: 4px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+          color: #777;
+          line-height: 140%; }
+          @media only screen and (max-width: 47.9375em) {
+            .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile h3 {
+              font-size: 15px; } }
+        .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn {
+          clear: both;
+          margin-top: 10px;
+          padding: 4px 13px;
+          border: 0px;
+          font-size: 13px;
+          font-weight: 600; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn:hover {
+            padding: 4px 13px; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn.btn-secondary {
+            margin-left: 8px; }
+          .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn.btn-inline {
+            padding-left: 0; }
+            @media only screen and (max-width: 47.9375em) {
+              .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn.btn-inline {
+                background-color: #234069;
+                color: #FFFFFF; }
+                .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn.btn-inline i {
+                  color: #FFFFFF; }
+                .professional-profiles-landing-container .professional-profiles--inner .professional-profiles-landing-list .professional-profiles-tile .btn.btn-inline:hover {
+                  background-color: #3663a2; } }
 
 .professional-profile-detail {
   float: left;
@@ -9767,80 +9574,6 @@ __ _) || |/ ___ \|  _| |  _|
 |____/ |_/_/   \_\_|   |_|
 
 */
-#staffContainer {
-  padding: 0px !important;
-  text-decoration: none;
-  list-style: none;
-  margin: 20px 0px 30px 0px;
-  /*0px --> 768px*/ }
-  #staffContainer p {
-    font-size: .9em;
-    line-height: 1.4em; }
-  #staffContainer span {
-    font-weight: 500; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    #staffContainer {
-      padding: 0px 20px 10px 20px !important;
-      margin: 20px 0px 30px 0px; } }
-
-#isotope-portfolio-container li {
-  height: 130px !important; }
-
-.staffBodyContainer {
-  float: left;
-  clear: right;
-  width: 100%;
-  padding: 10px 20px 10px 30px;
-  box-shadow: 1px 1px 6px #36454F;
-  border: 2px solid #eeeeee;
-  margin: 40px 0px 60px 0px;
-  /*0px --> 768px*/ }
-  .staffBodyContainer p {
-    font-size: .9em;
-    line-height: 1.35em;
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 0px) and (max-width: 768px) {
-      .staffBodyContainer p {
-        font-size: .85em; } }
-  .staffBodyContainer h1 {
-    font-family: 'Raleway', sans-serif !important;
-    text-transform: uppercase;
-    position: relative;
-    margin: 0;
-    font-weight: 300;
-    color: #000;
-    font-size: 2em;
-    line-height: 1.4em;
-    margin: 10px 0px 20px 0px;
-    border-bottom: 1px solid #BBBBBB;
-    padding: 0px 0px 5px 0px; }
-  .staffBodyContainer img {
-    float: right;
-    clear: left;
-    margin: 10px 30px 20px 40px;
-    border: 2px solid #BBBBBB;
-    /*0px --> 768px*/ }
-    @media only screen and (min-width: 0px) and (max-width: 768px) {
-      .staffBodyContainer img {
-        margin: 0px 0px 30px 0px;
-        width: 100%; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .staffBodyContainer {
-      padding: 10px 0px 30px 0px;
-      margin: 10px 0px 30px 0px; } }
-
-.staffDirectory > #subheaderMainStaffDirectoryTop > h1 {
-  font-family: "Open Sans", sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 1.5rem !important;
-  color: #333 !important;
-  text-transform: capitalize !important; }
-
-.staffDirectory > #subheaderMainStaffDirectoryTop > h2 {
-  font-weight: 400 !important;
-  font-style: italic !important; }
-
-/* -------------------------- END EXPERIENCE CSS -------------------------- */
 .staff-landing-container {
   display: flex;
   padding: 130px 25px 30px 25px; }
@@ -10020,6 +9753,7 @@ __ _) || |/ ___ \|  _| |  _|
       .staff-landing-container .slc--inner .staff-landing-list .staff-tile {
         flex: 2;
         min-width: 250px;
+        max-width: 250px;
         min-height: 100px;
         margin: 8px;
         border: 1px solid #AAAAAA; }

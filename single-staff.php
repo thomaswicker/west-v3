@@ -7,9 +7,9 @@
 
     <article class='professional-profile-detail'>
       <header class="ppd--header">
-        <a href=" http://www.west-inc.com/staff/" class="btn-back-to-team">
+        <a href=" http://www.west-inc.com/professional-profiles/" class="btn-back-to-team">
           <i class="fa fa-arrow-left"></i>
-          <span>Back to the Staff Page</span>
+          <span>Back to Professional Profiles</span>
         </a>
       </header>
 
@@ -67,9 +67,9 @@
             </li>
 
             <li class="about-subnav--staff">
-              <a href="http://www.west-inc.com/about/staff/">
+              <a href="http://www.west-inc.com/about/professional-profiles/">
                 <i class="fa fa-chevron-right"></i>
-                Our Staff
+                Professional Profiles
               </a>
             </li>
 

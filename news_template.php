@@ -36,6 +36,14 @@ Template Name: News __TEMPLATE __
               <?php if( get_field('news_content') ): ?>
                 <?php the_field( 'news_content' ); ?>
               <?php endif; ?>
+
+              <?php if( get_field('news_photo') ): ?>
+                <img src="<?php the_field( 'news_photo' ); ?>" class="inline-news-photo" alt="Photo of <?php the_field( 'news_photo' ); ?>">
+              <?php endif; ?>
+
+              <?php if( get_field('news_links') ): ?>
+                <a href="<?php the_field( 'news_links' ); ?>" class="inline-news-link">Click Here for More Info</a>
+              <?php endif; ?>
             </li>
 
             <?php endwhile; else: ?>
@@ -64,9 +72,9 @@ Template Name: News __TEMPLATE __
       		</li>
 
       		<li class="about-subnav--staff">
-      			<a href="http://www.west-inc.com/about/staff/">
+            <a href="http://www.west-inc.com/about/professional-profiles/">
       				<i class="fa fa-chevron-right"></i>
-      				Our Staff
+      				Professional Profiles
       			</a>
       		</li>
 

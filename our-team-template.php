@@ -320,9 +320,9 @@ Template Name: Our Team Landing Page __TEMPLATE__
           		</li>
 
           		<li class="about-subnav--staff">
-          			<a href="http://www.west-inc.com/about/staff/">
+                <a href="http://www.west-inc.com/about/professional-profiles/">
           				<i class="fa fa-chevron-right"></i>
-          				Our Staff
+          				Professional Profiles
           			</a>
           		</li>
 

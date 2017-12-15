@@ -16,10 +16,11 @@
 	<section class="footer--middle">
 		<h4><i class="fa fa-newspaper-o"></i> News & Events</h4>
 
-		<ul class="footer-events">
+		<ul class="footer-news">
 			<?php
 				$args = array(
-			  	'post_type' => 'events',
+					'post_type' => 'news',
+					'order'=>'DESC',
 			  	'posts_per_page' => 5
 				);
 
@@ -28,18 +29,25 @@
 
 			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				<li>
-					<h2><?php the_title() ;?></h2>
-
-					<?php if( get_field('description') ): ?>
-						<p><?php the_field( 'description' ); ?></p>
+					<?php if( get_field('news_title') ): ?>
+						<h2> <?php the_field( 'news_title' ); ?></h2>
 					<?php endif; ?>
 
-					<?php if( get_field('links') ): ?>
-						<span><?php the_field( 'links' ); ?></span>
+					<?php if( get_field('news_content') ): ?>
+						<?php the_field( 'news_content' ); ?>
+					<?php endif; ?>
+
+					<?php if( get_field('news_photo') ): ?>
+						<img src="<?php the_field( 'news_photo' ); ?>" class="inline-news-photo" alt="Photo of <?php the_field( 'news_photo' ); ?>">
+					<?php endif; ?>
+
+					<?php if( get_field('news_links') ): ?>
+						<a href="<?php the_field( 'news_links' ); ?>" class="inline-news-link" target="_blank">
+							<i class="fa fa-info-circle" style="margin-right: 4px;"></i>
+							Click Here for More Info
+						</a>
 					<?php endif; ?>
 				</li>
-
-				<hr style="border: 1px solid #dddddd;">
 
 			<?php endwhile; else: ?>
 			  <p class="warning-text">There are no Events to show or something went wrong. Please try again later.</p>

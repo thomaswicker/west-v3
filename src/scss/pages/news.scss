@@ -97,11 +97,12 @@
       .news-list {
         float: left;
         width: 100%;
-        padding: 0 0 30px 0;
+        padding: 40px 0 30px 0;
 
         li {
-          margin: 30px 0 30px 0;
-          padding: 10px 25px 10px 25px;
+          float: left;
+          width: 100%;
+          padding: 20px 25px 20px 25px;
           border-bottom: 1px solid #ddd;
 
           @include mq(md) {
@@ -176,6 +177,27 @@
             height: auto;
             margin: 20px 0 0 0;
             display: block;
+          }
+
+          .inline-news-photo {
+            max-width: 400px;
+            height: auto;
+            margin: 20px 0 0 0;
+            display: block;
+          }
+
+          .inline-news-link {
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+            font-family: $font-primary;
+            font-weight: 500;
+            color: $color-secondary-alt;
+
+            &:hover {
+              color: lighten($color-secondary-alt, 15%);
+              text-decoration: underline;
+            }
           }
         }
 

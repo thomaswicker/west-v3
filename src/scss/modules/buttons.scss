@@ -612,3 +612,43 @@ ____  _   _ _____ _____ ___  _   _ ____
     color: $white;
   }
 }
+
+.inline-news-link {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: $color-secondary-alt;
+  border: 2px solid $color-secondary-alt;
+  color: $white;
+
+  &:hover, &:active, &:focus {
+    background-color: lighten($color-secondary-alt, 15%);
+    border: 2px solid lighten($color-secondary-alt, 15%);
+    color: $white;
+
+    i {
+      color: $white;
+    }
+  }
+}
+
+.btn-view-staff {
+  margin-top: 25px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background-color: #109ED9;
+  border: 2px solid #109ED9;
+
+  &:hover, &:active, &:focus {
+    background-color: lighten(#109ED9, 10%);
+    border: 2px solid lighten(#109ED9, 10%);
+    color: $white;
+
+    i {
+      color: $white;
+    }
+  }
+}
