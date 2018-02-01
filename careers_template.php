@@ -52,7 +52,7 @@ Template Name: Careers __TEMPLATE__
 
           </ul>
 
-          <a class="btn btn-mini btn-primary" href="http://westinc.catsone.com/careers/" target="_blank">View Available Careers <i class="fa fa-arrow-right" style="margin-left4px;"></i></a>
+          <a class="btn btn-mini btn-primary" href="https://west-inc.hua.hrsmart.com/hr/ats/JobSearch/viewAll" target="_blank">View Available Careers <i class="fa fa-arrow-right" style="margin-left4px;"></i></a>
 
         <?php endif; ?>
       <?php endif; ?>
