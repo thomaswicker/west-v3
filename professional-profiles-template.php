@@ -66,7 +66,7 @@ Template Name: Professional Profiles Landing Page __TEMPLATE__
                 <?php endif; ?>
 
                 <?php if( get_field('staff_member_email_address') ): ?>
-                  <a href="mailto: <?php the_field( 'staff_member_email_address' ); ?>" class="btn btn-primary" alt="Email Me Button">Email</a>
+                  <a href="mailto:<?php the_field( 'staff_member_email_address' ); ?>" class="btn btn-primary" alt="Email Me Button">Email</a>
                 <?php endif; ?>
 
                 <?php if( get_field('staff_member_profile_page') == 'yes' ): ?>

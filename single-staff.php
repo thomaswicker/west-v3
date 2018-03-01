@@ -18,7 +18,7 @@
 
         <div class="profile-links">
           <?php if( get_field('staff_member_email_address') ): ?>
-            <a href="mailto: <?php the_field( 'staff_member_email_address' ); ?>" class="btn btn-primary profile-email-address-btn">
+            <a href="mailto:<?php the_field( 'staff_member_email_address' ); ?>" class="btn btn-primary profile-email-address-btn">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               Email <?php the_field( 'staff_member_short_name' ); ?>
             </a>
