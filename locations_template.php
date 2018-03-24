@@ -29,8 +29,8 @@ Template Name: Locations Page  __TEMPLATE__
       <p class="locationsEmail"><a href="mailto:marketing@west-inc.com">marketing@west-inc.com</a></p>
 
       <p class="addressLine1">WEST, ULC Headquarters</p>
-      <p class="addressLine2">Unit 207, 535 10 Ave SW</p>
-      <p class="addressLine3">Calgary, AB T2R 0A8</p>
+      <p class="addressLine2">Suite 303, 1000 9th Ave SW</p>
+      <p class="addressLine3">Calgary, Alberta, T2P 2Y6</p>
       <p class="locationsPhone">Phone: 403.265.0343</p>
       <p class="locationsEmail"><a href="mailto:marketing@west-ulc.ca">marketing@west-ulc.ca</a></p>
     </aside>
