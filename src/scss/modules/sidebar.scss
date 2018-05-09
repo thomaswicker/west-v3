@@ -72,6 +72,25 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
       border-left: 0px;
     }
 
+    &.resources {
+      li {
+        a {
+          &.active {
+            background-color: $color-primary;
+            color: $white;
+
+            i {
+              color: $white;
+            }
+
+            &:hover {
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+
     //ABOUT SIDEBAR
     &.profile {
       li.about-subnav--profile a {
@@ -224,7 +243,7 @@ __ _) | || |_| | |___| |_) / ___ \|  _ <
 
     //PUBLICATIONS ROOT SIDEBAR
     &.bookstore {
-      
+
       li.publications-subnav--bookstore a {
         background-color: $color-primary;
         color: $white;

@@ -10,11 +10,25 @@
 // Global SCSS variables used througout the CSS
 
 @import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";
-@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700";
-@import "https://fonts.googleapis.com/css?family=Raleway:400,100";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,
+  300,
+  300italic,
+  400italic,
+  600,
+  600italic,
+  700,
+  700italic,
+  800,
+  800italic|Montserrat:400,
+  700";
+@import "https://fonts.googleapis.com/css?family=Raleway:400, 100";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700";
-
+@import "https://fonts.googleapis.com/css?family=Roboto:300,
+  400,
+  400i,
+  500,
+  500i,
+  700";
 
 @mixin flex() {
   display: -webkit-box;
@@ -25,31 +39,37 @@
   -webkit-flex-flow: row wrap;
 }
 
-@mixin mq($query){
+@mixin mq($query) {
   @if $query == sm {
-      @media only screen and (max-width: $sm-end) { @content; }
+    @media only screen and (max-width: $sm-end) {
+      @content;
+    }
   }
 
   @if $query == md {
-      @media only screen and (min-width: $md-start) and (max-width: $md-end) { @content; }
+    @media only screen and (min-width: $md-start) and (max-width: $md-end) {
+      @content;
+    }
   }
 
   @if $query == lg {
-      @media only screen and (min-width: $lg-start) and (max-width: $lg-end) { @content; }
+    @media only screen and (min-width: $lg-start) and (max-width: $lg-end) {
+      @content;
+    }
   }
 
   @if $query == xl {
-      @media only screen and (min-width: $xl-start) and (max-width: $xl-end) { @content; }
+    @media only screen and (min-width: $xl-start) and (max-width: $xl-end) {
+      @content;
+    }
   }
 
   @if $query == jumbo {
-      @media only screen and (min-width: $jumbo-start) { @content; }
+    @media only screen and (min-width: $jumbo-start) {
+      @content;
+    }
   }
 }
-
-
-
-
 
 /*
  __     ___    ____  ___    _    ____  _     _____ ____
@@ -58,7 +78,6 @@
    \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
     \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
 */
-
 
 /* ==========================================================================
    %% Import your fonts here %%
@@ -72,50 +91,47 @@
    ========================================================================== */
 
 // Generic monochrome colors
-$none:              transparent;
-$white:             #ffffff;
-$off-white:         #f4f4f4;
-$xxlight-gray:      #dddddd;
-$xlight-gray:       #cccccc;
-$light-gray:        #bbbbbb;
-$gray:              #999999;
-$medium-gray:       #777777;
-$dark-gray:         #444444;
-$xdark-gray:        #222222;
-$xxdark-gray:       #111111;
-$black:             #000000;
+$none: transparent;
+$white: #ffffff;
+$off-white: #f4f4f4;
+$xxlight-gray: #dddddd;
+$xlight-gray: #cccccc;
+$light-gray: #bbbbbb;
+$gray: #999999;
+$medium-gray: #777777;
+$dark-gray: #444444;
+$xdark-gray: #222222;
+$xxdark-gray: #111111;
+$black: #000000;
 
 // Standard color palette
-$red-potion:        #E90000;
-$green-potion:      #72A430;
-$blue-potion:       #0071a9;
-$teal-potion:       #0DABA7;
-$orange-potion:     #f57e20;
-$yellow-potion:     $teal-potion;
-$purple-potion:     #a06eaf;
-$brown-potion:      #554D3F;
-$tan-potion:        #E4DCCD;
+$red-potion: #e90000;
+$green-potion: #72a430;
+$blue-potion: #0071a9;
+$teal-potion: #0daba7;
+$orange-potion: #f57e20;
+$yellow-potion: $teal-potion;
+$purple-potion: #a06eaf;
+$brown-potion: #554d3f;
+$tan-potion: #e4dccd;
 
 // Set your global app/site variables here
-$color-primary:     $green-potion;
-$color-secondary:   #2C3621;
+$color-primary: $green-potion;
+$color-secondary: #2c3621;
 $color-secondary-alt: #234069;
-$color-tertiary:    #e4dccd;
+$color-tertiary: #e4dccd;
 
-
-$westGreen: #72A430;
+$westGreen: #72a430;
 $ultraLightGray: #ecf0f1;
-$lightGray: #BBBBBB;
-$charcoal: #36454F;
+$lightGray: #bbbbbb;
+$charcoal: #36454f;
 $black: #000000;
-$white: #FFFFFF;
-$twWhite: #ffffff;
+$white: #ffffff;
 $tan: $tan-potion;
 
 // Element color styling variables
-$link:              $color-secondary;
-$text:              $dark-gray;
-
+$link: $color-secondary;
+$text: $dark-gray;
 
 /* ==========================================================================
    %% Typography Variables %%
@@ -126,24 +142,24 @@ $text:              $dark-gray;
 $base-line-height: 135%;
 
 // font weights
-$font-weight-xlight:   200;
-$font-weight-light:    300;
-$font-weight-normal:   400;
+$font-weight-xlight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
 $font-weight-semibold: 500;
-$font-weight-bold:     600;
-$font-weight-ultra:    800;
+$font-weight-bold: 600;
+$font-weight-ultra: 800;
 
 //font sizes
-$font-size-tiny:       8px;
-$font-size-xxs:        10px;
-$font-size-xs:         11px;
-$font-size-sm:         12px;
-$font-size-base:       13px;
-$font-size-md:         14px;
-$font-size-lg:         15px;
-$font-size-xl:         20px;
-$font-size-xxl:        24px;
-$font-size-jumbo:      30px;
+$font-size-tiny: 8px;
+$font-size-xxs: 10px;
+$font-size-xs: 11px;
+$font-size-sm: 12px;
+$font-size-base: 13px;
+$font-size-md: 14px;
+$font-size-lg: 15px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size-jumbo: 30px;
 
 $font-size: $font-size-base;
 
@@ -151,23 +167,22 @@ $font-size: $font-size-base;
 
 //often used for code blocks
 
-$raleway: 'Raleway', sans-serif;
-$opensans: 'Open Sans', sans-serif;
+$raleway: "Raleway", sans-serif;
+$opensans: "Open Sans", sans-serif;
 $arial: Arial, Helvetica, sans-serif;
 
-$font-primary: 'Roboto', sans-serif;
+$font-primary: "Roboto", sans-serif;
 $font-secondary: Arial, Helvetica, sans-serif;
 $font-tertiary: FontAwesome;
 
-$font-1: 'Open Sans', sans-serif;
-$font-2: 'Dancing Script', cursive;
-$font-3: 'Parisienne', cursive;
+$font-1: "Open Sans", sans-serif;
+$font-2: "Dancing Script", cursive;
+$font-3: "Parisienne", cursive;
 $font-4: Arial, Helvetica, sans-serif;
 
 $body-text: $font-size-md;
 $body-text-small: $font-size-sm;
 $body-text-large: $font-size-lg;
-
 
 /* ==========================================================================
    %% Headers h1,h2,h3,h4,h5,h6 %%
@@ -180,22 +195,20 @@ $h4-size: $font-size-md;
 $h5-size: $font-size-base;
 $h6-size: $font-size-xs;
 
-
 /* ==========================================================================
    %% Spacing Units %%
    ========================================================================== */
 
-
-$unit-tiny:   2px;
-$unit-xxs:    5px;
-$unit-xs:     10px;
-$unit-sm:     15px;
-$unit-base:   20px;
-$unit-md:     25px;
-$unit-lg:     30px;
-$unit-xl:     35px;
-$unit-xxl:    50px;
-$unit-jumbo:  75px;
+$unit-tiny: 2px;
+$unit-xxs: 5px;
+$unit-xs: 10px;
+$unit-sm: 15px;
+$unit-base: 20px;
+$unit-md: 25px;
+$unit-lg: 30px;
+$unit-xl: 35px;
+$unit-xxl: 50px;
+$unit-jumbo: 75px;
 
 $half-unit-base: $unit-base / 2;
 $unit: $unit-base;
@@ -209,7 +222,6 @@ $grid-cols: 12;
 $gutter-width: 20px;
 $grid-max-width: 100%;
 
-
 /* ==========================================================================
    %% Border Radius %%
    ========================================================================== */
@@ -220,48 +232,44 @@ $border-radius: 0;
    %% Button Variables %%
    ========================================================================== */
 
-$button-primary:   $color-primary;
+$button-primary: $color-primary;
 $button-secondary: $color-secondary;
-$button-red:       $red-potion;
-$button-green:     $green-potion;
-$button-gray:      $xlight-gray;
-$button-blue:      $blue-potion;
-$button-dark:      $dark-gray;
-$button-orange:    $orange-potion;
-$button-purple:    $purple-potion;
-
+$button-red: $red-potion;
+$button-green: $green-potion;
+$button-gray: $xlight-gray;
+$button-blue: $blue-potion;
+$button-dark: $dark-gray;
+$button-orange: $orange-potion;
+$button-purple: $purple-potion;
 
 /* ==========================================================================
    %% Media Query Variables %%
    ========================================================================== */
 
+// small range (0px --> 640px) ==> Good for mobile devices
+$sm-start: 0em;
+$sm-end: 47.9375em;
 
- // small range (0px --> 640px) ==> Good for mobile devices
- $sm-start:   0em;
- $sm-end:     47.9375em;
+// medium range (641px --> 1024px) ==> Good for tablet devices
+$md-start: 48em;
+$md-end: 64em;
 
- // medium range (641px --> 1024px) ==> Good for tablet devices
- $md-start:  48em;
- $md-end:    64em;
+// large range (1025px --> 1440px) ==> Good for portable & laptop devices
+$lg-start: 64.063em;
+$lg-end: 90em;
 
- // large range (1025px --> 1440px) ==> Good for portable & laptop devices
- $lg-start:   64.063em;
- $lg-end:     90em;
+// xlarge range (1441px --> 1992px)  ==> Good for large screens & desktop
+$xl-start: 90.063em;
+$xl-end: 124em;
 
- // xlarge range (1441px --> 1992px)  ==> Good for large screens & desktop
- $xl-start:  90.063em;
- $xl-end:    124em;
-
- // jumbo range (1993px --> up)  ==> Good for everything above large screens & desktop
- $jumbo-start:  124.063em;
-
+// jumbo range (1993px --> up)  ==> Good for everything above large screens & desktop
+$jumbo-start: 124.063em;
 
 /* ==========================================================================
    %% Form Variables %%
    ========================================================================== */
 
 $form-focus: $xlight-gray;
-
 
 // If you have to support IE8
 $support-legacy: true;

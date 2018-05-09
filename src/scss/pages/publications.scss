@@ -7,6 +7,34 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
 
 */
 
+.ebd_link {
+  margin-bottom: 15px;
+  background-color: $blue-potion;
+  color: $white;
+  padding: 10px 15px;
+  font-size: 14px;
+
+  &:hover {
+    background-color: lighten($blue-potion, 10%);
+    color: $white;
+  }
+
+  &:empty {
+    display: none;
+  }
+}
+
+.resources-search {
+  padding-left: 15px;
+  box-shadow: none;
+  border: 1px solid #0071a9;
+  min-height: 50px;
+
+  &:placeholder {
+    color: red;
+  }
+}
+
 #bookstoreContainer {
     padding: 0px !important;
     text-decoration: none;
@@ -264,7 +292,7 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
         line-height: 140%;
       }
 
-      ul.books-list, ul.publications-list {
+      ul.books-list, ul.publications-list, ul.reports-list {
         float: left;
         width: 100%;
 
@@ -294,7 +322,7 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
               float: left;
               width: 100%;
               height: auto;
-              padding: 15px 20px;
+              padding: 15px 20px 30px 20px;
 
               label, h3, p {
                 display: block;

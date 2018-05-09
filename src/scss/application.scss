@@ -43,7 +43,6 @@
  * STYLEGUIDES.........Sytles only relating to the styleguide sample sheet, does not affect Potion
  */
 
-
 /* ## Base ## */
 @import "base/reset";
 @import "base/normalize";
@@ -86,8 +85,10 @@
 @import "pages/reports.scss";
 @import "pages/safety.scss";
 @import "pages/services.scss";
+@import "pages/software.scss";
 @import "pages/staff.scss";
 @import "pages/team.scss";
+@import "pages/workshops.scss";
 
 @import "modules/cyclone-slider.scss";
 
@@ -104,7 +105,9 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-p, span, a {
+p,
+span,
+a {
   font-family: $font-primary;
 }
 
