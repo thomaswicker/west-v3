@@ -8,6 +8,7 @@ Template Name: Statistics & Biometrics __TEMPLATE__
 
 <section class="body-container publications-and-reports-page-container">
   <section class="body-container--inner parpc--inner">
+
     <article class="bci--left parpc-page--inner-left">
       <?php if( get_field('page_title') ): ?>
         <h1 class="main-title">
