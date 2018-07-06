@@ -75,15 +75,27 @@ Template Name: Markets Page __TEMPLATE__
 			<?php endif; ?>
 			</section>
 
-			<?php if( get_field('page_subtitle') ): ?>
+			<?php if( get_field('subtitle') ): ?>
 				<h2 class="subtitle">
-					<?php the_field( 'page_subtitle' ); ?>
+					<?php the_field( 'subtitle' ); ?>
 				</h2>
 			<?php endif; ?>
 
 			<?php if( get_field('body_content_extra_section') ): ?>
 				<p class="body-content-extra-section">
 					<?php the_field( 'body_content_extra_section' ); ?>
+				</p>
+			<?php endif; ?>
+
+			<?php if( get_field('subtitle_2') ): ?>
+				<h2 class="subtitle">
+					<?php the_field( 'subtitle_2' ); ?>
+				</h2>
+			<?php endif; ?>
+
+			<?php if( get_field('body_content_extra_section_2') ): ?>
+				<p class="body-content-extra-section">
+					<?php the_field( 'body_content_extra_section_2' ); ?>
 				</p>
 			<?php endif; ?>
 
