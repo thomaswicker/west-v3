@@ -94,14 +94,14 @@
 
 html {
   overflow-x: hidden;
-  overflow-y: auto; /* has to be scroll, not auto */
+  overflow-y: auto !important;
   -webkit-overflow-scrolling: touch;
 }
 
 body {
   font-family: $font-primary;
   overflow-x: hidden;
-  overflow-y: auto; /* has to be scroll, not auto */
+  overflow-y: hidden !important;; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 
