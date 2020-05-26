@@ -11,19 +11,19 @@ _______   ______  _____
 .lowercase { text-transform: uppercase !important; }
 
 .font-1 {
-  font-family: $font-1;
+  font-family: $font-primary;
 }
 
 .font-2 {
-  font-family: $font-2;
+  font-family: $font-primary;
 }
 
 .font-3 {
-  font-family: $font-3;
+  font-family: $font-secondary;
 }
 
 .font-4 {
-  font-family: $font-4;
+  font-family: $font-secondary;
 }
 
 
@@ -114,7 +114,7 @@ _______   ______  _____
 ========================================================================== */
 
 .intro-text {
-  @include font($font: $font-2, $style: normal, $size: 1.3rem, $weight: $font-weight-light);
+  @include font($font: $font-primary, $style: normal, $size: 1.3rem, $weight: $font-weight-light);
   line-height: ($base-line-height * 1.4);
   letter-spacing: normal;
 }
@@ -123,38 +123,38 @@ _______   ______  _____
   float: left;
   width: 100%;
   margin: $unit-xs 0;
-  @include font($font: $font-2, $style: normal, $size: 17px, $weight: $font-weight-normal);
+  @include font($font: $font-primary, $style: normal, $size: 17px, $weight: $font-weight-normal);
   line-height: 135%;
   letter-spacing: normal;
 
   @include mq(xl) {
-    @include font($font: $font-2, $style: normal, $size: 16px, $weight: $font-weight-normal);
+    @include font($font: $font-primary, $style: normal, $size: 16px, $weight: $font-weight-normal);
     line-height: 140%;
   }
 
   @include mq(lg) {
-    @include font($font: $font-2, $style: normal, $size: 16px, $weight: $font-weight-normal);
+    @include font($font: $font-primary, $style: normal, $size: 16px, $weight: $font-weight-normal);
     line-height: 145%;
   }
 
   @include mq(md) {
-    @include font($font: $font-2, $style: normal, $size: 15px, $weight: $font-weight-normal);
+    @include font($font: $font-primary, $style: normal, $size: 15px, $weight: $font-weight-normal);
   }
 
   @include mq(sm) {
-    @include font($font: $font-2, $style: normal, $size: 16px, $weight: $font-weight-normal);
+    @include font($font: $font-primary, $style: normal, $size: 16px, $weight: $font-weight-normal);
   }
 }
 
 .body-text-small {
-  @include font($font: $font-1, $style: normal, $size: $body-text-small, $weight: $font-weight-normal);
+  @include font($font: $font-primary, $style: normal, $size: $body-text-small, $weight: $font-weight-normal);
   line-height: $base-line-height;
   letter-spacing: normal;
   margin-bottom: 1.1em;
 }
 
 .body-text-large {
-  @include font($font: $font-1, $style: normal, $size: $body-text-large, $weight: $font-weight-normal);
+  @include font($font: $font-primary, $style: normal, $size: $body-text-large, $weight: $font-weight-normal);
   line-height: $base-line-height;
   letter-spacing: normal;
   margin-bottom: 1.1em;

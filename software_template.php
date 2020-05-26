@@ -33,6 +33,8 @@ Template Name: Software __TEMPLATE__
         $the_query = new WP_Query( $args );
       ?>
 
+      <h3 class="software-subheader">Software & Applications</h3>
+
       <ul class="software-list">
         <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 

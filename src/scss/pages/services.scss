@@ -58,7 +58,7 @@ ___) | |___|  _ < \ V /  | | |___| |___ ___) |
   overflow: hidden;
 
   h5 {
-    font-family: $raleway;
+    font-family: $font-primary;
     text-transform: uppercase;
     position: relative;
     padding: 20px 0px 10px 0px;
@@ -128,7 +128,7 @@ a:hover {
     text-transform: capitalize !important;
     font-size: 1.5rem !important;
     font-weight: 400 !important;
-    font-family: $opensans !important;
+    font-family: $font-primary !important;
     border-bottom: 1px solid #aaaaaa;
     padding: 0px 0px 10px 0px;
     line-height: 1.4em;
@@ -149,7 +149,7 @@ a:hover {
 .services-details .post-title {
   margin-top: 0;
   position: relative;
-  font-family: $raleway;
+  font-family: $font-primary;
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 1.5em;
@@ -183,7 +183,7 @@ a:hover {
     line-height: 1.7em;
     list-style: square;
     color: $black;
-    font-family: $raleway;
+    font-family: $font-primary;
     margin: 10px 0px 10px 30px;
 
     /*0px --> 768px*/
@@ -872,7 +872,7 @@ a:hover {
   padding-bottom: 20px;
 
   h5 {
-    font-family: $raleway;
+    font-family: $font-primary;
     text-transform: uppercase;
     position: relative;
     padding: 20px 0px 10px 0px;
@@ -908,7 +908,7 @@ a:hover {
       padding-bottom: .6rem;
       margin-bottom: .5rem;
       border-bottom: 1px solid #ddd;
-      font-family: $opensans;
+      font-family: $font-primary;
       font-weight: 500;
 
       i {
@@ -920,7 +920,7 @@ a:hover {
       display: block;
       font-size: .8rem;
       line-height: 1.2rem;
-      font-family: $arial;
+      font-family: $font-secondary;
       margin-bottom: 1rem;
     }
   }
@@ -1905,8 +1905,8 @@ a:hover {
             }
           }
 
-          &.deserttortoisemanagement {
-            .deserttortoisemanagement-link a {
+          &.dogdetection {
+            .dogdetection-link a {
               background-color: $color-primary;
               color: $white;
 
@@ -1984,6 +1984,17 @@ a:hover {
 
           &.statisticsandbiometrics {
             .statisticsandbiometrics-link a {
+              background-color: $color-primary;
+              color: $white;
+
+              &:before {
+                color: $white;
+              }
+            }
+          }
+
+          &.uas {
+            .uas-link a {
               background-color: $color-primary;
               color: $white;
 

@@ -22,6 +22,8 @@ Template Name: Workshops __TEMPLATE__
         </h2>
       <?php endif; ?>
 
+      <h3 class="workshops-subheader">Upcoming Workshops</h3>
+
       <?php
         $args = array(
           'post_type' => 'west_workshops',
@@ -60,6 +62,7 @@ Template Name: Workshops __TEMPLATE__
                 <li class="workshop-link">
                   <a href="<?php the_field('workshop_link'); ?>" target="_blank" class="btn btn-primary">
                     More Details
+                    <i class="fa fa-arrow-right" style="margin-left: 5px;" aria-hidden="true"></i>  
                   </a>
                 </li>
               </ul>

@@ -9,17 +9,17 @@
 			</a>
 		</li>
 
-		<li class="resources-subnav--workshops">
+		<!-- <li class="resources-subnav--workshops">
 			<a href="http://www.west-inc.com/resources/workshops">
 				<i class="fa fa-chevron-right"></i>
 				Workshops
 			</a>
-		</li>
+		</li> -->
 
 		<li class="resources-subnav--software">
 			<a href="http://www.west-inc.com/resources/software" class="active">
 				<i class="fa fa-chevron-right"></i>
-				Software
+				Software & Applications
 			</a>
 		</li>
 	</ul>

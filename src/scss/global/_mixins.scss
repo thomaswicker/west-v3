@@ -236,7 +236,7 @@
 
 --- USAGE ---
 
-  @include font($font: $font-1, $style: normal, $size: $h1-size, $weight: normal, color);
+  @include font($font: $font-primary, $style: normal, $size: $h1-size, $weight: normal, color);
 
 --------------
 % */

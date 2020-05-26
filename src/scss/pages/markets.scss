@@ -29,7 +29,7 @@ __  __    _    ____  _  _______ _____ ____
   padding-bottom: 20px;
 
   h5 {
-    font-family: $raleway;
+    font-family: $font-primary;
     text-transform: uppercase;
     position: relative;
     padding: 20px 0px 10px 0px;
@@ -68,7 +68,7 @@ __  __    _    ____  _  _______ _____ ____
   }
 
   h3 {
-    font-family: $raleway;
+    font-family: $font-primary;
     font-size: .95em;
     font-weight: 400 !important;
     line-height: 1.4em;
@@ -157,7 +157,7 @@ __  __    _    ____  _  _______ _____ ____
   }
 
   h3 {
-    font-family: $raleway;
+    font-family: $font-primary;
     font-size: .95em;
     font-weight: 400 !important;
     line-height: 1.4em;
@@ -347,7 +347,7 @@ __  __    _    ____  _  _______ _____ ____
   line-height: 1.7em;
   list-style: disc;
   color: $black;
-  font-family: $raleway;
+  font-family: $font-primary;
   margin: 10px 0px 10px 20px;
 }
 
@@ -439,7 +439,7 @@ __  __    _    ____  _  _______ _____ ____
     font-size: 1.5em;
     line-height: 1.3em;
     font-weight: 400;
-    font-family: $opensans;
+    font-family: $font-primary;
     border-bottom: 1px solid #aaaaaa;
     padding: 0px 0px 10px 0px;
     text-transform: capitalize !important;
@@ -662,7 +662,7 @@ __  __    _    ____  _  _______ _____ ____
   margin: 15px 0px 0px 0px;
 
   h5 {
-    font-family: $raleway;
+    font-family: $font-primary;
     text-transform: uppercase;
     position: relative;
     padding: 20px 0px 10px 0px;
@@ -1160,7 +1160,7 @@ __  __    _    ____  _  _______ _____ ____
       }
 
       h3.body-text-header {
-        font-family: $font-1;
+        font-family: $font-primary;
         font-size: 18px;
         font-weight: 600;
         text-transform: none;

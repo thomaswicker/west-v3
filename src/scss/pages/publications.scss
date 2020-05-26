@@ -39,14 +39,27 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
   }
 }
 
-.resources-search {
-  padding-left: 15px;
-  box-shadow: none;
-  border: 1px solid #0071a9;
-  min-height: 50px;
-
-  &:placeholder {
-    color: red;
+.resources--search {
+  input {
+    margin-bottom: 0;
+    padding-left: 15px;
+    box-shadow: none;
+    border: 1px solid $blue-potion;
+    min-height: 50px;
+    color: $blue-potion;
+    transition: all 200ms ease-in-out;
+  
+    &:focus {
+      border: 3px solid lighten($blue-potion, 12%);
+      box-shadow: none;
+      outline: none;
+    }
+  
+    &:active {
+      border: 3px solid lighten($blue-potion, 12%);
+      box-shadow: none;
+      outline: none;
+    }
   }
 }
 
@@ -271,15 +284,13 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
         float: left;
         width: 100%;
         margin-top: 30px;
-        margin-bottom: 15px;
-        padding: 8px 20px 8px 12px;
+        margin-bottom: 5px;
+        padding: 8px 20px 8px 0;
         font-family: $font-primary;
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 30px;
+        font-weight: 900;
         line-height: 140%;
-        text-transform: uppercase;
-        background-color: #333333;
-        color: $white;
+        color: #333333;
       }
 
       h4.publications-report-subheader-alt {
@@ -303,40 +314,16 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
         li.publication-list-item {
           float: left;
           width: 100%;
-          padding: 8px 15px 10px 15px;
+          padding: 8px 0 10px 0;
 
           &:nth-child(even) {
-            background-color: #ededed;
+            background-color: $xxlight-gray;
           }
 
-          @include mq(lg) {
-          }
-
-          @include mq(md) {
-          }
-
-          @include mq(sm) {
-          }
-
-          &.active {
-            .pbi--left .email-before-download-container {
-              float: left;
-              width: 100%;
-              height: auto;
-              padding: 15px 20px 30px 20px;
-
-              label,
-              h3,
-              p {
-                display: block;
-              }
-            }
-          }
-
-          .pbi--left {
+          .publication-content-container {
             float: left;
-            width: calc(100% - 90px);
-            padding-right: 30px;
+            width: calc(100% - 100px);
+            padding: 10px 25px;
 
             @include mq(lg) {
             }
@@ -349,154 +336,14 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
               padding-right: 0;
             }
 
-            p {
-              font-size: 15px;
-            }
-
-            .email-before-download-container {
-              float: left;
-              width: 100%;
-              height: 0;
-              margin-top: 15px;
-              padding: 0 0 0 0;
-              background-color: $color-secondary-alt;
-              transition: all 300ms ease-in-out;
-
-              .download-icon {
-                float: left;
-                margin-top: 0;
-                margin-bottom: 15px;
-                padding: 7px 13px 7px 13px;
-                font-family: $font-primary;
-                font-size: 14px;
-                font-weight: 500;
-                color: $color-secondary-alt;
-                background-color: #00c1ff;
-                text-decoration: none;
-
-                &:hover {
-                  background-color: darken(#00c1ff, 10%);
-                  color: $white;
-                  cursor: pointer;
-                  text-decoration: underline;
-
-                  &:before {
-                    color: $white !important;
-                    text-decoration: none;
-                  }
-                }
-
-                &:before {
-                  content: '\f063';
-                  margin-right: 4px;
-                  font-family: FontAwesome;
-                  color: $color-secondary-alt;
-                }
-              }
-
-              .wpcf7-submit {
-                float: left;
-                display: block;
-                min-width: $unit-jumbo;
-                margin-bottom: 15px;
-                padding: 7px 14px;
-                border: 2px solid $color-primary;
-                border-radius: 0;
-                font-family: $font-primary;
-                font-size: 16px;
-                font-weight: 600;
-                text-align: center;
-                background: $color-primary;
-                color: $white;
-                cursor: pointer;
-                text-transform: uppercase;
-                text-rendering: optimizeLegibility;
-                -webkit-font-smoothing: antialiased;
-                transition: all 0.3s ease;
-
-                &:hover {
-                  border: 2px solid lighten($color-primary, 15%);
-                  background: lighten($color-primary, 15%);
-                }
-              }
-
-              .wpcf7-form-control-wrap {
-                float: left;
-                width: 100%;
-                min-height: 30px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-              }
-
-              div.wpcf7-response-output {
-                float: left;
-                width: 100%;
-                margin-top: 10px;
-                margin-left: 0;
-                padding: 12px 18px 12px 0;
-                color: $white;
-                font-weight: bold;
-                font-family: $font-primary;
-                font-size: 15px;
-                font-style: italic;
-                font-weight: 500;
-                background-color: transparent;
-                border: 0px;
-
-                &.wpcf7-validation-errors {
-                  background-color: red !important;
-                }
-              }
-
-              label {
-                float: left;
-                width: 100%;
-                margin-bottom: 5px;
-                color: $white !important;
-              }
-
-              h3 {
-                float: left;
-                width: 100%;
-                margin-left: 0;
-                margin-top: 15px;
-                margin-bottom: 25px;
-                font-family: $font-primary;
-                font-size: 18px;
-                font-weight: 500;
-                color: $white;
-                display: none;
-
-                i {
-                  margin-right: 4px;
-                  padding: 0;
-                  color: $white;
-                }
-
-                span {
-                }
-              }
-
-              p {
-                float: left;
-                width: 100%;
-                font-family: $font-primary;
-                font-size: 12px;
-                font-weight: bold;
-                text-transform: uppercase;
-                color: $white;
-                display: none;
-              }
-            }
-
             .publication-title {
               float: left;
               width: 100%;
-              margin-bottom: 0px;
+              margin-bottom: 0;
               padding-right: 15px;
               font-family: $font-primary;
               font-size: 18px;
-              font-weight: 500;
+              font-weight: 600;
               line-height: 140%;
               color: $black;
 
@@ -519,111 +366,140 @@ ____  _   _ ____  _     ___ ____    _  _____ ___ ___  _   _ ____
               }
             }
 
-            .publication-details {
+            .publication-author-title {
               float: left;
               width: 100%;
-              font-family: $font-secondary;
+              margin-top: 10px;
+              margin-bottom: 0;
+              padding-right: 15px;
+              font-family: $font-primary;
               font-size: 15px;
-              font-weight: 500;
-              line-height: 135%;
-              color: #444444;
+              font-weight: 900;
+              line-height: 140%;
+              color: black;
+              text-transform: uppercase;
+            }
 
-              @include mq(lg) {
-                font-size: 15px;
-                font-weight: 500;
-                line-height: 135%;
-              }
+            .publication-author {
+              float: left;
+              margin-top: 5px;
+              margin-right: 7px;
+              margin-bottom: 8px;
 
-              @include mq(md) {
-                margin-top: 10px;
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 135%;
-              }
-
-              @include mq(sm) {
-                margin-top: 10px;
+              .publication-author-name {
+                float: left;
+                font-family: $font-primary;
                 font-size: 14px;
-                font-weight: 400;
-                line-height: 140%;
+                font-weight: 500;
+                color: #222222;
+                padding: 3px 8px;
+                background-color: #BBBBBB;
+
+                &.alt {
+                  color: #EFEFEF;
+                  background-color: #5B5B5B;
+                }
               }
+            }
+
+            .publication-year {
+              float: left;
+              width: 100%;
+              margin-top: 5px;
+              font-family: $font-primary;
+              font-size: 15px;
             }
           }
 
-          .pbi--right {
+          .tag-container {
             float: left;
-            width: 90px;
-            text-align: center;
+            width: 100px;
 
             @include mq(md) {
+
             }
 
             @include mq(sm) {
               width: 100%;
+              padding-left: 15px;
+              padding-right: 15px;
+              padding-bottom: 15px;
             }
 
-            a {
+            .tag-type {
               float: left;
               min-width: 75px;
               margin-top: 8px;
-              padding: 10px 15px;
+              padding: 10px 15px 10px 10px;
               border-radius: 5px;
               font-family: $font-primary;
               font-size: 14px;
               text-align: center;
-
+              border: 0;
+  
               @include mq(sm) {
                 padding: 10px 30px;
               }
 
+              &:hover {
+                border: 0;
+                color: $white;
+
+                i {
+                  color: white;
+                }
+              }
+
+              &:active {
+                border: 0;
+                color: $white;
+
+                i {
+                  color: white;
+                }
+              }
+
+              &:focus {
+                border: 0;
+                color: $white;
+
+                i {
+                  color: white;
+                }
+              }
+
+              i {
+                color: white;
+              }
+
+              &.btn-pub-pdf {
+                background-color: darken(red, 5%);
+
+                &:hover {
+                  background-color: lighten(red, 10%);
+                }
+              }
+
+              &.btn-pub-book {
+                background-color: $color-primary;
+
+                &:hover {
+                  background-color: lighten($color-primary, 15%);
+                }
+              }
+
+              &.btn-pub-url {
+                background-color: lighten($color-secondary-alt, 15%);
+
+                &:hover {
+                  background-color: lighten($color-secondary-alt, 30%);
+                }
+              }
+  
               &:before {
                 width: 35px;
                 height: 35px;
                 color: white;
-              }
-
-              &.book-icon {
-                background-color: $color-primary;
-
-                &:hover {
-                  background-color: lighten($color-primary, 10%);
-                }
-
-                &:before {
-                  content: 'BOOK';
-                }
-              }
-
-              &.pdf-icon {
-                background-color: darken(red, 5%);
-
-                &:hover {
-                  background-color: lighten(red, 5%);
-                }
-
-                &:before {
-                  content: 'PDF';
-                }
-              }
-
-              &.link-icon {
-                background-color: lighten($color-secondary-alt, 15%);
-
-                &:hover {
-                  background-color: lighten($color-secondary-alt, 25%);
-                }
-
-                &:before {
-                  content: 'LINK';
-                }
-              }
-
-              &.msc-icon {
-                background-color: #CCCCC;
-
-                &:before {
-                  content: 'MSC';
-                }
               }
             }
           }

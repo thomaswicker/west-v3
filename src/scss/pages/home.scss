@@ -38,7 +38,7 @@ _   _  ___  __  __ _____
   h1 {
     float: left;
     width: 100%;
-    font-family: $opensans !important;
+    font-family: $font-primary !important;
     font-weight: 400;
     font-size: 1.7rem;
     margin-top: 0;
@@ -60,7 +60,7 @@ _   _  ___  __  __ _____
     float: left;
     width: 100%;
     color: $westGreen;
-    font-family: $opensans;
+    font-family: $font-primary;
     font-weight: 400;
     font-size: 1.1em;
     font-style: italic;
@@ -179,7 +179,7 @@ _   _  ___  __  __ _____
   }
 
   h3 {
-    font-family: $opensans;
+    font-family: $font-primary;
     font-weight: 500;
     color: #72A430;
     font-size: 1.2em;
@@ -189,7 +189,7 @@ _   _  ___  __  __ _____
 
   p {
     width: 100%;
-    font-family: $opensans;
+    font-family: $font-primary;
     color: #72A430;
     font-size: .9em;
     line-height: 1.4em;

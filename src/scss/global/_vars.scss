@@ -10,25 +10,7 @@
 // Global SCSS variables used througout the CSS
 
 @import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";
-@import "https://fonts.googleapis.com/css?family=Open+Sans:400,
-  300,
-  300italic,
-  400italic,
-  600,
-  600italic,
-  700,
-  700italic,
-  800,
-  800italic|Montserrat:400,
-  700";
-@import "https://fonts.googleapis.com/css?family=Raleway:400, 100";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-@import "https://fonts.googleapis.com/css?family=Roboto:300,
-  400,
-  400i,
-  500,
-  500i,
-  700";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900,900i');
 
 @mixin flex() {
   display: -webkit-box;
@@ -94,7 +76,7 @@
 $none: transparent;
 $white: #ffffff;
 $off-white: #f4f4f4;
-$xxlight-gray: #dddddd;
+$xxlight-gray: #eeeeee;
 $xlight-gray: #cccccc;
 $light-gray: #bbbbbb;
 $gray: #999999;
@@ -165,20 +147,9 @@ $font-size: $font-size-base;
 
 //Font Family Variables
 
-//often used for code blocks
-
-$raleway: "Raleway", sans-serif;
-$opensans: "Open Sans", sans-serif;
-$arial: Arial, Helvetica, sans-serif;
-
 $font-primary: "Roboto", sans-serif;
 $font-secondary: Arial, Helvetica, sans-serif;
 $font-tertiary: FontAwesome;
-
-$font-1: "Open Sans", sans-serif;
-$font-2: "Dancing Script", cursive;
-$font-3: "Parisienne", cursive;
-$font-4: Arial, Helvetica, sans-serif;
 
 $body-text: $font-size-md;
 $body-text-small: $font-size-sm;

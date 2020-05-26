@@ -170,9 +170,9 @@ Template Name: Services Page __TEMPLATE__
 						</a>
 					</li>
 
-					<li class="deserttortoisemanagement-link">
-						<a href="http://www.west-inc.com/services/desert-tortoise-management/">
-							Desert Tortoise Management
+					<li class="dogdetection-link">
+						<a href="http://www.west-inc.com/services/dog-detection-services/">
+							Dog Detection Services
 						</a>
 					</li>
 
@@ -205,6 +205,14 @@ Template Name: Services Page __TEMPLATE__
 							Statistics & Biometrics
 						</a>
 					</li>
+
+					<!-- <li>
+						<li class="uas-link">
+							<a href="http://www.west-inc.com/services/uas">
+								UAS
+							</a>
+						</a>
+					</li> -->
 
 					<li class="vegetationsamplingandplantsurveys-link">
 						<a href="http://www.west-inc.com/services/vegetation-sampling-and-plant-surveys/">
